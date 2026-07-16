@@ -10,17 +10,64 @@
   });
   if (!session) return;
 
-  const [obras, colaboradores, producao, qualidade, faltas, ocorrencias, epis, treinamentos] = await Promise.all([
+  const [obras, colaboradores, producao, qualidade, faltas, ocorrencias, epis, treinamentos, obrasReais, pessoalResumo] = await Promise.all([
     GP.loadJSON("obras.json"), GP.loadJSON("colaboradores.json"), GP.loadJSON("producao.json"),
     GP.loadJSON("qualidade.json"), GP.loadJSON("faltas.json"), GP.loadJSON("ocorrencias_seguranca.json"),
     GP.loadJSON("epis_pendentes.json"), GP.loadJSON("treinamentos_pendentes.json"),
+    GP.loadJSON("obras_reais.json"), GP.loadJSON("pessoal_resumo.json"),
   ]);
+  const obrasAtivasReais = obrasReais.filter((o) => o.ativa);
 
   const HOJE = "2026-07-16";
   const state = { periodo: 30, obraId: session.perfil === "supervisor" ? session.obraId : "todas", grupo: "todos", from: GP.isoDaysAgo(29, HOJE), to: HOJE };
 
   const content = document.getElementById("gp-content");
   content.innerHTML = `
+    <div class="card">
+      <div class="section-head" style="margin-bottom:4px;">
+        <h2>Obras em andamento</h2>
+        <span class="chip chip-neutral">Dados reais — Viana &amp; Moura, UGB Caruaru</span>
+      </div>
+      <p class="footnote" style="margin-bottom:14px;">
+        Das 8 frentes acompanhadas, 5 já estão praticamente concluídas (Rec. Laranjeiras,
+        Condomínio Oliveiras, Rec. Cerejeiras, Condomínio Cerejeiras e Condomínio Amoreiras).
+        Estas 3 seguem com produção em aberto.
+      </p>
+      <div class="grid grid-3" style="margin-bottom:16px;">
+        <div class="stat-tile">
+          <div class="stat-label">Obras ativas</div>
+          <div class="stat-value">${obrasAtivasReais.length}</div>
+          <span class="footnote">de ${obrasReais.length} empreendimentos no total</span>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-label">Casas pendentes nas obras ativas</div>
+          <div class="stat-value">${GP.fmtInt(obrasAtivasReais.reduce((a, o) => a + o.total - o.concluida, 0))}</div>
+          <span class="footnote">de ${GP.fmtInt(obrasAtivasReais.reduce((a, o) => a + o.total, 0))} casas nessas 3 obras</span>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-label">Colaboradores ativos</div>
+          <div class="stat-value">${GP.fmtInt(pessoalResumo.ativos)} <small>de ${GP.fmtInt(pessoalResumo.total)}</small></div>
+          <span class="footnote">${GP.fmtInt(pessoalResumo.direto)} mão de obra direta · ${GP.fmtInt(pessoalResumo.indireto)} indireta</span>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        ${obrasAtivasReais.map((o) => `
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:12.5px; margin-bottom:4px;">
+              <span style="font-weight:600;">${o.empreendimento}</span>
+              <span class="footnote mono">${GP.fmtInt(o.concluida)} / ${GP.fmtInt(o.total)} casas · ${o.pct_concluido}%</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" style="width:${o.pct_concluido}%;"></div></div>
+          </div>`).join("")}
+      </div>
+      <a class="btn btn-ghost" style="margin-top:14px;" href="casas.html">Ver casa a casa →</a>
+    </div>
+
+    <p class="footnote" style="margin: -8px 0 0;">
+      Os indicadores abaixo (produtividade, absenteísmo, saúde e segurança) usam dados de
+      demonstração fictícios.
+    </p>
+
     <div class="filter-bar">
       <div class="field">
         <label>Período</label>
