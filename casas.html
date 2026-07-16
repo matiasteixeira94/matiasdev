@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Casas · Gestão da Produção</title>
+<link rel="stylesheet" href="css/styles.css" />
+<style>
+  .stage-tracker { display: flex; gap: 3px; }
+  .stage-dot { width: 9px; height: 9px; border-radius: 2px; background: var(--border-strong); }
+  .stage-dot.done { background: var(--status-good); }
+  .stage-dot.current { background: var(--gold); }
+</style>
+</head>
+<body>
+  <div class="shell" id="gp-shell"></div>
+  <script src="js/app.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/casas.js"></script>
+</body>
+</html>

@@ -45,10 +45,12 @@ const GP = (() => {
     indicadores: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-4 4"/></svg>',
     faltas: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M9 16l2 2 4-4"/></svg>',
     seguranca: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>',
+    casas: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>',
   };
 
   const NAV_ITEMS = [
     { key: "dashboard", href: "index.html", label: "Visão Geral" },
+    { key: "casas", href: "casas.html", label: "Casas" },
     { key: "indicadores", href: "indicadores.html", label: "Produtividade e Qualidade" },
     { key: "faltas", href: "faltas.html", label: "Faltas e Absenteísmo" },
     { key: "seguranca", href: "seguranca.html", label: "Saúde e Segurança" },
