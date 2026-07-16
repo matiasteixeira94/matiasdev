@@ -187,8 +187,11 @@ h1, h2, h3, .num-hero, .brand-word {
   background: linear-gradient(155deg, var(--accent), var(--accent-strong));
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
-.brand-mark svg { width: 20px; height: 20px; }
-.logomark { width: 100%; height: 100%; }
+.brand-mark { padding: 4px; }
+/* A logomarca é bem mais alta que larga (duas espigas); escalar pela altura
+   do contêiner e deixar a largura seguir o aspect-ratio evita o "sanduíche"
+   fino que aparece ao forçar 100%/100% num contêiner quadrado. */
+.logomark { height: 100%; width: auto; aspect-ratio: 84 / 172; display: block; }
 .logomark polygon { fill: var(--gold); }
 .logomark line { stroke: var(--gold); stroke-width: 1.6; stroke-linecap: round; }
 .brand-word { font-size: 15.5px; line-height: 1.15; }
@@ -345,27 +348,3 @@ table.data td.num, table.data th.num { text-align: right; }
 .footnote { font-size: 11.5px; color: var(--ink-muted); }
 .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .section-head h2 { font-size: 16.5px; }
-
-/* login */
-.auth-shell { min-height: 100vh; display: grid; grid-template-columns: 1.1fr 1fr; }
-@media (max-width: 860px) { .auth-shell { grid-template-columns: 1fr; } }
-.auth-visual {
-  background: radial-gradient(circle at 15% 12%, var(--accent-strong), var(--accent) 55%, #3B1113 100%);
-  color: #FBF1E3; padding: 48px; display: flex; flex-direction: column; justify-content: space-between;
-}
-.auth-visual .brand-mosaic {
-  position: absolute; inset: 0; opacity: 0.5; mix-blend-mode: soft-light;
-  background-image:
-    repeating-linear-gradient(135deg, rgba(217,164,65,0.9) 0 46px, transparent 46px 92px),
-    repeating-linear-gradient(45deg, rgba(251,241,227,0.7) 0 34px, transparent 34px 102px);
-}
-.auth-panel { display: flex; align-items: center; justify-content: center; padding: 32px; background: var(--page); }
-.auth-card { width: 100%; max-width: 380px; display: flex; flex-direction: column; gap: 18px; }
-.role-option {
-  display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid var(--border-strong);
-  border-radius: var(--radius-md); cursor: pointer; background: var(--surface-raised);
-}
-.role-option input { accent-color: var(--accent); }
-.role-option strong { display:block; font-size: 13.5px; }
-.role-option span { font-size: 11.5px; color: var(--ink-muted); }
-.role-option:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }

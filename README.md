@@ -14,7 +14,6 @@ site estático com os dados separados em `data/` e a documentação em `docs/`.
 ├── indicadores.html       # Produtividade e Qualidade
 ├── faltas.html            # Faltas e Absenteísmo
 ├── seguranca.html          # Saúde e Segurança
-├── login.html              # Autenticação (mock, com seleção de perfil)
 ├── css/styles.css          # Tokens de design + componentes compartilhados
 ├── js/
 │   ├── app.js               # Shell (sidebar/topbar), sessão, tema, utilidades
@@ -44,9 +43,11 @@ npx http-server . -p 8080
 npx serve -l 8080
 ```
 
-Depois acesse `http://localhost:8080/login.html`. É um login de demonstração
-(sem senha): escolha um perfil — **Administrador**, **Gestor** ou
-**Supervisor de obra** — para simular o escopo de acesso de cada um.
+Depois acesse `http://localhost:8080/index.html` — sem tela de login: a
+sessão de demonstração (perfil **Administrador**) é criada automaticamente
+no primeiro acesso. Para simular os outros perfis (**Gestor** ou
+**Supervisor de obra**, com escopo restrito a uma obra), use o seletor de
+perfil no rodapé da barra lateral.
 
 ## Regenerar os dados de demonstração
 

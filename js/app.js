@@ -12,18 +12,32 @@ const GP = (() => {
     supervisor: { label: "Supervisor de Obra", desc: "Apenas a obra designada, sem produtividade individual" },
   };
 
-  // Logomarca — duas espigas estilizadas (identidade Viana & Moura), em ouro sobre o vermelho da marca.
-  const LOGO_MARK_SVG = `<svg class="logomark" viewBox="0 0 40 38" role="img" aria-label="Viana e Moura Construções">
-    <line x1="12" y1="3" x2="12" y2="6.6"/>
-    <line x1="28" y1="3" x2="28" y2="6.6"/>
-    <polygon points="6,6.8 12,10 18,6.8 18,13.2 12,10 6,13.2"/>
-    <polygon points="6.5,13.8 12,17 17.5,13.8 17.5,20.2 12,17 6.5,20.2"/>
-    <polygon points="7,20.8 12,24 17,20.8 17,27.2 12,24 7,27.2"/>
-    <polygon points="7.5,27.8 12,31 16.5,27.8 16.5,34.2 12,31 7.5,34.2"/>
-    <polygon points="22,6.8 28,10 34,6.8 34,13.2 28,10 22,13.2"/>
-    <polygon points="22.5,13.8 28,17 33.5,13.8 33.5,20.2 28,17 22.5,20.2"/>
-    <polygon points="23,20.8 28,24 33,20.8 33,27.2 28,24 23,27.2"/>
-    <polygon points="23.5,27.8 28,31 32.5,27.8 32.5,34.2 28,31 23.5,34.2"/>
+  // Logomarca — duas espigas trançadas (identidade Viana & Moura). Coluna direita
+  // mais alta que a esquerda, como no manual de marca; renderizada só em ouro
+  // (versão "reversa" do logo) porque aqui ela sempre fica sobre fundo vermelho.
+  const LOGO_MARK_SVG = `<svg class="logomark" viewBox="16 0 84 172" role="img" aria-label="Viana e Moura Construções">
+    <line x1="36" y1="48" x2="36" y2="60"/>
+    <line x1="80" y1="3" x2="80" y2="11"/>
+    <polygon points="23,64 36,72 36,94 23,86"/>
+    <polygon points="36,72 49,64 49,86 36,94"/>
+    <polygon points="23,89 36,97 36,119 23,111"/>
+    <polygon points="36,97 49,89 49,111 36,119"/>
+    <polygon points="23,114 36,122 36,144 23,136"/>
+    <polygon points="36,122 49,114 49,136 36,144"/>
+    <polygon points="23,139 36,147 36,169 23,161"/>
+    <polygon points="36,147 49,139 49,161 36,169"/>
+    <polygon points="67,14 80,22 80,44 67,36"/>
+    <polygon points="80,22 93,14 93,36 80,44"/>
+    <polygon points="67,39 80,47 80,69 67,61"/>
+    <polygon points="80,47 93,39 93,61 80,69"/>
+    <polygon points="67,64 80,72 80,94 67,86"/>
+    <polygon points="80,72 93,64 93,86 80,94"/>
+    <polygon points="67,89 80,97 80,119 67,111"/>
+    <polygon points="80,97 93,89 93,111 80,119"/>
+    <polygon points="67,114 80,122 80,144 67,136"/>
+    <polygon points="80,122 93,114 93,136 80,144"/>
+    <polygon points="67,139 80,147 80,169 67,161"/>
+    <polygon points="80,147 93,139 93,161 80,169"/>
   </svg>`;
 
   const NAV_ICONS = {
@@ -53,9 +67,11 @@ const GP = (() => {
   function setSession(session) { localStorage.setItem(SESSION_KEY, JSON.stringify(session)); }
   function clearSession() { localStorage.removeItem(SESSION_KEY); }
 
+  const DEFAULT_SESSION = { nome: "Matias Teixeira", perfil: "admin", obraId: null };
+
   function requireAuth() {
-    const s = getSession();
-    if (!s) { window.location.href = "login.html"; return null; }
+    let s = getSession();
+    if (!s) { s = { ...DEFAULT_SESSION }; setSession(s); }
     return s;
   }
 
@@ -114,15 +130,22 @@ const GP = (() => {
           <button class="btn btn-ghost" id="gp-theme-toggle" style="justify-content:flex-start" type="button">
             <span aria-hidden="true" id="gp-theme-icon">☾</span><span>Alternar tema</span>
           </button>
-          <div class="user-card">
-            <div class="user-avatar">${initials(session.nome)}</div>
-            <div class="user-meta">
-              <strong>${session.nome}</strong>
-              <span>${PERFIS[session.perfil]?.label ?? session.perfil}</span>
+          <div class="user-card" style="flex-direction:column; align-items:stretch; gap:10px;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div class="user-avatar">${initials(session.nome)}</div>
+              <div class="user-meta">
+                <strong>${session.nome}</strong>
+                <span>${PERFIS[session.perfil]?.label ?? session.perfil}</span>
+              </div>
             </div>
-            <button class="btn icon-btn btn-ghost" id="gp-logout" title="Sair" type="button">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>
-            </button>
+            <div style="display:flex; flex-direction:column; gap:6px;">
+              <select class="select" id="gp-perfil-switch" style="width:100%; font-size:11.5px; padding:5px 8px;">
+                ${Object.entries(PERFIS).map(([k, v]) => `<option value="${k}" ${k === session.perfil ? "selected" : ""}>${v.label}</option>`).join("")}
+              </select>
+              <select class="select" id="gp-obra-switch" style="width:100%; font-size:11.5px; padding:5px 8px; display:${session.perfil === "supervisor" ? "block" : "none"};">
+                ${OBRA_MOCK.map((o) => `<option value="${o.id}" ${o.id === session.obraId ? "selected" : ""}>${o.id} — ${o.nome}</option>`).join("")}
+              </select>
+            </div>
           </div>
         </div>
       </aside>
@@ -138,7 +161,18 @@ const GP = (() => {
       </div>`;
 
     wireThemeToggle(document.getElementById("gp-theme-toggle"));
-    document.getElementById("gp-logout").addEventListener("click", () => { clearSession(); window.location.href = "login.html"; });
+    const perfilSwitch = document.getElementById("gp-perfil-switch");
+    const obraSwitch = document.getElementById("gp-obra-switch");
+    perfilSwitch.addEventListener("change", () => {
+      const perfil = perfilSwitch.value;
+      const obraId = perfil === "supervisor" ? (obraSwitch.value || OBRA_MOCK[0].id) : null;
+      setSession({ ...session, perfil, obraId });
+      window.location.reload();
+    });
+    obraSwitch.addEventListener("change", () => {
+      setSession({ ...session, perfil: "supervisor", obraId: obraSwitch.value });
+      window.location.reload();
+    });
     return session;
   }
 
