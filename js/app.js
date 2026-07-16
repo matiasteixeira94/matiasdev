@@ -126,10 +126,14 @@ const GP = (() => {
 
     mount.innerHTML = `
       <aside class="sidebar">
-        <div class="brand">
+        <a class="brand" href="inicio.html" title="Voltar à tela inicial">
           <div class="brand-mark">${LOGO_MARK_SVG}</div>
           <div class="brand-word">Gestão da Produção<small>Viana &amp; Moura Construções</small></div>
-        </div>
+        </a>
+        <a class="nav-link" href="inicio.html" style="margin: -12px 0 4px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+          <span>Voltar à tela inicial</span>
+        </a>
         <nav class="nav-group">
           <div class="nav-label">Monitoramento</div>
           ${navHtml}
