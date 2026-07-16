@@ -12,6 +12,20 @@ const GP = (() => {
     supervisor: { label: "Supervisor de Obra", desc: "Apenas a obra designada, sem produtividade individual" },
   };
 
+  // Logomarca — duas espigas estilizadas (identidade Viana & Moura), em ouro sobre o vermelho da marca.
+  const LOGO_MARK_SVG = `<svg class="logomark" viewBox="0 0 40 38" role="img" aria-label="Viana e Moura Construções">
+    <line x1="12" y1="3" x2="12" y2="6.6"/>
+    <line x1="28" y1="3" x2="28" y2="6.6"/>
+    <polygon points="6,6.8 12,10 18,6.8 18,13.2 12,10 6,13.2"/>
+    <polygon points="6.5,13.8 12,17 17.5,13.8 17.5,20.2 12,17 6.5,20.2"/>
+    <polygon points="7,20.8 12,24 17,20.8 17,27.2 12,24 7,27.2"/>
+    <polygon points="7.5,27.8 12,31 16.5,27.8 16.5,34.2 12,31 7.5,34.2"/>
+    <polygon points="22,6.8 28,10 34,6.8 34,13.2 28,10 22,13.2"/>
+    <polygon points="22.5,13.8 28,17 33.5,13.8 33.5,20.2 28,17 22.5,20.2"/>
+    <polygon points="23,20.8 28,24 33,20.8 33,27.2 28,24 23,27.2"/>
+    <polygon points="23.5,27.8 28,31 32.5,27.8 32.5,34.2 28,31 23.5,34.2"/>
+  </svg>`;
+
   const NAV_ICONS = {
     dashboard: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>',
     indicadores: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-4 4"/></svg>',
@@ -56,11 +70,12 @@ const GP = (() => {
 
   function wireThemeToggle(btn) {
     if (!btn) return;
+    const icon = btn.querySelector("#gp-theme-icon") || btn;
     const setIcon = () => {
       const isDark = getComputedStyle(document.documentElement).colorScheme === "dark" ||
         document.documentElement.getAttribute("data-theme") === "dark" ||
         (!document.documentElement.getAttribute("data-theme") && window.matchMedia("(prefers-color-scheme: dark)").matches);
-      btn.textContent = isDark ? "☀" : "☾";
+      icon.textContent = isDark ? "☀" : "☾";
     };
     setIcon();
     btn.addEventListener("click", () => {
@@ -88,11 +103,7 @@ const GP = (() => {
     mount.innerHTML = `
       <aside class="sidebar">
         <div class="brand">
-          <div class="brand-mark">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/>
-            </svg>
-          </div>
+          <div class="brand-mark">${LOGO_MARK_SVG}</div>
           <div class="brand-word">Gestão da Produção<small>Viana &amp; Moura Construções</small></div>
         </div>
         <nav class="nav-group">
@@ -101,7 +112,7 @@ const GP = (() => {
         </nav>
         <div class="sidebar-foot">
           <button class="btn btn-ghost" id="gp-theme-toggle" style="justify-content:flex-start" type="button">
-            <span aria-hidden="true">☾</span><span>Alternar tema</span>
+            <span aria-hidden="true" id="gp-theme-icon">☾</span><span>Alternar tema</span>
           </button>
           <div class="user-card">
             <div class="user-avatar">${initials(session.nome)}</div>
@@ -157,7 +168,7 @@ const GP = (() => {
   const GRUPO_VAR = { estrutura: "--cat-estrutura", alvenaria: "--cat-alvenaria", acabamento: "--cat-acabamento", administrativo: "--cat-administrativo" };
 
   return {
-    PERFIS, NAV_ITEMS, OBRA_MOCK, GRUPO_LABEL, GRUPO_VAR,
+    PERFIS, NAV_ITEMS, OBRA_MOCK, GRUPO_LABEL, GRUPO_VAR, LOGO_MARK_SVG,
     getSession, setSession, clearSession, requireAuth,
     applyStoredTheme, wireThemeToggle, renderShell, initials,
     loadJSON, fmtInt, fmtNum1, fmtPct, fmtBRL, fmtDate, fmtDateShort, within, isoDaysAgo,
