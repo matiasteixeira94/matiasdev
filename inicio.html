@@ -25,16 +25,13 @@
     max-width: 760px;
     color: #FBF1E3;
   }
-  .cover-logo { width: 34px; height: 56px; }
-  .cover-logo .logomark line { stroke: #E3B354; }
-  .cover-logo .logomark polygon { fill: #E3B354; }
-  .cover-eyebrow {
-    font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 700;
-    color: #E3B354; margin-top: 6px;
+  .cover-logo-full {
+    height: clamp(64px, 9vw, 92px); width: auto; align-self: flex-start;
+    filter: drop-shadow(0 2px 10px rgba(0,0,0,0.45));
   }
   .cover-title {
     font-family: var(--font-display); font-weight: 600; letter-spacing: 0.01em; text-wrap: balance;
-    font-size: clamp(34px, 5.6vw, 58px); line-height: 1.02; margin: 2px 0 6px;
+    font-size: clamp(30px, 5vw, 50px); line-height: 1.02; margin: 4px 0 6px;
   }
   .cover-org {
     display: flex; flex-direction: column; gap: 6px;
@@ -65,11 +62,8 @@
     <img class="cover-photo" src="assets/images/capa-empreendimento.png" alt="Vista aérea de empreendimento residencial construído pela Viana &amp; Moura Construções" />
     <div class="cover-overlay"></div>
     <div class="cover-content">
-      <div class="cover-logo" id="cover-logo"></div>
-      <div>
-        <div class="cover-eyebrow">Viana &amp; Moura Construções</div>
-        <h1 class="cover-title">Gestão da Produção</h1>
-      </div>
+      <img class="cover-logo-full" src="assets/images/logo-viana-moura.png" alt="Viana &amp; Moura Construções" />
+      <h1 class="cover-title">Gestão da Produção</h1>
       <div class="cover-org">
         <div><b>Gerente de UGB:</b> Alisson Matias</div>
         <div><b>Supervisores Líderes:</b> José Pedro, Jucélio Lourenço, Patrícia Paes e Reginaldo Lima</div>
@@ -103,7 +97,5 @@
     </div>
   </div>
 
-  <script src="js/app.js"></script>
-  <script>document.getElementById("cover-logo").innerHTML = GP.LOGO_MARK_SVG;</script>
 </body>
 </html>
