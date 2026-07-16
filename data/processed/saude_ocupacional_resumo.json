@@ -1,0 +1,42 @@
+{
+  "restricoes": {
+    "total_registros": 52,
+    "colaboradores_unicos": 48,
+    "por_status": {
+      "AFASTADO": 1,
+      "ATIVO": 51
+    },
+    "por_tipo": {
+      "TEMPORÁRIA": 30,
+      "PERMANENTE": 22
+    },
+    "por_parte_corpo": {
+      "Coluna/Tronco": 19,
+      "Membros superiores": 14,
+      "Partes múltiplas": 12,
+      "Membros inferiores": 6,
+      "Outro": 1
+    },
+    "com_impedimento_formal": 17
+  },
+  "queixas": {
+    "total_registros": 23,
+    "solicitaram_tratamento": 16,
+    "geraram_restricao": 12,
+    "por_parte_corpo": {
+      "Ombro": 7,
+      "Joelho": 2,
+      "Coluna/Tronco": 9,
+      "Punho/Mão": 2,
+      "Partes múltiplas": 1,
+      "Cotovelo": 1,
+      "Membros inferiores": 1
+    },
+    "status": {
+      "Em acompanhamento": 21,
+      "Não informado": 1,
+      "Concluída": 1
+    }
+  },
+  "atualizado_em": "2026-07-16"
+}

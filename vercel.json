@@ -1,6 +1,9 @@
 {
   "cleanUrls": false,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/inicio.html" }
+  ],
   "headers": [
     {
       "source": "/data/processed/(.*).json",
