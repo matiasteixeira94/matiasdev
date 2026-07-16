@@ -46,11 +46,17 @@ const GP = (() => {
     faltas: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M9 16l2 2 4-4"/></svg>',
     seguranca: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>',
     casas: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>',
+    muros: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 12h18M8 5v7M16 5v7M3 19v-2M21 19v-2"/></svg>',
+    acabamentos: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2 8 12l-2 6 6-2L22 6Z"/><path d="M2 22l4-1 1-4"/></svg>',
+    assistencia: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 1-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 1 5.4-5.4L14 13"/></svg>',
   };
 
   const NAV_ITEMS = [
     { key: "dashboard", href: "index.html", label: "Visão Geral" },
     { key: "casas", href: "casas.html", label: "Casas" },
+    { key: "muros", href: "muros.html", label: "Muros" },
+    { key: "acabamentos", href: "acabamentos.html", label: "Acabamentos" },
+    { key: "assistencia", href: "assistencia-tecnica.html", label: "Assistência Técnica" },
     { key: "indicadores", href: "indicadores.html", label: "Produtividade e Qualidade" },
     { key: "faltas", href: "faltas.html", label: "Faltas e Absenteísmo" },
     { key: "seguranca", href: "seguranca.html", label: "Saúde e Segurança" },
