@@ -1,0 +1,765 @@
+[
+  {
+    "id": "COL-0001",
+    "nome": "Eduardo Santos Cavalcanti",
+    "funcao": "Marceneiro",
+    "grupo": "acabamento",
+    "obra_id": "OB-001",
+    "data_admissao": "2022-02-08",
+    "ativo": true
+  },
+  {
+    "id": "COL-0002",
+    "nome": "Marcos Almeida Lima",
+    "funcao": "Meio-Oficial de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2019-05-26",
+    "ativo": true
+  },
+  {
+    "id": "COL-0003",
+    "nome": "Juliana Barbosa Fernandes",
+    "funcao": "Azulejista",
+    "grupo": "acabamento",
+    "obra_id": "OB-001",
+    "data_admissao": "2022-02-16",
+    "ativo": false
+  },
+  {
+    "id": "COL-0004",
+    "nome": "Juliana Freitas Barbosa",
+    "funcao": "Meio-Oficial de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2020-05-24",
+    "ativo": true
+  },
+  {
+    "id": "COL-0005",
+    "nome": "Bruno Freitas Gomes",
+    "funcao": "Servente de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2024-05-16",
+    "ativo": true
+  },
+  {
+    "id": "COL-0006",
+    "nome": "Patrícia Oliveira Araújo",
+    "funcao": "Servente de Acabamento",
+    "grupo": "acabamento",
+    "obra_id": "OB-001",
+    "data_admissao": "2025-09-20",
+    "ativo": true
+  },
+  {
+    "id": "COL-0007",
+    "nome": "Rafael Nascimento Almeida",
+    "funcao": "Auxiliar Administrativo",
+    "grupo": "administrativo",
+    "obra_id": "OB-001",
+    "data_admissao": "2024-10-20",
+    "ativo": true
+  },
+  {
+    "id": "COL-0008",
+    "nome": "Aline Melo Almeida",
+    "funcao": "Meio-Oficial de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2020-02-01",
+    "ativo": true
+  },
+  {
+    "id": "COL-0009",
+    "nome": "Ana Ribeiro Ribeiro",
+    "funcao": "Meio-Oficial de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2026-12-04",
+    "ativo": true
+  },
+  {
+    "id": "COL-0010",
+    "nome": "Fábio Cavalcanti Araújo",
+    "funcao": "Técnico de Segurança",
+    "grupo": "administrativo",
+    "obra_id": "OB-001",
+    "data_admissao": "2019-06-11",
+    "ativo": true
+  },
+  {
+    "id": "COL-0011",
+    "nome": "Ana Martins Araújo",
+    "funcao": "Engenheiro de Obra",
+    "grupo": "administrativo",
+    "obra_id": "OB-001",
+    "data_admissao": "2023-11-27",
+    "ativo": true
+  },
+  {
+    "id": "COL-0012",
+    "nome": "Felipe Costa Martins",
+    "funcao": "Servente de Estrutura",
+    "grupo": "estrutura",
+    "obra_id": "OB-001",
+    "data_admissao": "2024-08-10",
+    "ativo": true
+  },
+  {
+    "id": "COL-0013",
+    "nome": "Thiago Lima Pereira",
+    "funcao": "Servente de Acabamento",
+    "grupo": "acabamento",
+    "obra_id": "OB-001",
+    "data_admissao": "2025-08-09",
+    "ativo": true
+  },
+  {
+    "id": "COL-0014",
+    "nome": "Larissa Barbosa Souza",
+    "funcao": "Pedreiro",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2022-05-11",
+    "ativo": true
+  },
+  {
+    "id": "COL-0015",
+    "nome": "Ana Martins Costa",
+    "funcao": "Armador",
+    "grupo": "estrutura",
+    "obra_id": "OB-001",
+    "data_admissao": "2025-07-03",
+    "ativo": true
+  },
+  {
+    "id": "COL-0016",
+    "nome": "André Martins Costa",
+    "funcao": "Servente de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2025-08-19",
+    "ativo": true
+  },
+  {
+    "id": "COL-0017",
+    "nome": "Juliana Costa Almeida",
+    "funcao": "Pedreiro",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2019-07-13",
+    "ativo": true
+  },
+  {
+    "id": "COL-0018",
+    "nome": "Fábio Souza Lima",
+    "funcao": "Meio-Oficial de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2024-10-10",
+    "ativo": false
+  },
+  {
+    "id": "COL-0019",
+    "nome": "Camila Fernandes Oliveira",
+    "funcao": "Pedreiro",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2022-05-26",
+    "ativo": true
+  },
+  {
+    "id": "COL-0020",
+    "nome": "Simone Silva Rodrigues",
+    "funcao": "Meio-Oficial de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2025-09-05",
+    "ativo": true
+  },
+  {
+    "id": "COL-0021",
+    "nome": "Eduardo Silva Araújo",
+    "funcao": "Azulejista",
+    "grupo": "acabamento",
+    "obra_id": "OB-001",
+    "data_admissao": "2022-08-08",
+    "ativo": true
+  },
+  {
+    "id": "COL-0022",
+    "nome": "Leandro Nascimento Costa",
+    "funcao": "Engenheiro de Obra",
+    "grupo": "administrativo",
+    "obra_id": "OB-001",
+    "data_admissao": "2020-07-04",
+    "ativo": true
+  },
+  {
+    "id": "COL-0023",
+    "nome": "Tatiane Cavalcanti Rodrigues",
+    "funcao": "Meio-Oficial de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2019-06-12",
+    "ativo": true
+  },
+  {
+    "id": "COL-0024",
+    "nome": "Felipe Barbosa Barbosa",
+    "funcao": "Meio-Oficial de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2026-02-17",
+    "ativo": true
+  },
+  {
+    "id": "COL-0025",
+    "nome": "Leandro Freitas Lima",
+    "funcao": "Pedreiro",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2022-12-11",
+    "ativo": true
+  },
+  {
+    "id": "COL-0026",
+    "nome": "Ricardo Costa Fernandes",
+    "funcao": "Operador de Betoneira",
+    "grupo": "estrutura",
+    "obra_id": "OB-001",
+    "data_admissao": "2025-11-27",
+    "ativo": false
+  },
+  {
+    "id": "COL-0027",
+    "nome": "Fernanda Almeida Rodrigues",
+    "funcao": "Almoxarife",
+    "grupo": "administrativo",
+    "obra_id": "OB-001",
+    "data_admissao": "2022-10-16",
+    "ativo": true
+  },
+  {
+    "id": "COL-0028",
+    "nome": "Patrícia Martins Barbosa",
+    "funcao": "Servente de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2020-11-12",
+    "ativo": true
+  },
+  {
+    "id": "COL-0029",
+    "nome": "Ricardo Santos Martins",
+    "funcao": "Carpinteiro de Forma",
+    "grupo": "estrutura",
+    "obra_id": "OB-001",
+    "data_admissao": "2020-04-23",
+    "ativo": true
+  },
+  {
+    "id": "COL-0030",
+    "nome": "Juliana Oliveira Nascimento",
+    "funcao": "Pintor",
+    "grupo": "acabamento",
+    "obra_id": "OB-001",
+    "data_admissao": "2022-08-01",
+    "ativo": true
+  },
+  {
+    "id": "COL-0031",
+    "nome": "Bruno Lima Almeida",
+    "funcao": "Operador de Betoneira",
+    "grupo": "estrutura",
+    "obra_id": "OB-001",
+    "data_admissao": "2025-01-19",
+    "ativo": true
+  },
+  {
+    "id": "COL-0032",
+    "nome": "Carlos Nascimento Barbosa",
+    "funcao": "Gesseiro",
+    "grupo": "acabamento",
+    "obra_id": "OB-001",
+    "data_admissao": "2022-09-03",
+    "ativo": true
+  },
+  {
+    "id": "COL-0033",
+    "nome": "Fernanda Silva Martins",
+    "funcao": "Pedreiro",
+    "grupo": "alvenaria",
+    "obra_id": "OB-001",
+    "data_admissao": "2023-07-19",
+    "ativo": true
+  },
+  {
+    "id": "COL-0034",
+    "nome": "Pedro Costa Martins",
+    "funcao": "Armador",
+    "grupo": "estrutura",
+    "obra_id": "OB-001",
+    "data_admissao": "2020-01-15",
+    "ativo": true
+  },
+  {
+    "id": "COL-0035",
+    "nome": "Priscila Fernandes Cavalcanti",
+    "funcao": "Carpinteiro de Forma",
+    "grupo": "estrutura",
+    "obra_id": "OB-002",
+    "data_admissao": "2026-07-23",
+    "ativo": true
+  },
+  {
+    "id": "COL-0036",
+    "nome": "Thiago Lima Almeida",
+    "funcao": "Pedreiro",
+    "grupo": "alvenaria",
+    "obra_id": "OB-002",
+    "data_admissao": "2026-04-07",
+    "ativo": true
+  },
+  {
+    "id": "COL-0037",
+    "nome": "Bianca Fernandes Martins",
+    "funcao": "Servente de Estrutura",
+    "grupo": "estrutura",
+    "obra_id": "OB-002",
+    "data_admissao": "2020-09-18",
+    "ativo": true
+  },
+  {
+    "id": "COL-0038",
+    "nome": "Diego Rodrigues Souza",
+    "funcao": "Pedreiro",
+    "grupo": "alvenaria",
+    "obra_id": "OB-002",
+    "data_admissao": "2019-04-06",
+    "ativo": true
+  },
+  {
+    "id": "COL-0039",
+    "nome": "Vanessa Lima Freitas",
+    "funcao": "Ferramenteiro",
+    "grupo": "estrutura",
+    "obra_id": "OB-002",
+    "data_admissao": "2025-08-03",
+    "ativo": true
+  },
+  {
+    "id": "COL-0040",
+    "nome": "Débora Freitas Araújo",
+    "funcao": "Pedreiro",
+    "grupo": "alvenaria",
+    "obra_id": "OB-002",
+    "data_admissao": "2025-02-18",
+    "ativo": true
+  },
+  {
+    "id": "COL-0041",
+    "nome": "Vanessa Rodrigues Ribeiro",
+    "funcao": "Pedreiro",
+    "grupo": "alvenaria",
+    "obra_id": "OB-002",
+    "data_admissao": "2019-05-03",
+    "ativo": true
+  },
+  {
+    "id": "COL-0042",
+    "nome": "Michele Martins Lima",
+    "funcao": "Servente de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-002",
+    "data_admissao": "2021-06-03",
+    "ativo": true
+  },
+  {
+    "id": "COL-0043",
+    "nome": "Marcos Araújo Costa",
+    "funcao": "Ferramenteiro",
+    "grupo": "estrutura",
+    "obra_id": "OB-002",
+    "data_admissao": "2025-12-14",
+    "ativo": true
+  },
+  {
+    "id": "COL-0044",
+    "nome": "Thiago Souza Silva",
+    "funcao": "Servente de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-002",
+    "data_admissao": "2019-07-09",
+    "ativo": true
+  },
+  {
+    "id": "COL-0045",
+    "nome": "João Pereira Cavalcanti",
+    "funcao": "Encarregado Geral",
+    "grupo": "administrativo",
+    "obra_id": "OB-002",
+    "data_admissao": "2019-11-24",
+    "ativo": true
+  },
+  {
+    "id": "COL-0046",
+    "nome": "Rodrigo Gomes Martins",
+    "funcao": "Ferramenteiro",
+    "grupo": "estrutura",
+    "obra_id": "OB-002",
+    "data_admissao": "2022-06-12",
+    "ativo": true
+  },
+  {
+    "id": "COL-0047",
+    "nome": "Fábio Oliveira Cavalcanti",
+    "funcao": "Carpinteiro de Forma",
+    "grupo": "estrutura",
+    "obra_id": "OB-002",
+    "data_admissao": "2022-05-08",
+    "ativo": true
+  },
+  {
+    "id": "COL-0048",
+    "nome": "Elaine Oliveira Fernandes",
+    "funcao": "Engenheiro de Obra",
+    "grupo": "administrativo",
+    "obra_id": "OB-002",
+    "data_admissao": "2020-01-01",
+    "ativo": true
+  },
+  {
+    "id": "COL-0049",
+    "nome": "João Freitas Ribeiro",
+    "funcao": "Pedreiro",
+    "grupo": "alvenaria",
+    "obra_id": "OB-002",
+    "data_admissao": "2025-08-24",
+    "ativo": true
+  },
+  {
+    "id": "COL-0050",
+    "nome": "Rodrigo Souza Souza",
+    "funcao": "Meio-Oficial de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-002",
+    "data_admissao": "2023-11-08",
+    "ativo": true
+  },
+  {
+    "id": "COL-0051",
+    "nome": "Bianca Pereira Araújo",
+    "funcao": "Meio-Oficial de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-002",
+    "data_admissao": "2022-12-26",
+    "ativo": true
+  },
+  {
+    "id": "COL-0052",
+    "nome": "Débora Barbosa Lima",
+    "funcao": "Marceneiro",
+    "grupo": "acabamento",
+    "obra_id": "OB-002",
+    "data_admissao": "2026-01-07",
+    "ativo": true
+  },
+  {
+    "id": "COL-0053",
+    "nome": "Tatiane Fernandes Ribeiro",
+    "funcao": "Pedreiro",
+    "grupo": "alvenaria",
+    "obra_id": "OB-002",
+    "data_admissao": "2022-09-08",
+    "ativo": true
+  },
+  {
+    "id": "COL-0054",
+    "nome": "Cristiane Pereira Costa",
+    "funcao": "Servente de Estrutura",
+    "grupo": "estrutura",
+    "obra_id": "OB-002",
+    "data_admissao": "2020-01-15",
+    "ativo": true
+  },
+  {
+    "id": "COL-0055",
+    "nome": "Fernanda Barbosa Santos",
+    "funcao": "Ferramenteiro",
+    "grupo": "estrutura",
+    "obra_id": "OB-002",
+    "data_admissao": "2020-04-27",
+    "ativo": true
+  },
+  {
+    "id": "COL-0056",
+    "nome": "Thiago Silva Souza",
+    "funcao": "Servente de Acabamento",
+    "grupo": "acabamento",
+    "obra_id": "OB-002",
+    "data_admissao": "2022-12-17",
+    "ativo": true
+  },
+  {
+    "id": "COL-0057",
+    "nome": "Rafael Pereira Santos",
+    "funcao": "Servente de Estrutura",
+    "grupo": "estrutura",
+    "obra_id": "OB-003",
+    "data_admissao": "2026-09-15",
+    "ativo": true
+  },
+  {
+    "id": "COL-0058",
+    "nome": "Maria Rodrigues Souza",
+    "funcao": "Operador de Betoneira",
+    "grupo": "estrutura",
+    "obra_id": "OB-003",
+    "data_admissao": "2021-05-07",
+    "ativo": true
+  },
+  {
+    "id": "COL-0059",
+    "nome": "Vanessa Almeida Araújo",
+    "funcao": "Meio-Oficial de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-003",
+    "data_admissao": "2025-10-11",
+    "ativo": true
+  },
+  {
+    "id": "COL-0060",
+    "nome": "Gustavo Souza Ribeiro",
+    "funcao": "Armador",
+    "grupo": "estrutura",
+    "obra_id": "OB-003",
+    "data_admissao": "2020-04-17",
+    "ativo": true
+  },
+  {
+    "id": "COL-0061",
+    "nome": "Simone Pereira Araújo",
+    "funcao": "Técnico de Segurança",
+    "grupo": "administrativo",
+    "obra_id": "OB-003",
+    "data_admissao": "2021-01-27",
+    "ativo": true
+  },
+  {
+    "id": "COL-0062",
+    "nome": "Bianca Pereira Almeida",
+    "funcao": "Armador",
+    "grupo": "estrutura",
+    "obra_id": "OB-003",
+    "data_admissao": "2021-12-13",
+    "ativo": false
+  },
+  {
+    "id": "COL-0063",
+    "nome": "Débora Carvalho Pereira",
+    "funcao": "Servente de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-003",
+    "data_admissao": "2026-10-23",
+    "ativo": false
+  },
+  {
+    "id": "COL-0064",
+    "nome": "Vanessa Gomes Costa",
+    "funcao": "Servente de Estrutura",
+    "grupo": "estrutura",
+    "obra_id": "OB-003",
+    "data_admissao": "2024-08-15",
+    "ativo": true
+  },
+  {
+    "id": "COL-0065",
+    "nome": "Camila Martins Cavalcanti",
+    "funcao": "Meio-Oficial de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-003",
+    "data_admissao": "2026-05-20",
+    "ativo": true
+  },
+  {
+    "id": "COL-0066",
+    "nome": "Maria Melo Nascimento",
+    "funcao": "Pintor",
+    "grupo": "acabamento",
+    "obra_id": "OB-003",
+    "data_admissao": "2026-10-14",
+    "ativo": true
+  },
+  {
+    "id": "COL-0067",
+    "nome": "Paulo Gomes Oliveira",
+    "funcao": "Almoxarife",
+    "grupo": "administrativo",
+    "obra_id": "OB-003",
+    "data_admissao": "2023-02-07",
+    "ativo": true
+  },
+  {
+    "id": "COL-0068",
+    "nome": "Marcos Nascimento Pereira",
+    "funcao": "Azulejista",
+    "grupo": "acabamento",
+    "obra_id": "OB-003",
+    "data_admissao": "2025-04-16",
+    "ativo": true
+  },
+  {
+    "id": "COL-0069",
+    "nome": "Alexandre Pereira Pereira",
+    "funcao": "Azulejista",
+    "grupo": "acabamento",
+    "obra_id": "OB-003",
+    "data_admissao": "2026-01-21",
+    "ativo": true
+  },
+  {
+    "id": "COL-0070",
+    "nome": "Tatiane Fernandes Almeida",
+    "funcao": "Almoxarife",
+    "grupo": "administrativo",
+    "obra_id": "OB-003",
+    "data_admissao": "2019-09-14",
+    "ativo": true
+  },
+  {
+    "id": "COL-0071",
+    "nome": "Michele Oliveira Nascimento",
+    "funcao": "Servente de Estrutura",
+    "grupo": "estrutura",
+    "obra_id": "OB-003",
+    "data_admissao": "2019-01-05",
+    "ativo": true
+  },
+  {
+    "id": "COL-0072",
+    "nome": "Bianca Freitas Martins",
+    "funcao": "Técnico de Segurança",
+    "grupo": "administrativo",
+    "obra_id": "OB-003",
+    "data_admissao": "2020-04-27",
+    "ativo": true
+  },
+  {
+    "id": "COL-0073",
+    "nome": "Michele Carvalho Souza",
+    "funcao": "Carpinteiro de Forma",
+    "grupo": "estrutura",
+    "obra_id": "OB-003",
+    "data_admissao": "2026-06-15",
+    "ativo": true
+  },
+  {
+    "id": "COL-0074",
+    "nome": "Renata Pereira Araújo",
+    "funcao": "Azulejista",
+    "grupo": "acabamento",
+    "obra_id": "OB-003",
+    "data_admissao": "2019-07-25",
+    "ativo": true
+  },
+  {
+    "id": "COL-0075",
+    "nome": "Rafael Barbosa Souza",
+    "funcao": "Encarregado Geral",
+    "grupo": "administrativo",
+    "obra_id": "OB-003",
+    "data_admissao": "2026-05-10",
+    "ativo": true
+  },
+  {
+    "id": "COL-0076",
+    "nome": "Karla Carvalho Cavalcanti",
+    "funcao": "Ferramenteiro",
+    "grupo": "estrutura",
+    "obra_id": "OB-003",
+    "data_admissao": "2025-04-15",
+    "ativo": true
+  },
+  {
+    "id": "COL-0077",
+    "nome": "Patrícia Rodrigues Freitas",
+    "funcao": "Servente de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-003",
+    "data_admissao": "2026-07-25",
+    "ativo": true
+  },
+  {
+    "id": "COL-0078",
+    "nome": "Rafael Costa Barbosa",
+    "funcao": "Servente de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-003",
+    "data_admissao": "2024-06-02",
+    "ativo": true
+  },
+  {
+    "id": "COL-0079",
+    "nome": "Maria Oliveira Freitas",
+    "funcao": "Servente de Estrutura",
+    "grupo": "estrutura",
+    "obra_id": "OB-003",
+    "data_admissao": "2022-02-16",
+    "ativo": true
+  },
+  {
+    "id": "COL-0080",
+    "nome": "Débora Rodrigues Souza",
+    "funcao": "Carpinteiro de Forma",
+    "grupo": "estrutura",
+    "obra_id": "OB-003",
+    "data_admissao": "2023-09-15",
+    "ativo": true
+  },
+  {
+    "id": "COL-0081",
+    "nome": "Cristiane Cavalcanti Nascimento",
+    "funcao": "Carpinteiro de Forma",
+    "grupo": "estrutura",
+    "obra_id": "OB-003",
+    "data_admissao": "2023-03-12",
+    "ativo": true
+  },
+  {
+    "id": "COL-0082",
+    "nome": "Felipe Oliveira Oliveira",
+    "funcao": "Servente de Alvenaria",
+    "grupo": "alvenaria",
+    "obra_id": "OB-003",
+    "data_admissao": "2024-09-07",
+    "ativo": true
+  },
+  {
+    "id": "COL-0083",
+    "nome": "Priscila Silva Silva",
+    "funcao": "Técnico de Segurança",
+    "grupo": "administrativo",
+    "obra_id": "OB-001",
+    "obras_adicionais": [
+      "OB-002"
+    ],
+    "data_admissao": "2022-03-14",
+    "ativo": true
+  },
+  {
+    "id": "COL-0084",
+    "nome": "Fábio Pereira Lima",
+    "funcao": "Técnico de Segurança",
+    "grupo": "administrativo",
+    "obra_id": "OB-003",
+    "obras_adicionais": [
+      "OB-002",
+      "OB-004"
+    ],
+    "data_admissao": "2022-03-14",
+    "ativo": true
+  }
+]

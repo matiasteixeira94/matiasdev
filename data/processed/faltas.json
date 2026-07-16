@@ -1,0 +1,1370 @@
+[
+  {
+    "data": "2026-05-29",
+    "colaborador_id": "COL-0008",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-05-29",
+    "colaborador_id": "COL-0012",
+    "obra_id": "OB-001",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-05-29",
+    "colaborador_id": "COL-0021",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": "Atestado médico"
+  },
+  {
+    "data": "2026-05-29",
+    "colaborador_id": "COL-0060",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-05-30",
+    "colaborador_id": "COL-0035",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-01",
+    "colaborador_id": "COL-0041",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-01",
+    "colaborador_id": "COL-0044",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-01",
+    "colaborador_id": "COL-0069",
+    "obra_id": "OB-003",
+    "grupo": "acabamento",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-02",
+    "colaborador_id": "COL-0039",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-02",
+    "colaborador_id": "COL-0044",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": "Atestado médico"
+  },
+  {
+    "data": "2026-06-02",
+    "colaborador_id": "COL-0050",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-02",
+    "colaborador_id": "COL-0059",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-02",
+    "colaborador_id": "COL-0068",
+    "obra_id": "OB-003",
+    "grupo": "acabamento",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-02",
+    "colaborador_id": "COL-0078",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Atestado médico"
+  },
+  {
+    "data": "2026-06-03",
+    "colaborador_id": "COL-0021",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-03",
+    "colaborador_id": "COL-0028",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-03",
+    "colaborador_id": "COL-0029",
+    "obra_id": "OB-001",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-03",
+    "colaborador_id": "COL-0034",
+    "obra_id": "OB-001",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-03",
+    "colaborador_id": "COL-0044",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-03",
+    "colaborador_id": "COL-0069",
+    "obra_id": "OB-003",
+    "grupo": "acabamento",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-04",
+    "colaborador_id": "COL-0025",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-06-04",
+    "colaborador_id": "COL-0036",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-04",
+    "colaborador_id": "COL-0052",
+    "obra_id": "OB-002",
+    "grupo": "acabamento",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-04",
+    "colaborador_id": "COL-0055",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": "Atestado médico"
+  },
+  {
+    "data": "2026-06-04",
+    "colaborador_id": "COL-0059",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-05",
+    "colaborador_id": "COL-0014",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Atestado médico"
+  },
+  {
+    "data": "2026-06-05",
+    "colaborador_id": "COL-0024",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-05",
+    "colaborador_id": "COL-0037",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-05",
+    "colaborador_id": "COL-0053",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-06",
+    "colaborador_id": "COL-0023",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-06",
+    "colaborador_id": "COL-0042",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-06",
+    "colaborador_id": "COL-0064",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-06",
+    "colaborador_id": "COL-0069",
+    "obra_id": "OB-003",
+    "grupo": "acabamento",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-06-08",
+    "colaborador_id": "COL-0058",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-08",
+    "colaborador_id": "COL-0065",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-08",
+    "colaborador_id": "COL-0073",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Atestado médico"
+  },
+  {
+    "data": "2026-06-09",
+    "colaborador_id": "COL-0043",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-09",
+    "colaborador_id": "COL-0078",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-06-09",
+    "colaborador_id": "COL-0082",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-10",
+    "colaborador_id": "COL-0002",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-10",
+    "colaborador_id": "COL-0012",
+    "obra_id": "OB-001",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-10",
+    "colaborador_id": "COL-0025",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-10",
+    "colaborador_id": "COL-0038",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-10",
+    "colaborador_id": "COL-0060",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-10",
+    "colaborador_id": "COL-0068",
+    "obra_id": "OB-003",
+    "grupo": "acabamento",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": "Atestado médico"
+  },
+  {
+    "data": "2026-06-11",
+    "colaborador_id": "COL-0032",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-11",
+    "colaborador_id": "COL-0071",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-12",
+    "colaborador_id": "COL-0005",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-12",
+    "colaborador_id": "COL-0028",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-12",
+    "colaborador_id": "COL-0031",
+    "obra_id": "OB-001",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-12",
+    "colaborador_id": "COL-0071",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-12",
+    "colaborador_id": "COL-0079",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-15",
+    "colaborador_id": "COL-0009",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-15",
+    "colaborador_id": "COL-0058",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-15",
+    "colaborador_id": "COL-0060",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-16",
+    "colaborador_id": "COL-0036",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-16",
+    "colaborador_id": "COL-0059",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-16",
+    "colaborador_id": "COL-0071",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-16",
+    "colaborador_id": "COL-0082",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-17",
+    "colaborador_id": "COL-0005",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-17",
+    "colaborador_id": "COL-0021",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-17",
+    "colaborador_id": "COL-0029",
+    "obra_id": "OB-001",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-17",
+    "colaborador_id": "COL-0032",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-17",
+    "colaborador_id": "COL-0034",
+    "obra_id": "OB-001",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-17",
+    "colaborador_id": "COL-0039",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-17",
+    "colaborador_id": "COL-0076",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-17",
+    "colaborador_id": "COL-0077",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-17",
+    "colaborador_id": "COL-0082",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-06-18",
+    "colaborador_id": "COL-0071",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-06-18",
+    "colaborador_id": "COL-0079",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-19",
+    "colaborador_id": "COL-0006",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-19",
+    "colaborador_id": "COL-0015",
+    "obra_id": "OB-001",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-19",
+    "colaborador_id": "COL-0078",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-06-19",
+    "colaborador_id": "COL-0081",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-22",
+    "colaborador_id": "COL-0006",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-22",
+    "colaborador_id": "COL-0033",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-22",
+    "colaborador_id": "COL-0043",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-06-23",
+    "colaborador_id": "COL-0017",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Atestado médico"
+  },
+  {
+    "data": "2026-06-23",
+    "colaborador_id": "COL-0051",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-23",
+    "colaborador_id": "COL-0053",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-24",
+    "colaborador_id": "COL-0013",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-06-24",
+    "colaborador_id": "COL-0030",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-24",
+    "colaborador_id": "COL-0034",
+    "obra_id": "OB-001",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-25",
+    "colaborador_id": "COL-0014",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-25",
+    "colaborador_id": "COL-0015",
+    "obra_id": "OB-001",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-25",
+    "colaborador_id": "COL-0038",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-25",
+    "colaborador_id": "COL-0043",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-25",
+    "colaborador_id": "COL-0082",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-26",
+    "colaborador_id": "COL-0031",
+    "obra_id": "OB-001",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Atestado médico"
+  },
+  {
+    "data": "2026-06-26",
+    "colaborador_id": "COL-0066",
+    "obra_id": "OB-003",
+    "grupo": "acabamento",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-27",
+    "colaborador_id": "COL-0023",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-27",
+    "colaborador_id": "COL-0057",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-27",
+    "colaborador_id": "COL-0064",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-29",
+    "colaborador_id": "COL-0037",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-06-29",
+    "colaborador_id": "COL-0066",
+    "obra_id": "OB-003",
+    "grupo": "acabamento",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-29",
+    "colaborador_id": "COL-0082",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-30",
+    "colaborador_id": "COL-0013",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-30",
+    "colaborador_id": "COL-0023",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-30",
+    "colaborador_id": "COL-0044",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-06-30",
+    "colaborador_id": "COL-0049",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-06-30",
+    "colaborador_id": "COL-0079",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-01",
+    "colaborador_id": "COL-0020",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-07-01",
+    "colaborador_id": "COL-0038",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-07-02",
+    "colaborador_id": "COL-0009",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-02",
+    "colaborador_id": "COL-0014",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-02",
+    "colaborador_id": "COL-0031",
+    "obra_id": "OB-001",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-07-02",
+    "colaborador_id": "COL-0054",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-07-02",
+    "colaborador_id": "COL-0076",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-07-03",
+    "colaborador_id": "COL-0009",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-07-03",
+    "colaborador_id": "COL-0028",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Atestado médico"
+  },
+  {
+    "data": "2026-07-03",
+    "colaborador_id": "COL-0042",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-03",
+    "colaborador_id": "COL-0052",
+    "obra_id": "OB-002",
+    "grupo": "acabamento",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-07-03",
+    "colaborador_id": "COL-0056",
+    "obra_id": "OB-002",
+    "grupo": "acabamento",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-04",
+    "colaborador_id": "COL-0002",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-07-04",
+    "colaborador_id": "COL-0031",
+    "obra_id": "OB-001",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-07-04",
+    "colaborador_id": "COL-0032",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-04",
+    "colaborador_id": "COL-0037",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-07-04",
+    "colaborador_id": "COL-0039",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-04",
+    "colaborador_id": "COL-0064",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-04",
+    "colaborador_id": "COL-0065",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Atestado médico"
+  },
+  {
+    "data": "2026-07-06",
+    "colaborador_id": "COL-0009",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-07-06",
+    "colaborador_id": "COL-0043",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-06",
+    "colaborador_id": "COL-0047",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-07-06",
+    "colaborador_id": "COL-0053",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-07",
+    "colaborador_id": "COL-0030",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-07",
+    "colaborador_id": "COL-0039",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-07-08",
+    "colaborador_id": "COL-0016",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-08",
+    "colaborador_id": "COL-0017",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-08",
+    "colaborador_id": "COL-0041",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-07-09",
+    "colaborador_id": "COL-0013",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-07-09",
+    "colaborador_id": "COL-0080",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Atestado médico"
+  },
+  {
+    "data": "2026-07-09",
+    "colaborador_id": "COL-0082",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-07-10",
+    "colaborador_id": "COL-0050",
+    "obra_id": "OB-002",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-07-10",
+    "colaborador_id": "COL-0066",
+    "obra_id": "OB-003",
+    "grupo": "acabamento",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-07-11",
+    "colaborador_id": "COL-0004",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-11",
+    "colaborador_id": "COL-0035",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-11",
+    "colaborador_id": "COL-0080",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-13",
+    "colaborador_id": "COL-0025",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-07-13",
+    "colaborador_id": "COL-0068",
+    "obra_id": "OB-003",
+    "grupo": "acabamento",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-14",
+    "colaborador_id": "COL-0005",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-14",
+    "colaborador_id": "COL-0014",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-07-14",
+    "colaborador_id": "COL-0021",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-14",
+    "colaborador_id": "COL-0058",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-14",
+    "colaborador_id": "COL-0065",
+    "obra_id": "OB-003",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Transporte"
+  },
+  {
+    "data": "2026-07-15",
+    "colaborador_id": "COL-0024",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": "Não informado"
+  },
+  {
+    "data": "2026-07-15",
+    "colaborador_id": "COL-0032",
+    "obra_id": "OB-001",
+    "grupo": "acabamento",
+    "tipo": "saida_antecipada",
+    "justificada": false,
+    "motivo": "Atestado médico"
+  },
+  {
+    "data": "2026-07-15",
+    "colaborador_id": "COL-0054",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-16",
+    "colaborador_id": "COL-0017",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "falta",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-16",
+    "colaborador_id": "COL-0020",
+    "obra_id": "OB-001",
+    "grupo": "alvenaria",
+    "tipo": "atraso",
+    "justificada": true,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-16",
+    "colaborador_id": "COL-0046",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "falta",
+    "justificada": false,
+    "motivo": null
+  },
+  {
+    "data": "2026-07-16",
+    "colaborador_id": "COL-0055",
+    "obra_id": "OB-002",
+    "grupo": "estrutura",
+    "tipo": "saida_antecipada",
+    "justificada": true,
+    "motivo": "Problema familiar"
+  },
+  {
+    "data": "2026-07-16",
+    "colaborador_id": "COL-0076",
+    "obra_id": "OB-003",
+    "grupo": "estrutura",
+    "tipo": "atraso",
+    "justificada": false,
+    "motivo": "Atestado médico"
+  }
+]

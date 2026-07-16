@@ -1,0 +1,58 @@
+[
+  {
+    "id": "OB-001",
+    "nome": "Residencial Bosque Verde",
+    "cidade": "Recife",
+    "uf": "PE",
+    "data_inicio": "2025-11-03",
+    "data_fim_prevista": "2026-12-15",
+    "data_fim_real": null,
+    "status": "em_execucao",
+    "engenheiro": "Camila Andrade Souza",
+    "encarregado": "José Ribeiro Lima",
+    "orcamento_previsto": 18500000,
+    "orcamento_realizado": 9870000
+  },
+  {
+    "id": "OB-002",
+    "nome": "Edifício Comercial Marco Zero",
+    "cidade": "Recife",
+    "uf": "PE",
+    "data_inicio": "2026-02-10",
+    "data_fim_prevista": "2027-05-30",
+    "data_fim_real": null,
+    "status": "em_execucao",
+    "engenheiro": "Rodrigo Peixoto Melo",
+    "encarregado": "Antônio Carlos Ferreira",
+    "orcamento_previsto": 27300000,
+    "orcamento_realizado": 6120000
+  },
+  {
+    "id": "OB-003",
+    "nome": "Condomínio Vista do Rio",
+    "cidade": "Olinda",
+    "uf": "PE",
+    "data_inicio": "2025-06-01",
+    "data_fim_prevista": "2026-08-20",
+    "data_fim_real": null,
+    "status": "em_execucao",
+    "engenheiro": "Fernanda Costa Lins",
+    "encarregado": "Severino Alves Torres",
+    "orcamento_previsto": 14200000,
+    "orcamento_realizado": 12430000
+  },
+  {
+    "id": "OB-004",
+    "nome": "Galpão Industrial Suape",
+    "cidade": "Ipojuca",
+    "uf": "PE",
+    "data_inicio": "2024-09-15",
+    "data_fim_prevista": "2026-06-30",
+    "data_fim_real": "2026-06-24",
+    "status": "concluida",
+    "engenheiro": "Marcelo Tavares Brito",
+    "encarregado": "Edvaldo Nunes Pereira",
+    "orcamento_previsto": 9800000,
+    "orcamento_realizado": 9640000
+  }
+]

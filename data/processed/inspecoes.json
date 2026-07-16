@@ -1,0 +1,56 @@
+[
+  {
+    "id": "INSP-0001",
+    "data": "2026-05-16",
+    "obra_id": "OB-002",
+    "responsavel": "Técnico de Segurança",
+    "itens_verificados": 18,
+    "itens_nao_conformes": 4,
+    "status": "nao_conforme"
+  },
+  {
+    "id": "INSP-0002",
+    "data": "2026-05-28",
+    "obra_id": "OB-003",
+    "responsavel": "Técnico de Segurança",
+    "itens_verificados": 23,
+    "itens_nao_conformes": 0,
+    "status": "conforme"
+  },
+  {
+    "id": "INSP-0003",
+    "data": "2026-06-01",
+    "obra_id": "OB-001",
+    "responsavel": "Técnico de Segurança",
+    "itens_verificados": 22,
+    "itens_nao_conformes": 4,
+    "status": "nao_conforme"
+  },
+  {
+    "id": "INSP-0004",
+    "data": "2026-06-17",
+    "obra_id": "OB-001",
+    "responsavel": "Técnico de Segurança",
+    "itens_verificados": 18,
+    "itens_nao_conformes": 1,
+    "status": "conforme_com_ressalvas"
+  },
+  {
+    "id": "INSP-0005",
+    "data": "2026-06-20",
+    "obra_id": "OB-001",
+    "responsavel": "Técnico de Segurança",
+    "itens_verificados": 25,
+    "itens_nao_conformes": 1,
+    "status": "conforme_com_ressalvas"
+  },
+  {
+    "id": "INSP-0006",
+    "data": "2026-07-07",
+    "obra_id": "OB-001",
+    "responsavel": "Técnico de Segurança",
+    "itens_verificados": 24,
+    "itens_nao_conformes": 4,
+    "status": "nao_conforme"
+  }
+]

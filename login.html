@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Entrar · Gestão da Produção</title>
+<link rel="stylesheet" href="css/styles.css" />
+<style>
+  .auth-visual { position: relative; overflow: hidden; }
+  .auth-visual .blueprint-grid { position: absolute; inset: 0; }
+  .auth-visual-inner { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; justify-content: space-between; }
+  .auth-brand { display: flex; align-items: center; gap: 12px; }
+  .auth-brand-mark { width: 40px; height: 40px; border-radius: 10px; background: rgba(255,255,255,.16); display: flex; align-items: center; justify-content: center; }
+  .auth-brand-word { font-family: var(--font-display); font-size: 17px; }
+  .auth-brand-word small { display: block; font-family: var(--font-body); font-weight: 400; opacity: .78; font-size: 12px; }
+  .auth-quote { max-width: 420px; font-size: 22px; line-height: 1.3; font-family: var(--font-display); font-weight: 600; text-wrap: balance; }
+  .auth-stats { display: flex; gap: 28px; }
+  .auth-stats div strong { display: block; font-family: var(--font-display); font-size: 24px; }
+  .auth-stats div span { font-size: 11.5px; opacity: .75; text-transform: uppercase; letter-spacing: .06em; }
+  .field-label { font-size: 12px; font-weight: 700; color: var(--ink-secondary); }
+</style>
+</head>
+<body>
+  <div class="auth-shell">
+    <section class="auth-visual">
+      <div class="blueprint-grid"></div>
+      <div class="auth-visual-inner">
+        <div class="auth-brand">
+          <div class="auth-brand-mark">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg>
+          </div>
+          <div class="auth-brand-word">Gestão da Produção<small>Viana &amp; Moura Construções</small></div>
+        </div>
+        <p class="auth-quote">Uma visão única de todas as obras: produção, equipes, qualidade e segurança, atualizadas todos os dias.</p>
+        <div class="auth-stats">
+          <div><strong>4</strong><span>Obras ativas</span></div>
+          <div><strong>84</strong><span>Colaboradores</span></div>
+          <div><strong>24h</strong><span>Ciclo de atualização</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="auth-panel">
+      <form class="auth-card" id="login-form" novalidate>
+        <div>
+          <h1 style="font-size:21px;">Entrar na plataforma</h1>
+          <p class="footnote" style="margin-top:4px;">Ambiente de demonstração — escolha um perfil para simular o acesso.</p>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:6px;">
+          <label class="field-label" for="nome">Nome</label>
+          <input class="input" id="nome" name="nome" placeholder="Seu nome completo" value="Matias Teixeira" required />
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <span class="field-label">Perfil de acesso</span>
+
+          <label class="role-option">
+            <input type="radio" name="perfil" value="admin" checked />
+            <div><strong>Administrador</strong><span>Acesso total, todas as obras, auditoria e produtividade individual</span></div>
+          </label>
+          <label class="role-option">
+            <input type="radio" name="perfil" value="gestor" />
+            <div><strong>Gestor</strong><span>Todas as obras, inclui produtividade individual</span></div>
+          </label>
+          <label class="role-option">
+            <input type="radio" name="perfil" value="supervisor" />
+            <div><strong>Supervisor de obra</strong><span>Somente a obra designada, sem produtividade individual</span></div>
+          </label>
+        </div>
+
+        <div id="obra-field" style="display:none; flex-direction:column; gap:6px;">
+          <label class="field-label" for="obra">Obra designada</label>
+          <select class="select" id="obra" name="obra"></select>
+        </div>
+
+        <button class="btn btn-primary" type="submit" style="justify-content:center; padding:11px;">Entrar</button>
+        <p class="footnote" style="text-align:center;">Sem senha nesta demonstração — a sessão fica salva neste navegador.</p>
+      </form>
+    </section>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script>
+    const obraSelect = document.getElementById("obra");
+    GP.OBRA_MOCK.forEach((o) => {
+      const opt = document.createElement("option");
+      opt.value = o.id; opt.textContent = `${o.id} — ${o.nome}`;
+      obraSelect.appendChild(opt);
+    });
+
+    const obraField = document.getElementById("obra-field");
+    document.querySelectorAll('input[name="perfil"]').forEach((r) => {
+      r.addEventListener("change", () => {
+        obraField.style.display = r.value === "supervisor" && r.checked ? "flex" : obraField.style.display;
+        if (r.checked) obraField.style.display = r.value === "supervisor" ? "flex" : "none";
+      });
+    });
+
+    document.getElementById("login-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const nome = document.getElementById("nome").value.trim() || "Usuário";
+      const perfil = document.querySelector('input[name="perfil"]:checked').value;
+      const obraId = perfil === "supervisor" ? obraSelect.value : null;
+      GP.setSession({ nome, perfil, obraId });
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>

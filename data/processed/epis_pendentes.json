@@ -1,0 +1,58 @@
+[
+  {
+    "id": "EPI-0001",
+    "colaborador_id": "COL-0013",
+    "obra_id": "OB-001",
+    "item": "Protetor auricular",
+    "situacao": "vencido",
+    "vencimento": "2026-07-17"
+  },
+  {
+    "id": "EPI-0002",
+    "colaborador_id": "COL-0012",
+    "obra_id": "OB-001",
+    "item": "Cinto de segurança tipo paraquedista",
+    "situacao": "faltando",
+    "vencimento": "2026-07-28"
+  },
+  {
+    "id": "EPI-0003",
+    "colaborador_id": "COL-0029",
+    "obra_id": "OB-001",
+    "item": "Cinto de segurança tipo paraquedista",
+    "situacao": "vencido",
+    "vencimento": "2026-06-30"
+  },
+  {
+    "id": "EPI-0004",
+    "colaborador_id": "COL-0041",
+    "obra_id": "OB-002",
+    "item": "Protetor auricular",
+    "situacao": "faltando",
+    "vencimento": "2026-06-10"
+  },
+  {
+    "id": "EPI-0005",
+    "colaborador_id": "COL-0055",
+    "obra_id": "OB-002",
+    "item": "Luva de raspa",
+    "situacao": "faltando",
+    "vencimento": "2026-06-21"
+  },
+  {
+    "id": "EPI-0006",
+    "colaborador_id": "COL-0076",
+    "obra_id": "OB-003",
+    "item": "Protetor auricular",
+    "situacao": "vencido",
+    "vencimento": "2026-07-14"
+  },
+  {
+    "id": "EPI-0007",
+    "colaborador_id": "COL-0065",
+    "obra_id": "OB-003",
+    "item": "Cinto de segurança tipo paraquedista",
+    "situacao": "vencido",
+    "vencimento": "2026-06-22"
+  }
+]

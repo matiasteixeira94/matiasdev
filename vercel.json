@@ -1,0 +1,10 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/data/processed/(.*).json",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=300, must-revalidate" }]
+    }
+  ]
+}
