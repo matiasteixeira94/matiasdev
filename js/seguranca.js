@@ -139,16 +139,18 @@
     GPCharts.bodyMap(document.getElementById("chart-saude-queixa"), { items: partesQueixa, color: "var(--gold)" });
 
     const medidas = Object.entries(naoConformidades.por_medida).sort((a, b) => b[1] - a[1]);
-    GPCharts.bars(document.getElementById("chart-nc-medida"), {
-      categories: medidas.map(([k]) => k),
-      series: [{ name: "Registros", color: "var(--status-warning)", values: medidas.map(([, v]) => v) }],
-      yFormat: (v) => GP.fmtInt(v),
+    GPCharts.hbars(document.getElementById("chart-nc-medida"), {
+      items: medidas.map(([label, value]) => ({ label, value, color: "var(--status-warning)" })),
+      valueFormat: (v) => GP.fmtInt(v),
+      showTarget: false,
     });
+
     const anos = Object.entries(naoConformidades.por_ano);
-    GPCharts.bars(document.getElementById("chart-nc-ano"), {
-      categories: anos.map(([k]) => k),
-      series: [{ name: "Registros", color: "var(--accent)", values: anos.map(([, v]) => v) }],
+    GPCharts.barsLine(document.getElementById("chart-nc-ano"), {
+      items: anos.map(([label, value]) => ({ label, value, color: "var(--accent)" })),
       yFormat: (v) => GP.fmtInt(v),
+      tooltipLabel: "Registros",
+      legendLabel: "Registros por ano",
     });
   }
 
