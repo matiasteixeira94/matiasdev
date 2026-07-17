@@ -57,3 +57,13 @@ muros[empreendimento].concluidos = muros[empreendimento].lotes.length;
 
 writeFileSync(PATH, JSON.stringify(muros, null, 2), "utf8");
 console.log(`${empreendimento}: ${adicionados} lote(s) marcado(s) como muro concluído (${data}). Total agora: ${muros[empreendimento].concluidos}.`);
+
+// Se a data cair no 2º semestre de 2026, soma no "realizado" da meta do
+// período (ver extrair_metas_semestre.mjs / cartão "Evolução da Meta").
+if (adicionados > 0 && data >= "2026-07-01" && data <= "2026-12-31") {
+  const METAS_PATH = new URL("../processed/metas_2026_2.json", import.meta.url);
+  const metas = JSON.parse(readFileSync(METAS_PATH, "utf8"));
+  metas.muros.realizado += adicionados;
+  writeFileSync(METAS_PATH, JSON.stringify(metas, null, 2), "utf8");
+  console.log(`Meta 2026.2 (muros): realizado agora é ${metas.muros.realizado} de ${metas.muros.meta}.`);
+}
