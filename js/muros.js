@@ -7,8 +7,8 @@
   });
   if (!session) return;
 
-  const [muros, mapaLotes] = await Promise.all([
-    GP.loadJSON("muros.json"), GP.loadJSON("mapa_lotes.json"),
+  const [muros, mapaLotes, metas] = await Promise.all([
+    GP.loadJSON("muros.json"), GP.loadJSON("mapa_lotes.json"), GP.loadJSON("metas_2026_2.json"),
   ]);
 
   const ORDEM_EXECUCAO = ["Laranjeiras", "Cerejeiras", "Oliveiras", "Amoreiras"];
@@ -35,6 +35,24 @@
       ${GP.fmtInt(totalGeralConcluidos)} de ${GP.fmtInt(totalGeralLotes)} lotes com muro/cisterna concluído
       (${GP.fmtPct((totalGeralConcluidos / totalGeralLotes) * 100, 0)}).
     </p>
+
+    <div class="grid grid-3">
+      <div class="card stat-tile">
+        <div class="stat-label">Meta 2026.2</div>
+        <div class="stat-value">${GP.fmtInt(metas.muros.meta)}</div>
+        <span class="footnote">muros — julho a dezembro de 2026</span>
+      </div>
+      <div class="card stat-tile">
+        <div class="stat-label">Evolução da Meta</div>
+        <div class="stat-value">${GP.fmtInt(metas.muros.realizado)}<small>${GP.fmtPct((metas.muros.realizado / metas.muros.meta) * 100, 0)}</small></div>
+        <span class="chip ${metas.muros.realizado > 0 ? "chip-good" : "chip-neutral"}">Realizado no período</span>
+      </div>
+      <div class="card stat-tile">
+        <div class="stat-label">Delta da Meta</div>
+        <div class="stat-value">${GP.fmtInt(metas.muros.meta - metas.muros.realizado)}</div>
+        <span class="chip chip-warning">Faltam para a meta</span>
+      </div>
+    </div>
 
     <div class="grid grid-4" id="kpi-row"></div>
 

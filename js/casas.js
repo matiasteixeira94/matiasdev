@@ -7,8 +7,8 @@
   });
   if (!session) return;
 
-  const [casasBrutas, mapaLotes, obrasReais] = await Promise.all([
-    GP.loadJSON("casas.json"), GP.loadJSON("mapa_lotes.json"), GP.loadJSON("obras_reais.json"),
+  const [casasBrutas, mapaLotes, obrasReais, metas] = await Promise.all([
+    GP.loadJSON("casas.json"), GP.loadJSON("mapa_lotes.json"), GP.loadJSON("obras_reais.json"), GP.loadJSON("metas_2026_2.json"),
   ]);
   const lotesReais = Object.fromEntries(obrasReais.map((o) => [o.empreendimento, o.total]));
 
@@ -109,6 +109,24 @@
       (2026.1 e 2026.2) — ${GP.fmtInt(casas.length)} casas, ${equipes.length} equipes,
       ${EMPREENDIMENTOS.length} empreendimentos.
     </p>
+
+    <div class="grid grid-3">
+      <div class="card stat-tile">
+        <div class="stat-label">Meta 2026.2</div>
+        <div class="stat-value">${GP.fmtInt(metas.casas.meta)}</div>
+        <span class="footnote">casas — julho a dezembro de 2026</span>
+      </div>
+      <div class="card stat-tile">
+        <div class="stat-label">Evolução da Meta</div>
+        <div class="stat-value">${GP.fmtInt(metas.casas.realizado)}<small>${GP.fmtPct((metas.casas.realizado / metas.casas.meta) * 100, 0)}</small></div>
+        <span class="chip ${metas.casas.realizado > 0 ? "chip-good" : "chip-neutral"}">Realizado no período</span>
+      </div>
+      <div class="card stat-tile">
+        <div class="stat-label">Delta da Meta</div>
+        <div class="stat-value">${GP.fmtInt(metas.casas.meta - metas.casas.realizado)}</div>
+        <span class="chip chip-warning">Faltam para a meta</span>
+      </div>
+    </div>
 
     <div class="filter-bar">
       <div class="field">
