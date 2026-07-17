@@ -114,16 +114,21 @@
       yFormat: (v) => GP.fmtInt(v),
     });
 
+    // Nesta tela o sinal é invertido: realizado acima do planejado significa
+    // mais gente do que o previsto, ou seja, mais gasto com pessoal — por
+    // isso positivo é vermelho (ruim) e negativo/zero é verde (bom) aqui,
+    // ao contrário do padrão usado nas outras telas de meta.
     document.getElementById("tabela-quadro-mensal").innerHTML = meses.map((m) => {
       const desvio = m.realizado - m.planejado;
-      const seta = desvio >= 0
-        ? `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--status-good)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>`
-        : `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--status-critical)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>`;
+      const ruim = desvio > 0;
+      const seta = ruim
+        ? `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--status-critical)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>`
+        : `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--status-good)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>`;
       return `<tr>
         <td>${m.label}</td>
         <td class="num">${GP.fmtInt(m.planejado)}</td>
         <td class="num">${GP.fmtInt(m.realizado)}</td>
-        <td class="num"><span class="chip ${desvio >= 0 ? "chip-good" : "chip-warning"}">${seta} ${desvio > 0 ? "+" : ""}${GP.fmtInt(desvio)}</span></td>
+        <td class="num"><span class="chip ${ruim ? "chip-warning" : "chip-good"}">${seta} ${desvio > 0 ? "+" : ""}${GP.fmtInt(desvio)}</span></td>
       </tr>`;
     }).join("");
   }
