@@ -7,9 +7,10 @@
   });
   if (!session) return;
 
-  const [casasBrutas, mapaLotes] = await Promise.all([
-    GP.loadJSON("casas.json"), GP.loadJSON("mapa_lotes.json"),
+  const [casasBrutas, mapaLotes, obrasReais] = await Promise.all([
+    GP.loadJSON("casas.json"), GP.loadJSON("mapa_lotes.json"), GP.loadJSON("obras_reais.json"),
   ]);
+  const lotesReais = Object.fromEntries(obrasReais.map((o) => [o.empreendimento, o.total]));
 
   // Só os 4 condomínios em acompanhamento hoje — planilhas antigas (Xique-xique
   // etc.) e variações de nome do mesmo empreendimento são unificadas/descartadas aqui.
@@ -168,6 +169,9 @@
     }).join("");
     const contornoSvg = mapa.contorno.map((d) => `<path d="${d}" fill="none" stroke="var(--border-strong)" stroke-width="0.3" opacity="0.5" />`).join("");
 
+    const totalReal = lotesReais[state.empreendimento];
+    const faltam = totalReal != null ? totalReal - mapa.lotes.length : 0;
+
     host.innerHTML = `
       <svg viewBox="${mapa.viewBox}" style="width:100%; height:auto; max-height:640px; display:block;">
         <g>${contornoSvg}</g>
@@ -178,6 +182,7 @@
         <span class="tag-dot" style="color:${STATUS_COR.em_producao}">Em produção</span>
         <span class="tag-dot" style="color:${STATUS_COR.nao_iniciada}">Não iniciada / sem dados</span>
       </div>
+      ${faltam > 0 ? `<p class="footnote" style="margin-top:8px;">A planta desta obra (arquivo de projeto) tem ${mapa.lotes.length} lotes desenhados; faltam ${faltam} lote(s) que ainda não foram incluídos no arquivo de origem — envie uma planta atualizada para completar o mapa.</p>` : ""}
     `;
   }
 
