@@ -2,8 +2,8 @@
   {
     "empreendimento": "Laranjeiras",
     "total": 500,
-    "concluida": 498,
-    "pct_concluido": 99.6
+    "concluida": 500,
+    "pct_concluido": 100
   },
   {
     "empreendimento": "Cerejeiras",
@@ -14,8 +14,8 @@
   {
     "empreendimento": "Oliveiras",
     "total": 505,
-    "concluida": 503,
-    "pct_concluido": 99.6
+    "concluida": 505,
+    "pct_concluido": 100
   },
   {
     "empreendimento": "Amoreiras",

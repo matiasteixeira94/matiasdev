@@ -33,6 +33,12 @@ const TOTAL_PLANEJADO_OVERRIDE = {
   Amoreiras: 505,
 };
 
+// Condomínios confirmados como 100% concluídos (todas as casas entregues),
+// mesmo quando a aba "DADOS CASA" não tem todas as linhas marcadas como
+// concluídas — a planilha de origem não é a fonte definitiva de conclusão
+// para essas obras.
+const CONCLUIDO_OVERRIDE = new Set(["Laranjeiras", "Oliveiras"]);
+
 const porObra = new Map();
 for (const c of casas) {
   const nome = NOME_CANONICO[c.empreendimento];
@@ -47,11 +53,12 @@ const ORDEM = ["Laranjeiras", "Cerejeiras", "Oliveiras", "Amoreiras"];
 const obras = ORDEM.map((nome) => {
   const o = porObra.get(nome) ?? { empreendimento: nome, total_rastreado: 0, concluida: 0 };
   const total = TOTAL_PLANEJADO_OVERRIDE[nome] ?? o.total_rastreado;
+  const concluida = CONCLUIDO_OVERRIDE.has(nome) ? total : o.concluida;
   return {
     empreendimento: nome,
     total,
-    concluida: o.concluida,
-    pct_concluido: Math.round((o.concluida / total) * 1000) / 10,
+    concluida,
+    pct_concluido: Math.round((concluida / total) * 1000) / 10,
   };
 });
 
