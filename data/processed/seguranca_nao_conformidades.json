@@ -1,0 +1,30 @@
+{
+  "total_registros": 276,
+  "por_setor": {
+    "ASSISTENCIA TÉCNICA": 3,
+    "PRODUÇÃO": 273
+  },
+  "por_medida": {
+    "Advertência verbal": 101,
+    "Treinamento": 128,
+    "Advertência escrita": 32,
+    "Outra": 1,
+    "Não informada": 2,
+    "Suspensão": 8,
+    "Retreinamento": 4
+  },
+  "sanada": {
+    "Não informado": 109,
+    "Sanada": 166,
+    "Pendente": 1
+  },
+  "por_ano": {
+    "2021": 30,
+    "2022": 9,
+    "2023": 83,
+    "2024": 16,
+    "2025": 84,
+    "2026": 53
+  },
+  "atualizado_em": "2026-07-17"
+}

@@ -8,11 +8,11 @@
   });
   if (!session) return;
 
-  const [obras, colaboradores, producao, ocorrencias, epis, treinamentos, inspecoes, saude] = await Promise.all([
+  const [obras, colaboradores, producao, ocorrencias, epis, treinamentos, inspecoes, saude, naoConformidades] = await Promise.all([
     GP.loadJSON("obras.json"), GP.loadJSON("colaboradores.json"), GP.loadJSON("producao.json"),
     GP.loadJSON("ocorrencias_seguranca.json"), GP.loadJSON("epis_pendentes.json"),
     GP.loadJSON("treinamentos_pendentes.json"), GP.loadJSON("inspecoes.json"),
-    GP.loadJSON("saude_ocupacional_resumo.json"),
+    GP.loadJSON("saude_ocupacional_resumo.json"), GP.loadJSON("seguranca_nao_conformidades.json"),
   ]);
   const colabById = Object.fromEntries(colaboradores.map((c) => [c.id, c]));
   const obraById = Object.fromEntries(obras.map((o) => [o.id, o]));
@@ -61,6 +61,49 @@
         <div>
           <div class="card-sub" style="margin-bottom:8px;">Queixas por parte do corpo</div>
           <div class="chart-host" id="chart-saude-queixa"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-head" style="margin-bottom:4px;">
+        <h2>Não conformidades de segurança</h2>
+        <span class="chip chip-neutral">Dados reais e agregados — Controle de Recomendações</span>
+      </div>
+      <p class="footnote" style="margin-bottom:14px;">
+        Não conformidades observadas em campo e a medida disciplinar recomendada, sempre agregadas —
+        nunca associadas a nome ou descrição do colaborador ou de quem aplicou.
+      </p>
+      <div class="grid grid-4" style="margin-bottom:16px;">
+        <div class="stat-tile">
+          <div class="stat-label">Registros no histórico</div>
+          <div class="stat-value">${GP.fmtInt(naoConformidades.total_registros)}</div>
+          <span class="footnote">desde ${Object.keys(naoConformidades.por_ano)[0]}</span>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-label">Registros em ${new Date().getFullYear()}</div>
+          <div class="stat-value">${GP.fmtInt(naoConformidades.por_ano[new Date().getFullYear()] || 0)}</div>
+          <span class="footnote">ano corrente</span>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-label">Situação sanada</div>
+          <div class="stat-value">${GP.fmtPct((naoConformidades.sanada["Sanada"] / naoConformidades.total_registros) * 100, 0)}</div>
+          <span class="footnote">${GP.fmtInt(naoConformidades.sanada["Sanada"] || 0)} de ${GP.fmtInt(naoConformidades.total_registros)} registros</span>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-label">Setor mais recorrente</div>
+          <div class="stat-value" style="font-size:20px;">${Object.entries(naoConformidades.por_setor).sort((a, b) => b[1] - a[1])[0][0]}</div>
+          <span class="footnote">${Object.entries(naoConformidades.por_setor).sort((a, b) => b[1] - a[1])[0][1]} registro(s)</span>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div>
+          <div class="card-sub" style="margin-bottom:8px;">Por medida disciplinar recomendada</div>
+          <div class="chart-host" id="chart-nc-medida"></div>
+        </div>
+        <div>
+          <div class="card-sub" style="margin-bottom:8px;">Registros por ano</div>
+          <div class="chart-host" id="chart-nc-ano"></div>
         </div>
       </div>
     </div>
@@ -294,6 +337,19 @@
     GPCharts.bars(document.getElementById("chart-saude-queixa"), {
       categories: partesQueixa.map(([k]) => k),
       series: [{ name: "Queixas", color: "var(--gold)", values: partesQueixa.map(([, v]) => v) }],
+      yFormat: (v) => GP.fmtInt(v),
+    });
+
+    const medidas = Object.entries(naoConformidades.por_medida).sort((a, b) => b[1] - a[1]);
+    GPCharts.bars(document.getElementById("chart-nc-medida"), {
+      categories: medidas.map(([k]) => k),
+      series: [{ name: "Registros", color: "var(--status-warning)", values: medidas.map(([, v]) => v) }],
+      yFormat: (v) => GP.fmtInt(v),
+    });
+    const anos = Object.entries(naoConformidades.por_ano);
+    GPCharts.bars(document.getElementById("chart-nc-ano"), {
+      categories: anos.map(([k]) => k),
+      series: [{ name: "Registros", color: "var(--accent)", values: anos.map(([, v]) => v) }],
       yFormat: (v) => GP.fmtInt(v),
     });
   }
