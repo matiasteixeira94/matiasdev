@@ -8149,7 +8149,7 @@
     ]
   },
   "Amoreiras": {
-    "concluidos": 44,
+    "concluidos": 52,
     "lotes": [
       {
         "empreendimento": "Amoreiras",
@@ -8388,6 +8388,62 @@
         "ga": "MOTIVAÇÃO",
         "supervisor": "CARLOS ANDRÉ",
         "data": "2026-06-23"
+      },
+      {
+        "empreendimento": "Amoreiras",
+        "numero": 130,
+        "ga": null,
+        "supervisor": null,
+        "data": "2026-07-17"
+      },
+      {
+        "empreendimento": "Amoreiras",
+        "numero": 131,
+        "ga": null,
+        "supervisor": null,
+        "data": "2026-07-17"
+      },
+      {
+        "empreendimento": "Amoreiras",
+        "numero": 132,
+        "ga": null,
+        "supervisor": null,
+        "data": "2026-07-17"
+      },
+      {
+        "empreendimento": "Amoreiras",
+        "numero": 133,
+        "ga": null,
+        "supervisor": null,
+        "data": "2026-07-17"
+      },
+      {
+        "empreendimento": "Amoreiras",
+        "numero": 134,
+        "ga": null,
+        "supervisor": null,
+        "data": "2026-07-17"
+      },
+      {
+        "empreendimento": "Amoreiras",
+        "numero": 135,
+        "ga": null,
+        "supervisor": null,
+        "data": "2026-07-17"
+      },
+      {
+        "empreendimento": "Amoreiras",
+        "numero": 136,
+        "ga": null,
+        "supervisor": null,
+        "data": "2026-07-17"
+      },
+      {
+        "empreendimento": "Amoreiras",
+        "numero": 137,
+        "ga": null,
+        "supervisor": null,
+        "data": "2026-07-17"
       },
       {
         "empreendimento": "Amoreiras",
