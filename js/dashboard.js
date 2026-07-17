@@ -28,6 +28,7 @@
   // Ordem real em que os condomínios foram construídos (não é a ordem de
   // exibição dos cartões acima, que é Amoreiras/Oliveiras/Cerejeiras/Laranjeiras).
   const ORDEM_EXECUCAO = ["Laranjeiras", "Cerejeiras", "Oliveiras", "Amoreiras"];
+  const SUBCONTAS_CUSTO = ["MATERIAL", "SERVIÇO", "PESSOAL", "OUTROS CUSTOS"];
   const obrasComCusto = ORDEM_EXECUCAO.filter((nome) => custoCasa[nome]);
   const primeiraObraCusto = obrasComCusto[0] ? custoCasa[obrasComCusto[0]] : null;
   const ultimaObraCusto = obrasComCusto.length ? custoCasa[obrasComCusto[obrasComCusto.length - 1]] : null;
@@ -89,6 +90,24 @@
       <div class="card-head">
         <div><div class="card-title">Custo por casa — grupo "Custo Casa"</div><div class="card-sub">Última fotografia de orçamento (MATERIAL + SERVIÇO + PESSOAL + OUTROS CUSTOS) dividida pelos lotes de cada obra — na ordem em que os condomínios foram construídos</div></div>
         ${variacaoCustoGeral != null ? `<span class="chip ${variacaoCustoGeral > 0 ? "chip-warning" : "chip-good"}">${variacaoCustoGeral > 0 ? "+" : ""}${GP.fmtPct(variacaoCustoGeral, 1)} de Laranjeiras até Amoreiras</span>` : ""}
+      </div>
+      <div class="table-wrap" style="margin-bottom:16px;">
+        <table class="data">
+          <thead>
+            <tr><th>Item 01.05 — Custo Casa</th>${obrasComCusto.map((nome) => `<th class="num">${nome}</th>`).join("")}</tr>
+          </thead>
+          <tbody>
+            ${SUBCONTAS_CUSTO.map((sub) => `
+              <tr>
+                <td>${sub}</td>
+                ${obrasComCusto.map((nome) => `<td class="num">${custoCasa[nome].subcontas[sub] ? GP.fmtBRL(custoCasa[nome].subcontas[sub].atual) : "—"}</td>`).join("")}
+              </tr>`).join("")}
+            <tr style="font-weight:700;">
+              <td>Total (Material + Serviço + Pessoal + Outros)</td>
+              ${obrasComCusto.map((nome) => `<td class="num">${GP.fmtBRL(custoCasa[nome].total.atual)}</td>`).join("")}
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="chart-host" id="chart-custo-casa"></div>
       <div class="grid grid-4" style="margin-top:14px;">
