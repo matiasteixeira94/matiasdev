@@ -129,28 +129,20 @@
     </div>
 
     <div class="card">
-      <div class="card-head"><div><div class="card-title">Meta mensal — 2026.2</div><div class="card-sub">Meta (planejado/projetado) x realizado por mês, casa e muro — desvio = realizado − meta</div></div></div>
+      <div class="card-head"><div><div class="card-title">Meta mensal — 2026.2</div><div class="card-sub">Meta (planejado/projetado) x realizado por mês — desvio = realizado − meta</div></div></div>
       <div class="table-wrap">
         <table class="data">
           <thead>
-            <tr>
-              <th>Mês</th>
-              <th class="num">Meta Casa</th><th class="num">Realizado Casa</th><th class="num">Desvio Casa</th>
-              <th class="num">Meta Muro</th><th class="num">Realizado Muro</th><th class="num">Desvio Muro</th>
-            </tr>
+            <tr><th>Mês</th><th class="num">Meta</th><th class="num">Realizado</th><th class="num">Desvio</th></tr>
           </thead>
           <tbody>
             ${metasMensais.meses.map((m) => {
-              const desvioCasa = m.casas.realizado - m.casas.meta;
-              const desvioMuro = m.muros.realizado - m.muros.meta;
+              const desvio = m.casas.realizado - m.casas.meta;
               return `<tr>
                 <td>${m.label}</td>
                 <td class="num">${GP.fmtInt(m.casas.meta)}</td>
                 <td class="num">${GP.fmtInt(m.casas.realizado)}</td>
-                <td class="num"><span class="chip ${desvioCasa >= 0 ? "chip-good" : "chip-warning"}">${desvioCasa > 0 ? "+" : ""}${GP.fmtInt(desvioCasa)}</span></td>
-                <td class="num">${GP.fmtInt(m.muros.meta)}</td>
-                <td class="num">${GP.fmtInt(m.muros.realizado)}</td>
-                <td class="num"><span class="chip ${desvioMuro >= 0 ? "chip-good" : "chip-warning"}">${desvioMuro > 0 ? "+" : ""}${GP.fmtInt(desvioMuro)}</span></td>
+                <td class="num"><span class="chip ${desvio >= 0 ? "chip-good" : "chip-warning"}">${desvio > 0 ? "+" : ""}${GP.fmtInt(desvio)}</span></td>
               </tr>`;
             }).join("")}
             <tr style="font-weight:700;">
@@ -158,9 +150,6 @@
               <td class="num">${GP.fmtInt(metas.casas.meta)}</td>
               <td class="num">${GP.fmtInt(metas.casas.realizado)}</td>
               <td class="num">${GP.fmtInt(metas.casas.realizado - metas.casas.meta)}</td>
-              <td class="num">${GP.fmtInt(metas.muros.meta)}</td>
-              <td class="num">${GP.fmtInt(metas.muros.realizado)}</td>
-              <td class="num">${GP.fmtInt(metas.muros.realizado - metas.muros.meta)}</td>
             </tr>
           </tbody>
         </table>
@@ -376,6 +365,15 @@
     document.getElementById("limite-nota").textContent = filtradas.length > LIMITE
       ? `Mostrando ${LIMITE} de ${GP.fmtInt(filtradas.length)} — refine os filtros para ver outras casas.`
       : "";
+  }
+
+  // Vindo de um link da Visão Geral (cartão de um empreendimento específico)
+  // já abre com o filtro de Empreendimento aplicado.
+  const empDaUrl = new URLSearchParams(window.location.search).get("empreendimento");
+  if (empDaUrl && EMPREENDIMENTOS.includes(empDaUrl)) {
+    state.empreendimento = empDaUrl;
+    document.getElementById("filtro-emp").value = empDaUrl;
+    atualizarFiltrosDependentes();
   }
 
   render();

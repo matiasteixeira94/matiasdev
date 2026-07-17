@@ -85,7 +85,7 @@
       </div>
       <div class="grid grid-4">
         ${obrasReais.map((o) => `
-          <a class="card obra-card" href="casas.html">
+          <a class="card obra-card" href="casas.html?empreendimento=${encodeURIComponent(o.empreendimento)}">
             <div class="obra-card-icon">${OBRA_ICON[o.empreendimento] ?? OBRA_ICON.Oliveiras}</div>
             <div class="obra-card-name">${o.empreendimento}</div>
             <div class="obra-card-pct">${o.pct_concluido}%</div>
