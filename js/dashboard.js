@@ -77,7 +77,7 @@
     </div>
 
     <div class="card">
-      <div class="card-head"><div><div class="card-title">Produtividade média por obra</div><div class="card-sub">Coluna "PROD." da aba DADOS CASA, média das casas já entregues</div></div></div>
+      <div class="card-head"><div><div class="card-title">Produtividade média por obra</div><div class="card-sub">Coluna "PROD." da aba DADOS CASA, média das casas já entregues — na ordem em que as obras foram executadas</div></div></div>
       <div class="chart-host" id="chart-produtividade-media"></div>
     </div>
 
@@ -107,13 +107,17 @@
   document.getElementById("btn-export-pdf").addEventListener("click", () => window.print());
   document.getElementById("btn-export-xls").addEventListener("click", () => alert("Exportação para Excel: integra com o endpoint /relatorios/exportar?formato=xlsx (ver docs/estrutura-banco-dados.md)."));
 
+  // Ordem real em que os condomínios foram construídos (não é a ordem de
+  // exibição dos cartões acima, que é Amoreiras/Oliveiras/Cerejeiras/Laranjeiras).
+  const ORDEM_EXECUCAO = ["Laranjeiras", "Cerejeiras", "Oliveiras", "Amoreiras"];
+
   function renderGraficos() {
-    GPCharts.hbars(document.getElementById("chart-produtividade-media"), {
-      items: obrasReais.filter((o) => o.produtividade_media != null).map((o) => ({
-        label: o.empreendimento, value: o.produtividade_media, color: OBRA_COR[o.empreendimento] ?? "var(--accent)",
+    const porObra = Object.fromEntries(obrasReais.map((o) => [o.empreendimento, o]));
+    GPCharts.barsLine(document.getElementById("chart-produtividade-media"), {
+      items: ORDEM_EXECUCAO.filter((nome) => porObra[nome]?.produtividade_media != null).map((nome) => ({
+        label: nome, value: porObra[nome].produtividade_media, color: OBRA_COR[nome] ?? "var(--accent)",
       })),
-      valueFormat: (v) => GP.fmtNum1(v),
-      showTarget: false,
+      yFormat: (v) => GP.fmtNum1(v),
     });
     for (const [nome, d] of Object.entries(produtividadeObras)) {
       const host = document.getElementById(`chart-prod-${nome}`);

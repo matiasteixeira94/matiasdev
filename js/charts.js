@@ -189,6 +189,78 @@ const GPCharts = (() => {
     }
   }
 
+  /* ---------------- Barras + linha de evolução (sequência categórica) ---------------- */
+  function barsLine(host, { items, height = 240, yFormat = (v) => v, lineColor = "var(--gold)" }) {
+    host.innerHTML = "";
+    const tip = ensureTooltip(host);
+    const width = host.clientWidth || 640;
+    const pad = { t: 20, r: 16, b: 34, l: 44 };
+    const innerW = width - pad.l - pad.r;
+    const innerH = height - pad.t - pad.b;
+    const values = items.map((it) => it.value);
+    const min = Math.min(0, Math.min(...values));
+    const max = Math.max(...values, 1) * 1.12;
+    const yScale = (v) => pad.t + innerH - ((v - min) / (max - min)) * innerH;
+
+    const groupW = innerW / items.length;
+    const barW = Math.min(64, groupW * 0.46);
+
+    const svg = el("svg", { viewBox: `0 0 ${width} ${height}`, width: "100%", height, role: "img" });
+    const ticks = 4;
+    let lastYLabel = null;
+    for (let i = 0; i <= ticks; i++) {
+      const v = min + ((max - min) * i) / ticks;
+      const y = yScale(v);
+      svg.appendChild(el("line", { x1: pad.l, x2: width - pad.r, y1: y, y2: y, stroke: "var(--chart-grid)", "stroke-width": 1 }));
+      const label = yFormat(v);
+      if (label === lastYLabel) continue;
+      lastYLabel = label;
+      const t = el("text", { x: pad.l - 8, y: y + 3, "text-anchor": "end", class: "gp-axis-label" });
+      t.textContent = label;
+      svg.appendChild(t);
+    }
+
+    const pontos = [];
+    items.forEach((it, i) => {
+      const cx = pad.l + i * groupW + groupW / 2;
+      const y = yScale(it.value);
+      const barX = cx - barW / 2;
+      const h = pad.t + innerH - y;
+      const rect = el("rect", { x: barX, y, width: barW, height: Math.max(0, h), rx: 4, fill: it.color || "var(--accent)", class: "gp-bar" });
+      rect.addEventListener("mousemove", (e) => {
+        const rect2 = svg.getBoundingClientRect();
+        showTip(host, tip, (e.clientX - rect2.left) * (width / rect2.width), y,
+          `<div class="gp-tip-head">${it.label}</div><div class="gp-tip-row"><span class="gp-tip-dot" style="background:${it.color || "var(--accent)"}"></span>Produtividade<b>${yFormat(it.value)}</b></div>`);
+      });
+      rect.addEventListener("mouseleave", () => hideTip(tip));
+      svg.appendChild(rect);
+      const t = el("text", { x: cx, y: height - 10, "text-anchor": "middle", class: "gp-axis-label" });
+      t.textContent = it.label;
+      svg.appendChild(t);
+      pontos.push([cx, y]);
+    });
+
+    // linha ligando os pontos, na ordem de execução (ordem de "items")
+    svg.appendChild(el("polyline", {
+      points: pontos.map(([x, y]) => `${x},${y}`).join(" "),
+      fill: "none", stroke: lineColor, "stroke-width": 2.5,
+      "stroke-linecap": "round", "stroke-linejoin": "round",
+    }));
+    pontos.forEach(([x, y], i) => {
+      svg.appendChild(el("circle", { cx: x, cy: y, r: 5, fill: lineColor, stroke: "var(--surface-raised)", "stroke-width": 2 }));
+      const label = el("text", { x, y: y - 12, "text-anchor": "middle", class: "gp-axis-label", style: "font-weight:700;" });
+      label.textContent = yFormat(items[i].value);
+      svg.appendChild(label);
+    });
+
+    host.appendChild(svg);
+    const legend = document.createElement("div");
+    legend.className = "legend";
+    legend.style.marginTop = "8px";
+    legend.innerHTML = `<span class="tag-dot" style="color:${lineColor}">Evolução (ordem de execução)</span>`;
+    host.appendChild(legend);
+  }
+
   /* ---------------- Barras horizontais (ranking / progresso) ---------------- */
   function hbars(host, { items, valueFormat = (v) => v, showTarget = true }) {
     host.innerHTML = "";
@@ -213,5 +285,5 @@ const GPCharts = (() => {
     host.appendChild(wrap);
   }
 
-  return { line, bars, hbars };
+  return { line, bars, hbars, barsLine };
 })();
