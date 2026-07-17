@@ -52,6 +52,25 @@
   .cover-cta:hover { background: #EFC670; transform: translateY(-1px); box-shadow: 0 14px 34px rgba(227, 179, 84, 0.38); }
   .cover-cta svg { width: 18px; height: 18px; }
 
+  .cover-team {
+    position: absolute; z-index: 1;
+    right: clamp(20px, 5vw, 64px); bottom: clamp(40px, 8vh, 88px);
+    width: clamp(240px, 27vw, 400px);
+    border-radius: 18px; overflow: hidden;
+    border: 1px solid rgba(251, 241, 227, 0.28);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5);
+  }
+  .cover-team img { display: block; width: 100%; height: auto; }
+  .cover-team-caption {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 10px 14px 12px;
+    background: linear-gradient(0deg, rgba(15, 6, 6, 0.86) 0%, rgba(15, 6, 6, 0) 100%);
+    color: #FBF1E3; font-size: 12px; font-weight: 600; letter-spacing: 0.01em;
+  }
+
+  @media (max-width: 900px) {
+    .cover-team { display: none; }
+  }
   @media (max-width: 560px) {
     .cover-content { padding: 40px 20px 36px; gap: 14px; }
     .cover-org { font-size: 13.5px; }
@@ -62,6 +81,10 @@
   <div class="cover-hero">
     <img class="cover-photo" src="assets/images/capa-empreendimento.png" alt="Vista aérea de empreendimento residencial construído pela Viana &amp; Moura Construções" />
     <div class="cover-overlay"></div>
+    <div class="cover-team">
+      <img src="assets/images/equipe-ugb-caruaru.jpg" alt="Equipe da UGB Caruaru em entrega de empreendimento" />
+      <div class="cover-team-caption">Equipe UGB Caruaru</div>
+    </div>
     <div class="cover-content">
       <img class="cover-logo-full" src="assets/images/logo-viana-moura.png" alt="Viana &amp; Moura Construções" />
       <h1 class="cover-title">Gestão da Produção</h1>
