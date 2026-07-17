@@ -49,7 +49,7 @@ for (const c of casas) {
   if (c.status === "concluida") o.concluida++;
 }
 
-const ORDEM = ["Laranjeiras", "Cerejeiras", "Oliveiras", "Amoreiras"];
+const ORDEM = ["Amoreiras", "Oliveiras", "Cerejeiras", "Laranjeiras"];
 const obras = ORDEM.map((nome) => {
   const o = porObra.get(nome) ?? { empreendimento: nome, total_rastreado: 0, concluida: 0 };
   const total = TOTAL_PLANEJADO_OVERRIDE[nome] ?? o.total_rastreado;

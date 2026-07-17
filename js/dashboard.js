@@ -19,6 +19,14 @@
   const totalCasas = obrasReais.reduce((a, o) => a + o.total, 0);
   const totalConcluidas = obrasReais.reduce((a, o) => a + o.concluida, 0);
 
+  // Cada condomínio leva o nome de uma árvore frutífera — o ícone segue o tema.
+  const OBRA_ICON = {
+    Amoreiras: `<svg viewBox="0 0 40 40"><path d="M20 10V4" stroke="#5B7A3A" stroke-width="2" stroke-linecap="round"/><path d="M20 8c3-3 7-2 8 1-3 2-6 1-8-1Z" fill="#5B7A3A"/><circle cx="20" cy="15" r="3.3" fill="#4A2A57"/><circle cx="16" cy="19" r="3.3" fill="#5B3466"/><circle cx="24" cy="19" r="3.3" fill="#5B3466"/><circle cx="13.5" cy="24" r="3.3" fill="#4A2A57"/><circle cx="20" cy="24" r="3.3" fill="#5B3466"/><circle cx="26.5" cy="24" r="3.3" fill="#4A2A57"/><circle cx="17" cy="29" r="3.3" fill="#5B3466"/><circle cx="23" cy="29" r="3.3" fill="#4A2A57"/></svg>`,
+    Oliveiras: `<svg viewBox="0 0 40 40"><path d="M6 11c8-5 20-5 28 0" stroke="#6B5B3A" stroke-width="2" fill="none" stroke-linecap="round"/><ellipse cx="20" cy="25" rx="8" ry="11" fill="#7A8C3F"/><ellipse cx="17" cy="20" rx="2.4" ry="3.3" fill="rgba(255,255,255,0.28)"/></svg>`,
+    Cerejeiras: `<svg viewBox="0 0 40 40"><path d="M16 11c1-5 6-8 10-7" stroke="#5B7A3A" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M23 10c1-4 5-6 8-5" stroke="#5B7A3A" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="15" cy="25" r="7.5" fill="#C23B3B"/><circle cx="26" cy="24" r="7.5" fill="#A9302F"/></svg>`,
+    Laranjeiras: `<svg viewBox="0 0 40 40"><circle cx="20" cy="23" r="13" fill="#E2871E"/><rect x="19" y="4" width="2" height="8" rx="1" fill="#5B7A3A"/><path d="M21 8c4-3 8-2 9 1-3 2-7 1-9-1Z" fill="#5B7A3A"/></svg>`,
+  };
+
   const HOJE = "2026-07-16";
   const state = { periodo: 30, obraId: session.perfil === "supervisor" ? session.obraId : "todas", grupo: "todos", from: GP.isoDaysAgo(29, HOJE), to: HOJE };
 
@@ -52,15 +60,16 @@
           <span class="footnote">${GP.fmtInt(pessoalResumo.direto)} mão de obra direta · ${GP.fmtInt(pessoalResumo.indireto)} indireta</span>
         </div>
       </div>
-      <div style="display:flex; flex-direction:column; gap:12px;">
+      <div class="grid grid-4">
         ${obrasReais.map((o) => `
-          <div>
-            <div style="display:flex; justify-content:space-between; font-size:12.5px; margin-bottom:4px;">
-              <span style="font-weight:600;">${o.empreendimento}</span>
-              <span class="footnote mono">${GP.fmtInt(o.concluida)} / ${GP.fmtInt(o.total)} casas · ${o.pct_concluido}%</span>
-            </div>
+          <a class="card obra-card" href="casas.html">
+            <div class="obra-card-icon">${OBRA_ICON[o.empreendimento] ?? OBRA_ICON.Oliveiras}</div>
+            <div class="obra-card-name">${o.empreendimento}</div>
+            <div class="obra-card-pct">${o.pct_concluido}%</div>
             <div class="bar-track"><div class="bar-fill" style="width:${o.pct_concluido}%;"></div></div>
-          </div>`).join("")}
+            <div class="footnote mono" style="margin-top:8px;">${GP.fmtInt(o.concluida)} / ${GP.fmtInt(o.total)} casas</div>
+            <span class="chip ${o.pct_concluido >= 100 ? "chip-good" : "chip-warning"}" style="margin-top:8px;">${o.pct_concluido >= 100 ? "Concluída" : "Em andamento"}</span>
+          </a>`).join("")}
       </div>
       <a class="btn btn-ghost" style="margin-top:14px;" href="casas.html">Ver casa a casa →</a>
     </div>

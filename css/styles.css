@@ -307,6 +307,27 @@ h1, h2, h3, .num-hero, .brand-word {
 .delta-down { color: var(--status-critical); }
 .delta-flat { color: var(--ink-muted); }
 
+/* cartão de obra (Visão Geral) */
+.obra-card {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  cursor: pointer; transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.obra-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px -10px rgba(43, 20, 20, 0.3);
+  border-color: var(--accent);
+}
+.obra-card-icon {
+  width: 56px; height: 56px; border-radius: 50%; flex-shrink: 0;
+  background: var(--accent-soft);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 10px;
+}
+.obra-card-icon svg { width: 34px; height: 34px; }
+.obra-card-name { font-size: 14px; font-weight: 700; margin-bottom: 2px; }
+.obra-card-pct { font-family: var(--font-display); font-size: 30px; font-weight: 600; line-height: 1; margin-bottom: 12px; }
+.obra-card .bar-track { width: 100%; }
+
 /* badges / chips */
 .chip {
   display: inline-flex; align-items: center; gap: 5px;
