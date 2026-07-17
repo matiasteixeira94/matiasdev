@@ -174,7 +174,24 @@
     </div>
   `;
 
-  document.getElementById("filtro-emp").addEventListener("change", (e) => { state.empreendimento = e.target.value; render(); });
+  // Ao trocar o empreendimento, os filtros de GA-Equipe e Supervisor só
+  // mostram quem de fato trabalhou nele — evita listar equipes/supervisores
+  // de outras obras que nunca vão dar resultado.
+  function atualizarFiltrosDependentes() {
+    const doEmpreendimento = state.empreendimento === "todos" ? casas : casas.filter((c) => c.empreendimento === state.empreendimento);
+    const equipesDisponiveis = [...new Set(doEmpreendimento.map((c) => c.ga).filter(Boolean))].sort(ptCompare);
+    const supervisoresDisponiveis = [...new Set(doEmpreendimento.map((c) => c.supervisor).filter(Boolean))].sort(ptCompare);
+
+    if (!equipesDisponiveis.includes(state.equipe)) state.equipe = "todos";
+    if (!supervisoresDisponiveis.includes(state.supervisor)) state.supervisor = "todos";
+
+    document.getElementById("filtro-equipe").innerHTML = `<option value="todos">Todas</option>${equipesDisponiveis.map((g) => `<option value="${g}">${g}</option>`).join("")}`;
+    document.getElementById("filtro-supervisor").innerHTML = `<option value="todos">Todos</option>${supervisoresDisponiveis.map((s) => `<option value="${s}">${s}</option>`).join("")}`;
+    document.getElementById("filtro-equipe").value = state.equipe;
+    document.getElementById("filtro-supervisor").value = state.supervisor;
+  }
+
+  document.getElementById("filtro-emp").addEventListener("change", (e) => { state.empreendimento = e.target.value; atualizarFiltrosDependentes(); render(); });
   document.getElementById("filtro-equipe").addEventListener("change", (e) => { state.equipe = e.target.value; render(); });
   document.getElementById("filtro-supervisor").addEventListener("change", (e) => { state.supervisor = e.target.value; render(); });
   document.getElementById("filtro-status").addEventListener("change", (e) => { state.status = e.target.value; render(); });
