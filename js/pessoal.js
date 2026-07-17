@@ -16,6 +16,31 @@
   const tipos = [...new Set(ativos.map((a) => a.tipo).filter(Boolean))].sort(ptCompare);
 
   const FRENTES = ["Acabamento", "Assistência Técnica", "Produção", "Aprendiz", "Muro"];
+
+  // Setor/frente de cada função — o Quadro Geral não tem essa coluna, então
+  // a função de cada colaborador é o jeito de ligar a lista de ativos às
+  // frentes do Boletim mensal. "Muro" não dá pra distinguir por aqui: as
+  // equipes de muro usam os mesmos nomes de função da produção de casas
+  // (Pedreiro, Servente...), sem nenhuma marcação própria na planilha.
+  const FUNCAO_PARA_FRENTE = {
+    "ELETRICISTA": "Acabamento",
+    "MARCENEIRO": "Acabamento",
+    "OPERADOR DE PRODUÇÃO": "Acabamento", // "Operador de Produção / Pintor" no Boletim, dentro de Acabamento
+    "SUPERVISOR DE ACABAMENTO": "Acabamento",
+    "SUPERVISOR LIDER DE ACABAMENTO E ASSIST TECNICA": "Acabamento",
+    "OPERADOR DE ASSISTENCIA TÉCNICA": "Assistência Técnica",
+    "SERVENTE DE ASSISTÊNCIA TÉCNICA": "Assistência Técnica",
+    "OPERADOR LÍDER DE ASSISTENCIA TÉCNICA": "Assistência Técnica",
+    "SUPERVISOR(A) DE ASSISTENCIA TECNICA": "Assistência Técnica",
+    "SERVENTE DE PRODUÇÃO": "Produção",
+    "SERVENTE POLIVALENTE DE PRODUÇÃO": "Produção",
+    "PEDREIRO DE PRODUÇÃO": "Produção",
+    "PEDREIRO LIDER DE PRODUÇÃO": "Produção",
+    "SUPERVISOR(A) DE PRODUÇÃO": "Produção",
+    "SUPERVISOR(A) DE PRODUÇÃO LIDER": "Produção",
+    "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS": "Aprendiz",
+  };
+
   const state = { funcao: "todos", tipo: "todos", busca: "", frente: "todos" };
 
   const content = document.getElementById("gp-content");
@@ -133,7 +158,7 @@
     }).join("");
   }
 
-  document.getElementById("filtro-frente").addEventListener("change", (e) => { state.frente = e.target.value; renderQuadro(); });
+  document.getElementById("filtro-frente").addEventListener("change", (e) => { state.frente = e.target.value; renderQuadro(); render(); });
   renderQuadro();
 
   document.getElementById("filtro-funcao").addEventListener("change", (e) => { state.funcao = e.target.value; render(); });
@@ -146,11 +171,14 @@
 
   function render() {
     const filtrados = ativos.filter((a) =>
+      (state.frente === "todos" || FUNCAO_PARA_FRENTE[a.funcao] === state.frente) &&
       (state.funcao === "todos" || a.funcao === state.funcao) &&
       (state.tipo === "todos" || a.tipo === state.tipo) &&
       (!state.busca || a.nome.toUpperCase().includes(state.busca))
     );
-    document.getElementById("contador-pessoal").textContent = `${GP.fmtInt(filtrados.length)} colaborador(es)`;
+    document.getElementById("contador-pessoal").textContent = state.frente === "Muro"
+      ? `${GP.fmtInt(filtrados.length)} colaborador(es) — o Quadro Geral não marca quem trabalha em muro separado de casa, então essa frente não filtra a lista`
+      : `${GP.fmtInt(filtrados.length)} colaborador(es)`;
     document.querySelector("#tabela-pessoal tbody").innerHTML = filtrados.map((a) => `
       <tr>
         <td>${a.nome}</td>
