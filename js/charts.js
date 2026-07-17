@@ -285,5 +285,80 @@ const GPCharts = (() => {
     host.appendChild(wrap);
   }
 
-  return { line, bars, hbars, barsLine };
+  /* ---------------- Boneco com setas por parte do corpo ---------------- */
+  const PONTOS_CORPO = {
+    "CABEÇA": [210, 26],
+    "OMBRO": [244, 60],
+    "COTOVELO": [253, 112],
+    "PUNHO/MÃO": [271, 170],
+    "COLUNA/TRONCO": [210, 100],
+    "JOELHO": [243, 252],
+    "MEMBROS SUPERIORES": [231, 88],
+    "MEMBROS INFERIORES": [235, 200],
+  };
+
+  function bodyMap(host, { items, color = "var(--accent)" }) {
+    host.innerHTML = "";
+    const height = 380;
+    const total = items.reduce((a, i) => a + i.value, 0) || 1;
+
+    const comPonto = [];
+    const semPonto = [];
+    for (const it of items) {
+      const xy = PONTOS_CORPO[it.label.toUpperCase()];
+      if (xy) comPonto.push({ ...it, xy });
+      else semPonto.push(it);
+    }
+    comPonto.sort((a, b) => a.xy[1] - b.xy[1]);
+
+    const svg = el("svg", { viewBox: `0 0 420 ${height}`, width: "100%", height, role: "img" });
+
+    const corpo = el("g", { fill: "none", stroke: "var(--border-strong)", "stroke-linecap": "round" });
+    corpo.appendChild(el("circle", { cx: 210, cy: 26, r: 16, fill: "var(--border-strong)", stroke: "none" }));
+    const membros = [
+      [210, 44, 210, 152, 24], // torso
+      [210, 56, 168, 112, 14], [168, 112, 150, 170, 12], // braço esquerdo
+      [210, 56, 252, 112, 14], [252, 112, 270, 170, 12], // braço direito
+      [195, 152, 178, 252, 16], [178, 252, 172, 330, 14], // perna esquerda
+      [225, 152, 242, 252, 16], [242, 252, 248, 330, 14], // perna direita
+    ];
+    for (const [x1, y1, x2, y2, w] of membros) corpo.appendChild(el("line", { x1, y1, x2, y2, "stroke-width": w }));
+    svg.appendChild(corpo);
+
+    const n = comPonto.length;
+    const padTop = 34, padBottom = 34;
+    const rowH = n > 1 ? (height - padTop - padBottom) / (n - 1) : 0;
+    comPonto.forEach((it, i) => {
+      const [px, py] = it.xy;
+      const pct = Math.round((it.value / total) * 1000) / 10;
+      const labelY = n > 1 ? padTop + i * rowH : height / 2;
+      const labelX = 296;
+
+      svg.appendChild(el("path", {
+        d: `M ${px} ${py} L ${labelX - 14} ${labelY}`,
+        stroke: color, "stroke-width": 1.5, fill: "none", "stroke-dasharray": "3,3",
+      }));
+      svg.appendChild(el("circle", { cx: px, cy: py, r: 4.5, fill: color, stroke: "var(--surface-raised)", "stroke-width": 1.5 }));
+
+      const nome = el("text", { x: labelX, y: labelY - 4, class: "gp-axis-label", style: "font-weight:700; font-size:12px; fill:var(--ink);" });
+      nome.textContent = it.label;
+      svg.appendChild(nome);
+      const valor = el("text", { x: labelX, y: labelY + 13, class: "gp-axis-label", style: "font-size:12px;" });
+      valor.textContent = `${it.value} (${pct}%)`;
+      svg.appendChild(valor);
+    });
+
+    host.appendChild(svg);
+
+    if (semPonto.length) {
+      const legend = document.createElement("div");
+      legend.className = "footnote";
+      legend.style.marginTop = "8px";
+      const totalSemPonto = semPonto.reduce((a, i) => a + i.value, 0);
+      legend.textContent = `Outras categorias (${totalSemPonto}): ` + semPonto.map((it) => `${it.label} — ${it.value} (${Math.round((it.value / total) * 1000) / 10}%)`).join(" · ");
+      host.appendChild(legend);
+    }
+  }
+
+  return { line, bars, hbars, barsLine, bodyMap };
 })();

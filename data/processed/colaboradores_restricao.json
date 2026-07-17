@@ -1,0 +1,290 @@
+[
+  {
+    "nome": "MARCELO JOAQUIM DA SILVA",
+    "funcao": "OPERADOR DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "PERMANENTE",
+    "dias": 3965
+  },
+  {
+    "nome": "FLAVIO FRANCISCO DA SILVA",
+    "funcao": "PEDREIRO LÍDER DE PRODUÇÃO",
+    "tipo": "PERMANENTE",
+    "dias": 3434
+  },
+  {
+    "nome": "JOSE CICERO BEZERRA",
+    "funcao": "AUXILIAR DE SERVICOS GERAIS",
+    "tipo": "PERMANENTE",
+    "dias": 2468
+  },
+  {
+    "nome": "JOSEILSON ROBERTO DA SILVA",
+    "funcao": "OPERADOR LÍDER DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "PERMANENTE",
+    "dias": 2116
+  },
+  {
+    "nome": "JOSENILDO ROBERTO DA SILVA",
+    "funcao": "OPERADOR LÍDER DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "PERMANENTE",
+    "dias": 1991
+  },
+  {
+    "nome": "VAESDO FERREIRA DA SILVA",
+    "funcao": "AUXILIAR DE SERVICOS GERAIS",
+    "tipo": "PERMANENTE",
+    "dias": 1975
+  },
+  {
+    "nome": "ADILSON SILVA DE BARROS",
+    "funcao": "OPERADOR DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "PERMANENTE",
+    "dias": 1766
+  },
+  {
+    "nome": "ADRIANO AFONSO DA SILVA",
+    "funcao": "OPERADOR DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "PERMANENTE",
+    "dias": 1755
+  },
+  {
+    "nome": "ROMILDO DA SILVA BARNABE",
+    "funcao": "OPERADOR LÍDER DE INFRAESTRUTURA",
+    "tipo": "PERMANENTE",
+    "dias": 1723
+  },
+  {
+    "nome": "GIRLANDO JOÃO DE OLIVEIRA",
+    "funcao": "SUPERVISOR DE PRODUÇÃO",
+    "tipo": "PERMANENTE",
+    "dias": 1458
+  },
+  {
+    "nome": "ADAILTON BEZERRA DA SILVA",
+    "funcao": "OPERADOR LÍDER DE INFRAESTRUTURA",
+    "tipo": "PERMANENTE",
+    "dias": 1458
+  },
+  {
+    "nome": "AMARO GALDINO DE OLIVEIRA",
+    "funcao": "AUXILIAR DE SUPRIMENTOS",
+    "tipo": "PERMANENTE",
+    "dias": 1104
+  },
+  {
+    "nome": "ATÃ BELO DA SILVA",
+    "funcao": "OPERADOR DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "PERMANENTE",
+    "dias": 1024
+  },
+  {
+    "nome": "EDIMARIO EURICO DE LIMA",
+    "funcao": "OPERADOR DE INFRAESTRUTURA",
+    "tipo": "PERMANENTE",
+    "dias": 796
+  },
+  {
+    "nome": "WILAMAR HUGO DA COSTA BRITO",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 746
+  },
+  {
+    "nome": "LUIZ CARLOS DOS SANTOS FILHO",
+    "funcao": "AUXILIAR DE KIT´S",
+    "tipo": "TEMPORÁRIA",
+    "dias": 592
+  },
+  {
+    "nome": "JUNIO FRANCISCO DA SILVA SOBRAL",
+    "funcao": "OPERADOR DE INFRAESTRUTURA",
+    "tipo": "PERMANENTE",
+    "dias": 429
+  },
+  {
+    "nome": "LOURIVAL IVANILDO DA SILVA",
+    "funcao": "OPERADOR DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "TEMPORÁRIA",
+    "dias": 414
+  },
+  {
+    "nome": "ADEMILTON PEDRO DA SILVA",
+    "funcao": "OPERADOR DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "TEMPORÁRIA",
+    "dias": 402
+  },
+  {
+    "nome": "JOSE AGEU DA SILVA",
+    "funcao": "OPERADOR LÍDER DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "PERMANENTE",
+    "dias": 334
+  },
+  {
+    "nome": "LEONILSON DA SILVA FRANÇA",
+    "funcao": "AUXILIAR DE OBRA",
+    "tipo": "PERMANENTE",
+    "dias": 290
+  },
+  {
+    "nome": "MARCELO DIONIZO DE AGUIAR",
+    "funcao": "OPERADOR DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "TEMPORÁRIA",
+    "dias": 253
+  },
+  {
+    "nome": "JOSE DE OLIVEIRA SILVA",
+    "funcao": "OPERADOR DE INFRAESTRUTURA",
+    "tipo": "TEMPORÁRIA",
+    "dias": 235
+  },
+  {
+    "nome": "MANOEL JOSE DE BARROS",
+    "funcao": "SERVENTE POLIVALENTE DE INFRAESTRUTURA",
+    "tipo": "TEMPORÁRIA",
+    "dias": 194
+  },
+  {
+    "nome": "JEFFERSON JOSE DA SILVA",
+    "funcao": "SERVENTE POLIVALENTE DE INFRAESTRUTURA",
+    "tipo": "TEMPORÁRIA",
+    "dias": 165
+  },
+  {
+    "nome": "JORGE JOSE DE OLIVEIRA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 164
+  },
+  {
+    "nome": "VITOR WANDSON DA SILVA REGO",
+    "funcao": "OPERADOR DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "TEMPORÁRIA",
+    "dias": 164
+  },
+  {
+    "nome": "CICERO JOSE DA SILVA",
+    "funcao": "OPERADOR DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 123
+  },
+  {
+    "nome": "JOSE MARIA DOS SANTOS SILVA",
+    "funcao": "OPERADOR DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "TEMPORÁRIA",
+    "dias": 123
+  },
+  {
+    "nome": "REGINALDO PEREIRA DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 123
+  },
+  {
+    "nome": "ROBERVAL LUIZ DO REGO SILVA",
+    "funcao": "OPERADOR DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "TEMPORÁRIA",
+    "dias": 123
+  },
+  {
+    "nome": "GILVAN OLIVEIRA DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 120
+  },
+  {
+    "nome": "JOSE ALEXANDRE DE MORAES BARBOSA",
+    "funcao": "SERVENTE POLIVALENTE",
+    "tipo": "TEMPORÁRIA",
+    "dias": 120
+  },
+  {
+    "nome": "MEKSON MANOEL PEREIRA NASCIMENTO",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 120
+  },
+  {
+    "nome": "JOSE CARLOS DA SILVA NASCIMENTO",
+    "funcao": "OPERADOR DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "TEMPORÁRIA",
+    "dias": 117
+  },
+  {
+    "nome": "VLADIMIR ARAUJO DE LIMA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "tipo": "PERMANENTE",
+    "dias": 115
+  },
+  {
+    "nome": "ADRIANO JOSE DOS SANTOS",
+    "funcao": "PEDREIRO LÍDER DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 95
+  },
+  {
+    "nome": "EDEILSON EDMILSON DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 95
+  },
+  {
+    "nome": "SEVERINO PEDRO DA SILVA",
+    "funcao": "OPERADOR DE ASSISTÊNCIA TÉCNICA",
+    "tipo": "TEMPORÁRIA",
+    "dias": 85
+  },
+  {
+    "nome": "LAURA SAMARA DA CONCEIÇÃO SILVA SANTOS",
+    "funcao": "SUPERVISOR DE PRODUÇÃO",
+    "tipo": "PERMANENTE",
+    "dias": 82
+  },
+  {
+    "nome": "JORGE LUIZ DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 81
+  },
+  {
+    "nome": "WESLEY DE MOURABERLAMINO",
+    "funcao": "PEDREIRO LÍDER DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 72
+  },
+  {
+    "nome": "ROBSON DIOGO SILVA SERCUNDES DE LIRA",
+    "funcao": "OPERADOR DE INFRAESTRUTURA",
+    "tipo": "TEMPORÁRIA",
+    "dias": 65
+  },
+  {
+    "nome": "JOSIANO JOSE DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 46
+  },
+  {
+    "nome": "LUCAS GUEDES BEZERRA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 46
+  },
+  {
+    "nome": "RIVALDO PEREIRA DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 46
+  },
+  {
+    "nome": "ANTONIO CICERO DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 45
+  },
+  {
+    "nome": "DENIS WASHINGTON BARBOSA DE OLIVEIRA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "tipo": "TEMPORÁRIA",
+    "dias": 33
+  }
+]
