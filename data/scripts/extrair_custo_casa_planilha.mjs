@@ -28,11 +28,10 @@ if (!file) {
 const SHEETS = { RL: "Laranjeiras", RC: "Cerejeiras", RO: "Oliveiras", RA: "Amoreiras" };
 const SUBCONTAS = ["MATERIAL", "SERVIÇO", "PESSOAL", "OUTROS CUSTOS"];
 
-// A contagem de lotes lançada no cabeçalho de cada aba desta planilha às
-// vezes está desatualizada/errada (ex.: aba RA dizia 503 quando o
-// empreendimento tem 505 casas cadastradas de fato). obras_reais.json vem da
-// planilha DADOS CASA (ver extrair_casas_planilha.mjs) e é a fonte confiável
-// da contagem real — tem prioridade sobre o rótulo da aba de custo.
+// A contagem de lotes lançada no cabeçalho de cada aba desta planilha pode
+// divergir da contagem oficial usada no resto do app (data/processed/
+// obras_reais.json, curada manualmente — ver gerar_resumo_obras.mjs). Quando
+// as duas divergem, obras_reais.json tem prioridade e um aviso é impresso.
 const OUT_DIR = new URL("../processed/", import.meta.url);
 let lotesReais = {};
 try {

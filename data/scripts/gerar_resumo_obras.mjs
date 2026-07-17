@@ -27,10 +27,11 @@ const NOME_CANONICO = {
 };
 
 // Total de casas contratado/planejado por condomínio, quando maior que o que
-// a planilha "DADOS CASA" rastreia linha a linha (ex.: Amoreiras tem 505
-// casas no total, mas só 189 aparecem detalhadas nessa aba).
+// a planilha "DADOS CASA" rastreia linha a linha (ex.: Amoreiras tem 503
+// lotes no total — confirmado com o cliente —, mas só 189 aparecem
+// detalhadas nessa aba).
 const TOTAL_PLANEJADO_OVERRIDE = {
-  Amoreiras: 505,
+  Amoreiras: 503,
 };
 
 // Condomínios confirmados como 100% concluídos (todas as casas entregues),
