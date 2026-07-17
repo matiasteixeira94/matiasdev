@@ -72,5 +72,387 @@
       "planejado": 265,
       "realizado": 0
     }
-  ]
+  ],
+  "frentes": {
+    "Acabamento": {
+      "meses": [
+        {
+          "mes": "2026-01",
+          "label": "Janeiro/2026",
+          "planejado": 5,
+          "realizado": 5
+        },
+        {
+          "mes": "2026-02",
+          "label": "Fevereiro/2026",
+          "planejado": 5,
+          "realizado": 5
+        },
+        {
+          "mes": "2026-03",
+          "label": "Março/2026",
+          "planejado": 5,
+          "realizado": 5
+        },
+        {
+          "mes": "2026-04",
+          "label": "Abril/2026",
+          "planejado": 5,
+          "realizado": 4
+        },
+        {
+          "mes": "2026-05",
+          "label": "Maio/2026",
+          "planejado": 5,
+          "realizado": 5
+        },
+        {
+          "mes": "2026-06",
+          "label": "Junho/2026",
+          "planejado": 5,
+          "realizado": 5
+        },
+        {
+          "mes": "2026-07",
+          "label": "Julho/2026",
+          "planejado": 5,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-08",
+          "label": "Agosto/2026",
+          "planejado": 5,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-09",
+          "label": "Setembro/2026",
+          "planejado": 5,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-10",
+          "label": "Outubro/2026",
+          "planejado": 5,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-11",
+          "label": "Novembro/2026",
+          "planejado": 5,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-12",
+          "label": "Dezembro/2026",
+          "planejado": 5,
+          "realizado": 0
+        }
+      ]
+    },
+    "Assistência Técnica": {
+      "meses": [
+        {
+          "mes": "2026-01",
+          "label": "Janeiro/2026",
+          "planejado": 27,
+          "realizado": 36
+        },
+        {
+          "mes": "2026-02",
+          "label": "Fevereiro/2026",
+          "planejado": 27,
+          "realizado": 36
+        },
+        {
+          "mes": "2026-03",
+          "label": "Março/2026",
+          "planejado": 27,
+          "realizado": 36
+        },
+        {
+          "mes": "2026-04",
+          "label": "Abril/2026",
+          "planejado": 27,
+          "realizado": 40
+        },
+        {
+          "mes": "2026-05",
+          "label": "Maio/2026",
+          "planejado": 27,
+          "realizado": 37
+        },
+        {
+          "mes": "2026-06",
+          "label": "Junho/2026",
+          "planejado": 27,
+          "realizado": 35
+        },
+        {
+          "mes": "2026-07",
+          "label": "Julho/2026",
+          "planejado": 27,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-08",
+          "label": "Agosto/2026",
+          "planejado": 27,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-09",
+          "label": "Setembro/2026",
+          "planejado": 27,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-10",
+          "label": "Outubro/2026",
+          "planejado": 27,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-11",
+          "label": "Novembro/2026",
+          "planejado": 27,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-12",
+          "label": "Dezembro/2026",
+          "planejado": 27,
+          "realizado": 0
+        }
+      ]
+    },
+    "Produção": {
+      "meses": [
+        {
+          "mes": "2026-01",
+          "label": "Janeiro/2026",
+          "planejado": 199,
+          "realizado": 189
+        },
+        {
+          "mes": "2026-02",
+          "label": "Fevereiro/2026",
+          "planejado": 199,
+          "realizado": 185
+        },
+        {
+          "mes": "2026-03",
+          "label": "Março/2026",
+          "planejado": 199,
+          "realizado": 198
+        },
+        {
+          "mes": "2026-04",
+          "label": "Abril/2026",
+          "planejado": 199,
+          "realizado": 189
+        },
+        {
+          "mes": "2026-05",
+          "label": "Maio/2026",
+          "planejado": 199,
+          "realizado": 188
+        },
+        {
+          "mes": "2026-06",
+          "label": "Junho/2026",
+          "planejado": 199,
+          "realizado": 202
+        },
+        {
+          "mes": "2026-07",
+          "label": "Julho/2026",
+          "planejado": 199,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-08",
+          "label": "Agosto/2026",
+          "planejado": 199,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-09",
+          "label": "Setembro/2026",
+          "planejado": 199,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-10",
+          "label": "Outubro/2026",
+          "planejado": 199,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-11",
+          "label": "Novembro/2026",
+          "planejado": 199,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-12",
+          "label": "Dezembro/2026",
+          "planejado": 199,
+          "realizado": 0
+        }
+      ]
+    },
+    "Aprendiz": {
+      "meses": [
+        {
+          "mes": "2026-01",
+          "label": "Janeiro/2026",
+          "planejado": 22,
+          "realizado": 18
+        },
+        {
+          "mes": "2026-02",
+          "label": "Fevereiro/2026",
+          "planejado": 22,
+          "realizado": 19
+        },
+        {
+          "mes": "2026-03",
+          "label": "Março/2026",
+          "planejado": 22,
+          "realizado": 21
+        },
+        {
+          "mes": "2026-04",
+          "label": "Abril/2026",
+          "planejado": 22,
+          "realizado": 20
+        },
+        {
+          "mes": "2026-05",
+          "label": "Maio/2026",
+          "planejado": 22,
+          "realizado": 29
+        },
+        {
+          "mes": "2026-06",
+          "label": "Junho/2026",
+          "planejado": 22,
+          "realizado": 26
+        },
+        {
+          "mes": "2026-07",
+          "label": "Julho/2026",
+          "planejado": 22,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-08",
+          "label": "Agosto/2026",
+          "planejado": 22,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-09",
+          "label": "Setembro/2026",
+          "planejado": 22,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-10",
+          "label": "Outubro/2026",
+          "planejado": 22,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-11",
+          "label": "Novembro/2026",
+          "planejado": 22,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-12",
+          "label": "Dezembro/2026",
+          "planejado": 22,
+          "realizado": 0
+        }
+      ]
+    },
+    "Muro": {
+      "meses": [
+        {
+          "mes": "2026-01",
+          "label": "Janeiro/2026",
+          "planejado": 12,
+          "realizado": 10
+        },
+        {
+          "mes": "2026-02",
+          "label": "Fevereiro/2026",
+          "planejado": 12,
+          "realizado": 12
+        },
+        {
+          "mes": "2026-03",
+          "label": "Março/2026",
+          "planejado": 12,
+          "realizado": 12
+        },
+        {
+          "mes": "2026-04",
+          "label": "Abril/2026",
+          "planejado": 12,
+          "realizado": 11
+        },
+        {
+          "mes": "2026-05",
+          "label": "Maio/2026",
+          "planejado": 12,
+          "realizado": 11
+        },
+        {
+          "mes": "2026-06",
+          "label": "Junho/2026",
+          "planejado": 12,
+          "realizado": 4
+        },
+        {
+          "mes": "2026-07",
+          "label": "Julho/2026",
+          "planejado": 12,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-08",
+          "label": "Agosto/2026",
+          "planejado": 12,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-09",
+          "label": "Setembro/2026",
+          "planejado": 12,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-10",
+          "label": "Outubro/2026",
+          "planejado": 12,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-11",
+          "label": "Novembro/2026",
+          "planejado": 12,
+          "realizado": 0
+        },
+        {
+          "mes": "2026-12",
+          "label": "Dezembro/2026",
+          "planejado": 12,
+          "realizado": 0
+        }
+      ]
+    }
+  }
 }

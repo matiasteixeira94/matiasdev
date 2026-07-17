@@ -15,7 +15,8 @@
   const funcoes = [...new Set(ativos.map((a) => a.funcao).filter(Boolean))].sort(ptCompare);
   const tipos = [...new Set(ativos.map((a) => a.tipo).filter(Boolean))].sort(ptCompare);
 
-  const state = { funcao: "todos", tipo: "todos", busca: "" };
+  const FRENTES = ["Acabamento", "Assistência Técnica", "Produção", "Aprendiz", "Muro"];
+  const state = { funcao: "todos", tipo: "todos", busca: "", frente: "todos" };
 
   const content = document.getElementById("gp-content");
   content.innerHTML = `
@@ -49,25 +50,18 @@
     </div>
 
     <div class="card">
-      <div class="card-head"><div><div class="card-title">Quadro planejado x realizado</div><div class="card-sub">Nº de colaboradores por mês — desvio = realizado − planejado</div></div></div>
+      <div class="card-head">
+        <div><div class="card-title">Quadro planejado x realizado</div><div class="card-sub">Nº de colaboradores por mês — desvio = realizado − planejado</div></div>
+        <select class="select" id="filtro-frente">
+          <option value="todos">Todas as frentes</option>
+          ${FRENTES.map((f) => `<option value="${f}">${f}</option>`).join("")}
+        </select>
+      </div>
       <div class="chart-host" id="chart-pessoal"></div>
       <div class="table-wrap" style="margin-top:16px;">
         <table class="data">
           <thead><tr><th>Mês</th><th class="num">Planejado</th><th class="num">Realizado</th><th class="num">Desvio</th></tr></thead>
-          <tbody>
-            ${quadroMensal.meses.map((m) => {
-              const desvio = m.realizado - m.planejado;
-              const seta = desvio >= 0
-                ? `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--status-good)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>`
-                : `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--status-critical)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>`;
-              return `<tr>
-                <td>${m.label}</td>
-                <td class="num">${GP.fmtInt(m.planejado)}</td>
-                <td class="num">${GP.fmtInt(m.realizado)}</td>
-                <td class="num"><span class="chip ${desvio >= 0 ? "chip-good" : "chip-warning"}">${seta} ${desvio > 0 ? "+" : ""}${GP.fmtInt(desvio)}</span></td>
-              </tr>`;
-            }).join("")}
-          </tbody>
+          <tbody id="tabela-quadro-mensal"></tbody>
         </table>
       </div>
     </div>
@@ -108,14 +102,34 @@
     </div>
   `;
 
-  GPCharts.bars(document.getElementById("chart-pessoal"), {
-    categories: quadroMensal.meses.map((m) => m.label.replace("/2026", "")),
-    series: [
-      { name: "Planejado", color: "var(--border-strong)", values: quadroMensal.meses.map((m) => m.planejado) },
-      { name: "Realizado", color: "var(--accent)", values: quadroMensal.meses.map((m) => m.realizado) },
-    ],
-    yFormat: (v) => GP.fmtInt(v),
-  });
+  function renderQuadro() {
+    const meses = state.frente === "todos" ? quadroMensal.meses : quadroMensal.frentes[state.frente].meses;
+
+    GPCharts.bars(document.getElementById("chart-pessoal"), {
+      categories: meses.map((m) => m.label.replace("/2026", "")),
+      series: [
+        { name: "Planejado", color: "var(--border-strong)", values: meses.map((m) => m.planejado) },
+        { name: "Realizado", color: "var(--accent)", values: meses.map((m) => m.realizado) },
+      ],
+      yFormat: (v) => GP.fmtInt(v),
+    });
+
+    document.getElementById("tabela-quadro-mensal").innerHTML = meses.map((m) => {
+      const desvio = m.realizado - m.planejado;
+      const seta = desvio >= 0
+        ? `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--status-good)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>`
+        : `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--status-critical)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>`;
+      return `<tr>
+        <td>${m.label}</td>
+        <td class="num">${GP.fmtInt(m.planejado)}</td>
+        <td class="num">${GP.fmtInt(m.realizado)}</td>
+        <td class="num"><span class="chip ${desvio >= 0 ? "chip-good" : "chip-warning"}">${seta} ${desvio > 0 ? "+" : ""}${GP.fmtInt(desvio)}</span></td>
+      </tr>`;
+    }).join("");
+  }
+
+  document.getElementById("filtro-frente").addEventListener("change", (e) => { state.frente = e.target.value; renderQuadro(); });
+  renderQuadro();
 
   document.getElementById("filtro-funcao").addEventListener("change", (e) => { state.funcao = e.target.value; render(); });
   document.getElementById("filtro-tipo").addEventListener("change", (e) => { state.tipo = e.target.value; render(); });
@@ -143,17 +157,5 @@
   }
 
   render();
-  window.addEventListener("resize", () => {
-    clearTimeout(window.__gpResize);
-    window.__gpResize = setTimeout(() => {
-      GPCharts.bars(document.getElementById("chart-pessoal"), {
-        categories: quadroMensal.meses.map((m) => m.label.replace("/2026", "")),
-        series: [
-          { name: "Planejado", color: "var(--border-strong)", values: quadroMensal.meses.map((m) => m.planejado) },
-          { name: "Realizado", color: "var(--accent)", values: quadroMensal.meses.map((m) => m.realizado) },
-        ],
-        yFormat: (v) => GP.fmtInt(v),
-      });
-    }, 200);
-  });
+  window.addEventListener("resize", () => { clearTimeout(window.__gpResize); window.__gpResize = setTimeout(renderQuadro, 200); });
 })();
