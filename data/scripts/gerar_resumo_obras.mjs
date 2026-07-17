@@ -43,15 +43,23 @@ const porObra = new Map();
 for (const c of casas) {
   const nome = NOME_CANONICO[c.empreendimento];
   if (!nome) continue;
-  if (!porObra.has(nome)) porObra.set(nome, { empreendimento: nome, total_rastreado: 0, concluida: 0 });
+  if (!porObra.has(nome)) porObra.set(nome, { empreendimento: nome, total_rastreado: 0, concluida: 0, somaProdutividade: 0, qtdProdutividade: 0 });
   const o = porObra.get(nome);
   o.total_rastreado++;
-  if (c.status === "concluida") o.concluida++;
+  if (c.status === "concluida") {
+    o.concluida++;
+    // Produtividade média = coluna M ("PROD.") da aba DADOS CASA, a produtividade
+    // total de cada casa já entregue — só faz sentido para casas concluídas.
+    if (typeof c.produtividade_total === "number") {
+      o.somaProdutividade += c.produtividade_total;
+      o.qtdProdutividade++;
+    }
+  }
 }
 
 const ORDEM = ["Amoreiras", "Oliveiras", "Cerejeiras", "Laranjeiras"];
 const obras = ORDEM.map((nome) => {
-  const o = porObra.get(nome) ?? { empreendimento: nome, total_rastreado: 0, concluida: 0 };
+  const o = porObra.get(nome) ?? { empreendimento: nome, total_rastreado: 0, concluida: 0, somaProdutividade: 0, qtdProdutividade: 0 };
   const total = TOTAL_PLANEJADO_OVERRIDE[nome] ?? o.total_rastreado;
   const concluida = CONCLUIDO_OVERRIDE.has(nome) ? total : o.concluida;
   return {
@@ -59,6 +67,7 @@ const obras = ORDEM.map((nome) => {
     total,
     concluida,
     pct_concluido: Math.round((concluida / total) * 1000) / 10,
+    produtividade_media: o.qtdProdutividade ? Math.round((o.somaProdutividade / o.qtdProdutividade) * 100) / 100 : null,
   };
 });
 

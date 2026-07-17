@@ -29,7 +29,7 @@ function toIso(v) {
 // Colunas da aba DADOS CASA (linha 0 = título, linha 1 = cabeçalho, linha 2+ = dados)
 const COL = {
   ga: 1, projeto: 2, empreendimento: 3, supervisor: 4, casa: 5, pacote: 6,
-  dia: 8, mes: 9, ano: 10,
+  dia: 8, mes: 9, ano: 10, produtividade: 12, // coluna M — produtividade total da casa
   radierData: 14, radierProd: 16,
   alvenariaData: 17, alvenariaProd: 19,
   acab2Data: 20, acab2Prod: 22,
@@ -63,6 +63,7 @@ for (const file of files) {
       data_inicio: toIso(r[COL.dia]),
       mes: r[COL.mes] || null,
       ano: r[COL.ano] || null,
+      produtividade_total: typeof r[COL.produtividade] === "number" ? r[COL.produtividade] : null,
       etapas: {
         radier: { data: toIso(r[COL.radierData]), producao: typeof r[COL.radierProd] === "number" ? r[COL.radierProd] : null },
         alvenaria: { data: toIso(r[COL.alvenariaData]), producao: typeof r[COL.alvenariaProd] === "number" ? r[COL.alvenariaProd] : null },

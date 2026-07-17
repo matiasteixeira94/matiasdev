@@ -70,9 +70,15 @@
             <div class="bar-track"><div class="bar-fill" style="width:${o.pct_concluido}%;"></div></div>
             <div class="footnote mono" style="margin-top:8px;">${GP.fmtInt(o.concluida)} / ${GP.fmtInt(o.total)} casas</div>
             <span class="chip ${o.pct_concluido >= 100 ? "chip-good" : "chip-warning"}" style="margin-top:8px;">${o.pct_concluido >= 100 ? "Concluída" : "Em andamento"}</span>
+            ${o.produtividade_media != null ? `<div class="footnote" style="margin-top:8px;">Produtividade média<br><span class="mono" style="color:var(--ink); font-weight:700;">${GP.fmtNum1(o.produtividade_media)}</span> por casa entregue</div>` : ""}
           </a>`).join("")}
       </div>
       <a class="btn btn-ghost" style="margin-top:14px;" href="casas.html">Ver casa a casa →</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><div><div class="card-title">Produtividade média por obra</div><div class="card-sub">Coluna "PROD." da aba DADOS CASA, média das casas já entregues</div></div></div>
+      <div class="chart-host" id="chart-produtividade-media"></div>
     </div>
 
     <div class="card">
@@ -102,6 +108,13 @@
   document.getElementById("btn-export-xls").addEventListener("click", () => alert("Exportação para Excel: integra com o endpoint /relatorios/exportar?formato=xlsx (ver docs/estrutura-banco-dados.md)."));
 
   function renderGraficos() {
+    GPCharts.hbars(document.getElementById("chart-produtividade-media"), {
+      items: obrasReais.filter((o) => o.produtividade_media != null).map((o) => ({
+        label: o.empreendimento, value: o.produtividade_media, color: OBRA_COR[o.empreendimento] ?? "var(--accent)",
+      })),
+      valueFormat: (v) => GP.fmtNum1(v),
+      showTarget: false,
+    });
     for (const [nome, d] of Object.entries(produtividadeObras)) {
       const host = document.getElementById(`chart-prod-${nome}`);
       if (!host) continue;
