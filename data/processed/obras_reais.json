@@ -1,74 +1,26 @@
 [
   {
-    "empreendimento": "Xique-xique II (Etapa 3)",
-    "total": 112,
-    "concluida": 0,
-    "em_producao": 0,
-    "nao_iniciada": 112,
-    "pct_concluido": 0,
-    "ativa": true
-  },
-  {
-    "empreendimento": "Xique-xique (Etapa 6)",
-    "total": 36,
-    "concluida": 0,
-    "em_producao": 0,
-    "nao_iniciada": 36,
-    "pct_concluido": 0,
-    "ativa": true
-  },
-  {
-    "empreendimento": "Xique-xique III",
-    "total": 837,
-    "concluida": 143,
-    "em_producao": 1,
-    "nao_iniciada": 693,
-    "pct_concluido": 17.1,
-    "ativa": true
-  },
-  {
-    "empreendimento": "Rec. Laranjeiras",
+    "empreendimento": "Laranjeiras",
     "total": 500,
     "concluida": 498,
-    "em_producao": 1,
-    "nao_iniciada": 1,
-    "pct_concluido": 99.6,
-    "ativa": false
+    "pct_concluido": 99.6
   },
   {
-    "empreendimento": "CONDOMINIO OLIVEIRAS",
+    "empreendimento": "Cerejeiras",
+    "total": 500,
+    "concluida": 500,
+    "pct_concluido": 100
+  },
+  {
+    "empreendimento": "Oliveiras",
     "total": 505,
     "concluida": 503,
-    "em_producao": 2,
-    "nao_iniciada": 0,
-    "pct_concluido": 99.6,
-    "ativa": false
+    "pct_concluido": 99.6
   },
   {
-    "empreendimento": "Rec. Cerejeiras",
-    "total": 402,
-    "concluida": 402,
-    "em_producao": 0,
-    "nao_iniciada": 0,
-    "pct_concluido": 100,
-    "ativa": false
-  },
-  {
-    "empreendimento": "CONDOMINIO CEREJEIRAS",
-    "total": 98,
-    "concluida": 98,
-    "em_producao": 0,
-    "nao_iniciada": 0,
-    "pct_concluido": 100,
-    "ativa": false
-  },
-  {
-    "empreendimento": "CONDOMINIO AMOREIRAS",
-    "total": 189,
+    "empreendimento": "Amoreiras",
+    "total": 505,
     "concluida": 189,
-    "em_producao": 0,
-    "nao_iniciada": 0,
-    "pct_concluido": 100,
-    "ativa": false
+    "pct_concluido": 37.4
   }
 ]

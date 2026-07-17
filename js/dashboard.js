@@ -16,7 +16,8 @@
     GP.loadJSON("epis_pendentes.json"), GP.loadJSON("treinamentos_pendentes.json"),
     GP.loadJSON("obras_reais.json"), GP.loadJSON("pessoal_resumo.json"),
   ]);
-  const obrasAtivasReais = obrasReais.filter((o) => o.ativa);
+  const totalCasas = obrasReais.reduce((a, o) => a + o.total, 0);
+  const totalConcluidas = obrasReais.reduce((a, o) => a + o.concluida, 0);
 
   const HOJE = "2026-07-16";
   const state = { periodo: 30, obraId: session.perfil === "supervisor" ? session.obraId : "todas", grupo: "todos", from: GP.isoDaysAgo(29, HOJE), to: HOJE };
@@ -25,24 +26,25 @@
   content.innerHTML = `
     <div class="card">
       <div class="section-head" style="margin-bottom:4px;">
-        <h2>Obras em andamento</h2>
+        <h2>Obras</h2>
         <span class="chip chip-neutral">Dados reais — Viana &amp; Moura, UGB Caruaru</span>
       </div>
       <p class="footnote" style="margin-bottom:14px;">
-        Das 8 frentes acompanhadas, 5 já estão praticamente concluídas (Rec. Laranjeiras,
-        Condomínio Oliveiras, Rec. Cerejeiras, Condomínio Cerejeiras e Condomínio Amoreiras).
-        Estas 3 seguem com produção em aberto.
+        Condomínios cadastrados: Laranjeiras, Cerejeiras, Oliveiras e Amoreiras.
       </p>
-      <div class="grid grid-3" style="margin-bottom:16px;">
+      <div class="grid grid-4" style="margin-bottom:16px;">
         <div class="stat-tile">
-          <div class="stat-label">Obras ativas</div>
-          <div class="stat-value">${obrasAtivasReais.length}</div>
-          <span class="footnote">de ${obrasReais.length} empreendimentos no total</span>
+          <div class="stat-label">Obras cadastradas</div>
+          <div class="stat-value">${obrasReais.length}</div>
         </div>
         <div class="stat-tile">
-          <div class="stat-label">Casas pendentes nas obras ativas</div>
-          <div class="stat-value">${GP.fmtInt(obrasAtivasReais.reduce((a, o) => a + o.total - o.concluida, 0))}</div>
-          <span class="footnote">de ${GP.fmtInt(obrasAtivasReais.reduce((a, o) => a + o.total, 0))} casas nessas 3 obras</span>
+          <div class="stat-label">Total de casas</div>
+          <div class="stat-value">${GP.fmtInt(totalCasas)}</div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-label">Casas concluídas</div>
+          <div class="stat-value">${GP.fmtInt(totalConcluidas)}</div>
+          <span class="footnote">${GP.fmtPct((totalConcluidas / totalCasas) * 100, 0)} do total</span>
         </div>
         <div class="stat-tile">
           <div class="stat-label">Colaboradores ativos</div>
@@ -51,7 +53,7 @@
         </div>
       </div>
       <div style="display:flex; flex-direction:column; gap:12px;">
-        ${obrasAtivasReais.map((o) => `
+        ${obrasReais.map((o) => `
           <div>
             <div style="display:flex; justify-content:space-between; font-size:12.5px; margin-bottom:4px;">
               <span style="font-weight:600;">${o.empreendimento}</span>
