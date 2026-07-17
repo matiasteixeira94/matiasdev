@@ -149,10 +149,7 @@
 
     <div class="grid grid-auto" id="kpi-row"></div>
 
-    <div class="card">
-      <div class="card-head"><div><div class="card-title">Casas por status</div><div class="card-sub">No filtro atual</div></div></div>
-      <div class="chart-host" id="chart-status"></div>
-    </div>
+    <div class="grid grid-3" id="status-cards"></div>
 
     <div class="card" id="card-mapa">
       <div class="card-head"><div><div class="card-title">Mapa do empreendimento</div><div class="card-sub" id="mapa-sub">Implantação real — clique num lote para localizá-lo na tabela</div></div></div>
@@ -287,11 +284,24 @@
       </div>
     `;
 
-    GPCharts.bars(document.getElementById("chart-status"), {
-      categories: ["Concluída", "Em produção", "Não iniciada"],
-      series: [{ name: "Casas", color: "var(--accent)", values: [concluidas, emProducao, naoIniciadas] }],
-      yFormat: (v) => GP.fmtInt(v),
-    });
+    const pct = (n) => (filtradas.length ? GP.fmtPct((n / filtradas.length) * 100, 0) : "0%");
+    document.getElementById("status-cards").innerHTML = `
+      <div class="card stat-tile">
+        <div class="stat-label">Casas Concluídas</div>
+        <div class="stat-value">${GP.fmtInt(concluidas)}</div>
+        <span class="chip chip-good">${pct(concluidas)} do filtro atual</span>
+      </div>
+      <div class="card stat-tile">
+        <div class="stat-label">Casas em Andamento</div>
+        <div class="stat-value">${GP.fmtInt(emProducao)}</div>
+        <span class="chip chip-warning">${pct(emProducao)} do filtro atual</span>
+      </div>
+      <div class="card stat-tile">
+        <div class="stat-label">Casas Não Iniciadas</div>
+        <div class="stat-value">${GP.fmtInt(naoIniciadas)}</div>
+        <span class="chip chip-neutral">${pct(naoIniciadas)} do filtro atual</span>
+      </div>
+    `;
 
     renderMapa(filtradas);
 
