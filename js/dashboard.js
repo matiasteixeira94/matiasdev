@@ -10,8 +10,8 @@
   });
   if (!session) return;
 
-  const [obrasReais, pessoalResumo, produtividadeObras] = await Promise.all([
-    GP.loadJSON("obras_reais.json"), GP.loadJSON("pessoal_resumo.json"), GP.loadJSON("produtividade_obras.json"),
+  const [obrasReais, pessoalResumo] = await Promise.all([
+    GP.loadJSON("obras_reais.json"), GP.loadJSON("pessoal_resumo.json"),
   ]);
   const totalCasas = obrasReais.reduce((a, o) => a + o.total, 0);
   const totalConcluidas = obrasReais.reduce((a, o) => a + o.concluida, 0);
@@ -24,12 +24,6 @@
     Laranjeiras: `<svg viewBox="0 0 40 40"><circle cx="20" cy="23" r="13" fill="#E2871E"/><rect x="19" y="4" width="2" height="8" rx="1" fill="#5B7A3A"/><path d="M21 8c4-3 8-2 9 1-3 2-7 1-9-1Z" fill="#5B7A3A"/></svg>`,
   };
   const OBRA_COR = { Amoreiras: "var(--cat-alvenaria)", Oliveiras: "var(--cat-acabamento)", Cerejeiras: "var(--cat-estrutura)", Laranjeiras: "var(--cat-administrativo)" };
-
-  const MESES_ABREV = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
-  function labelMes(m) {
-    const [ano, mes] = m.split("-");
-    return `${MESES_ABREV[Number(mes) - 1]}/${ano.slice(2)}`;
-  }
 
   const content = document.getElementById("gp-content");
   content.innerHTML = `
@@ -80,28 +74,6 @@
       <div class="card-head"><div><div class="card-title">Produtividade média por obra</div><div class="card-sub">Coluna "PROD." da aba DADOS CASA, média das casas já entregues — na ordem em que as obras foram executadas</div></div></div>
       <div class="chart-host" id="chart-produtividade-media"></div>
     </div>
-
-    <div class="card">
-      <div class="section-head" style="margin-bottom:4px;">
-        <h2>Evolução da produtividade média</h2>
-        <span class="chip chip-neutral">Dados reais</span>
-      </div>
-      <p class="footnote" style="margin-bottom:14px;">
-        Média mensal da produção registrada por macroetapa concluída (aba DADOS CASA), por
-        obra. Cada condomínio foi construído em uma janela de tempo diferente — por isso cada
-        um tem seu próprio período no eixo horizontal.
-      </p>
-      <div class="grid grid-2">
-        ${Object.entries(produtividadeObras).map(([nome, d]) => `
-          <div>
-            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
-              <div class="obra-card-icon" style="width:28px; height:28px; margin-bottom:0;">${OBRA_ICON[nome] ?? ""}</div>
-              <span class="tag-dot" style="color:${OBRA_COR[nome] ?? "var(--accent)"}; font-size:13px; font-weight:700;">${nome}</span>
-            </div>
-            <div class="chart-host" id="chart-prod-${nome}"></div>
-          </div>`).join("")}
-      </div>
-    </div>
   `;
 
   document.getElementById("btn-export-pdf").addEventListener("click", () => window.print());
@@ -119,16 +91,6 @@
       })),
       yFormat: (v) => GP.fmtNum1(v),
     });
-    for (const [nome, d] of Object.entries(produtividadeObras)) {
-      const host = document.getElementById(`chart-prod-${nome}`);
-      if (!host) continue;
-      GPCharts.line(host, {
-        labels: d.meses.map(labelMes),
-        series: [{ name: "Produção média", color: OBRA_COR[nome] ?? "var(--accent)", values: d.valores, area: true }],
-        height: 170,
-        yFormat: (v) => GP.fmtNum1(v),
-      });
-    }
   }
 
   renderGraficos();
