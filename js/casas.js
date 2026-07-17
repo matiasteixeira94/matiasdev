@@ -149,8 +149,6 @@
 
     <div class="grid grid-auto" id="kpi-row"></div>
 
-    <div class="grid grid-3" id="status-cards"></div>
-
     <div class="card" id="card-mapa">
       <div class="card-head"><div><div class="card-title">Mapa do empreendimento</div><div class="card-sub" id="mapa-sub">Implantação real — clique num lote para localizá-lo na tabela</div></div></div>
       <div id="mapa-host"></div>
@@ -281,25 +279,6 @@
         <div class="stat-label">Não iniciadas</div>
         <div class="stat-value">${GP.fmtInt(naoIniciadas)}</div>
         <span class="footnote">Aguardando início do radier</span>
-      </div>
-    `;
-
-    const pct = (n) => (filtradas.length ? GP.fmtPct((n / filtradas.length) * 100, 0) : "0%");
-    document.getElementById("status-cards").innerHTML = `
-      <div class="card stat-tile">
-        <div class="stat-label">Casas Concluídas</div>
-        <div class="stat-value">${GP.fmtInt(concluidas)}</div>
-        <span class="chip chip-good">${pct(concluidas)} do filtro atual</span>
-      </div>
-      <div class="card stat-tile">
-        <div class="stat-label">Casas em Andamento</div>
-        <div class="stat-value">${GP.fmtInt(emProducao)}</div>
-        <span class="chip chip-warning">${pct(emProducao)} do filtro atual</span>
-      </div>
-      <div class="card stat-tile">
-        <div class="stat-label">Casas Não Iniciadas</div>
-        <div class="stat-value">${GP.fmtInt(naoIniciadas)}</div>
-        <span class="chip chip-neutral">${pct(naoIniciadas)} do filtro atual</span>
       </div>
     `;
 
