@@ -22,11 +22,25 @@
     "CONDOMINIO AMOREIRAS": "Amoreiras",
   };
   const EMPREENDIMENTOS = ["Laranjeiras", "Cerejeiras", "Oliveiras", "Amoreiras"];
+
+  // Mesma pessoa/equipe grafada de formas diferentes na planilha de origem.
+  const SUPERVISOR_CANONICO = {
+    "ELIALDERSON DA SILVA (CP)": "ELIANDERSON DA SILVA (CP)",
+    "JOSENILDO MILANÊS": "JOSENILDO MILANEZ",
+  };
+  const EQUIPE_CANONICA = { AGUIA: "ÁGUIA" };
+
   const casas = casasBrutas
-    .map((c) => ({ ...c, empreendimento: NOME_CANONICO[c.empreendimento] || c.empreendimento }))
+    .map((c) => ({
+      ...c,
+      empreendimento: NOME_CANONICO[c.empreendimento] || c.empreendimento,
+      ga: EQUIPE_CANONICA[c.ga?.trim()] || c.ga?.trim(),
+      supervisor: SUPERVISOR_CANONICO[c.supervisor?.trim()] || c.supervisor?.trim(),
+    }))
     .filter((c) => EMPREENDIMENTOS.includes(c.empreendimento));
-  const supervisores = [...new Set(casas.map((c) => c.supervisor).filter(Boolean))].sort();
-  const equipes = [...new Set(casas.map((c) => c.ga).filter(Boolean))].sort();
+  const ptCompare = (a, b) => a.localeCompare(b, "pt-BR");
+  const supervisores = [...new Set(casas.map((c) => c.supervisor).filter(Boolean))].sort(ptCompare);
+  const equipes = [...new Set(casas.map((c) => c.ga).filter(Boolean))].sort(ptCompare);
 
   // Número do lote embutido no código da casa (ex.: "RL 127A" -> 127) — é o
   // mesmo número usado para casar cada casa com seu polígono no mapa do
@@ -40,6 +54,32 @@
   for (const c of casas) {
     const n = numeroLote(c);
     if (n != null) casaPorLote[c.empreendimento][n] = c;
+  }
+
+  // Lotes que existem na planta (mapa_lotes.json) mas ainda não têm nenhuma
+  // linha em casas.json (nem em DADOS CASA, nem no cronograma CONTROLE) —
+  // isso significa que a casa ainda não foi iniciada de fato. Sem essas
+  // linhas sintéticas, "Total de casas" ficaria menor que o real (ex.:
+  // Amoreiras: só 215 das 503 casas têm alguma linha de progresso hoje).
+  const PREFIXO_POR_EMPREENDIMENTO = { Laranjeiras: "RL", Cerejeiras: "RC", Oliveiras: "RO", Amoreiras: "RA" };
+  for (const emp of EMPREENDIMENTOS) {
+    const mapa = mapaLotes[emp];
+    if (!mapa) continue;
+    for (const lote of mapa.lotes) {
+      if (casaPorLote[emp][lote.numero] != null) continue;
+      const placeholder = {
+        empreendimento: emp,
+        casa: `${PREFIXO_POR_EMPREENDIMENTO[emp]} ${lote.numero}`,
+        ga: null,
+        supervisor: null,
+        data_inicio: null,
+        macroetapas_concluidas: 0,
+        status: "nao_iniciada",
+        etapa_atual: "radier",
+      };
+      casas.push(placeholder);
+      casaPorLote[emp][lote.numero] = placeholder;
+    }
   }
 
   const ETAPAS_ORDEM = ["radier", "alvenaria", "acab2_coberta", "reboco_int_ext", "acab1"];
@@ -164,7 +204,9 @@
       const status = c ? c.status : "nao_iniciada";
       const noFiltro = c ? idsNoFiltro.has(c.casa) : (state.equipe === "todos" && state.supervisor === "todos" && state.status === "todos" && !state.busca);
       const cor = STATUS_COR[status];
-      const titulo = c ? `Lote ${lote.numero} — ${c.casa}\n${STATUS_LABEL[c.status]}\nEquipe: ${c.ga} · Supervisor: ${c.supervisor || "—"}` : `Lote ${lote.numero} — sem dados de produção`;
+      const titulo = !c ? `Lote ${lote.numero} — sem dados de produção`
+        : c.ga ? `Lote ${lote.numero} — ${c.casa}\n${STATUS_LABEL[c.status]}\nEquipe: ${c.ga} · Supervisor: ${c.supervisor || "—"}`
+        : `Lote ${lote.numero} — ${c.casa}\n${STATUS_LABEL[c.status]} · ainda sem equipe atribuída`;
       return `<path d="${lote.d}" fill="${cor}" stroke="var(--surface-raised)" stroke-width="0.4" opacity="${noFiltro ? 1 : 0.18}" class="mapa-lote" data-casa="${c ? c.casa : ""}" style="cursor:${c ? "pointer" : "default"};"><title>${titulo}</title></path>`;
     }).join("");
     const contornoSvg = mapa.contorno.map((d) => `<path d="${d}" fill="none" stroke="var(--border-strong)" stroke-width="0.3" opacity="0.5" />`).join("");
@@ -247,7 +289,7 @@
       <tr>
         <td class="mono">${c.casa}</td>
         <td>${c.empreendimento}</td>
-        <td>${c.ga}</td>
+        <td>${c.ga || "—"}</td>
         <td>${c.supervisor || "—"}</td>
         <td><span class="chip ${STATUS_CHIP[c.status]}">${STATUS_LABEL[c.status]}</span></td>
         <td>${stageTracker(c)}</td>

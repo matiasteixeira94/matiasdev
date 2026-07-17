@@ -99121,5 +99121,993 @@
     "macroetapas_concluidas": 5,
     "status": "concluida",
     "etapa_atual": "entregue"
+  },
+  {
+    "ga": "CARCARÁ",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "JANACLEBSON GOES",
+    "casa": "RA 477R",
+    "pacote": "",
+    "data_inicio": "2026-07-03",
+    "mes": 8,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "PROVIDÊNCIA",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "JANACLEBSON GOES",
+    "casa": "RA 478R",
+    "pacote": "",
+    "data_inicio": "2026-07-03",
+    "mes": 8,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "PROGRESSO",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "LAURA SAMARA",
+    "casa": "RA 221P",
+    "pacote": "",
+    "data_inicio": "2026-07-07",
+    "mes": 7,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": "2026-07-09",
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 1,
+    "status": "em_producao",
+    "etapa_atual": "alvenaria",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "TRADIÇÃO",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "LAURA SAMARA",
+    "casa": "RA 222P",
+    "pacote": "",
+    "data_inicio": "2026-07-07",
+    "mes": 7,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": "2026-07-09",
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 1,
+    "status": "em_producao",
+    "etapa_atual": "alvenaria",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "SUPERAÇÃO",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "SUELLEN NATHALIA",
+    "casa": "RA 453N",
+    "pacote": "",
+    "data_inicio": "2026-07-27",
+    "mes": 8,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "PROSPERIDADE",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "SUELLEN NATHALIA",
+    "casa": "RA 454N",
+    "pacote": "",
+    "data_inicio": "2026-07-27",
+    "mes": 8,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "GUERREIROS DE OURO",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "GEOVANE LIMA",
+    "casa": "RA 481R",
+    "pacote": "",
+    "data_inicio": "2026-07-02",
+    "mes": 8,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "PATATIVA",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "GEOVANE LIMA",
+    "casa": "RA 482R",
+    "pacote": "",
+    "data_inicio": "2026-07-02",
+    "mes": 8,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "NOVA UNIÃO",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "MARIA DAS GRAÇAS",
+    "casa": "RA 479R",
+    "pacote": "",
+    "data_inicio": "2026-07-03",
+    "mes": 7,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": "2026-07-08",
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 1,
+    "status": "em_producao",
+    "etapa_atual": "alvenaria",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "ESPERANÇA",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "MARIA DAS GRAÇAS",
+    "casa": "RA 480R",
+    "pacote": "",
+    "data_inicio": "2026-07-03",
+    "mes": 7,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": "2026-07-08",
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 1,
+    "status": "em_producao",
+    "etapa_atual": "alvenaria",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "EVOLUÇÃO",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "BENEDITO DA SILVA",
+    "casa": "RA 441K",
+    "pacote": "",
+    "data_inicio": "2026-07-01",
+    "mes": 8,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "CONFIANÇA",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "BENEDITO DA SILVA",
+    "casa": "RA 442K",
+    "pacote": "",
+    "data_inicio": "2026-07-01",
+    "mes": 8,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "ASA BRANCA",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "CAIO CESAR",
+    "casa": "RA 455Q",
+    "pacote": "",
+    "data_inicio": "2026-07-06",
+    "mes": 7,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": "2026-07-10",
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 1,
+    "status": "em_producao",
+    "etapa_atual": "alvenaria",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "DEUS É FIEL",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "CAIO CESAR",
+    "casa": "RA 456Q",
+    "pacote": "",
+    "data_inicio": "2026-07-06",
+    "mes": 7,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": "2026-07-10",
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 1,
+    "status": "em_producao",
+    "etapa_atual": "alvenaria",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "NOVO DIA",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "JOSÉ ADNILSON",
+    "casa": "RA 234M",
+    "pacote": "",
+    "data_inicio": "2026-07-02",
+    "mes": null,
+    "ano": "-",
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": "2026-07-27",
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 1,
+    "status": "em_producao",
+    "etapa_atual": "alvenaria",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "FORTALEZA",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "JOSÉ ADNILSON",
+    "casa": "RA 235M",
+    "pacote": "",
+    "data_inicio": "2026-07-02",
+    "mes": null,
+    "ano": "-",
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": "2026-07-27",
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 1,
+    "status": "em_producao",
+    "etapa_atual": "alvenaria",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "BEIJA-FLOR",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "GABRIELLY MARIA",
+    "casa": "RA 206O",
+    "pacote": "",
+    "data_inicio": "2026-07-27",
+    "mes": 8,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "LAVANDEIRA",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "GABRIELLY MARIA",
+    "casa": "RA 207O",
+    "pacote": "",
+    "data_inicio": "2026-07-27",
+    "mes": 8,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "ARAUTOS",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "JESLY SAMARA",
+    "casa": "RA 189O",
+    "pacote": "",
+    "data_inicio": "2026-07-14",
+    "mes": 7,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "UNIDOS PELA FÉ",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "JESLY SAMARA",
+    "casa": "RA 190O",
+    "pacote": "",
+    "data_inicio": "2026-07-14",
+    "mes": 7,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "GAVIÃO",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "VAGNER MOURA",
+    "casa": "RA 79D",
+    "pacote": "",
+    "data_inicio": "2026-07-27",
+    "mes": 8,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "ANDORINHA",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "VAGNER MOURA",
+    "casa": "RA 80D",
+    "pacote": "",
+    "data_inicio": "2026-07-27",
+    "mes": 8,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "DETERMINAÇÃO",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "GIRLANDO JOÃO",
+    "casa": "RA 14A",
+    "pacote": "",
+    "data_inicio": "2026-07-14",
+    "mes": 7,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "LIBERDADE",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "GIRLANDO JOÃO",
+    "casa": "RA 217M",
+    "pacote": "",
+    "data_inicio": "2026-07-14",
+    "mes": 7,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "FALCÃO",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "JOSEMILSON FAUSTINO",
+    "casa": "RA 23A",
+    "pacote": "",
+    "data_inicio": "2026-07-14",
+    "mes": 7,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
+  },
+  {
+    "ga": "EPM",
+    "projeto": "Projeto 13.2.5",
+    "empreendimento": "CONDOMINIO AMOREIRAS",
+    "supervisor": "JOSEMILSON FAUSTINO",
+    "casa": "RA 24A",
+    "pacote": "",
+    "data_inicio": "2026-07-14",
+    "mes": 7,
+    "ano": 2026,
+    "produtividade_total": null,
+    "etapas": {
+      "radier": {
+        "data": null,
+        "producao": null
+      },
+      "alvenaria": {
+        "data": null,
+        "producao": null
+      },
+      "acab2_coberta": {
+        "data": null,
+        "producao": null
+      },
+      "reboco_int_ext": {
+        "data": null,
+        "producao": null
+      },
+      "acab1": {
+        "data": null,
+        "producao": null
+      }
+    },
+    "macroetapas_concluidas": 0,
+    "status": "em_producao",
+    "etapa_atual": "radier",
+    "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   }
 ]
