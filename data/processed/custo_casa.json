@@ -120,41 +120,41 @@
     }
   },
   "Amoreiras": {
-    "lotes": 503,
+    "lotes": 505,
     "total": {
       "baseline": 26346636,
       "atual": 26430402,
-      "custo_por_casa_baseline": 52379,
-      "custo_por_casa_atual": 52545.53,
+      "custo_por_casa_baseline": 52171.56,
+      "custo_por_casa_atual": 52337.43,
       "variacao_pct": 0.3
     },
     "subcontas": {
       "MATERIAL": {
         "baseline": 12349440,
         "atual": 12567843,
-        "custo_por_casa_baseline": 24551.57,
-        "custo_por_casa_atual": 24985.77,
+        "custo_por_casa_baseline": 24454.34,
+        "custo_por_casa_atual": 24886.82,
         "variacao_pct": 1.8
       },
       "SERVIÇO": {
         "baseline": 1590738,
         "atual": 1560306,
-        "custo_por_casa_baseline": 3162.5,
-        "custo_por_casa_atual": 3102,
+        "custo_por_casa_baseline": 3149.98,
+        "custo_por_casa_atual": 3089.71,
         "variacao_pct": -1.9
       },
       "PESSOAL": {
         "baseline": 12178635,
         "atual": 11972627,
-        "custo_por_casa_baseline": 24212,
-        "custo_por_casa_atual": 23802.44,
+        "custo_por_casa_baseline": 24116.11,
+        "custo_por_casa_atual": 23708.17,
         "variacao_pct": -1.7
       },
       "OUTROS CUSTOS": {
         "baseline": 227824,
         "atual": 329626,
-        "custo_por_casa_baseline": 452.93,
-        "custo_por_casa_atual": 655.32,
+        "custo_por_casa_baseline": 451.14,
+        "custo_por_casa_atual": 652.72,
         "variacao_pct": 44.7
       }
     }

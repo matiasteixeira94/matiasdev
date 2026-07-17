@@ -17,7 +17,7 @@
  *   node data/scripts/extrair_custo_casa_planilha.mjs "<planilha .xlsb>"
  */
 import XLSX from "xlsx";
-import { writeFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
 
 const file = process.argv[2];
 if (!file) {
@@ -28,6 +28,18 @@ if (!file) {
 const SHEETS = { RL: "Laranjeiras", RC: "Cerejeiras", RO: "Oliveiras", RA: "Amoreiras" };
 const SUBCONTAS = ["MATERIAL", "SERVIÇO", "PESSOAL", "OUTROS CUSTOS"];
 
+// A contagem de lotes lançada no cabeçalho de cada aba desta planilha às
+// vezes está desatualizada/errada (ex.: aba RA dizia 503 quando o
+// empreendimento tem 505 casas cadastradas de fato). obras_reais.json vem da
+// planilha DADOS CASA (ver extrair_casas_planilha.mjs) e é a fonte confiável
+// da contagem real — tem prioridade sobre o rótulo da aba de custo.
+const OUT_DIR = new URL("../processed/", import.meta.url);
+let lotesReais = {};
+try {
+  const obrasReais = JSON.parse(readFileSync(new URL("obras_reais.json", OUT_DIR), "utf8"));
+  lotesReais = Object.fromEntries(obrasReais.map((o) => [o.empreendimento, o.total]));
+} catch { /* segue sem override se o arquivo não existir */ }
+
 const wb = XLSX.readFile(file, { cellDates: true });
 const resultado = {};
 
@@ -36,7 +48,11 @@ for (const [aba, nomeObra] of Object.entries(SHEETS)) {
   if (!ws) { console.warn(`Aba "${aba}" não encontrada.`); continue; }
   const rows = XLSX.utils.sheet_to_json(ws, { header: 1, raw: true, defval: "" });
 
-  const lotes = Number(rows[2]?.[1]) || null;
+  const lotesAba = Number(rows[2]?.[1]) || null;
+  const lotes = lotesReais[nomeObra] ?? lotesAba;
+  if (lotesReais[nomeObra] != null && lotesAba != null && lotesReais[nomeObra] !== lotesAba) {
+    console.warn(`${nomeObra}: aba de custo diz ${lotesAba} lotes, usando ${lotes} (obras_reais.json).`);
+  }
 
   const row4 = rows[4] || [];
   const valCols = [];

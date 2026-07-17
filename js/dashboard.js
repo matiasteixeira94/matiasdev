@@ -36,17 +36,21 @@
     ? Math.round(((ultimaObraCusto.total.custo_por_casa_atual - primeiraObraCusto.total.custo_por_casa_atual) / primeiraObraCusto.total.custo_por_casa_atual) * 1000) / 10
     : null;
 
-  // Seta ao lado do nome da obra comparando o custo/casa com a obra anterior
-  // na ordem de execução — verde para baixo (melhorou) ou vermelha para cima (piorou).
+  // Seta + variação % ao lado do nome da obra, comparando o custo/casa com a
+  // obra anterior na ordem de execução — verde para baixo (melhorou) ou
+  // vermelha para cima (piorou).
   function custoTrendArrow(i) {
     if (i === 0) return "";
     const atual = custoCasa[obrasComCusto[i]].total.custo_por_casa_atual;
     const anterior = custoCasa[obrasComCusto[i - 1]].total.custo_por_casa_atual;
     if (atual === anterior) return "";
     const piorou = atual > anterior;
+    const pct = Math.round((Math.abs(atual - anterior) / anterior) * 1000) / 10;
     const cor = piorou ? "var(--status-critical)" : "var(--status-good)";
     const path = piorou ? `<path d="M12 19V5M5 12l7-7 7 7"/>` : `<path d="M12 5v14M19 12l-7 7-7-7"/>`;
-    return `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cor}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px; margin-left:5px;">${path}</svg>`;
+    return `<span style="display:inline-flex; align-items:center; gap:2px; margin-left:5px; color:${cor}; font-weight:700; font-size:12px;">` +
+      `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cor}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">${path}</svg>` +
+      `${piorou ? "+" : "-"}${GP.fmtPct(pct, 1)}</span>`;
   }
 
   const content = document.getElementById("gp-content");
