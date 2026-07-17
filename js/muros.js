@@ -17,10 +17,23 @@
   // Total de lotes de cada obra vem da planta (mapa_lotes.json) — é a mesma
   // contagem usada na tela Casas e na Visão Geral.
   const totalLotes = Object.fromEntries(ORDEM_EXECUCAO.map((e) => [e, mapaLotes[e]?.lotes.length ?? 0]));
+
+  // Obras 100% entregues — o muro/cisterna dessas obras já está todo
+  // concluído na prática, mesmo que a aba DADOS MURO ainda não tenha
+  // lançamento pra todo lote (mesmo critério já usado para casas).
+  const CONCLUIDO_OVERRIDE = new Set(["Laranjeiras", "Cerejeiras", "Oliveiras"]);
   const concluidoPorLote = {};
   for (const emp of ORDEM_EXECUCAO) {
     concluidoPorLote[emp] = {};
     for (const l of muros[emp]?.lotes ?? []) concluidoPorLote[emp][l.numero] = l;
+    if (CONCLUIDO_OVERRIDE.has(emp)) {
+      for (const lote of mapaLotes[emp]?.lotes ?? []) {
+        if (concluidoPorLote[emp][lote.numero] == null) {
+          concluidoPorLote[emp][lote.numero] = { empreendimento: emp, numero: lote.numero, ga: null, supervisor: null, data: null };
+        }
+      }
+      muros[emp] = { ...muros[emp], concluidos: totalLotes[emp] };
+    }
   }
 
   const totalGeralLotes = ORDEM_EXECUCAO.reduce((a, e) => a + totalLotes[e], 0);
