@@ -31,6 +31,7 @@ const data = rows.slice(2).filter((r) => (r[0] || "").toString().trim());
 
 const porMes = {};
 const porFuncao = {};
+const porMesFuncao = {};
 for (const r of data) {
   const funcao = (r[COL.funcao] || "Não informada").toString().trim() || "Não informada";
   porFuncao[funcao] = (porFuncao[funcao] || 0) + 1;
@@ -39,6 +40,8 @@ for (const r of data) {
   if (d instanceof Date && !isNaN(d)) {
     const chave = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
     porMes[chave] = (porMes[chave] || 0) + 1;
+    porMesFuncao[chave] ??= {};
+    porMesFuncao[chave][funcao] = (porMesFuncao[chave][funcao] || 0) + 1;
   }
 }
 
@@ -48,6 +51,10 @@ const resumo = {
   periodo: meses.length ? `${meses[0]} a ${meses[meses.length - 1]}` : null,
   por_mes: Object.fromEntries(meses.map((m) => [m, porMes[m]])),
   por_funcao: Object.fromEntries(Object.entries(porFuncao).sort((a, b) => b[1] - a[1])),
+  por_mes_funcao: Object.fromEntries(meses.map((m) => [
+    m,
+    Object.fromEntries(Object.entries(porMesFuncao[m]).sort((a, b) => b[1] - a[1])),
+  ])),
   atualizado_em: new Date().toISOString().slice(0, 10),
 };
 

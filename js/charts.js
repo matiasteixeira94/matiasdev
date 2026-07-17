@@ -190,7 +190,7 @@ const GPCharts = (() => {
   }
 
   /* ---------------- Barras + linha de evolução (sequência categórica) ---------------- */
-  function barsLine(host, { items, height = 240, yFormat = (v) => v, lineColor = "var(--gold)", tooltipLabel = "Produtividade", legendLabel = "Evolução (ordem de execução)" }) {
+  function barsLine(host, { items, height = 240, yFormat = (v) => v, lineColor = "var(--gold)", tooltipLabel = "Produtividade", legendLabel = "Evolução (ordem de execução)", onClick = null }) {
     host.innerHTML = "";
     const tip = ensureTooltip(host);
     const width = host.clientWidth || 640;
@@ -236,6 +236,7 @@ const GPCharts = (() => {
           `<div class="gp-tip-head">${it.label}</div><div class="gp-tip-row"><span class="gp-tip-dot" style="background:${it.color || "var(--accent)"}"></span>${tooltipLabel}<b>${yFormat(it.value)}</b></div>`);
       });
       rect.addEventListener("mouseleave", () => hideTip(tip));
+      if (onClick) { rect.style.cursor = "pointer"; rect.addEventListener("click", () => onClick(it, i)); }
       svg.appendChild(rect);
       if (i % passo === 0) {
         const t = el("text", { x: cx, y: height - 10, "text-anchor": "middle", class: "gp-axis-label" });

@@ -95,8 +95,9 @@
       <div class="card-head"><div><div class="card-title">Desligamentos</div><div class="card-sub">${desligamentos.total_registros} registros no levantamento (${desligamentos.periodo})</div></div></div>
       <div class="grid grid-2">
         <div>
-          <div class="card-sub" style="margin-bottom:8px;">Evolução mensal</div>
+          <div class="card-sub" style="margin-bottom:8px;">Evolução mensal <span class="footnote">— clique num mês para ver por função</span></div>
           <div class="chart-host" id="chart-desligamentos-mes"></div>
+          <div id="detalhe-mes-desligamento" class="footnote" style="margin-top:10px;">Clique num mês no gráfico para ver o detalhe por função.</div>
         </div>
         <div>
           <div class="card-sub" style="margin-bottom:8px;">Por função</div>
@@ -183,12 +184,21 @@
     for (let a = anoIni, m = mesIni; a < anoFim || (a === anoFim && m <= mesFim); m++) {
       if (m > 12) { m = 1; a++; }
       const chave = `${a}-${String(m).padStart(2, "0")}`;
-      serieMensal.push({ label: `${MESES_ABREV[m - 1]}/${String(a).slice(2)}`, value: desligamentos.por_mes[chave] || 0 });
+      serieMensal.push({ label: `${MESES_ABREV[m - 1]}/${String(a).slice(2)}`, value: desligamentos.por_mes[chave] || 0, mes: chave });
     }
     GPCharts.barsLine(document.getElementById("chart-desligamentos-mes"), {
       items: serieMensal,
       yFormat: (v) => GP.fmtInt(v),
       tooltipLabel: "Desligamentos",
+      onClick: (it) => {
+        const detalhe = desligamentos.por_mes_funcao[it.mes] || {};
+        const entradas = Object.entries(detalhe);
+        const host = document.getElementById("detalhe-mes-desligamento");
+        host.innerHTML = entradas.length
+          ? `<div style="margin-bottom:6px;"><strong>${it.label}</strong> — ${it.value} desligamento(s):</div>
+             <div style="display:flex; flex-wrap:wrap; gap:6px;">${entradas.map(([f, v]) => `<span class="chip chip-neutral">${f} — ${v}</span>`).join("")}</div>`
+          : `Nenhum desligamento em ${it.label}.`;
+      },
       legendLabel: "Desligamentos por mês",
     });
 
