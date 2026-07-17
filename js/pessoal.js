@@ -7,8 +7,8 @@
   });
   if (!session) return;
 
-  const [ativos, resumo, quadroMensal] = await Promise.all([
-    GP.loadJSON("pessoal_ativos.json"), GP.loadJSON("pessoal_resumo.json"), GP.loadJSON("quadro_pessoal_mensal.json"),
+  const [ativos, resumo, quadroMensal, desligamentos] = await Promise.all([
+    GP.loadJSON("pessoal_ativos.json"), GP.loadJSON("pessoal_resumo.json"), GP.loadJSON("quadro_pessoal_mensal.json"), GP.loadJSON("desligamentos.json"),
   ]);
 
   const ptCompare = (a, b) => a.localeCompare(b, "pt-BR");
@@ -92,6 +92,20 @@
     </div>
 
     <div class="card">
+      <div class="card-head"><div><div class="card-title">Desligamentos</div><div class="card-sub">${desligamentos.total_registros} registros no levantamento (${desligamentos.periodo})</div></div></div>
+      <div class="grid grid-2">
+        <div>
+          <div class="card-sub" style="margin-bottom:8px;">Evolução mensal</div>
+          <div class="chart-host" id="chart-desligamentos-mes"></div>
+        </div>
+        <div>
+          <div class="card-sub" style="margin-bottom:8px;">Por função</div>
+          <div class="chart-host" id="chart-desligamentos-funcao"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
       <div class="section-head" style="margin-bottom:14px;">
         <h2>Colaboradores ativos</h2>
         <span class="footnote" id="contador-pessoal"></span>
@@ -158,8 +172,42 @@
     }).join("");
   }
 
+  function renderDesligamentos() {
+    // Preenche os meses sem nenhum desligamento (0), pra evolução não pular
+    // mês, entre o primeiro e o último mês do levantamento.
+    const meses = Object.keys(desligamentos.por_mes).sort();
+    const [anoIni, mesIni] = meses[0].split("-").map(Number);
+    const [anoFim, mesFim] = meses[meses.length - 1].split("-").map(Number);
+    const MESES_ABREV = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+    const serieMensal = [];
+    for (let a = anoIni, m = mesIni; a < anoFim || (a === anoFim && m <= mesFim); m++) {
+      if (m > 12) { m = 1; a++; }
+      const chave = `${a}-${String(m).padStart(2, "0")}`;
+      serieMensal.push({ label: `${MESES_ABREV[m - 1]}/${String(a).slice(2)}`, value: desligamentos.por_mes[chave] || 0 });
+    }
+    GPCharts.barsLine(document.getElementById("chart-desligamentos-mes"), {
+      items: serieMensal,
+      yFormat: (v) => GP.fmtInt(v),
+      tooltipLabel: "Desligamentos",
+      legendLabel: "Desligamentos por mês",
+    });
+
+    const porFuncao = Object.entries(desligamentos.por_funcao).sort((a, b) => b[1] - a[1]);
+    const TOP = 8;
+    const principais = porFuncao.slice(0, TOP);
+    const outras = porFuncao.slice(TOP).reduce((a, [, v]) => a + v, 0);
+    const itensFuncao = principais.map(([label, value]) => ({ label, value, color: "var(--status-serious)" }));
+    if (outras > 0) itensFuncao.push({ label: "Outras funções", value: outras, color: "var(--border-strong)" });
+    GPCharts.hbars(document.getElementById("chart-desligamentos-funcao"), {
+      items: itensFuncao,
+      valueFormat: (v) => GP.fmtInt(v),
+      showTarget: false,
+    });
+  }
+
   document.getElementById("filtro-frente").addEventListener("change", (e) => { state.frente = e.target.value; renderQuadro(); render(); });
   renderQuadro();
+  renderDesligamentos();
 
   document.getElementById("filtro-funcao").addEventListener("change", (e) => { state.funcao = e.target.value; render(); });
   document.getElementById("filtro-tipo").addEventListener("change", (e) => { state.tipo = e.target.value; render(); });
@@ -190,5 +238,5 @@
   }
 
   render();
-  window.addEventListener("resize", () => { clearTimeout(window.__gpResize); window.__gpResize = setTimeout(renderQuadro, 200); });
+  window.addEventListener("resize", () => { clearTimeout(window.__gpResize); window.__gpResize = setTimeout(() => { renderQuadro(); renderDesligamentos(); }, 200); });
 })();

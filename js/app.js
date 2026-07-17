@@ -6,12 +6,6 @@ const GP = (() => {
   const SESSION_KEY = "gp_session";
   const THEME_KEY = "gp_theme";
 
-  const PERFIS = {
-    admin: { label: "Administrador", desc: "Acesso total, inclui auditoria e produtividade individual" },
-    gestor: { label: "Gestor", desc: "Todas as obras, inclui produtividade individual" },
-    supervisor: { label: "Supervisor de Obra", desc: "Apenas a obra designada, sem produtividade individual" },
-  };
-
   // Logomarca — duas espigas trançadas (identidade Viana & Moura). Coluna direita
   // mais alta que a esquerda, como no manual de marca; renderizada só em ouro
   // (versão "reversa" do logo) porque aqui ela sempre fica sobre fundo vermelho.
@@ -62,20 +56,13 @@ const GP = (() => {
     { key: "seguranca", href: "seguranca.html", label: "Saúde e Segurança" },
   ];
 
-  const OBRA_MOCK = [
-    { id: "OB-001", nome: "Residencial Bosque Verde" },
-    { id: "OB-002", nome: "Edifício Comercial Marco Zero" },
-    { id: "OB-003", nome: "Condomínio Vista do Rio" },
-    { id: "OB-004", nome: "Galpão Industrial Suape" },
-  ];
-
   function getSession() {
     try { return JSON.parse(localStorage.getItem(SESSION_KEY)); } catch { return null; }
   }
   function setSession(session) { localStorage.setItem(SESSION_KEY, JSON.stringify(session)); }
   function clearSession() { localStorage.removeItem(SESSION_KEY); }
 
-  const DEFAULT_SESSION = { nome: "Matias Teixeira", perfil: "admin", obraId: null };
+  const DEFAULT_SESSION = { nome: "Matias Teixeira" };
 
   function requireAuth() {
     let s = getSession();
@@ -142,21 +129,10 @@ const GP = (() => {
           <button class="btn btn-ghost" id="gp-theme-toggle" style="justify-content:flex-start" type="button">
             <span aria-hidden="true" id="gp-theme-icon">☾</span><span>Alternar tema</span>
           </button>
-          <div class="user-card" style="flex-direction:column; align-items:stretch; gap:10px;">
-            <div style="display:flex; align-items:center; gap:10px;">
-              <div class="user-avatar">${initials(session.nome)}</div>
-              <div class="user-meta">
-                <strong>${session.nome}</strong>
-                <span>${PERFIS[session.perfil]?.label ?? session.perfil}</span>
-              </div>
-            </div>
-            <div style="display:flex; flex-direction:column; gap:6px;">
-              <select class="select" id="gp-perfil-switch" style="width:100%; font-size:11.5px; padding:5px 8px;">
-                ${Object.entries(PERFIS).map(([k, v]) => `<option value="${k}" ${k === session.perfil ? "selected" : ""}>${v.label}</option>`).join("")}
-              </select>
-              <select class="select" id="gp-obra-switch" style="width:100%; font-size:11.5px; padding:5px 8px; display:${session.perfil === "supervisor" ? "block" : "none"};">
-                ${OBRA_MOCK.map((o) => `<option value="${o.id}" ${o.id === session.obraId ? "selected" : ""}>${o.id} — ${o.nome}</option>`).join("")}
-              </select>
+          <div class="user-card">
+            <div class="user-avatar">${initials(session.nome)}</div>
+            <div class="user-meta">
+              <strong>${session.nome}</strong>
             </div>
           </div>
         </div>
@@ -173,18 +149,6 @@ const GP = (() => {
       </div>`;
 
     wireThemeToggle(document.getElementById("gp-theme-toggle"));
-    const perfilSwitch = document.getElementById("gp-perfil-switch");
-    const obraSwitch = document.getElementById("gp-obra-switch");
-    perfilSwitch.addEventListener("change", () => {
-      const perfil = perfilSwitch.value;
-      const obraId = perfil === "supervisor" ? (obraSwitch.value || OBRA_MOCK[0].id) : null;
-      setSession({ ...session, perfil, obraId });
-      window.location.reload();
-    });
-    obraSwitch.addEventListener("change", () => {
-      setSession({ ...session, perfil: "supervisor", obraId: obraSwitch.value });
-      window.location.reload();
-    });
     return session;
   }
 
@@ -214,7 +178,7 @@ const GP = (() => {
   const GRUPO_VAR = { estrutura: "--cat-estrutura", alvenaria: "--cat-alvenaria", acabamento: "--cat-acabamento", administrativo: "--cat-administrativo" };
 
   return {
-    PERFIS, NAV_ITEMS, OBRA_MOCK, GRUPO_LABEL, GRUPO_VAR, LOGO_MARK_SVG,
+    NAV_ITEMS, GRUPO_LABEL, GRUPO_VAR, LOGO_MARK_SVG,
     getSession, setSession, clearSession, requireAuth,
     applyStoredTheme, wireThemeToggle, renderShell, initials,
     loadJSON, fmtInt, fmtNum1, fmtPct, fmtBRL, fmtDate, fmtDateShort, within, isoDaysAgo,

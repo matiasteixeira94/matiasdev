@@ -220,6 +220,9 @@ const GPCharts = (() => {
       svg.appendChild(t);
     }
 
+    // com muitas categorias, mostra só 1 a cada N rótulos pra não sobrepor.
+    const passo = Math.max(1, Math.ceil((items.length * 34) / innerW));
+
     const pontos = [];
     items.forEach((it, i) => {
       const cx = pad.l + i * groupW + groupW / 2;
@@ -234,9 +237,11 @@ const GPCharts = (() => {
       });
       rect.addEventListener("mouseleave", () => hideTip(tip));
       svg.appendChild(rect);
-      const t = el("text", { x: cx, y: height - 10, "text-anchor": "middle", class: "gp-axis-label" });
-      t.textContent = it.label;
-      svg.appendChild(t);
+      if (i % passo === 0) {
+        const t = el("text", { x: cx, y: height - 10, "text-anchor": "middle", class: "gp-axis-label" });
+        t.textContent = it.label;
+        svg.appendChild(t);
+      }
       pontos.push([cx, y]);
     });
 
