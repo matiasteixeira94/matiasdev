@@ -7,8 +7,8 @@
   });
   if (!session) return;
 
-  const [casasBrutas, mapaLotes, obrasReais, metas] = await Promise.all([
-    GP.loadJSON("casas.json"), GP.loadJSON("mapa_lotes.json"), GP.loadJSON("obras_reais.json"), GP.loadJSON("metas_2026_2.json"),
+  const [casasBrutas, mapaLotes, obrasReais, metas, metasMensais] = await Promise.all([
+    GP.loadJSON("casas.json"), GP.loadJSON("mapa_lotes.json"), GP.loadJSON("obras_reais.json"), GP.loadJSON("metas_2026_2.json"), GP.loadJSON("metas_mensais_2026_2.json"),
   ]);
   const lotesReais = Object.fromEntries(obrasReais.map((o) => [o.empreendimento, o.total]));
 
@@ -125,6 +125,45 @@
         <div class="stat-label">Delta da Meta</div>
         <div class="stat-value">${GP.fmtInt(metas.casas.meta - metas.casas.realizado)}</div>
         <span class="chip chip-warning">Faltam para a meta</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><div><div class="card-title">Meta mensal — 2026.2</div><div class="card-sub">Meta (planejado/projetado) x realizado por mês, casa e muro — desvio = realizado − meta</div></div></div>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr>
+              <th>Mês</th>
+              <th class="num">Meta Casa</th><th class="num">Realizado Casa</th><th class="num">Desvio Casa</th>
+              <th class="num">Meta Muro</th><th class="num">Realizado Muro</th><th class="num">Desvio Muro</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${metasMensais.meses.map((m) => {
+              const desvioCasa = m.casas.realizado - m.casas.meta;
+              const desvioMuro = m.muros.realizado - m.muros.meta;
+              return `<tr>
+                <td>${m.label}</td>
+                <td class="num">${GP.fmtInt(m.casas.meta)}</td>
+                <td class="num">${GP.fmtInt(m.casas.realizado)}</td>
+                <td class="num"><span class="chip ${desvioCasa >= 0 ? "chip-good" : "chip-warning"}">${desvioCasa > 0 ? "+" : ""}${GP.fmtInt(desvioCasa)}</span></td>
+                <td class="num">${GP.fmtInt(m.muros.meta)}</td>
+                <td class="num">${GP.fmtInt(m.muros.realizado)}</td>
+                <td class="num"><span class="chip ${desvioMuro >= 0 ? "chip-good" : "chip-warning"}">${desvioMuro > 0 ? "+" : ""}${GP.fmtInt(desvioMuro)}</span></td>
+              </tr>`;
+            }).join("")}
+            <tr style="font-weight:700;">
+              <td>Total 2026.2</td>
+              <td class="num">${GP.fmtInt(metas.casas.meta)}</td>
+              <td class="num">${GP.fmtInt(metas.casas.realizado)}</td>
+              <td class="num">${GP.fmtInt(metas.casas.realizado - metas.casas.meta)}</td>
+              <td class="num">${GP.fmtInt(metas.muros.meta)}</td>
+              <td class="num">${GP.fmtInt(metas.muros.realizado)}</td>
+              <td class="num">${GP.fmtInt(metas.muros.realizado - metas.muros.meta)}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 

@@ -59,11 +59,24 @@ writeFileSync(PATH, JSON.stringify(muros, null, 2), "utf8");
 console.log(`${empreendimento}: ${adicionados} lote(s) marcado(s) como muro concluído (${data}). Total agora: ${muros[empreendimento].concluidos}.`);
 
 // Se a data cair no 2º semestre de 2026, soma no "realizado" da meta do
-// período (ver extrair_metas_semestre.mjs / cartão "Evolução da Meta").
+// período (ver extrair_metas_semestre.mjs / cartão "Evolução da Meta") e
+// no mês correspondente da tabela de desvio mensal (extrair_metas_mensais.mjs).
 if (adicionados > 0 && data >= "2026-07-01" && data <= "2026-12-31") {
   const METAS_PATH = new URL("../processed/metas_2026_2.json", import.meta.url);
   const metas = JSON.parse(readFileSync(METAS_PATH, "utf8"));
   metas.muros.realizado += adicionados;
   writeFileSync(METAS_PATH, JSON.stringify(metas, null, 2), "utf8");
   console.log(`Meta 2026.2 (muros): realizado agora é ${metas.muros.realizado} de ${metas.muros.meta}.`);
+
+  const MENSAL_PATH = new URL("../processed/metas_mensais_2026_2.json", import.meta.url);
+  try {
+    const mensal = JSON.parse(readFileSync(MENSAL_PATH, "utf8"));
+    const mesChave = data.slice(0, 7);
+    const mes = mensal.meses.find((m) => m.mes === mesChave);
+    if (mes) {
+      mes.muros.realizado += adicionados;
+      writeFileSync(MENSAL_PATH, JSON.stringify(mensal, null, 2), "utf8");
+      console.log(`Mês ${mes.label} (muros): realizado agora é ${mes.muros.realizado} de ${mes.muros.meta}.`);
+    }
+  } catch { /* arquivo mensal ainda não existe — segue sem atualizar */ }
 }
