@@ -49,6 +49,7 @@ const GP = (() => {
     muros: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 12h18M8 5v7M16 5v7M3 19v-2M21 19v-2"/></svg>',
     acabamentos: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2 8 12l-2 6 6-2L22 6Z"/><path d="M2 22l4-1 1-4"/></svg>',
     assistencia: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 1-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 1 5.4-5.4L14 13"/></svg>',
+    pessoal: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
   };
 
   const NAV_ITEMS = [
@@ -57,6 +58,7 @@ const GP = (() => {
     { key: "muros", href: "muros.html", label: "Muros" },
     { key: "acabamentos", href: "acabamentos.html", label: "Acabamentos" },
     { key: "assistencia", href: "assistencia-tecnica.html", label: "Assistência Técnica" },
+    { key: "pessoal", href: "pessoal.html", label: "Quadro de Pessoal" },
     { key: "indicadores", href: "indicadores.html", label: "Produtividade e Qualidade" },
     { key: "faltas", href: "faltas.html", label: "Faltas e Absenteísmo" },
     { key: "seguranca", href: "seguranca.html", label: "Saúde e Segurança" },

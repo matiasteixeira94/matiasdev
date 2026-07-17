@@ -1,0 +1,2082 @@
+[
+  {
+    "nome": "ADEILDO PEDRO DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-03-09",
+    "tempo_empresa_anos": 0.4
+  },
+  {
+    "nome": "ADELSON MARTINS DOS SANTOS FILHO",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-02-07",
+    "tempo_empresa_anos": 1.4
+  },
+  {
+    "nome": "ADENILDO ANTONIO SERAFIM",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-10-21",
+    "tempo_empresa_anos": 0.7
+  },
+  {
+    "nome": "ADILSON SILVA DE BARROS",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "ADRIANA BEZERRA DA SILVA",
+    "funcao": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-07-07",
+    "tempo_empresa_anos": 1
+  },
+  {
+    "nome": "ADRIANO AFONSO DA SILVA",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-08-03",
+    "tempo_empresa_anos": 5.9
+  },
+  {
+    "nome": "ADRIANO JOSE DOS SANTOS",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2015-03-10",
+    "tempo_empresa_anos": 11.4
+  },
+  {
+    "nome": "ADSON BEZERRA DE LIMA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-05-14",
+    "tempo_empresa_anos": 2.2
+  },
+  {
+    "nome": "ALAN DE LIMA FEITOZA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-10-04",
+    "tempo_empresa_anos": 1.8
+  },
+  {
+    "nome": "ALAN MANOEL PEREIRA DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-05-08",
+    "tempo_empresa_anos": 2.2
+  },
+  {
+    "nome": "ALESSANDRO VITOR DA SILVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "ALEXANDRO DE SANTANA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-06-06",
+    "tempo_empresa_anos": 2.1
+  },
+  {
+    "nome": "ALEXANDRO SALVADOR DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "ALICIA BEATRIZ DE FREITAS DA SILVA",
+    "funcao": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2026-05-11",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "ALINE SANTOS CORDEIRO DA SILVA",
+    "funcao": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-08-04",
+    "tempo_empresa_anos": 0.9
+  },
+  {
+    "nome": "ALISSON MATIAS TEIXEIRA",
+    "funcao": "GERENTE DE UGB",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2024-02-15",
+    "tempo_empresa_anos": 2.4
+  },
+  {
+    "nome": "ALISSON TAVARES DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-08-04",
+    "tempo_empresa_anos": 0.9
+  },
+  {
+    "nome": "ALISSON VALDOMIRO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-03-13",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "ALYSON RANIERE FREIRE DOS SANTOS",
+    "funcao": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2026-05-11",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "AMARO FERREIRA DA SILVA",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "ANAILTON JESUS SOUZA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2022-09-19",
+    "tempo_empresa_anos": 3.8
+  },
+  {
+    "nome": "ANDERSON DA SILVA BARBOSA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-05-14",
+    "tempo_empresa_anos": 2.2
+  },
+  {
+    "nome": "ANDERSON HENRIQUE SILVA DE AQUINO",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-07-06",
+    "tempo_empresa_anos": 0
+  },
+  {
+    "nome": "ANDRE AFONSO BARBOSA DA SILVA",
+    "funcao": "SUPERVISOR DE ACABAMENTO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2020-09-03",
+    "tempo_empresa_anos": 5.9
+  },
+  {
+    "nome": "ANDRE FLORENCIO DE VASCONCELOS",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-02-19",
+    "tempo_empresa_anos": 2.4
+  },
+  {
+    "nome": "ANDRIELLI YASMIM DA SILVA DE LIMA",
+    "funcao": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2026-05-11",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "ANTONIO CICERO DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-08",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "ARNALDO ANSELMO SOBRAL",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-04-17",
+    "tempo_empresa_anos": 1.2
+  },
+  {
+    "nome": "ARNAVIO AMARO FERREIRA",
+    "funcao": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2016-01-20",
+    "tempo_empresa_anos": 10.5
+  },
+  {
+    "nome": "ARTUR BERNARDO DE SOUZA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-08",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "ATA BELO DA SILVA",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-02-04",
+    "tempo_empresa_anos": 6.4
+  },
+  {
+    "nome": "AURICLENES DOS SANTOS VILA NOVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-02-10",
+    "tempo_empresa_anos": 6.4
+  },
+  {
+    "nome": "AYRAN LUIS SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-06-04",
+    "tempo_empresa_anos": 1.1
+  },
+  {
+    "nome": "BENEDITO DA SILVA SIQUEIRA",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2014-05-05",
+    "tempo_empresa_anos": 12.2
+  },
+  {
+    "nome": "CAETANO CICERO DA SILVA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-09-09",
+    "tempo_empresa_anos": 1.8
+  },
+  {
+    "nome": "CAIO CESAR FLORENCIO DOS SANTOS",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2026-06-22",
+    "tempo_empresa_anos": 0.1
+  },
+  {
+    "nome": "CAMILA PEREIRA DA SILVA",
+    "funcao": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-06-04",
+    "tempo_empresa_anos": 1.1
+  },
+  {
+    "nome": "CAMILLY VITORIA DE SOUZA FRANCA",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-07-14",
+    "tempo_empresa_anos": 0
+  },
+  {
+    "nome": "CARLOS ANDRE DA SILVA",
+    "funcao": "ELETRICISTA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-11-09",
+    "tempo_empresa_anos": 5.7
+  },
+  {
+    "nome": "CARLOS ANDRE OLIVEIRA ANDRADE JUNIOR",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2025-11-03",
+    "tempo_empresa_anos": 0.7
+  },
+  {
+    "nome": "CARLOS ANDRE PEREIRA DE OLIVEIRA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2022-09-19",
+    "tempo_empresa_anos": 3.8
+  },
+  {
+    "nome": "CARLOS VINICIUS DOS SANTOS",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-02-19",
+    "tempo_empresa_anos": 2.4
+  },
+  {
+    "nome": "CELIO MANOEL DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-04-06",
+    "tempo_empresa_anos": 0.3
+  },
+  {
+    "nome": "CELIO NUNES DOS SANTOS",
+    "funcao": "MARCENEIRO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "CESAR ROBERTO SILVA DE ALMEIDA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-03-09",
+    "tempo_empresa_anos": 0.4
+  },
+  {
+    "nome": "CICERO ANTONIO DOS SANTOS",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "CICERO BEZERRA DA SILVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-06-06",
+    "tempo_empresa_anos": 2.1
+  },
+  {
+    "nome": "CICERO DA SILVA PEREIRA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-10-21",
+    "tempo_empresa_anos": 0.7
+  },
+  {
+    "nome": "CICERO EDUARDO BEZERRA DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-09-09",
+    "tempo_empresa_anos": 1.8
+  },
+  {
+    "nome": "CICERO FRANCISCO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-06-12",
+    "tempo_empresa_anos": 2.1
+  },
+  {
+    "nome": "CICERO JOSE FLORENCIO",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-10-22",
+    "tempo_empresa_anos": 1.7
+  },
+  {
+    "nome": "CLAUDEMIR DA SILVA ALVES",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-02-02",
+    "tempo_empresa_anos": 0.4
+  },
+  {
+    "nome": "CLEBSON DA SILVA ALVES",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-05-14",
+    "tempo_empresa_anos": 2.2
+  },
+  {
+    "nome": "CLEBSON GALDINO DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-06-01",
+    "tempo_empresa_anos": 0.1
+  },
+  {
+    "nome": "CLECIA ALBINO DE ALMEIDA SOUZA",
+    "funcao": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-08-04",
+    "tempo_empresa_anos": 0.9
+  },
+  {
+    "nome": "CLEITON ALVES DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-08-21",
+    "tempo_empresa_anos": 1.9
+  },
+  {
+    "nome": "CLEIVISON MARCONE DA SILVA GOMES",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2022-09-19",
+    "tempo_empresa_anos": 3.8
+  },
+  {
+    "nome": "CRISTIANE MARIA DAS DORES SANTOS SILVA",
+    "funcao": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-07-07",
+    "tempo_empresa_anos": 1
+  },
+  {
+    "nome": "DANIEL CANDIDO DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-02-19",
+    "tempo_empresa_anos": 2.4
+  },
+  {
+    "nome": "DANIEL SEVERINO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-02-08",
+    "tempo_empresa_anos": 3.4
+  },
+  {
+    "nome": "DAVI DE MENEZES SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-05-20",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "DAVID DA SILVA MARQUES DE OLIVEIRA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-03-13",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "DENILSON CICERO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-11-06",
+    "tempo_empresa_anos": 2.7
+  },
+  {
+    "nome": "DENIS WASHINGTON BARBOSA DE OLIVEIRA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-05-08",
+    "tempo_empresa_anos": 2.2
+  },
+  {
+    "nome": "DHEMERSON HALBERTO SILVA LIBERAL",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-04-06",
+    "tempo_empresa_anos": 0.3
+  },
+  {
+    "nome": "DOUGLAS DE ARAUJO LIMA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-03-13",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "DOUGLAS VINICIUS RIBEIRO SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-03-02",
+    "tempo_empresa_anos": 0.4
+  },
+  {
+    "nome": "EDEILSON EDMILSON DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-10-18",
+    "tempo_empresa_anos": 2.7
+  },
+  {
+    "nome": "EDICLECIO VITALINO DE MELO",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-04-14",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "EDIMILSON CORDEIRO",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-03-02",
+    "tempo_empresa_anos": 6.4
+  },
+  {
+    "nome": "EDMILSON LOPES DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-02-04",
+    "tempo_empresa_anos": 6.4
+  },
+  {
+    "nome": "EDNA TRAJANO DA SILVA",
+    "funcao": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-06-04",
+    "tempo_empresa_anos": 1.1
+  },
+  {
+    "nome": "EDNALDO DE LIMA BRAZ",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "EDSON ANTONIO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-08",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "EDSON ANTONIO FERREIRA DA LUZ",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-04-14",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "EDSON JOAO DOS SANTOS JUNIOR",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-06-15",
+    "tempo_empresa_anos": 0.1
+  },
+  {
+    "nome": "ELIAS ANTONIO DA SILVA",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "ELTON ANTONIO FELIX DE ANDRADE LIMA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-02-07",
+    "tempo_empresa_anos": 1.4
+  },
+  {
+    "nome": "EMANUEL VITOR SILVA CANDIDO",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-04-06",
+    "tempo_empresa_anos": 0.3
+  },
+  {
+    "nome": "EMERSON CARLOS PEDRO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-04-04",
+    "tempo_empresa_anos": 3.3
+  },
+  {
+    "nome": "EMERSON MOREIRA DO NASCIMENTO",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2017-10-05",
+    "tempo_empresa_anos": 8.8
+  },
+  {
+    "nome": "EMERSSON JOSE DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2022-02-14",
+    "tempo_empresa_anos": 4.4
+  },
+  {
+    "nome": "ENDERSON DE LIMA DO NASCIMENTO",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-03-16",
+    "tempo_empresa_anos": 3.3
+  },
+  {
+    "nome": "ERIBERTO SOUZA DA SILVA FILHO",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-06-01",
+    "tempo_empresa_anos": 0.1
+  },
+  {
+    "nome": "ERLAINE CONCEICAO DE LIMA",
+    "funcao": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-08-04",
+    "tempo_empresa_anos": 0.9
+  },
+  {
+    "nome": "EVANDRO LOURENCO DOS SANTOS",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "EVELYN APARECIDA NEPOMUCENA DE CARVALHO",
+    "funcao": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2026-05-11",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "EVERTON DOUGLAS OLIVEIRA BEZERRA DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-09-01",
+    "tempo_empresa_anos": 0.9
+  },
+  {
+    "nome": "EZEQUIEL INACIO DOS SANTOS",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-08-15",
+    "tempo_empresa_anos": 1.9
+  },
+  {
+    "nome": "FABIANO JOSE DA SILVA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-08",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "FABIANO SEVERINO DOS SANTOS",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-05-08",
+    "tempo_empresa_anos": 2.2
+  },
+  {
+    "nome": "FABIO ANTONIO DE OLIVEIRA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2022-10-03",
+    "tempo_empresa_anos": 3.8
+  },
+  {
+    "nome": "FABIO FARIAS DA SILVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-05-10",
+    "tempo_empresa_anos": 3.2
+  },
+  {
+    "nome": "FABIO JUNIOR ANTONIO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-02-10",
+    "tempo_empresa_anos": 6.4
+  },
+  {
+    "nome": "FLAVIANNY KETHILLY CAVALCANTE BARBOSA",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-07-14",
+    "tempo_empresa_anos": 0
+  },
+  {
+    "nome": "FLAVIO FRANCISCO DA SILVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2014-11-04",
+    "tempo_empresa_anos": 11.7
+  },
+  {
+    "nome": "GABRIELLY MARIA FEITOSA VASCONCELOS",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2024-08-21",
+    "tempo_empresa_anos": 1.9
+  },
+  {
+    "nome": "GEIBSON JOSE SILVA DOS SANTOS",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-08-03",
+    "tempo_empresa_anos": 5.9
+  },
+  {
+    "nome": "GEISE KELLY DA SILVA",
+    "funcao": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-08-04",
+    "tempo_empresa_anos": 0.9
+  },
+  {
+    "nome": "GENILSON JURANDIR DE ALMEIDA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2014-07-01",
+    "tempo_empresa_anos": 12
+  },
+  {
+    "nome": "GEOVANE LIMA DA SILVA JUNIOR",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2017-10-23",
+    "tempo_empresa_anos": 8.7
+  },
+  {
+    "nome": "GERSON MATHEUS GOMES DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-11-18",
+    "tempo_empresa_anos": 0.7
+  },
+  {
+    "nome": "GILVAN OLIVEIRA DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2021-02-19",
+    "tempo_empresa_anos": 5.4
+  },
+  {
+    "nome": "GILVANIO QUITONHO BARBOSA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-07-06",
+    "tempo_empresa_anos": 0
+  },
+  {
+    "nome": "GIOVANA CAROLINE SILVA DE BARROS",
+    "funcao": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2026-05-11",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "GIRLANDO JOAO DE OLIVEIRA",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2012-05-02",
+    "tempo_empresa_anos": 14.2
+  },
+  {
+    "nome": "GIVANILDO JOSE SANTOS DA SILVA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-08-15",
+    "tempo_empresa_anos": 1.9
+  },
+  {
+    "nome": "GIVANILDO MARCELINO DOS SANTOS",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-05-20",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "GIVANILSON JOSE DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-02-19",
+    "tempo_empresa_anos": 2.4
+  },
+  {
+    "nome": "ILAMAR JOSE DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-05-20",
+    "tempo_empresa_anos": 2.2
+  },
+  {
+    "nome": "INACIO FREITAS DA SILVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2018-07-20",
+    "tempo_empresa_anos": 8
+  },
+  {
+    "nome": "ISRAEL DA SILVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-08",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "JACKSON JOSE OLIVEIRA DE FRANCA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-04-14",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "JADSON HENRIQUE DOS SANTOS",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-08-15",
+    "tempo_empresa_anos": 1.9
+  },
+  {
+    "nome": "JAILSON JOAO DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-04-14",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "JAILSON REGINO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-11-20",
+    "tempo_empresa_anos": 5.7
+  },
+  {
+    "nome": "JAILTON JOSE ALVES DA SILVA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-06-09",
+    "tempo_empresa_anos": 3.1
+  },
+  {
+    "nome": "JANACLEBSON GOIS DE MOURA",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2020-01-20",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "JANAILSON BATISTA DOS SANTOS",
+    "funcao": "OPERADOR LÍDER DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2013-01-18",
+    "tempo_empresa_anos": 13.5
+  },
+  {
+    "nome": "JARDIEL JOSE DOS SANTOS SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2021-11-04",
+    "tempo_empresa_anos": 4.7
+  },
+  {
+    "nome": "JEFFERSON DO NASCIMENTO BORBA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-03-02",
+    "tempo_empresa_anos": 0.4
+  },
+  {
+    "nome": "JESLY SAMARA RODRIGUES DA SILVA",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2026-04-16",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "JHONATAS HENRIQUE DA SILVA BEZERRA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2022-09-19",
+    "tempo_empresa_anos": 3.8
+  },
+  {
+    "nome": "JOAO ALEXANDRE BARBOSA FILHO",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2015-01-05",
+    "tempo_empresa_anos": 11.5
+  },
+  {
+    "nome": "JOAO BARROS NETO",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2024-04-03",
+    "tempo_empresa_anos": 2.3
+  },
+  {
+    "nome": "JOAO DA SILVA JUNIOR",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-05-08",
+    "tempo_empresa_anos": 2.2
+  },
+  {
+    "nome": "JOAO HENRIQUE BATISTA DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-03-02",
+    "tempo_empresa_anos": 0.4
+  },
+  {
+    "nome": "JOAO VINICIUS DA SILVA SANTOS",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2026-07-06",
+    "tempo_empresa_anos": 0
+  },
+  {
+    "nome": "JOAO VITOR DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-03-02",
+    "tempo_empresa_anos": 0.4
+  },
+  {
+    "nome": "JOHN DIEGO DA SILVA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-09-09",
+    "tempo_empresa_anos": 1.8
+  },
+  {
+    "nome": "JONATA PEREIRA MARTINS",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2021-06-10",
+    "tempo_empresa_anos": 5.1
+  },
+  {
+    "nome": "JORGE JOSE DE OLIVEIRA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2021-02-19",
+    "tempo_empresa_anos": 5.4
+  },
+  {
+    "nome": "JORGE LUIZ DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-04-14",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "JOSE ADMILSON DOS SANTOS JUNIOR",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2024-05-14",
+    "tempo_empresa_anos": 2.2
+  },
+  {
+    "nome": "JOSE ADRIANO DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-04-06",
+    "tempo_empresa_anos": 0.3
+  },
+  {
+    "nome": "JOSE AGEU DA SILVA",
+    "funcao": "OPERADOR LÍDER DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2009-04-22",
+    "tempo_empresa_anos": 17.2
+  },
+  {
+    "nome": "JOSE ALEXSSANDRO ALVES DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-08-20",
+    "tempo_empresa_anos": 0.9
+  },
+  {
+    "nome": "JOSE APARECIDO FERNANDES DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2018-01-19",
+    "tempo_empresa_anos": 8.5
+  },
+  {
+    "nome": "JOSE BELO DA SILVA FILHO",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-06-06",
+    "tempo_empresa_anos": 2.1
+  },
+  {
+    "nome": "JOSE BIVALDO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "JOSE CARLOS DA SILVA",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "JOSE CARLOS DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-07-06",
+    "tempo_empresa_anos": 0
+  },
+  {
+    "nome": "JOSE CARLOS SOBRAL DOS SANTOS",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-05-06",
+    "tempo_empresa_anos": 1.2
+  },
+  {
+    "nome": "JOSE CICERO CORDEIRO MERGULHAO",
+    "funcao": "OPERADOR DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2021-02-08",
+    "tempo_empresa_anos": 5.4
+  },
+  {
+    "nome": "JOSE CICERO DE ALMEIDA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-06-15",
+    "tempo_empresa_anos": 0.1
+  },
+  {
+    "nome": "JOSE CLAUDEMIR BEZERRA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-04-07",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "JOSE EDMILSON NASCIMENTO DE OLIVEIRA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-08-15",
+    "tempo_empresa_anos": 1.9
+  },
+  {
+    "nome": "JOSE EDMILSON SILVA DE LIMA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "JOSE EDUARDO DA SILVA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-11-18",
+    "tempo_empresa_anos": 0.7
+  },
+  {
+    "nome": "JOSE ERALDO MARQUES DA SILVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "JOSE FELICIANO DA SILVA FILHO",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-02-10",
+    "tempo_empresa_anos": 6.4
+  },
+  {
+    "nome": "JOSE FILIPE BRITO SILVA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-08-15",
+    "tempo_empresa_anos": 1.9
+  },
+  {
+    "nome": "JOSE GEOVANE DA SILVA GERMANO",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "JOSE IGOR DA SILVA ALVES",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-05-20",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "JOSE JEFFERSON DE MORAIS BEZERRA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-08-04",
+    "tempo_empresa_anos": 0.9
+  },
+  {
+    "nome": "JOSE LUCENILDO DA SILVA",
+    "funcao": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-10-22",
+    "tempo_empresa_anos": 1.7
+  },
+  {
+    "nome": "JOSE LUIS NASCIMENTO DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-05-20",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "JOSE MANOEL DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-20",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "JOSE MARIA DOS SANTOS SILVA",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2013-03-15",
+    "tempo_empresa_anos": 13.3
+  },
+  {
+    "nome": "JOSE MATHEUS COSTA DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-08",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "JOSE MIRANDA FERREIRA DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-03-13",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "JOSE PEDRO DA SILVA JUNIOR",
+    "funcao": "SUPERVISOR(A) DE ASSISTENCIA TECNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2013-04-05",
+    "tempo_empresa_anos": 13.3
+  },
+  {
+    "nome": "JOSE RAFAEL DA SILVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-06-02",
+    "tempo_empresa_anos": 3.1
+  },
+  {
+    "nome": "JOSE RENATO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2021-03-08",
+    "tempo_empresa_anos": 5.4
+  },
+  {
+    "nome": "JOSE SEVERINO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-02-08",
+    "tempo_empresa_anos": 3.4
+  },
+  {
+    "nome": "JOSE VICTOR ALVES DA SILVA",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-08-04",
+    "tempo_empresa_anos": 0.9
+  },
+  {
+    "nome": "JOSE WEVERTON OLIVEIRA NUNES",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-05-20",
+    "tempo_empresa_anos": 2.2
+  },
+  {
+    "nome": "JOSEILDO OLIVEIRA LIMA",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2013-02-01",
+    "tempo_empresa_anos": 13.5
+  },
+  {
+    "nome": "JOSELMO BARBOSA DA SILVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2022-01-18",
+    "tempo_empresa_anos": 4.5
+  },
+  {
+    "nome": "JOSELMO CARVALHO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-08",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "JOSEMILSON FAUSTINO DE LIRA",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2010-04-07",
+    "tempo_empresa_anos": 16.3
+  },
+  {
+    "nome": "JOSENILDO DA SILVA MILANEZ",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2022-01-18",
+    "tempo_empresa_anos": 4.5
+  },
+  {
+    "nome": "JOSENILDO ROBERTO DA SILVA",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-02-04",
+    "tempo_empresa_anos": 6.4
+  },
+  {
+    "nome": "JOSENILSON DA SILVA SANTOS",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-04-07",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "JOSIANO JOSE DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2014-10-10",
+    "tempo_empresa_anos": 11.8
+  },
+  {
+    "nome": "JOSINALDO VIEIRA DE LIMA JUNIOR",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2017-03-17",
+    "tempo_empresa_anos": 9.3
+  },
+  {
+    "nome": "JOSIVAN SILVA MONTEIRO",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-06-08",
+    "tempo_empresa_anos": 0.1
+  },
+  {
+    "nome": "JOZENILDO VITALINO DE MELO",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-11-13",
+    "tempo_empresa_anos": 5.7
+  },
+  {
+    "nome": "JUCELIO LOURENCO DOS SANTOS",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO LIDER",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2013-04-01",
+    "tempo_empresa_anos": 13.3
+  },
+  {
+    "nome": "JUNIOR CARLOS DE BRITO FERREIRA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-10-21",
+    "tempo_empresa_anos": 0.7
+  },
+  {
+    "nome": "LAURA SAMARA DA CONCEICAO SILVA SANTOS",
+    "funcao": "SUPERVISOR DE ACABAMENTO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2020-11-13",
+    "tempo_empresa_anos": 5.7
+  },
+  {
+    "nome": "LAURO VINICIUS ARAUJO DA SILVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2017-02-17",
+    "tempo_empresa_anos": 9.4
+  },
+  {
+    "nome": "LEANDRO VICTOR DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-10-18",
+    "tempo_empresa_anos": 2.7
+  },
+  {
+    "nome": "LEILIANE BEATRIZ DA SILVA",
+    "funcao": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2026-05-11",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "LENILDO DA SILVA SALES",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-06-15",
+    "tempo_empresa_anos": 0.1
+  },
+  {
+    "nome": "LEONARDO DA SILVA COSTA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-07-06",
+    "tempo_empresa_anos": 0
+  },
+  {
+    "nome": "LEONARDO DA SILVA FERREIRA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-10-16",
+    "tempo_empresa_anos": 1.7
+  },
+  {
+    "nome": "LEONILSON DA SILVA FRANCA",
+    "funcao": "AUXILIAR DE OBRA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2013-01-07",
+    "tempo_empresa_anos": 13.5
+  },
+  {
+    "nome": "LEONILSON RODRIGUES DOS SANTOS",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-08-14",
+    "tempo_empresa_anos": 0.9
+  },
+  {
+    "nome": "LINDAILSON SOARES DA SILVA",
+    "funcao": "ELETRICISTA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2021-01-19",
+    "tempo_empresa_anos": 5.5
+  },
+  {
+    "nome": "LOURIVAL IVANILDO DA SILVA",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-02-17",
+    "tempo_empresa_anos": 6.4
+  },
+  {
+    "nome": "LOURIVAL JUVENCIO DOS SANTOS",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-05-08",
+    "tempo_empresa_anos": 2.2
+  },
+  {
+    "nome": "LUCAS DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-03-02",
+    "tempo_empresa_anos": 0.4
+  },
+  {
+    "nome": "LUCAS DA SILVA RODRIGUES",
+    "funcao": "ELETRICISTA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2022-10-03",
+    "tempo_empresa_anos": 3.8
+  },
+  {
+    "nome": "LUCAS GABRIEL SIMAO BARRETO",
+    "funcao": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2026-05-11",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "LUCAS GUEDES BEZERRA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-05-20",
+    "tempo_empresa_anos": 2.2
+  },
+  {
+    "nome": "LUCAS VINICIUS DA SILVA REGO",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-09-01",
+    "tempo_empresa_anos": 2.9
+  },
+  {
+    "nome": "LUCIANO FARIAS DE BRITO",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-09-01",
+    "tempo_empresa_anos": 2.9
+  },
+  {
+    "nome": "LUCIVALDO JOSE DA SILVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-05-17",
+    "tempo_empresa_anos": 3.2
+  },
+  {
+    "nome": "LUIZ ANTONIO ALVES",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-05-06",
+    "tempo_empresa_anos": 1.2
+  },
+  {
+    "nome": "MANUELSON OLIVEIRA DOS SANTOS",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2017-08-01",
+    "tempo_empresa_anos": 9
+  },
+  {
+    "nome": "MARCELO JOAQUIM DA SILVA",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2011-05-02",
+    "tempo_empresa_anos": 15.2
+  },
+  {
+    "nome": "MARCOS ANTONIO DA SILVA JUNIOR",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-04-14",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "MARCOS ANTONIO GUEDES BEZERRA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2021-10-20",
+    "tempo_empresa_anos": 4.7
+  },
+  {
+    "nome": "MARIA DAS GRACAS MONTEIRO ALMEIDA DE MELO",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2026-01-05",
+    "tempo_empresa_anos": 0.5
+  },
+  {
+    "nome": "MARIA JUCILENE MARQUES CORREIA",
+    "funcao": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-07-07",
+    "tempo_empresa_anos": 1
+  },
+  {
+    "nome": "MARIA LUIZA DA SILVA",
+    "funcao": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2026-05-11",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "MATEUS ALEXANDRE DA SILVA MACEDO",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-06-09",
+    "tempo_empresa_anos": 3.1
+  },
+  {
+    "nome": "MAURICIO ALONSO DOS SANTOS",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-08-15",
+    "tempo_empresa_anos": 1.9
+  },
+  {
+    "nome": "PATRICIA PAES PEDROSA",
+    "funcao": "SUPERVISOR LIDER DE ACABAMENTO E ASSIST TECNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2021-01-04",
+    "tempo_empresa_anos": 5.5
+  },
+  {
+    "nome": "PAULO HELENO DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-02-04",
+    "tempo_empresa_anos": 6.4
+  },
+  {
+    "nome": "PAULO RICARDO HERCULANO DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-07-06",
+    "tempo_empresa_anos": 0
+  },
+  {
+    "nome": "PEDRO ANTONIO DE LIRA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-02-02",
+    "tempo_empresa_anos": 0.4
+  },
+  {
+    "nome": "PEDRO FELIPE SIQUEIRA DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-03-02",
+    "tempo_empresa_anos": 0.4
+  },
+  {
+    "nome": "PEDRO HENRIQUE DA SILVA OLIVEIRA",
+    "funcao": "SUPERVISOR(A) DE ASSISTENCIA TECNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2021-01-04",
+    "tempo_empresa_anos": 5.5
+  },
+  {
+    "nome": "PEDRO HENRIQUE NUNES DA SILVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-02-08",
+    "tempo_empresa_anos": 3.4
+  },
+  {
+    "nome": "PLINIO GUSTAVO LAURENTINO DE SANTANA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-11-18",
+    "tempo_empresa_anos": 0.7
+  },
+  {
+    "nome": "RAFAEL DE LIMA PEREIRA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2021-06-10",
+    "tempo_empresa_anos": 5.1
+  },
+  {
+    "nome": "RAONE FRANCISCO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-10-05",
+    "tempo_empresa_anos": 5.8
+  },
+  {
+    "nome": "RAYNARA ALVES DOS SANTOS",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2024-08-21",
+    "tempo_empresa_anos": 1.9
+  },
+  {
+    "nome": "REGINALDO LIMA DA SILVA",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO LIDER",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2010-03-01",
+    "tempo_empresa_anos": 16.4
+  },
+  {
+    "nome": "RELENCLAUDIO SILVA DO NASCIMENTO",
+    "funcao": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2022-02-14",
+    "tempo_empresa_anos": 4.4
+  },
+  {
+    "nome": "RENATO SILVA DO NASCIMENTO",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-11-18",
+    "tempo_empresa_anos": 0.7
+  },
+  {
+    "nome": "RENILSON JOSE DA SILVA NUNES",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-12-11",
+    "tempo_empresa_anos": 5.6
+  },
+  {
+    "nome": "RICARDO DA SILVA NASCIMENTO",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-09-03",
+    "tempo_empresa_anos": 5.9
+  },
+  {
+    "nome": "RINALDO SILVA QUERINO",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-06-01",
+    "tempo_empresa_anos": 0.1
+  },
+  {
+    "nome": "RIVALDO PEREIRA DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "RIZONILDO BARBOSA DA SILVA",
+    "funcao": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-10-22",
+    "tempo_empresa_anos": 1.7
+  },
+  {
+    "nome": "ROBERTO SOUSA DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-04-07",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "ROBERVAL LUIZ DO REGO SILVA",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-08-15",
+    "tempo_empresa_anos": 1.9
+  },
+  {
+    "nome": "ROBSON JOSE DA SILVA",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-06-15",
+    "tempo_empresa_anos": 0.1
+  },
+  {
+    "nome": "ROBSON WAGNER DA SILVA PAIVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-03-02",
+    "tempo_empresa_anos": 6.4
+  },
+  {
+    "nome": "ROGERIO RAIMUNDO DE ANDRADE",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-05-20",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "RONALDO JOSE MARQUES DE OLIVEIRA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2014-09-19",
+    "tempo_empresa_anos": 11.8
+  },
+  {
+    "nome": "ROSANGELA OLIVEIRA SILVA DOS SANTOS",
+    "funcao": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-06-04",
+    "tempo_empresa_anos": 1.1
+  },
+  {
+    "nome": "RUBENS DA SILVA TORRES",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-08-03",
+    "tempo_empresa_anos": 5.9
+  },
+  {
+    "nome": "SANDRO FERREIRA DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-04-07",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "SEVERINO MARCOS ANTONIO FILHO",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2021-06-10",
+    "tempo_empresa_anos": 5.1
+  },
+  {
+    "nome": "SEVERINO PEDRO DA SILVA",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "SILVANO ALCANTRA CIRILO",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-06-02",
+    "tempo_empresa_anos": 3.1
+  },
+  {
+    "nome": "SIVALDO CICERO DA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-04-14",
+    "tempo_empresa_anos": 1.3
+  },
+  {
+    "nome": "SUELLEN NATHALIA DE LIMA MELO",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2022-12-01",
+    "tempo_empresa_anos": 3.6
+  },
+  {
+    "nome": "THAIS VITORIA FERREIRA DA SILVA",
+    "funcao": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2026-05-11",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "TIAGO BEZERRA DE SOUZA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2023-05-10",
+    "tempo_empresa_anos": 3.2
+  },
+  {
+    "nome": "VAGNER MOURA DA SILVA",
+    "funcao": "SUPERVISOR(A) DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "INDIRETO",
+    "data_admissao": "2017-01-10",
+    "tempo_empresa_anos": 9.5
+  },
+  {
+    "nome": "VALDECI GILBERTO DA SILVA",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-01-06",
+    "tempo_empresa_anos": 6.5
+  },
+  {
+    "nome": "VALDEMIR CORDEIRO",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2021-09-20",
+    "tempo_empresa_anos": 4.8
+  },
+  {
+    "nome": "VICTOR DA SILVA DOS SANTOS",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-02-07",
+    "tempo_empresa_anos": 1.4
+  },
+  {
+    "nome": "VITOR WANDSON DA SILVA REGO",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2018-07-20",
+    "tempo_empresa_anos": 8
+  },
+  {
+    "nome": "VLADIMIR ARAUJO DE LIMA",
+    "funcao": "OPERADOR DE ASSISTENCIA TÉCNICA",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2024-06-06",
+    "tempo_empresa_anos": 2.1
+  },
+  {
+    "nome": "WALISSON EDSON ALVES DE CARVALHO",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-05-20",
+    "tempo_empresa_anos": 0.2
+  },
+  {
+    "nome": "WANDERLEI ERINALDO DE SOUZA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2021-06-10",
+    "tempo_empresa_anos": 5.1
+  },
+  {
+    "nome": "WANDERSON SOARES DOS SANTOS",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-04-06",
+    "tempo_empresa_anos": 0.3
+  },
+  {
+    "nome": "WEDSON ARLINDO DE ANDRADE",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2018-10-22",
+    "tempo_empresa_anos": 7.7
+  },
+  {
+    "nome": "WEDSON OLIVEIRA SILVA",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2022-02-07",
+    "tempo_empresa_anos": 4.4
+  },
+  {
+    "nome": "WELLINGTON ALVES GUIMARAES",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-03-02",
+    "tempo_empresa_anos": 0.4
+  },
+  {
+    "nome": "WESLEY DE MOURA BELARMINO",
+    "funcao": "PEDREIRO LIDER DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2022-04-04",
+    "tempo_empresa_anos": 4.3
+  },
+  {
+    "nome": "WILAMAR HUGO DA COSTA BRITO",
+    "funcao": "PEDREIRO DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2020-11-09",
+    "tempo_empresa_anos": 5.7
+  },
+  {
+    "nome": "WILLIAM JOSE SILVA DOS SANTOS",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2025-09-01",
+    "tempo_empresa_anos": 0.9
+  },
+  {
+    "nome": "YURI KAWAN SANTOS DE AGUIAR",
+    "funcao": "SERVENTE DE PRODUÇÃO",
+    "setor": "PRODUÇÃO",
+    "tipo": "DIRETO",
+    "data_admissao": "2026-06-08",
+    "tempo_empresa_anos": 0.1
+  }
+]
