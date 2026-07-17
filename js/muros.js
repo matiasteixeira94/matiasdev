@@ -70,6 +70,34 @@
     <div class="grid grid-4" id="kpi-row"></div>
 
     <div class="card">
+      <div class="card-head"><div><div class="card-title">Meta mensal — 2026.2</div><div class="card-sub">Meta (planejado/projetado) x realizado por mês — desvio = realizado − meta</div></div></div>
+      <div class="table-wrap">
+        <table class="data">
+          <thead>
+            <tr><th>Mês</th><th class="num">Meta</th><th class="num">Realizado</th><th class="num">Desvio</th></tr>
+          </thead>
+          <tbody>
+            ${metasMensais.meses.map((m) => {
+              const desvio = m.muros.realizado - m.muros.meta;
+              return `<tr>
+                <td>${m.label}</td>
+                <td class="num">${GP.fmtInt(m.muros.meta)}</td>
+                <td class="num">${GP.fmtInt(m.muros.realizado)}</td>
+                <td class="num"><span class="chip ${desvio >= 0 ? "chip-good" : "chip-warning"}">${desvio > 0 ? "+" : ""}${GP.fmtInt(desvio)}</span></td>
+              </tr>`;
+            }).join("")}
+            <tr style="font-weight:700;">
+              <td>Total 2026.2</td>
+              <td class="num">${GP.fmtInt(metas.muros.meta)}</td>
+              <td class="num">${GP.fmtInt(metas.muros.realizado)}</td>
+              <td class="num">${GP.fmtInt(metas.muros.realizado - metas.muros.meta)}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
       <div class="card-head"><div><div class="card-title">Muro concluído por obra</div><div class="card-sub">% de lotes com muro/cisterna já construído — na ordem em que os condomínios foram executados</div></div></div>
       <div class="chart-host" id="chart-muros"></div>
     </div>
@@ -102,34 +130,6 @@
                 <td class="num"><span class="chip ${conc === total ? "chip-good" : "chip-warning"}">${GP.fmtPct((conc / total) * 100, 0)}</span></td>
               </tr>`;
             }).join("")}
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-head"><div><div class="card-title">Meta mensal — 2026.2</div><div class="card-sub">Meta (planejado/projetado) x realizado por mês — desvio = realizado − meta</div></div></div>
-      <div class="table-wrap">
-        <table class="data">
-          <thead>
-            <tr><th>Mês</th><th class="num">Meta</th><th class="num">Realizado</th><th class="num">Desvio</th></tr>
-          </thead>
-          <tbody>
-            ${metasMensais.meses.map((m) => {
-              const desvio = m.muros.realizado - m.muros.meta;
-              return `<tr>
-                <td>${m.label}</td>
-                <td class="num">${GP.fmtInt(m.muros.meta)}</td>
-                <td class="num">${GP.fmtInt(m.muros.realizado)}</td>
-                <td class="num"><span class="chip ${desvio >= 0 ? "chip-good" : "chip-warning"}">${desvio > 0 ? "+" : ""}${GP.fmtInt(desvio)}</span></td>
-              </tr>`;
-            }).join("")}
-            <tr style="font-weight:700;">
-              <td>Total 2026.2</td>
-              <td class="num">${GP.fmtInt(metas.muros.meta)}</td>
-              <td class="num">${GP.fmtInt(metas.muros.realizado)}</td>
-              <td class="num">${GP.fmtInt(metas.muros.realizado - metas.muros.meta)}</td>
-            </tr>
           </tbody>
         </table>
       </div>
