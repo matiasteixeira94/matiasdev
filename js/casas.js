@@ -30,13 +30,26 @@
   };
   const EQUIPE_CANONICA = { AGUIA: "ÁGUIA" };
 
+  // Confirmado como 100% entregue, mesmo quando a aba DADOS CASA ainda não
+  // tem todas as linhas marcadas como concluídas (a planilha de origem não é
+  // a fonte definitiva de conclusão para essas obras) — mesmo critério já
+  // usado em gerar_resumo_obras.mjs para obras_reais.json.
+  const CONCLUIDO_OVERRIDE = new Set(["Laranjeiras", "Oliveiras"]);
+
   const casas = casasBrutas
-    .map((c) => ({
-      ...c,
-      empreendimento: NOME_CANONICO[c.empreendimento] || c.empreendimento,
-      ga: EQUIPE_CANONICA[c.ga?.trim()] || c.ga?.trim(),
-      supervisor: SUPERVISOR_CANONICO[c.supervisor?.trim()] || c.supervisor?.trim(),
-    }))
+    .map((c) => {
+      const empreendimento = NOME_CANONICO[c.empreendimento] || c.empreendimento;
+      const concluida = CONCLUIDO_OVERRIDE.has(empreendimento) && c.status !== "concluida";
+      return {
+        ...c,
+        empreendimento,
+        ga: EQUIPE_CANONICA[c.ga?.trim()] || c.ga?.trim(),
+        supervisor: SUPERVISOR_CANONICO[c.supervisor?.trim()] || c.supervisor?.trim(),
+        status: concluida ? "concluida" : c.status,
+        macroetapas_concluidas: concluida ? 5 : c.macroetapas_concluidas,
+        etapa_atual: concluida ? "entregue" : c.etapa_atual,
+      };
+    })
     .filter((c) => EMPREENDIMENTOS.includes(c.empreendimento));
   const ptCompare = (a, b) => a.localeCompare(b, "pt-BR");
   const supervisores = [...new Set(casas.map((c) => c.supervisor).filter(Boolean))].sort(ptCompare);
