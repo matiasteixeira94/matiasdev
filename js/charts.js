@@ -190,7 +190,7 @@ const GPCharts = (() => {
   }
 
   /* ---------------- Barras + linha de evolução (sequência categórica) ---------------- */
-  function barsLine(host, { items, height = 240, yFormat = (v) => v, lineColor = "var(--gold)" }) {
+  function barsLine(host, { items, height = 240, yFormat = (v) => v, lineColor = "var(--gold)", tooltipLabel = "Produtividade", legendLabel = "Evolução (ordem de execução)" }) {
     host.innerHTML = "";
     const tip = ensureTooltip(host);
     const width = host.clientWidth || 640;
@@ -230,7 +230,7 @@ const GPCharts = (() => {
       rect.addEventListener("mousemove", (e) => {
         const rect2 = svg.getBoundingClientRect();
         showTip(host, tip, (e.clientX - rect2.left) * (width / rect2.width), y,
-          `<div class="gp-tip-head">${it.label}</div><div class="gp-tip-row"><span class="gp-tip-dot" style="background:${it.color || "var(--accent)"}"></span>Produtividade<b>${yFormat(it.value)}</b></div>`);
+          `<div class="gp-tip-head">${it.label}</div><div class="gp-tip-row"><span class="gp-tip-dot" style="background:${it.color || "var(--accent)"}"></span>${tooltipLabel}<b>${yFormat(it.value)}</b></div>`);
       });
       rect.addEventListener("mouseleave", () => hideTip(tip));
       svg.appendChild(rect);
@@ -257,7 +257,7 @@ const GPCharts = (() => {
     const legend = document.createElement("div");
     legend.className = "legend";
     legend.style.marginTop = "8px";
-    legend.innerHTML = `<span class="tag-dot" style="color:${lineColor}">Evolução (ordem de execução)</span>`;
+    legend.innerHTML = `<span class="tag-dot" style="color:${lineColor}">${legendLabel}</span>`;
     host.appendChild(legend);
   }
 

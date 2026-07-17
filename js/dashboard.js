@@ -10,8 +10,8 @@
   });
   if (!session) return;
 
-  const [obrasReais, pessoalResumo] = await Promise.all([
-    GP.loadJSON("obras_reais.json"), GP.loadJSON("pessoal_resumo.json"),
+  const [obrasReais, pessoalResumo, custoCasa] = await Promise.all([
+    GP.loadJSON("obras_reais.json"), GP.loadJSON("pessoal_resumo.json"), GP.loadJSON("custo_casa.json"),
   ]);
   const totalCasas = obrasReais.reduce((a, o) => a + o.total, 0);
   const totalConcluidas = obrasReais.reduce((a, o) => a + o.concluida, 0);
@@ -24,6 +24,16 @@
     Laranjeiras: `<svg viewBox="0 0 40 40"><circle cx="20" cy="23" r="13" fill="#E2871E"/><rect x="19" y="4" width="2" height="8" rx="1" fill="#5B7A3A"/><path d="M21 8c4-3 8-2 9 1-3 2-7 1-9-1Z" fill="#5B7A3A"/></svg>`,
   };
   const OBRA_COR = { Amoreiras: "var(--cat-alvenaria)", Oliveiras: "var(--cat-acabamento)", Cerejeiras: "var(--cat-estrutura)", Laranjeiras: "var(--cat-administrativo)" };
+
+  // Ordem real em que os condomínios foram construídos (não é a ordem de
+  // exibição dos cartões acima, que é Amoreiras/Oliveiras/Cerejeiras/Laranjeiras).
+  const ORDEM_EXECUCAO = ["Laranjeiras", "Cerejeiras", "Oliveiras", "Amoreiras"];
+  const obrasComCusto = ORDEM_EXECUCAO.filter((nome) => custoCasa[nome]);
+  const primeiraObraCusto = obrasComCusto[0] ? custoCasa[obrasComCusto[0]] : null;
+  const ultimaObraCusto = obrasComCusto.length ? custoCasa[obrasComCusto[obrasComCusto.length - 1]] : null;
+  const variacaoCustoGeral = primeiraObraCusto && ultimaObraCusto
+    ? Math.round(((ultimaObraCusto.total.custo_por_casa_atual - primeiraObraCusto.total.custo_por_casa_atual) / primeiraObraCusto.total.custo_por_casa_atual) * 1000) / 10
+    : null;
 
   const content = document.getElementById("gp-content");
   content.innerHTML = `
@@ -74,14 +84,30 @@
       <div class="card-head"><div><div class="card-title">Produtividade média por obra</div><div class="card-sub">Coluna "PROD." da aba DADOS CASA, média das casas já entregues — na ordem em que as obras foram executadas</div></div></div>
       <div class="chart-host" id="chart-produtividade-media"></div>
     </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div><div class="card-title">Custo por casa — grupo "Custo Casa"</div><div class="card-sub">Última fotografia de orçamento (MATERIAL + SERVIÇO + PESSOAL + OUTROS CUSTOS) dividida pelos lotes de cada obra — na ordem em que os condomínios foram construídos</div></div>
+        ${variacaoCustoGeral != null ? `<span class="chip ${variacaoCustoGeral > 0 ? "chip-warning" : "chip-good"}">${variacaoCustoGeral > 0 ? "+" : ""}${GP.fmtPct(variacaoCustoGeral, 1)} de Laranjeiras até Amoreiras</span>` : ""}
+      </div>
+      <div class="chart-host" id="chart-custo-casa"></div>
+      <div class="grid grid-4" style="margin-top:14px;">
+        ${obrasComCusto.map((nome) => {
+          const d = custoCasa[nome];
+          return `
+          <div class="stat-tile">
+            <div class="stat-label">${nome}</div>
+            <div class="stat-value" style="font-size:20px;">${GP.fmtBRL(d.total.custo_por_casa_atual)}</div>
+            <span class="footnote">por casa · ${d.lotes} lotes</span><br>
+            <span class="chip ${d.total.variacao_pct > 0 ? "chip-warning" : "chip-good"}" style="margin-top:6px;">${d.total.variacao_pct > 0 ? "+" : ""}${GP.fmtPct(d.total.variacao_pct, 1)} vs orçamento base</span>
+          </div>`;
+        }).join("")}
+      </div>
+    </div>
   `;
 
   document.getElementById("btn-export-pdf").addEventListener("click", () => window.print());
   document.getElementById("btn-export-xls").addEventListener("click", () => alert("Exportação para Excel: integra com o endpoint /relatorios/exportar?formato=xlsx (ver docs/estrutura-banco-dados.md)."));
-
-  // Ordem real em que os condomínios foram construídos (não é a ordem de
-  // exibição dos cartões acima, que é Amoreiras/Oliveiras/Cerejeiras/Laranjeiras).
-  const ORDEM_EXECUCAO = ["Laranjeiras", "Cerejeiras", "Oliveiras", "Amoreiras"];
 
   function renderGraficos() {
     const porObra = Object.fromEntries(obrasReais.map((o) => [o.empreendimento, o]));
@@ -90,6 +116,15 @@
         label: nome, value: porObra[nome].produtividade_media, color: OBRA_COR[nome] ?? "var(--accent)",
       })),
       yFormat: (v) => GP.fmtNum1(v),
+    });
+
+    GPCharts.barsLine(document.getElementById("chart-custo-casa"), {
+      items: obrasComCusto.map((nome) => ({
+        label: nome, value: custoCasa[nome].total.custo_por_casa_atual, color: OBRA_COR[nome] ?? "var(--accent)",
+      })),
+      yFormat: (v) => GP.fmtBRL(v),
+      tooltipLabel: "Custo por casa",
+      legendLabel: "Custo por casa (ordem de execução)",
     });
   }
 
