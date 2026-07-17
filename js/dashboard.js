@@ -36,6 +36,19 @@
     ? Math.round(((ultimaObraCusto.total.custo_por_casa_atual - primeiraObraCusto.total.custo_por_casa_atual) / primeiraObraCusto.total.custo_por_casa_atual) * 1000) / 10
     : null;
 
+  // Seta ao lado do nome da obra comparando o custo/casa com a obra anterior
+  // na ordem de execução — verde para baixo (melhorou) ou vermelha para cima (piorou).
+  function custoTrendArrow(i) {
+    if (i === 0) return "";
+    const atual = custoCasa[obrasComCusto[i]].total.custo_por_casa_atual;
+    const anterior = custoCasa[obrasComCusto[i - 1]].total.custo_por_casa_atual;
+    if (atual === anterior) return "";
+    const piorou = atual > anterior;
+    const cor = piorou ? "var(--status-critical)" : "var(--status-good)";
+    const path = piorou ? `<path d="M12 19V5M5 12l7-7 7 7"/>` : `<path d="M12 5v14M19 12l-7 7-7-7"/>`;
+    return `<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cor}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px; margin-left:5px;">${path}</svg>`;
+  }
+
   const content = document.getElementById("gp-content");
   content.innerHTML = `
     <div class="card">
@@ -94,7 +107,7 @@
       <div class="table-wrap" style="margin-bottom:16px;">
         <table class="data">
           <thead>
-            <tr><th>Item 01.05 — Custo Casa</th>${obrasComCusto.map((nome) => `<th class="num">${nome}</th>`).join("")}</tr>
+            <tr><th>Item 01.05 — Custo Casa</th>${obrasComCusto.map((nome, i) => `<th class="num">${nome}${custoTrendArrow(i)}</th>`).join("")}</tr>
           </thead>
           <tbody>
             ${SUBCONTAS_CUSTO.map((sub) => `
@@ -111,11 +124,11 @@
       </div>
       <div class="chart-host" id="chart-custo-casa"></div>
       <div class="grid grid-4" style="margin-top:14px;">
-        ${obrasComCusto.map((nome) => {
+        ${obrasComCusto.map((nome, i) => {
           const d = custoCasa[nome];
           return `
           <div class="stat-tile">
-            <div class="stat-label">${nome}</div>
+            <div class="stat-label">${nome}${custoTrendArrow(i)}</div>
             <div class="stat-value" style="font-size:20px;">${GP.fmtBRL(d.total.custo_por_casa_atual)}</div>
             <span class="footnote">por casa · ${d.lotes} lotes</span><br>
             <span class="chip ${d.total.variacao_pct > 0 ? "chip-warning" : "chip-good"}" style="margin-top:6px;">${d.total.variacao_pct > 0 ? "+" : ""}${GP.fmtPct(d.total.variacao_pct, 1)} vs orçamento base</span>
