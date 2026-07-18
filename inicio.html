@@ -16,9 +16,21 @@
   .cover-photo-aerial {
     clip-path: polygon(0 0, 45% 0, 60% 100%, 0 100%);
   }
-  .cover-photo-team {
-    clip-path: polygon(45% 0, 100% 0, 100% 100%, 60% 100%);
-    object-position: center 28%;
+  /* A região da equipe é estreita (fatia diagonal), então a foto de grupo
+     larga não cabe inteira numa única janela de corte sem perder gente
+     nas pontas. Em vez de 1 recorte, são 2 metades da MESMA foto, cada
+     uma enviesada pra um lado (esquerda em cima, direita embaixo) — juntas
+     cobrem a foto inteira, com todo mundo aparecendo em algum dos dois. */
+  .cover-photo-team-top, .cover-photo-team-bottom {
+    object-fit: cover;
+  }
+  .cover-photo-team-top {
+    clip-path: polygon(45% 0, 100% 0, 100% 50%, 52.5% 50%);
+    object-position: 15% 32%;
+  }
+  .cover-photo-team-bottom {
+    clip-path: polygon(52.5% 50%, 100% 50%, 100% 100%, 60% 100%);
+    object-position: 85% 32%;
   }
   .cover-overlay {
     position: absolute; inset: 0;
@@ -63,7 +75,7 @@
     /* Em telas estreitas a diagonal fica apertada demais — some a foto da
        equipe e volta a foto aérea a ocupar o quadro inteiro. */
     .cover-photo-aerial { clip-path: none; }
-    .cover-photo-team { display: none; }
+    .cover-photo-team-top, .cover-photo-team-bottom { display: none; }
   }
   @media (max-width: 560px) {
     .cover-content { padding: 40px 20px 36px; gap: 14px; }
@@ -74,7 +86,8 @@
 <body>
   <div class="cover-hero">
     <img class="cover-photo cover-photo-aerial" src="assets/images/capa-empreendimento.png" alt="Vista aérea de empreendimento residencial construído pela Viana &amp; Moura Construções" />
-    <img class="cover-photo cover-photo-team" src="assets/images/equipe-ugb-caruaru.jpg" alt="Equipe da UGB Caruaru em entrega de empreendimento" />
+    <img class="cover-photo cover-photo-team-top" src="assets/images/equipe-ugb-caruaru.jpg" alt="Equipe da UGB Caruaru em entrega de empreendimento" />
+    <img class="cover-photo cover-photo-team-bottom" src="assets/images/equipe-ugb-caruaru.jpg" alt="" aria-hidden="true" />
     <div class="cover-overlay"></div>
     <div class="cover-content">
       <img class="cover-logo-full" src="assets/images/logo-viana-moura.png" alt="Viana &amp; Moura Construções" />
