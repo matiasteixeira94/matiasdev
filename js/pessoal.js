@@ -75,6 +75,17 @@
     </div>
 
     <div class="card">
+      <div class="section-head" style="margin-bottom:14px;">
+        <h2>Organograma — Produção CA</h2>
+        <span class="footnote">245 pessoas · julho de 2026</span>
+      </div>
+      <div style="overflow-x:auto; border-radius:12px; border:1px solid var(--border);">
+        <img src="assets/images/organograma-producao.jpg" alt="Organograma da Produção CA — julho de 2026" style="display:block; width:100%; min-width:1100px;" />
+      </div>
+      <p class="footnote" style="margin-top:8px;">Clique com o botão direito e abra a imagem em uma nova aba para ampliar.</p>
+    </div>
+
+    <div class="card">
       <div class="card-head">
         <div><div class="card-title">Quadro planejado x realizado</div><div class="card-sub">Nº de colaboradores por mês — desvio = realizado − planejado</div></div>
         <select class="select" id="filtro-frente">

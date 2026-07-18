@@ -67,8 +67,6 @@
       </div>
     </div>
 
-    <div class="grid grid-4" id="kpi-row"></div>
-
     <div class="card">
       <div class="card-head"><div><div class="card-title">Meta mensal — 2026.2</div><div class="card-sub">Meta (planejado/projetado) x realizado por mês — desvio = realizado − meta</div></div></div>
       <div class="table-wrap">
@@ -133,29 +131,6 @@
           </tbody>
         </table>
       </div>
-    </div>
-  `;
-
-  document.getElementById("kpi-row").innerHTML = `
-    <div class="card stat-tile">
-      <div class="stat-label">Lotes com muro concluído</div>
-      <div class="stat-value">${GP.fmtInt(totalGeralConcluidos)}</div>
-      <span class="footnote">de ${GP.fmtInt(totalGeralLotes)} lotes no total</span>
-    </div>
-    <div class="card stat-tile">
-      <div class="stat-label">% concluído geral</div>
-      <div class="stat-value">${GP.fmtPct((totalGeralConcluidos / totalGeralLotes) * 100, 0)}</div>
-      <span class="chip ${totalGeralConcluidos === totalGeralLotes ? "chip-good" : "chip-warning"}">${totalGeralLotes - totalGeralConcluidos} pendentes</span>
-    </div>
-    <div class="card stat-tile">
-      <div class="stat-label">Obra com maior avanço</div>
-      <div class="stat-value" style="font-size:22px;">${ORDEM_EXECUCAO.slice().sort((a, b) => (muros[b].concluidos / totalLotes[b]) - (muros[a].concluidos / totalLotes[a]))[0]}</div>
-      <span class="footnote">em % de lotes concluídos</span>
-    </div>
-    <div class="card stat-tile">
-      <div class="stat-label">Obra com menor avanço</div>
-      <div class="stat-value" style="font-size:22px;">${ORDEM_EXECUCAO.slice().sort((a, b) => (muros[a].concluidos / totalLotes[a]) - (muros[b].concluidos / totalLotes[b]))[0]}</div>
-      <span class="footnote">em % de lotes concluídos</span>
     </div>
   `;
 
