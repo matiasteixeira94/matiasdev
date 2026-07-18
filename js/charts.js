@@ -246,15 +246,19 @@ const GPCharts = (() => {
       pontos.push([cx, y]);
     });
 
-    // linha ligando os pontos, na ordem de execução (ordem de "items")
+    // linha ligando os pontos, na ordem de execução (ordem de "items").
+    // pointer-events:none nos dois — são só decoração; sem isso, quando uma
+    // barra é bem baixa (valor perto de 0), o círculo/linha do ponto fica
+    // bem em cima dela e rouba o clique que era pra ir pro <rect>.
     svg.appendChild(el("polyline", {
       points: pontos.map(([x, y]) => `${x},${y}`).join(" "),
       fill: "none", stroke: lineColor, "stroke-width": 2.5,
       "stroke-linecap": "round", "stroke-linejoin": "round",
+      "pointer-events": "none",
     }));
     pontos.forEach(([x, y], i) => {
-      svg.appendChild(el("circle", { cx: x, cy: y, r: 5, fill: lineColor, stroke: "var(--surface-raised)", "stroke-width": 2 }));
-      const label = el("text", { x, y: y - 12, "text-anchor": "middle", class: "gp-axis-label", style: "font-weight:700;" });
+      svg.appendChild(el("circle", { cx: x, cy: y, r: 5, fill: lineColor, stroke: "var(--surface-raised)", "stroke-width": 2, "pointer-events": "none" }));
+      const label = el("text", { x, y: y - 12, "text-anchor": "middle", class: "gp-axis-label", style: "font-weight:700;", "pointer-events": "none" });
       label.textContent = yFormat(items[i].value);
       svg.appendChild(label);
     });

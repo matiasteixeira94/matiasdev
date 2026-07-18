@@ -1,0 +1,2840 @@
+{
+  "atualizado_em": "2026-07-18",
+  "total_faltas": 6789,
+  "colaboradores_com_falta": 345,
+  "colaboradores_ativos_total": 249,
+  "colaboradores_ativos_com_falta": 229,
+  "pct_ativos_com_falta": 92,
+  "anos": [
+    "2025",
+    "2026"
+  ],
+  "por_ano": {
+    "2025": 3319,
+    "2026": 3470
+  },
+  "por_ano_mes": {
+    "2025": {
+      "2025-12": 447,
+      "2025-11": 448,
+      "2025-09": 653,
+      "2025-10": 516,
+      "2025-01": 2,
+      "2025-07": 639,
+      "2025-06": 3,
+      "2025-04": 2,
+      "2025-08": 609
+    },
+    "2026": {
+      "2026-07": 27,
+      "2026-06": 578,
+      "2026-05": 536,
+      "2026-04": 662,
+      "2026-03": 605,
+      "2026-01": 486,
+      "2026-02": 576
+    }
+  },
+  "por_mes_dia": {
+    "2026-07": {
+      "1": 5,
+      "2": 4,
+      "3": 4,
+      "6": 4,
+      "7": 3,
+      "8": 3,
+      "9": 3,
+      "27": 1
+    },
+    "2026-06": {
+      "1": 25,
+      "2": 25,
+      "3": 28,
+      "4": 16,
+      "7": 1,
+      "8": 21,
+      "9": 24,
+      "10": 15,
+      "11": 13,
+      "12": 22,
+      "15": 31,
+      "16": 26,
+      "17": 34,
+      "18": 26,
+      "19": 28,
+      "22": 26,
+      "23": 27,
+      "25": 34,
+      "26": 42,
+      "27": 87,
+      "29": 3,
+      "30": 24
+    },
+    "2026-05": {
+      "4": 29,
+      "5": 27,
+      "6": 42,
+      "7": 34,
+      "8": 31,
+      "11": 33,
+      "12": 32,
+      "13": 22,
+      "14": 22,
+      "15": 31,
+      "19": 26,
+      "20": 17,
+      "21": 18,
+      "22": 22,
+      "25": 32,
+      "26": 21,
+      "27": 26,
+      "28": 29,
+      "29": 42
+    },
+    "2026-04": {
+      "1": 35,
+      "2": 46,
+      "6": 36,
+      "7": 32,
+      "8": 36,
+      "9": 31,
+      "10": 27,
+      "13": 24,
+      "14": 24,
+      "15": 27,
+      "16": 30,
+      "17": 36,
+      "22": 27,
+      "23": 28,
+      "24": 28,
+      "25": 66,
+      "27": 26,
+      "28": 35,
+      "29": 30,
+      "30": 38
+    },
+    "2026-03": {
+      "2": 33,
+      "3": 27,
+      "4": 20,
+      "5": 43,
+      "9": 18,
+      "10": 35,
+      "11": 17,
+      "12": 24,
+      "13": 28,
+      "15": 1,
+      "16": 51,
+      "17": 25,
+      "18": 28,
+      "19": 27,
+      "20": 38,
+      "23": 27,
+      "24": 25,
+      "25": 20,
+      "26": 26,
+      "27": 28,
+      "29": 1,
+      "30": 32,
+      "31": 31
+    },
+    "2026-01": {
+      "5": 23,
+      "6": 21,
+      "7": 22,
+      "8": 20,
+      "9": 25,
+      "12": 35,
+      "13": 17,
+      "14": 17,
+      "15": 21,
+      "16": 27,
+      "19": 23,
+      "20": 22,
+      "21": 22,
+      "22": 18,
+      "23": 20,
+      "26": 23,
+      "27": 25,
+      "28": 20,
+      "29": 24,
+      "30": 61
+    },
+    "2026-02": {
+      "2": 33,
+      "3": 37,
+      "4": 25,
+      "5": 20,
+      "6": 39,
+      "9": 36,
+      "10": 23,
+      "11": 25,
+      "12": 27,
+      "13": 45,
+      "19": 22,
+      "20": 14,
+      "21": 79,
+      "23": 25,
+      "24": 35,
+      "25": 25,
+      "26": 25,
+      "27": 41
+    },
+    "2025-12": {
+      "1": 26,
+      "2": 18,
+      "3": 16,
+      "4": 16,
+      "5": 14,
+      "6": 67,
+      "8": 25,
+      "9": 25,
+      "10": 23,
+      "11": 22,
+      "12": 38,
+      "15": 22,
+      "16": 26,
+      "17": 22,
+      "18": 15,
+      "19": 71,
+      "20": 1
+    },
+    "2025-11": {
+      "3": 30,
+      "4": 24,
+      "5": 24,
+      "6": 19,
+      "7": 26,
+      "8": 53,
+      "10": 20,
+      "11": 15,
+      "12": 19,
+      "13": 17,
+      "14": 27,
+      "17": 19,
+      "18": 22,
+      "19": 24,
+      "24": 25,
+      "25": 20,
+      "26": 20,
+      "27": 15,
+      "28": 29
+    },
+    "2025-09": {
+      "1": 36,
+      "2": 23,
+      "3": 30,
+      "4": 38,
+      "5": 44,
+      "6": 2,
+      "7": 2,
+      "8": 32,
+      "9": 26,
+      "10": 29,
+      "11": 44,
+      "12": 41,
+      "13": 1,
+      "14": 1,
+      "16": 40,
+      "17": 25,
+      "18": 26,
+      "19": 33,
+      "20": 1,
+      "22": 20,
+      "23": 19,
+      "24": 17,
+      "25": 26,
+      "26": 26,
+      "28": 2,
+      "29": 36,
+      "30": 33
+    },
+    "2025-10": {
+      "1": 34,
+      "2": 34,
+      "3": 33,
+      "4": 3,
+      "5": 2,
+      "6": 28,
+      "7": 22,
+      "8": 25,
+      "9": 17,
+      "10": 21,
+      "11": 2,
+      "12": 2,
+      "13": 25,
+      "14": 22,
+      "15": 23,
+      "16": 25,
+      "17": 29,
+      "21": 20,
+      "22": 12,
+      "23": 10,
+      "24": 20,
+      "27": 24,
+      "28": 13,
+      "29": 13,
+      "30": 17,
+      "31": 40
+    },
+    "2025-01": {
+      "18": 1,
+      "29": 1
+    },
+    "2025-07": {
+      "1": 30,
+      "2": 36,
+      "3": 24,
+      "4": 35,
+      "5": 2,
+      "6": 2,
+      "7": 27,
+      "8": 27,
+      "9": 44,
+      "10": 26,
+      "11": 25,
+      "12": 2,
+      "13": 2,
+      "14": 27,
+      "15": 21,
+      "16": 25,
+      "17": 37,
+      "18": 2,
+      "19": 1,
+      "21": 29,
+      "22": 25,
+      "23": 31,
+      "24": 23,
+      "25": 34,
+      "26": 1,
+      "27": 1,
+      "28": 28,
+      "29": 19,
+      "30": 26,
+      "31": 27
+    },
+    "2025-06": {
+      "5": 1,
+      "6": 1,
+      "27": 1
+    },
+    "2025-04": {
+      "25": 1,
+      "28": 1
+    },
+    "2025-08": {
+      "1": 44,
+      "2": 4,
+      "3": 3,
+      "4": 34,
+      "5": 22,
+      "6": 31,
+      "7": 29,
+      "8": 38,
+      "9": 1,
+      "10": 1,
+      "11": 16,
+      "12": 18,
+      "13": 25,
+      "14": 14,
+      "15": 32,
+      "18": 29,
+      "19": 22,
+      "20": 29,
+      "21": 19,
+      "22": 29,
+      "25": 27,
+      "26": 31,
+      "27": 25,
+      "28": 33,
+      "29": 44,
+      "30": 5,
+      "31": 4
+    }
+  },
+  "ranking": [
+    {
+      "nome": "JOSE MARIA DOS SANTOS SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 102,
+      "ativo": true
+    },
+    {
+      "nome": "TIAGO DE SENA BARBOSA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 88,
+      "ativo": false
+    },
+    {
+      "nome": "CARLOS DANIEL SERAFIM ALVES DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 82,
+      "ativo": false
+    },
+    {
+      "nome": "LAURA SAMARA DA CONCEICAO SILVA SANTOS",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 73,
+      "ativo": true
+    },
+    {
+      "nome": "JOSENILDO ELIAS DA SILVA SANTANA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 72,
+      "ativo": false
+    },
+    {
+      "nome": "VICTOR DA SILVA DOS SANTOS",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 67,
+      "ativo": true
+    },
+    {
+      "nome": "ARTUR LUIZ NUNES DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 67,
+      "ativo": false
+    },
+    {
+      "nome": "WELTON DE ALMEIDA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 64,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE CARLOS SOBRAL DOS SANTOS",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 61,
+      "ativo": true
+    },
+    {
+      "nome": "SEVERINO MARCOS ANTONIO FILHO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 60,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE ANTONIO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 60,
+      "ativo": false
+    },
+    {
+      "nome": "ALAN MANOEL PEREIRA DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 58,
+      "ativo": true
+    },
+    {
+      "nome": "DOUGLAS DE ARAUJO LIMA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 56,
+      "ativo": true
+    },
+    {
+      "nome": "CHARLES BRUNO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 55,
+      "ativo": false
+    },
+    {
+      "nome": "WILLIAM JOSE SILVA DOS SANTOS",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 54,
+      "ativo": true
+    },
+    {
+      "nome": "WILLAMES ADRIANO DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 52,
+      "ativo": false
+    },
+    {
+      "nome": "GUILHERME EDUARDO FERREIRA SIMAO",
+      "cargo": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+      "setor": "Produção",
+      "total": 52,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE CLAUDEMIR BEZERRA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 52,
+      "ativo": true
+    },
+    {
+      "nome": "LUIZ CARLOS DOS SANTOS FILHO",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 52,
+      "ativo": false
+    },
+    {
+      "nome": "RICARDO DA SILVA NASCIMENTO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 50,
+      "ativo": true
+    },
+    {
+      "nome": "SANDRO JOSE FERREIRA DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 50,
+      "ativo": false
+    },
+    {
+      "nome": "LUIZ FILIPI DA SILVA OLIVEIRA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 49,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE WEVERTON OLIVEIRA NUNES",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 47,
+      "ativo": true
+    },
+    {
+      "nome": "LEANDRO JOSE FERREIRA DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 47,
+      "ativo": false
+    },
+    {
+      "nome": "CLEBSON CARDOSO DA SILVA CRUZ",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 46,
+      "ativo": false
+    },
+    {
+      "nome": "DANIEL SEVERINO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 45,
+      "ativo": true
+    },
+    {
+      "nome": "CICERO EDUARDO BEZERRA DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 45,
+      "ativo": true
+    },
+    {
+      "nome": "ROBERVAL LUIZ DO REGO SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 44,
+      "ativo": true
+    },
+    {
+      "nome": "EDSON ANTONIO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 44,
+      "ativo": true
+    },
+    {
+      "nome": "WILAMAR HUGO DA COSTA BRITO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 44,
+      "ativo": true
+    },
+    {
+      "nome": "REGINALDO PEREIRA DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 44,
+      "ativo": false
+    },
+    {
+      "nome": "AURILAN DIAS PEREIRA DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 44,
+      "ativo": false
+    },
+    {
+      "nome": "ALINE SANTOS CORDEIRO DA SILVA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 43,
+      "ativo": true
+    },
+    {
+      "nome": "MARCOS VINICIUS LIMA DO NASCIMENTO",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 43,
+      "ativo": false
+    },
+    {
+      "nome": "LUCAS KAUA DOS SANTOS DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 43,
+      "ativo": false
+    },
+    {
+      "nome": "SERGIO BATISTA DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 43,
+      "ativo": false
+    },
+    {
+      "nome": "JEFFERSON JOSE DA SILVA 2",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 43,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE ERALDO MARQUES DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 42,
+      "ativo": true
+    },
+    {
+      "nome": "JADSON HENRIQUE DOS SANTOS",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 41,
+      "ativo": true
+    },
+    {
+      "nome": "EMERSON MOREIRA DO NASCIMENTO",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 41,
+      "ativo": true
+    },
+    {
+      "nome": "THIAGO DE SOUZA DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 41,
+      "ativo": false
+    },
+    {
+      "nome": "CAETANO CICERO DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 40,
+      "ativo": true
+    },
+    {
+      "nome": "WEDSON OLIVEIRA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 40,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE CARLOS DA SILVA DO NASCIMENTO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 39,
+      "ativo": false
+    },
+    {
+      "nome": "ANDRE AFONSO BARBOSA DA SILVA",
+      "cargo": "SUPERVISOR(A) DE ACABAMENTO",
+      "setor": "Produção",
+      "total": 39,
+      "ativo": true
+    },
+    {
+      "nome": "PEDRO HENRIQUE NUNES DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 39,
+      "ativo": true
+    },
+    {
+      "nome": "EDUARDO ERIVALDO DA SILVA",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 39,
+      "ativo": false
+    },
+    {
+      "nome": "MARCIO JOSE LIMA RUFINO",
+      "cargo": "ELETRICISTA",
+      "setor": "Acabamento",
+      "total": 39,
+      "ativo": false
+    },
+    {
+      "nome": "GILVAN OLIVEIRA DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 37,
+      "ativo": true
+    },
+    {
+      "nome": "FABIANO SEVERINO DOS SANTOS",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 37,
+      "ativo": true
+    },
+    {
+      "nome": "RUBENS DA SILVA TORRES",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 37,
+      "ativo": true
+    },
+    {
+      "nome": "ROSANGELA OLIVEIRA SILVA DOS SANTOS",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 36,
+      "ativo": true
+    },
+    {
+      "nome": "GIVANILDO JOSE SANTOS DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 36,
+      "ativo": true
+    },
+    {
+      "nome": "ALAN DE LIMA FEITOZA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 36,
+      "ativo": true
+    },
+    {
+      "nome": "SEVERINO FRANCISCO DA SILVA FILHO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 36,
+      "ativo": false
+    },
+    {
+      "nome": "JONATA PEREIRA MARTINS",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 35,
+      "ativo": true
+    },
+    {
+      "nome": "FABIO ANTONIO DE OLIVEIRA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 35,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE ALEXANDRE DE MORAES BARBOSA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 35,
+      "ativo": false
+    },
+    {
+      "nome": "LEONILSON RODRIGUES DOS SANTOS",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 35,
+      "ativo": true
+    },
+    {
+      "nome": "EVERTON MAYCON GOMES DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 35,
+      "ativo": false
+    },
+    {
+      "nome": "ROGERIO GOMES DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 35,
+      "ativo": false
+    },
+    {
+      "nome": "CAMILA PEREIRA DA SILVA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 34,
+      "ativo": true
+    },
+    {
+      "nome": "LEONARDO DA SILVA FERREIRA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 34,
+      "ativo": true
+    },
+    {
+      "nome": "ANDERSON DA SILVA BARBOSA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 34,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE MIRANDA FERREIRA DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 34,
+      "ativo": true
+    },
+    {
+      "nome": "JOSENILDO FRANCISCO DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 34,
+      "ativo": false
+    },
+    {
+      "nome": "ASTON EMANUEL CAMPOS ROMAO",
+      "cargo": "SUPERVISOR DE ACABAMENTO",
+      "setor": "Produção",
+      "total": 34,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE RENATO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 33,
+      "ativo": true
+    },
+    {
+      "nome": "ELTON ANTONIO FELIX DE ANDRADE LIMA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 33,
+      "ativo": true
+    },
+    {
+      "nome": "MATEUS JOSE DOS SANTOS DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 33,
+      "ativo": false
+    },
+    {
+      "nome": "CICERO BEZERRA DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 32,
+      "ativo": true
+    },
+    {
+      "nome": "DENIS WASHINGTON BARBOSA DE OLIVEIRA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 32,
+      "ativo": true
+    },
+    {
+      "nome": "ARTUR BERNARDO DE SOUZA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 31,
+      "ativo": true
+    },
+    {
+      "nome": "RALISSON AMARO DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 31,
+      "ativo": false
+    },
+    {
+      "nome": "JOBSON LINO DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 31,
+      "ativo": false
+    },
+    {
+      "nome": "JAILSON JOAO DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 30,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE EDUARDO DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 30,
+      "ativo": true
+    },
+    {
+      "nome": "PAULO SEVERINO SOBRAL DE LIMA",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 30,
+      "ativo": false
+    },
+    {
+      "nome": "ARAMIS AQUILES SIQUEIRA FERREIRA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 30,
+      "ativo": false
+    },
+    {
+      "nome": "EZEQUIEL MELO DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 29,
+      "ativo": false
+    },
+    {
+      "nome": "JOAO ALEXANDRE BARBOSA FILHO",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 28,
+      "ativo": true
+    },
+    {
+      "nome": "FLAVIO FRANCISCO DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 28,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE MANOEL DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 28,
+      "ativo": true
+    },
+    {
+      "nome": "JOSEILDO OLIVEIRA LIMA",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 28,
+      "ativo": true
+    },
+    {
+      "nome": "LINDAILSON SOARES DA SILVA",
+      "cargo": "ELETRICISTA",
+      "setor": "Acabamento",
+      "total": 28,
+      "ativo": true
+    },
+    {
+      "nome": "LOURIVAL IVANILDO DA SILVA",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 28,
+      "ativo": true
+    },
+    {
+      "nome": "SEVERINO PEDRO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 28,
+      "ativo": true
+    },
+    {
+      "nome": "OZIEL ALVES DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 28,
+      "ativo": false
+    },
+    {
+      "nome": "JACKSON JOSE OLIVEIRA DE FRANCA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 28,
+      "ativo": true
+    },
+    {
+      "nome": "LEONARDO NATAN SILVA SANTOS",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 28,
+      "ativo": false
+    },
+    {
+      "nome": "ADEMILTON PEDRO DA SILVA",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 28,
+      "ativo": false
+    },
+    {
+      "nome": "PEDRO HENRIQUE DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 28,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE ALISON PEREIRA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 28,
+      "ativo": false
+    },
+    {
+      "nome": "GERSON MATHEUS GOMES DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 27,
+      "ativo": true
+    },
+    {
+      "nome": "EDUARDO BARBOSA DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 27,
+      "ativo": false
+    },
+    {
+      "nome": "GEFFERSON GILMAR DIAS LEITE",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 27,
+      "ativo": false
+    },
+    {
+      "nome": "WESLEY DE MOURA BELARMINO",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 26,
+      "ativo": true
+    },
+    {
+      "nome": "GABRIELLY MARIA FEITOSA VASCONCELOS",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 26,
+      "ativo": true
+    },
+    {
+      "nome": "GIVANILSON JOSE DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 26,
+      "ativo": true
+    },
+    {
+      "nome": "EDICLECIO VITALINO DE MELO",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 26,
+      "ativo": true
+    },
+    {
+      "nome": "MATEUS ALEXANDRE DA SILVA MACEDO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 26,
+      "ativo": true
+    },
+    {
+      "nome": "CARLOS VINICIUS DOS SANTOS",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 26,
+      "ativo": true
+    },
+    {
+      "nome": "DAVI URBANO DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 26,
+      "ativo": false
+    },
+    {
+      "nome": "VALDEMIR CORDEIRO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 25,
+      "ativo": true
+    },
+    {
+      "nome": "ROBSON WAGNER DA SILVA PAIVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 25,
+      "ativo": true
+    },
+    {
+      "nome": "LEANDRO VICTOR DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 25,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE MATHEUS COSTA DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 25,
+      "ativo": true
+    },
+    {
+      "nome": "CRISTIANE MARIA DAS DORES SANTOS SILVA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 25,
+      "ativo": true
+    },
+    {
+      "nome": "JOSELMO BARBOSA DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 25,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE BIVALDO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 25,
+      "ativo": true
+    },
+    {
+      "nome": "VITOR WANDSON DA SILVA REGO",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 25,
+      "ativo": true
+    },
+    {
+      "nome": "DAFANNY GABRIELE DA SILVA",
+      "cargo": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+      "setor": "Produção",
+      "total": 25,
+      "ativo": false
+    },
+    {
+      "nome": "ILAMAR JOSE DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 24,
+      "ativo": true
+    },
+    {
+      "nome": "JOSENILSON DA SILVA SANTOS",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 24,
+      "ativo": true
+    },
+    {
+      "nome": "CICERO JOSE FLORENCIO",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 24,
+      "ativo": true
+    },
+    {
+      "nome": "EDIMILSON CORDEIRO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 24,
+      "ativo": true
+    },
+    {
+      "nome": "ADEILDO JOSE DOS SANTOS",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 24,
+      "ativo": false
+    },
+    {
+      "nome": "CLEITON ALVES DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 23,
+      "ativo": true
+    },
+    {
+      "nome": "PEDRO FELIPE SIQUEIRA DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 22,
+      "ativo": true
+    },
+    {
+      "nome": "JARDIEL JOSE DOS SANTOS SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 22,
+      "ativo": true
+    },
+    {
+      "nome": "JOZENILDO VITALINO DE MELO",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 22,
+      "ativo": true
+    },
+    {
+      "nome": "CARLOS ANDRE PEREIRA DE OLIVEIRA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 22,
+      "ativo": true
+    },
+    {
+      "nome": "JORGE LUIZ DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 22,
+      "ativo": true
+    },
+    {
+      "nome": "LOURIVAL JUVENCIO DOS SANTOS",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 22,
+      "ativo": true
+    },
+    {
+      "nome": "MARCOS ANTONIO DA SILVA JUNIOR",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 22,
+      "ativo": true
+    },
+    {
+      "nome": "EDNALDO JOSE DA SILVA 2",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 22,
+      "ativo": false
+    },
+    {
+      "nome": "WANDERSON SOARES DOS SANTOS",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 21,
+      "ativo": true
+    },
+    {
+      "nome": "RAFAEL DE LIMA PEREIRA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 21,
+      "ativo": true
+    },
+    {
+      "nome": "JOHN DIEGO DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 21,
+      "ativo": true
+    },
+    {
+      "nome": "EZEQUIEL INACIO DOS SANTOS",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 21,
+      "ativo": true
+    },
+    {
+      "nome": "SANDRO FERREIRA DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 21,
+      "ativo": true
+    },
+    {
+      "nome": "JOSENILDO DA SILVA MILANEZ",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 21,
+      "ativo": true
+    },
+    {
+      "nome": "LUCIENE QUITERIA DA SILVA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Produção",
+      "total": 21,
+      "ativo": false
+    },
+    {
+      "nome": "JOSELMO CARVALHO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 20,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE RAMOS DO NASCIMENTO SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 20,
+      "ativo": false
+    },
+    {
+      "nome": "PAULO HELENO DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 19,
+      "ativo": true
+    },
+    {
+      "nome": "ERLAINE CONCEICAO DE LIMA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 19,
+      "ativo": true
+    },
+    {
+      "nome": "EVERTON DOUGLAS OLIVEIRA BEZERRA DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 19,
+      "ativo": true
+    },
+    {
+      "nome": "ENDERSON DE LIMA DO NASCIMENTO",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 19,
+      "ativo": true
+    },
+    {
+      "nome": "ALISSON TAVARES DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 19,
+      "ativo": true
+    },
+    {
+      "nome": "CICERO FRANCISCO DA SILVA 2",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 19,
+      "ativo": false
+    },
+    {
+      "nome": "ANAILTON JESUS SOUZA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 19,
+      "ativo": true
+    },
+    {
+      "nome": "RIVALDO PEREIRA DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 19,
+      "ativo": true
+    },
+    {
+      "nome": "CICERO JOSE DA SILVA",
+      "cargo": "OPERADOR DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 19,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE CLEBSON QUEIROZ DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 19,
+      "ativo": false
+    },
+    {
+      "nome": "JEFFERSON DO NASCIMENTO BORBA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 18,
+      "ativo": true
+    },
+    {
+      "nome": "CELIO NUNES DOS SANTOS",
+      "cargo": "MARCENEIRO",
+      "setor": "Acabamento",
+      "total": 18,
+      "ativo": true
+    },
+    {
+      "nome": "JOSEILSON ROBERTO DA SILVA",
+      "cargo": "OPERADOR LÍDER DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 18,
+      "ativo": false
+    },
+    {
+      "nome": "MARCELO DA SILVA ARRUDA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 18,
+      "ativo": false
+    },
+    {
+      "nome": "TIAGO BEZERRA DE SOUZA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 17,
+      "ativo": true
+    },
+    {
+      "nome": "MANUELSON OLIVEIRA DOS SANTOS",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 17,
+      "ativo": true
+    },
+    {
+      "nome": "RAYNARA ALVES DOS SANTOS",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 17,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE ALEXSSANDRO ALVES DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 17,
+      "ativo": true
+    },
+    {
+      "nome": "JANAILSON BATISTA DOS SANTOS",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 17,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE FELICIANO DA SILVA FILHO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 17,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE FILIPE BRITO SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 17,
+      "ativo": true
+    },
+    {
+      "nome": "VAGNER MOURA DA SILVA",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 17,
+      "ativo": true
+    },
+    {
+      "nome": "MARCELO DIONIZIO DE AGUIAR",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 17,
+      "ativo": false
+    },
+    {
+      "nome": "RENILSON JOSE DA SILVA NUNES",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 17,
+      "ativo": true
+    },
+    {
+      "nome": "JHONATAS HENRIQUE DA SILVA BEZERRA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 17,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE ADMILSON DOS SANTOS JUNIOR",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 17,
+      "ativo": true
+    },
+    {
+      "nome": "LUCAS DA SILVA RODRIGUES",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 17,
+      "ativo": true
+    },
+    {
+      "nome": "SIVALDO CICERO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 16,
+      "ativo": true
+    },
+    {
+      "nome": "SUELLEN NATHALIA DE LIMA MELO",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 16,
+      "ativo": true
+    },
+    {
+      "nome": "JORGE JOSE DE OLIVEIRA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 16,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE EDMILSON NASCIMENTO DE OLIVEIRA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 16,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE LUCENILDO DA SILVA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 16,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE RAFAEL DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 16,
+      "ativo": true
+    },
+    {
+      "nome": "LUCIANO FARIAS DE BRITO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 16,
+      "ativo": true
+    },
+    {
+      "nome": "EDMILSON LOPES DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 16,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE CICERO DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 16,
+      "ativo": false
+    },
+    {
+      "nome": "ALISON DOS SANTOS SOUZA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 16,
+      "ativo": false
+    },
+    {
+      "nome": "ADRIANA BEZERRA DA SILVA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 15,
+      "ativo": true
+    },
+    {
+      "nome": "JUNIOR CARLOS DE BRITO FERREIRA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 15,
+      "ativo": true
+    },
+    {
+      "nome": "LUCAS VINICIUS DA SILVA REGO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 15,
+      "ativo": true
+    },
+    {
+      "nome": "EDSON ANTONIO FERREIRA DA LUZ",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 15,
+      "ativo": true
+    },
+    {
+      "nome": "LUIZ ANTONIO ALVES",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 15,
+      "ativo": true
+    },
+    {
+      "nome": "ADSON BEZERRA DE LIMA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 15,
+      "ativo": true
+    },
+    {
+      "nome": "INACIO FREITAS DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 15,
+      "ativo": true
+    },
+    {
+      "nome": "WEDSON ARLINDO DE ANDRADE",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 15,
+      "ativo": true
+    },
+    {
+      "nome": "DANIEL DA SILVA GAMA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 15,
+      "ativo": false
+    },
+    {
+      "nome": "CICERO RAMOS DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 15,
+      "ativo": false
+    },
+    {
+      "nome": "DAVI JONATAS DOS SANTOS SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 15,
+      "ativo": false
+    },
+    {
+      "nome": "RONALDO JOSE MARQUES DE OLIVEIRA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 14,
+      "ativo": true
+    },
+    {
+      "nome": "RAONE FRANCISCO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 14,
+      "ativo": true
+    },
+    {
+      "nome": "JAILTON JOSE ALVES DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 14,
+      "ativo": true
+    },
+    {
+      "nome": "FABIO JUNIOR ANTONIO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 14,
+      "ativo": true
+    },
+    {
+      "nome": "AYRAN LUIS SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 14,
+      "ativo": true
+    },
+    {
+      "nome": "GEOVANE LIMA DA SILVA JUNIOR",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 14,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE ROMUALDO DO NASCIMENTO",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 14,
+      "ativo": false
+    },
+    {
+      "nome": "WARLEY ALEXANDRE BARBOSA DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 14,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE SEVERINO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 13,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE CICERO CORDEIRO MERGULHAO",
+      "cargo": "OPERADOR DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 13,
+      "ativo": true
+    },
+    {
+      "nome": "CLEIVISON MARCONE DA SILVA GOMES",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 13,
+      "ativo": true
+    },
+    {
+      "nome": "JOAO DA SILVA JUNIOR",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 13,
+      "ativo": true
+    },
+    {
+      "nome": "ANA CAROLLINA LEMOS SILVA",
+      "cargo": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+      "setor": "Produção",
+      "total": 13,
+      "ativo": false
+    },
+    {
+      "nome": "ANTONIO LUIZ OLIVEIRA LIMA FILHO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 13,
+      "ativo": false
+    },
+    {
+      "nome": "FELIPE ANTONINO DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 13,
+      "ativo": false
+    },
+    {
+      "nome": "JANACLEBSON GOIS DE MOURA",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 13,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE LUCIDIO DE OLIVEIRA BARROS",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 13,
+      "ativo": false
+    },
+    {
+      "nome": "JUCELIO LOURENCO DOS SANTOS",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO LIDER",
+      "setor": "Produção",
+      "total": 13,
+      "ativo": true
+    },
+    {
+      "nome": "GEIBSON JOSE SILVA DOS SANTOS",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 12,
+      "ativo": true
+    },
+    {
+      "nome": "EDEILSON EDMILSON DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 12,
+      "ativo": true
+    },
+    {
+      "nome": "GIRLANDO JOAO DE OLIVEIRA",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 12,
+      "ativo": true
+    },
+    {
+      "nome": "ROBERTO SOUSA DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 12,
+      "ativo": true
+    },
+    {
+      "nome": "CARLOS DANIEL DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 12,
+      "ativo": false
+    },
+    {
+      "nome": "DAVI ALVES CAVALCANTE",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 12,
+      "ativo": false
+    },
+    {
+      "nome": "KAIO ANDRE DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 12,
+      "ativo": false
+    },
+    {
+      "nome": "MARCELO JOAQUIM DA SILVA",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 11,
+      "ativo": true
+    },
+    {
+      "nome": "PLINIO GUSTAVO LAURENTINO DE SANTANA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 11,
+      "ativo": true
+    },
+    {
+      "nome": "ADRIANO JOSE DOS SANTOS",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 11,
+      "ativo": true
+    },
+    {
+      "nome": "EDNA TRAJANO DA SILVA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 11,
+      "ativo": true
+    },
+    {
+      "nome": "MARCOS ANTONIO GUEDES BEZERRA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 11,
+      "ativo": true
+    },
+    {
+      "nome": "EGNALDO JOSE DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 11,
+      "ativo": false
+    },
+    {
+      "nome": "RENATO SILVA DO NASCIMENTO",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 11,
+      "ativo": true
+    },
+    {
+      "nome": "PAULO MIGUEL DOS SANTOS",
+      "cargo": "SERVENTE POLIVALENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 11,
+      "ativo": false
+    },
+    {
+      "nome": "GEISE KELLY DA SILVA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 10,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE JEFFERSON DE MORAIS BEZERRA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 10,
+      "ativo": true
+    },
+    {
+      "nome": "LAURO VINICIUS ARAUJO DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 10,
+      "ativo": true
+    },
+    {
+      "nome": "ATA BELO DA SILVA",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 10,
+      "ativo": true
+    },
+    {
+      "nome": "MARIA JUCILENE MARQUES CORREIA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 10,
+      "ativo": true
+    },
+    {
+      "nome": "CESAR ROBERTO SILVA DE ALMEIDA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 10,
+      "ativo": true
+    },
+    {
+      "nome": "RELENCLAUDIO SILVA DO NASCIMENTO",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 10,
+      "ativo": true
+    },
+    {
+      "nome": "GLAUBER MONTEIRO DOS SANTOS",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO LIDER",
+      "setor": "Produção",
+      "total": 10,
+      "ativo": false
+    },
+    {
+      "nome": "ANTONIO LUIZ DA SILVA NETO",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 10,
+      "ativo": false
+    },
+    {
+      "nome": "FABIO FARIAS DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 9,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE APARECIDO FERNANDES DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 9,
+      "ativo": true
+    },
+    {
+      "nome": "ALISSON VALDOMIRO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 9,
+      "ativo": true
+    },
+    {
+      "nome": "ALESSANDRO VITOR DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 9,
+      "ativo": true
+    },
+    {
+      "nome": "EMERSON CARLOS PEDRO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 9,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE CARLOS DE LIMA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 9,
+      "ativo": false
+    },
+    {
+      "nome": "LUCAS GUEDES BEZERRA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 8,
+      "ativo": true
+    },
+    {
+      "nome": "DAVID DA SILVA MARQUES DE OLIVEIRA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 8,
+      "ativo": true
+    },
+    {
+      "nome": "ARNALDO ANSELMO SOBRAL",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 8,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE BELO DA SILVA FILHO",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 8,
+      "ativo": true
+    },
+    {
+      "nome": "CLECIA ALBINO DE ALMEIDA SOUZA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 8,
+      "ativo": true
+    },
+    {
+      "nome": "PATRICIA PAES PEDROSA",
+      "cargo": "SUPERVISOR LIDER DE ACABAMENTO E ASSIST TECNICA",
+      "setor": "Assistência Técnica",
+      "total": 8,
+      "ativo": true
+    },
+    {
+      "nome": "RUBEN GABRIEL DE MENEZES BARBOSA",
+      "cargo": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+      "setor": "Produção",
+      "total": 8,
+      "ativo": false
+    },
+    {
+      "nome": "EVANDRO LOURENCO DOS SANTOS",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 8,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE PEDRO DA SILVA JUNIOR",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 8,
+      "ativo": true
+    },
+    {
+      "nome": "REGINALDO LIMA DA SILVA",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO LIDER",
+      "setor": "Produção",
+      "total": 8,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE VICTOR ALVES DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 8,
+      "ativo": true
+    },
+    {
+      "nome": "IGOR RANGEL FRANCISCO DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 8,
+      "ativo": false
+    },
+    {
+      "nome": "RENATO PEDRO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 8,
+      "ativo": false
+    },
+    {
+      "nome": "JOSIANO JOSE DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 7,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE CARLOS DA SILVA",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 7,
+      "ativo": true
+    },
+    {
+      "nome": "ADRIANO AFONSO DA SILVA",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 7,
+      "ativo": true
+    },
+    {
+      "nome": "SILVANO ALCANTRA CIRILO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 7,
+      "ativo": true
+    },
+    {
+      "nome": "WILLIAN PEDRO DO NASCIMENTO",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 7,
+      "ativo": false
+    },
+    {
+      "nome": "LUCAS DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 7,
+      "ativo": true
+    },
+    {
+      "nome": "EDUARDO HENRIQUE DE OLIVEIRA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 7,
+      "ativo": false
+    },
+    {
+      "nome": "ALEXANDRO DE SANTANA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 7,
+      "ativo": true
+    },
+    {
+      "nome": "DJALMA DOS SANTOS SILVA",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 7,
+      "ativo": false
+    },
+    {
+      "nome": "ALEXANDRO SALVADOR DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 7,
+      "ativo": true
+    },
+    {
+      "nome": "EDMILSON JOSE BESERRA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 7,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE LEANDRO DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 7,
+      "ativo": false
+    },
+    {
+      "nome": "VLADIMIR ARAUJO DE LIMA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "GIVANILDO MARCELINO DOS SANTOS",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "EMANUEL VITOR SILVA CANDIDO",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE EDMILSON SILVA DE LIMA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "ALEXANDRE DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE INFRAESTRUTURA",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": false
+    },
+    {
+      "nome": "AMARO FERREIRA DA SILVA",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "AURICLENES DOS SANTOS VILA NOVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "JOAO HENRIQUE BATISTA DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "JOSENILDO ROBERTO DA SILVA",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "BENEDITO DA SILVA SIQUEIRA",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "MAURICIO ALONSO DOS SANTOS",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "CARLOS ANDRE DA SILVA",
+      "cargo": "ELETRICISTA",
+      "setor": "Acabamento",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE AGEU DA SILVA",
+      "cargo": "OPERADOR LIDER DE ASSISTENCIA TECNICA",
+      "setor": "Assistência Técnica",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "JAFE DE MACEDO SANTOS",
+      "cargo": "STAFF DE PADRONIZAÇÃO",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": false
+    },
+    {
+      "nome": "ADELSON MARTINS DOS SANTOS FILHO",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "ADILSON SILVA DE BARROS",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "ANDRE FLORENCIO DE VASCONCELOS",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "ELIAS ANTONIO DA SILVA",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "ISRAEL DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE SENICLAUDIO DA SILVA PAIXAO",
+      "cargo": "SUPERVISOR(A) DE ASSISTENCIA TECNICA",
+      "setor": "Produção",
+      "total": 6,
+      "ativo": false
+    },
+    {
+      "nome": "JESSICA PATRICIA DA SILVA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 6,
+      "ativo": false
+    },
+    {
+      "nome": "VALDECI GILBERTO DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 5,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE ADRIANO DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 5,
+      "ativo": true
+    },
+    {
+      "nome": "JOSINALDO VIEIRA DE LIMA JUNIOR",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 5,
+      "ativo": true
+    },
+    {
+      "nome": "CLEBSON DA SILVA ALVES",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 5,
+      "ativo": true
+    },
+    {
+      "nome": "CICERO DA SILVA PEREIRA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 5,
+      "ativo": true
+    },
+    {
+      "nome": "JESLY SAMARA RODRIGUES DA SILVA",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 5,
+      "ativo": true
+    },
+    {
+      "nome": "ADENILDO ANTONIO SERAFIM",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 5,
+      "ativo": true
+    },
+    {
+      "nome": "MARIA DAS GRACAS MONTEIRO ALMEIDA DE MELO",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 5,
+      "ativo": true
+    },
+    {
+      "nome": "ADRIANO CARLOS DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 5,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE GEOVANE DA SILVA GERMANO",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 5,
+      "ativo": true
+    },
+    {
+      "nome": "DANIEL CANDIDO DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 5,
+      "ativo": true
+    },
+    {
+      "nome": "ERIKA PATRICIA SALES GUIMARAES",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 5,
+      "ativo": false
+    },
+    {
+      "nome": "GLEBSON AVELINO BATISTA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 5,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE LUIS NASCIMENTO DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 4,
+      "ativo": true
+    },
+    {
+      "nome": "JOSE IGOR DA SILVA ALVES",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 4,
+      "ativo": true
+    },
+    {
+      "nome": "DENILSON CICERO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 4,
+      "ativo": true
+    },
+    {
+      "nome": "FABIANO JOSE DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 4,
+      "ativo": true
+    },
+    {
+      "nome": "EMERSSON JOSE DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 4,
+      "ativo": true
+    },
+    {
+      "nome": "GENILSON JURANDIR DE ALMEIDA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 4,
+      "ativo": true
+    },
+    {
+      "nome": "DARLAN CAETANO DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 4,
+      "ativo": false
+    },
+    {
+      "nome": "SARAH RAQUEL DE MENDONCA",
+      "cargo": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+      "setor": "Produção",
+      "total": 4,
+      "ativo": false
+    },
+    {
+      "nome": "ROGERIO RAIMUNDO DE ANDRADE",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": true
+    },
+    {
+      "nome": "PEDRO ANTONIO DE LIRA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": true
+    },
+    {
+      "nome": "LUCIVALDO JOSE DA SILVA",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": true
+    },
+    {
+      "nome": "CICERO ANTONIO DOS SANTOS",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": true
+    },
+    {
+      "nome": "DOUGLAS VINICIUS RIBEIRO SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": true
+    },
+    {
+      "nome": "DHEMERSON HALBERTO SILVA LIBERAL",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": true
+    },
+    {
+      "nome": "IASMIN GABRIELY LOPES DA SILVA",
+      "cargo": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": false
+    },
+    {
+      "nome": "JAILSON REGINO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": true
+    },
+    {
+      "nome": "LUANA ELISA LIMEIRA DA SILVA",
+      "cargo": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": false
+    },
+    {
+      "nome": "RIZONILDO BARBOSA DA SILVA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 3,
+      "ativo": true
+    },
+    {
+      "nome": "JOSEMILSON FAUSTINO DE LIRA",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": true
+    },
+    {
+      "nome": "RIZONALDO MANOEL DOS SANTOS",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": false
+    },
+    {
+      "nome": "PEDRO HENRIQUE DA SILVA OLIVEIRA",
+      "cargo": "SUPERVISOR(A) DE ASSISTENCIA TECNICA",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": true
+    },
+    {
+      "nome": "EMERSON JOSE DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE DIMAS VIEIRA FIRMINO",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": false
+    },
+    {
+      "nome": "MARCILIO ANTONIO EVARISTO DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 3,
+      "ativo": false
+    },
+    {
+      "nome": "MARCOS JUNIOR RIBEIRO",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": false
+    },
+    {
+      "nome": "ELIAS MANOEL DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": false
+    },
+    {
+      "nome": "ANDRE LUCAS SANTANA MONTEIRO",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 3,
+      "ativo": false
+    },
+    {
+      "nome": "MEKSON MANOEL PEREIRA NASCIMENTO",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 2,
+      "ativo": false
+    },
+    {
+      "nome": "YURI KAWAN SANTOS DE AGUIAR",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 2,
+      "ativo": true
+    },
+    {
+      "nome": "ANTONIO CICERO DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 2,
+      "ativo": true
+    },
+    {
+      "nome": "JOAO VITOR DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 2,
+      "ativo": true
+    },
+    {
+      "nome": "JOAO BARROS NETO",
+      "cargo": "SUPERVISOR(A) DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 2,
+      "ativo": true
+    },
+    {
+      "nome": "ARNAVIO AMARO FERREIRA",
+      "cargo": "SERVENTE DE ASSISTÊNCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 2,
+      "ativo": true
+    },
+    {
+      "nome": "WELLINGTON ALVES GUIMARAES",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 2,
+      "ativo": true
+    },
+    {
+      "nome": "MARIA EDUARDA EDILEUSA DA SILVA",
+      "cargo": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+      "setor": "Produção",
+      "total": 2,
+      "ativo": false
+    },
+    {
+      "nome": "DIOGO DIDACIO SANTOS ALVES DE OLIVEIRA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 2,
+      "ativo": false
+    },
+    {
+      "nome": "WANDERLEI ERINALDO DE SOUSA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 2,
+      "ativo": false
+    },
+    {
+      "nome": "MARCELO LIRA DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 2,
+      "ativo": false
+    },
+    {
+      "nome": "JULIANA CAMILLA DE SOUZA MUNIZ",
+      "cargo": "STAFF DE PADRONIZAÇÃO",
+      "setor": "Produção",
+      "total": 2,
+      "ativo": false
+    },
+    {
+      "nome": "EDNALDO DE LIMA BRAZ",
+      "cargo": "OPERADOR DE ASSISTENCIA TÉCNICA",
+      "setor": "Assistência Técnica",
+      "total": 2,
+      "ativo": true
+    },
+    {
+      "nome": "CRISTIANO SEVERINO DA SILVA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 2,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE CICERO DE ALMEIDA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": true
+    },
+    {
+      "nome": "VINICIUS DA SILVA SOBRAL",
+      "cargo": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": false
+    },
+    {
+      "nome": "ERIBERTO SOUZA DA SILVA FILHO",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": true
+    },
+    {
+      "nome": "JOSIVAN SILVA MONTEIRO",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": true
+    },
+    {
+      "nome": "CELIO MANOEL DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": true
+    },
+    {
+      "nome": "ADEILDO PEDRO DA SILVA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": true
+    },
+    {
+      "nome": "EDENILSON SANTOS SILVA NASCIMENTO",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": false
+    },
+    {
+      "nome": "PAULO HENRIQUE DOS SANTOS",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": false
+    },
+    {
+      "nome": "MARINA TIMOTEO FLORENCIO",
+      "cargo": "APRENDIZ ASSISTENTE DE GERENCIAMENTO DE OBRAS",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": false
+    },
+    {
+      "nome": "RACHEL BARROS PIRES",
+      "cargo": "STAFF DE PADRONIZAÇÃO",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": false
+    },
+    {
+      "nome": "RONALDO RODRIGUES DE OLIVEIRA",
+      "cargo": "SERVENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE CARLOS DOS SANTOS",
+      "cargo": "PEDREIRO LIDER DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": false
+    },
+    {
+      "nome": "JOSE JUNIOR DA SILVA",
+      "cargo": "SERVENTE POLIVALENTE DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": false
+    },
+    {
+      "nome": "LEONARDO FERREIRA BARBOSA",
+      "cargo": "PEDREIRO DE PRODUÇÃO",
+      "setor": "Produção",
+      "total": 1,
+      "ativo": false
+    }
+  ],
+  "por_setor": {
+    "Assistência Técnica": 597,
+    "Produção": 6101,
+    "Acabamento": 91
+  },
+  "por_classificacao": {
+    "NÃO.JUSTIFICADA": 3423,
+    "JUSTIFICADA": 2919,
+    "ABONADA": 435,
+    "Não informada": 6,
+    "SUSPENSÃO": 6
+  },
+  "por_motivo": {
+    "ATESTADO MEDICO DO COLABORADOR": 2108,
+    "ASSUNTOS PESSOAIS": 1834,
+    "ATRASO": 617,
+    "DECLARAÇAO MEDICA DO COLABORADOR": 454,
+    "SAIDA ANTES DO HORARIO": 386,
+    "OUTROS": 239,
+    "DOENTE SEM ATESTADO": 163,
+    "DAY OFF": 81,
+    "DOENÇA SEM ATESTADO": 72,
+    "ATESTADO ODONTOLÓGICO": 68,
+    "ATESTADO ODONTOLOGICO DO COLABORADOR": 64,
+    "BANCO/ LOTERICA": 61,
+    "LICENÇA PATERNIDADE": 54,
+    "SUSPENSAO": 48,
+    "DAY OFF - ANIVERSÁRIO": 47,
+    "CAIXA / CASAS LOTÉRICAS": 47,
+    "DETRAN": 44,
+    "ATESTADO MEDICO": 33,
+    "FOLGA": 31,
+    "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 28,
+    "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 24,
+    "EXAME OCUPACIONAL": 21,
+    "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 20,
+    "DOAÇAO DE SANGUE": 19,
+    "DECLARAÇAO DE ACOMPANHAMENTO DO FILHO": 18,
+    "ATESTADO DE ACOMPANHAMENTO DE CONJUGE AO MEDICO": 18,
+    "FALECIMENTO DE DEPENDENTES: PAIS/ AVÓS/ IRMÃOS/ CÒNJUGE/ FILHOS": 17,
+    "Não informado": 16,
+    "ACOMPANHAMENTO DE FILHO AO MÉDICO": 16,
+    "FALECIMENTO DE PARENTES": 13,
+    "EXAMES SOLICITADOS PELA EMPRESA": 12,
+    "RETORNO INSS": 12,
+    "FALECIMENTO DE PARENTE": 12,
+    "CERTIDÃO DE CASAMENTO": 11,
+    "FISIOTERAPIA": 10,
+    "CONVOCAÇÃO DA JUSTIÇA ": 9,
+    "DECLARAÇAO DE ACOMPANHAMENTO DO CONJUGE": 7,
+    "AUTORIZADO PELO LÍDER": 6,
+    "CURSO EXTERNO": 6,
+    "ACOMPANHAMENTO DE PARENTE": 6,
+    "DECLARAÇAO ODONTOLOGICA DO COLABORADOR": 5,
+    "COMPRA DE CASA": 4,
+    "DECLARAÇÃO DE ACOMPANHAMENTO DE FILHO": 4,
+    "DECLARAÇAO MEDICA": 3,
+    "AUTO ESCOLA": 3,
+    "REUNIÃO OU ATIVIDADES DO SINDICATO": 3,
+    "DECLARAÇÃO DE ACOMPANHAMENTO DE ESPOSA": 3,
+    "DECLARAÇÃO ODONTOLÓGICA": 3,
+    "CARTORIO": 2,
+    "ATESTADO DE ACOMPANHAMENTO DE PAI/ MÃE AO MEDICO": 2,
+    "FALECIMENTO DE PAI/MÂE": 2,
+    "ADVENTISTA": 1,
+    "FALECIMENTO DE SOGRO/A": 1,
+    "PROBLEMA COM TRANSPORTE": 1
+  }
+}
