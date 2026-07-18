@@ -31,7 +31,6 @@ const colaboradoras = [
   { nome: "Erlaine Conceição", motivacao: [100, 100], absenteismo: [4, 5], produtividade: [55, 27, 80, 0, 20, 45] },
   { nome: "Aline Santos", motivacao: [null, 50], absenteismo: [18, 16], produtividade: [0, 0, 80, 0, 0, 0] },
   { nome: "Geise Kelly", motivacao: [null, 50], absenteismo: [3, 2], produtividade: [28, 20, 80, 0, 0, 38] },
-  { nome: "Eneida Conceição", motivacao: [null, null], absenteismo: [null, null], produtividade: null },
 ];
 
 const resultado = {
