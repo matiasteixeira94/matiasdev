@@ -96,6 +96,24 @@ const porColaborador = {};
 const porSetor = {};
 const porClassificacao = {};
 const porMotivo = {};
+const detalheColaborador = {};
+
+function acumularMotivo(mapa, motivoBruto) {
+  // Motivos com grafia divergente só por acento (SAIDA/SAÍDA,
+  // DECLARAÇAO/DECLARAÇÃO...) são a mesma causa real — agrupa por uma
+  // chave sem acento, mas mantém como rótulo a grafia mais frequente.
+  const chave = normalizarChave(motivoBruto);
+  mapa[chave] ??= { label: motivoBruto, total: 0, porGrafia: {} };
+  mapa[chave].total += 1;
+  mapa[chave].porGrafia[motivoBruto] = (mapa[chave].porGrafia[motivoBruto] || 0) + 1;
+  if (mapa[chave].porGrafia[motivoBruto] > (mapa[chave].porGrafia[mapa[chave].label] || 0)) {
+    mapa[chave].label = motivoBruto;
+  }
+}
+
+function ordenarMotivos(mapa) {
+  return Object.fromEntries(Object.values(mapa).sort((a, b) => b.total - a.total).map((m) => [m.label, m.total]));
+}
 
 for (const f of faltas) {
   porAno[f.ano] = (porAno[f.ano] || 0) + 1;
@@ -111,25 +129,19 @@ for (const f of faltas) {
 
   porSetor[f.setor] = (porSetor[f.setor] || 0) + 1;
   porClassificacao[f.classificacao] = (porClassificacao[f.classificacao] || 0) + 1;
+  acumularMotivo(porMotivo, f.motivo);
 
-  // Motivos com grafia divergente só por acento (SAIDA/SAÍDA,
-  // DECLARAÇAO/DECLARAÇÃO...) são a mesma causa real — agrupa por uma
-  // chave sem acento, mas mantém como rótulo a grafia mais frequente.
-  const chave = normalizarChave(f.motivo);
-  porMotivo[chave] ??= { label: f.motivo, total: 0, porGrafia: {} };
-  porMotivo[chave].total += 1;
-  porMotivo[chave].porGrafia[f.motivo] = (porMotivo[chave].porGrafia[f.motivo] || 0) + 1;
-  if (porMotivo[chave].porGrafia[f.motivo] > (porMotivo[chave].porGrafia[porMotivo[chave].label] || 0)) {
-    porMotivo[chave].label = f.motivo;
-  }
+  detalheColaborador[f.nome] ??= { por_classificacao: {}, por_motivo: {} };
+  detalheColaborador[f.nome].por_classificacao[f.classificacao] = (detalheColaborador[f.nome].por_classificacao[f.classificacao] || 0) + 1;
+  acumularMotivo(detalheColaborador[f.nome].por_motivo, f.motivo);
+}
+
+for (const nome of Object.keys(detalheColaborador)) {
+  detalheColaborador[nome].por_motivo = ordenarMotivos(detalheColaborador[nome].por_motivo);
 }
 
 const ranking = Object.values(porColaborador).sort((a, b) => b.total - a.total);
-const motivoOrdenado = Object.fromEntries(
-  Object.values(porMotivo)
-    .sort((a, b) => b.total - a.total)
-    .map((m) => [m.label, m.total])
-);
+const motivoOrdenado = ordenarMotivos(porMotivo);
 const colaboradoresAtivosComFalta = ranking.filter((r) => r.ativo).length;
 
 const resultado = {
@@ -147,6 +159,7 @@ const resultado = {
   por_setor: porSetor,
   por_classificacao: porClassificacao,
   por_motivo: motivoOrdenado,
+  detalhe_colaborador: detalheColaborador,
 };
 
 writeFileSync(new URL("../processed/faltas.json", import.meta.url), JSON.stringify(resultado, null, 2), "utf8");

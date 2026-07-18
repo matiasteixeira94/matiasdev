@@ -2836,5 +2836,4620 @@
     "ADVENTISTA": 1,
     "FALECIMENTO DE SOGRO/A": 1,
     "PROBLEMA COM TRANSPORTE": 1
+  },
+  "detalhe_colaborador": {
+    "CAMILA PEREIRA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 23,
+        "JUSTIFICADA": 11
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 14,
+        "ATESTADO MEDICO DO COLABORADOR": 8,
+        "ATRASO": 6,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "ADRIANA BEZERRA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 10,
+        "JUSTIFICADA": 3,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 7,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "DOENTE SEM ATESTADO": 2,
+        "ATRASO": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "WILLIAM JOSE SILVA DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 37,
+        "JUSTIFICADA": 16,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "DOENTE SEM ATESTADO": 14,
+        "ASSUNTOS PESSOAIS": 13,
+        "ATESTADO MEDICO DO COLABORADOR": 13,
+        "ATRASO": 6,
+        "SAIDA ANTES DO HORARIO": 4,
+        "ATESTADO MEDICO": 3,
+        "CAIXA / CASAS LOTÉRICAS": 1
+      }
+    },
+    "WESLEY DE MOURA BELARMINO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 19,
+        "NÃO.JUSTIFICADA": 7
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 14,
+        "ASSUNTOS PESSOAIS": 6,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 1,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO FILHO": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1,
+        "OUTROS": 1
+      }
+    },
+    "VLADIMIR ARAUJO DE LIMA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 5,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 1,
+        "DAY OFF": 1
+      }
+    },
+    "MEKSON MANOEL PEREIRA NASCIMENTO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 2
+      }
+    },
+    "YURI KAWAN SANTOS DE AGUIAR": {
+      "por_classificacao": {
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "BANCO/ LOTERICA": 2
+      }
+    },
+    "WANDERSON SOARES DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 5,
+        "JUSTIFICADA": 15,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 11,
+        "ASSUNTOS PESSOAIS": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "DOENTE SEM ATESTADO": 2,
+        "ATESTADO MEDICO": 2,
+        "FALECIMENTO DE PARENTES": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "VALDEMIR CORDEIRO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 10,
+        "ABONADA": 1,
+        "JUSTIFICADA": 14
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 11,
+        "ASSUNTOS PESSOAIS": 7,
+        "ATRASO": 3,
+        "DAY OFF": 1,
+        "ATESTADO MEDICO": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "VALDECI GILBERTO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 2,
+        "NÃO.JUSTIFICADA": 2,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATRASO": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "DAY OFF": 1,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO FILHO": 1
+      }
+    },
+    "TIAGO BEZERRA DE SOUZA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 9,
+        "ABONADA": 1,
+        "JUSTIFICADA": 7
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "ASSUNTOS PESSOAIS": 4,
+        "OUTROS": 2,
+        "DAY OFF": 1,
+        "BANCO/ LOTERICA": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "DOENÇA SEM ATESTADO": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1
+      }
+    },
+    "SIVALDO CICERO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 8,
+        "NÃO.JUSTIFICADA": 8
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "ASSUNTOS PESSOAIS": 4,
+        "DOENTE SEM ATESTADO": 2,
+        "DECLARAÇÃO ODONTOLÓGICA": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "OUTROS": 2
+      }
+    },
+    "SEVERINO MARCOS ANTONIO FILHO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 51,
+        "JUSTIFICADA": 9
+      },
+      "por_motivo": {
+        "ATRASO": 39,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 5,
+        "ASSUNTOS PESSOAIS": 4,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "OUTROS": 3,
+        "SAIDA ANTES DO HORARIO": 2,
+        "CAIXA / CASAS LOTÉRICAS": 2,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1,
+        "DAY OFF": 1
+      }
+    },
+    "RONALDO JOSE MARQUES DE OLIVEIRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 6,
+        "JUSTIFICADA": 8
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "Não informado": 2,
+        "ASSUNTOS PESSOAIS": 2,
+        "DOENTE SEM ATESTADO": 1,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "ROBERVAL LUIZ DO REGO SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 38,
+        "NÃO.JUSTIFICADA": 5,
+        "Não informada": 1
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 16,
+        "ATESTADO MEDICO DO COLABORADOR": 16,
+        "ATESTADO ODONTOLÓGICO": 6,
+        "ASSUNTOS PESSOAIS": 2,
+        "OUTROS": 2,
+        "Não informado": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "RICARDO DA SILVA NASCIMENTO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 45,
+        "JUSTIFICADA": 5
+      },
+      "por_motivo": {
+        "ATRASO": 20,
+        "ASSUNTOS PESSOAIS": 11,
+        "SAIDA ANTES DO HORARIO": 7,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "Não informado": 2,
+        "OUTROS": 2,
+        "DOENTE SEM ATESTADO": 1,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 1,
+        "BANCO/ LOTERICA": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "RAONE FRANCISCO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 9,
+        "JUSTIFICADA": 4,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 5,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "ATRASO": 2,
+        "DOENTE SEM ATESTADO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "DAY OFF": 1,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "PEDRO FELIPE SIQUEIRA DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 20,
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 20,
+        "ASSUNTOS PESSOAIS": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "PAULO HELENO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 17,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 10,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO CONJUGE": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "BANCO/ LOTERICA": 1,
+        "ACOMPANHAMENTO DE FILHO AO MÉDICO": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1,
+        "OUTROS": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "ROGERIO RAIMUNDO DE ANDRADE": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "BANCO/ LOTERICA": 2,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "ROBSON WAGNER DA SILVA PAIVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 10,
+        "JUSTIFICADA": 12,
+        "ABONADA": 3
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 10,
+        "SAIDA ANTES DO HORARIO": 5,
+        "ASSUNTOS PESSOAIS": 4,
+        "LICENÇA PATERNIDADE": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ATRASO": 1
+      }
+    },
+    "RAFAEL DE LIMA PEREIRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 8,
+        "JUSTIFICADA": 11,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "ASSUNTOS PESSOAIS": 6,
+        "LICENÇA PATERNIDADE": 3,
+        "DOENTE SEM ATESTADO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "PEDRO ANTONIO DE LIRA": {
+      "por_classificacao": {
+        "ABONADA": 2,
+        "NÃO.JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "BANCO/ LOTERICA": 2,
+        "DAY OFF": 1
+      }
+    },
+    "MARCELO JOAQUIM DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 6,
+        "ABONADA": 1,
+        "JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 5,
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "DAY OFF": 1,
+        "OUTROS": 1
+      }
+    },
+    "MANUELSON OLIVEIRA DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 7,
+        "JUSTIFICADA": 9,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 5,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "ATESTADO ODONTOLÓGICO": 3,
+        "ATESTADO DE ACOMPANHAMENTO DE CONJUGE AO MEDICO": 2,
+        "SAIDA ANTES DO HORARIO": 2,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "ROSANGELA OLIVEIRA SILVA DOS SANTOS": {
+      "por_classificacao": {
+        "JUSTIFICADA": 27,
+        "NÃO.JUSTIFICADA": 8,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 15,
+        "ASSUNTOS PESSOAIS": 6,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 6,
+        "ATESTADO ODONTOLÓGICO": 4,
+        "FALECIMENTO DE PARENTES": 2,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DAY OFF": 1,
+        "DOENTE SEM ATESTADO": 1
+      }
+    },
+    "PLINIO GUSTAVO LAURENTINO DE SANTANA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 5,
+        "NÃO.JUSTIFICADA": 4,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "BANCO/ LOTERICA": 2,
+        "ASSUNTOS PESSOAIS": 2,
+        "ATESTADO MEDICO": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DAY OFF": 1
+      }
+    },
+    "RAYNARA ALVES DOS SANTOS": {
+      "por_classificacao": {
+        "JUSTIFICADA": 11,
+        "ABONADA": 6
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 6,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "DECLARAÇAO ODONTOLOGICA DO COLABORADOR": 2,
+        "ASSUNTOS PESSOAIS": 2,
+        "FOLGA": 2,
+        "DAY OFF": 1,
+        "OUTROS": 1
+      }
+    },
+    "SUELLEN NATHALIA DE LIMA MELO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 15,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 10,
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "WILLAMES ADRIANO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 19,
+        "NÃO.JUSTIFICADA": 31,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 18,
+        "ATESTADO MEDICO DO COLABORADOR": 17,
+        "DOENTE SEM ATESTADO": 4,
+        "SAIDA ANTES DO HORARIO": 4,
+        "ATRASO": 3,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 2,
+        "CAIXA / CASAS LOTÉRICAS": 2,
+        "OUTROS": 2
+      }
+    },
+    "GUILHERME EDUARDO FERREIRA SIMAO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 48,
+        "JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "ATRASO": 34,
+        "ASSUNTOS PESSOAIS": 14,
+        "ATESTADO MEDICO DO COLABORADOR": 4
+      }
+    },
+    "ERLAINE CONCEICAO DE LIMA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 13,
+        "JUSTIFICADA": 2,
+        "ABONADA": 4
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 7,
+        "DOENTE SEM ATESTADO": 6,
+        "FALECIMENTO DE DEPENDENTES: PAIS/ AVÓS/ IRMÃOS/ CÒNJUGE/ FILHOS": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "GEIBSON JOSE SILVA DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 9,
+        "JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 5,
+        "ATRASO": 3,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "GABRIELLY MARIA FEITOSA VASCONCELOS": {
+      "por_classificacao": {
+        "JUSTIFICADA": 14,
+        "ABONADA": 12
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 4,
+        "CURSO EXTERNO": 3,
+        "SAÍDA ANTES DO HORÁRIO": 3,
+        "FALECIMENTO DE DEPENDENTES: PAIS/ AVÓS/ IRMÃOS/ CÒNJUGE/ FILHOS": 2,
+        "ACOMPANHAMENTO DE FILHO AO MÉDICO": 2,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO FILHO": 1,
+        "ATRASO": 1,
+        "DAY OFF - ANIVERSÁRIO": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "DECLARAÇÃO ODONTOLÓGICA": 1,
+        "FOLGA": 1
+      }
+    },
+    "JOSE ALEXSSANDRO ALVES DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 16,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 13,
+        "SUSPENSAO": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "FOLGA": 1
+      }
+    },
+    "JOSE ADRIANO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 2,
+        "SAIDA ANTES DO HORARIO": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "JORGE JOSE DE OLIVEIRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 16
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 14,
+        "DOENTE SEM ATESTADO": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "JONATA PEREIRA MARTINS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 27,
+        "JUSTIFICADA": 8
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 16,
+        "ATRASO": 8,
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "SAIDA ANTES DO HORARIO": 2,
+        "DOAÇAO DE SANGUE": 1,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "JOHN DIEGO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 13,
+        "JUSTIFICADA": 6,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 11,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "SAIDA ANTES DO HORARIO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "DOENTE SEM ATESTADO": 1,
+        "ATESTADO MEDICO": 1,
+        "AUTORIZADO PELO LÍDER": 1
+      }
+    },
+    "JOAO ALEXANDRE BARBOSA FILHO": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 16,
+        "JUSTIFICADA": 11
+      },
+      "por_motivo": {
+        "SAIDA ANTES DO HORARIO": 12,
+        "ATESTADO MEDICO DO COLABORADOR": 9,
+        "ASSUNTOS PESSOAIS": 5,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2
+      }
+    },
+    "JEFFERSON DO NASCIMENTO BORBA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 5,
+        "JUSTIFICADA": 11,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 10,
+        "ASSUNTOS PESSOAIS": 4,
+        "BANCO/ LOTERICA": 2,
+        "ATESTADO MEDICO": 1,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "JARDIEL JOSE DOS SANTOS SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 19,
+        "ABONADA": 2,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "SAIDA ANTES DO HORARIO": 12,
+        "ASSUNTOS PESSOAIS": 6,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "COMPRA DE CASA": 1,
+        "DETRAN": 1,
+        "ATRASO": 1
+      }
+    },
+    "JANAILSON BATISTA DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 10,
+        "JUSTIFICADA": 6,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 10,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 4,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "JAILTON JOSE ALVES DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 9,
+        "JUSTIFICADA": 4,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 8,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ATRASO": 1,
+        "DAY OFF": 1
+      }
+    },
+    "JAILSON JOAO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 16,
+        "JUSTIFICADA": 9,
+        "ABONADA": 5
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 8,
+        "ATRASO": 8,
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "DOENÇA SEM ATESTADO": 4,
+        "DECLARAÇAO MEDICA": 1,
+        "DAY OFF": 1,
+        "DOENTE SEM ATESTADO": 1
+      }
+    },
+    "JADSON HENRIQUE DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 13,
+        "JUSTIFICADA": 27,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 24,
+        "ASSUNTOS PESSOAIS": 8,
+        "ATRASO": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "SAIDA ANTES DO HORARIO": 2
+      }
+    },
+    "GIVANILDO MARCELINO DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 6
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 6
+      }
+    },
+    "GIVANILDO JOSE SANTOS DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 9,
+        "JUSTIFICADA": 24,
+        "ABONADA": 3
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 20,
+        "ASSUNTOS PESSOAIS": 8,
+        "LICENÇA PATERNIDADE": 3,
+        "ATESTADO DE ACOMPANHAMENTO DE CONJUGE AO MEDICO": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "GILVAN OLIVEIRA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 19,
+        "JUSTIFICADA": 18
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 16,
+        "ASSUNTOS PESSOAIS": 9,
+        "ATRASO": 8,
+        "SAIDA ANTES DO HORARIO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2
+      }
+    },
+    "GERSON MATHEUS GOMES DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 14,
+        "JUSTIFICADA": 11,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 9,
+        "ATESTADO MEDICO DO COLABORADOR": 9,
+        "ATRASO": 2,
+        "SAIDA ANTES DO HORARIO": 2,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "GEISE KELLY DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 5,
+        "JUSTIFICADA": 3,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 5,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "FLAVIO FRANCISCO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 9,
+        "JUSTIFICADA": 18,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 17,
+        "SAIDA ANTES DO HORARIO": 4,
+        "ASSUNTOS PESSOAIS": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "DOENTE SEM ATESTADO": 1,
+        "ATRASO": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "FABIO JUNIOR ANTONIO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 10,
+        "JUSTIFICADA": 3,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 6,
+        "ATRASO": 4,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DAY OFF - ANIVERSÁRIO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "FABIO FARIAS DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 8,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 5,
+        "SAIDA ANTES DO HORARIO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1
+      }
+    },
+    "FABIO ANTONIO DE OLIVEIRA": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 30,
+        "JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 22,
+        "ATRASO": 2,
+        "SAIDA ANTES DO HORARIO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DOENÇA SEM ATESTADO": 2,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE CONJUGE AO MEDICO": 1
+      }
+    },
+    "FABIANO SEVERINO DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 31,
+        "JUSTIFICADA": 5,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATRASO": 23,
+        "ASSUNTOS PESSOAIS": 5,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "EZEQUIEL INACIO DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 18,
+        "JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 8,
+        "SAIDA ANTES DO HORARIO": 4,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DOENÇA SEM ATESTADO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE CONJUGE AO MEDICO": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "ACOMPANHAMENTO DE FILHO AO MÉDICO": 1,
+        "DETRAN": 1
+      }
+    },
+    "EVERTON DOUGLAS OLIVEIRA BEZERRA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 6,
+        "JUSTIFICADA": 12,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 11,
+        "ASSUNTOS PESSOAIS": 5,
+        "ATESTADO ODONTOLOGICO": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1
+      }
+    },
+    "ENDERSON DE LIMA DO NASCIMENTO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 9,
+        "ABONADA": 3,
+        "JUSTIFICADA": 7
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 6,
+        "LICENÇA PATERNIDADE": 3,
+        "ATESTADO DE ACOMPANHAMENTO DE CONJUGE AO MEDICO": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "DETRAN": 3,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO CONJUGE": 1
+      }
+    },
+    "EMANUEL VITOR SILVA CANDIDO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 6
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 5,
+        "ATRASO": 1
+      }
+    },
+    "EDSON ANTONIO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 40,
+        "ABONADA": 1,
+        "JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ATRASO": 17,
+        "SAIDA ANTES DO HORARIO": 16,
+        "ASSUNTOS PESSOAIS": 5,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DAY OFF": 1,
+        "BANCO/ LOTERICA": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "PROBLEMA COM TRANSPORTE": 1
+      }
+    },
+    "JOSE ALEXANDRE DE MORAES BARBOSA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 24,
+        "NÃO.JUSTIFICADA": 11
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 18,
+        "ASSUNTOS PESSOAIS": 9,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "SAIDA ANTES DO HORARIO": 1,
+        "BANCO/ LOTERICA": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "GIVANILSON JOSE DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 15,
+        "ABONADA": 7,
+        "NÃO.JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 15,
+        "LICENÇA PATERNIDADE": 4,
+        "ASSUNTOS PESSOAIS": 4,
+        "ATRASO": 2,
+        "DAY OFF": 1
+      }
+    },
+    "LEANDRO VICTOR DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 19,
+        "JUSTIFICADA": 6
+      },
+      "por_motivo": {
+        "ATRASO": 11,
+        "ASSUNTOS PESSOAIS": 7,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 4,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "JOSE MARIA DOS SANTOS SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 24,
+        "JUSTIFICADA": 78
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 51,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 16,
+        "ASSUNTOS PESSOAIS": 14,
+        "ATESTADO MEDICO": 10,
+        "SAÍDA ANTES DO HORÁRIO": 4,
+        "ATRASO": 3,
+        "DOENTE SEM ATESTADO": 2,
+        "DECLARAÇÃO DE ACOMPANHAMENTO DE ESPOSA": 1,
+        "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 1
+      }
+    },
+    "JOSE FELICIANO DA SILVA FILHO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 8,
+        "JUSTIFICADA": 9
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 8,
+        "ASSUNTOS PESSOAIS": 4,
+        "SAIDA ANTES DO HORARIO": 2,
+        "ATRASO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "JOSE APARECIDO FERNANDES DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 7,
+        "ABONADA": 1,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 3,
+        "AUTO ESCOLA": 3,
+        "ATRASO": 1,
+        "DAY OFF - ANIVERSÁRIO": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1
+      }
+    },
+    "JOSE LUIS NASCIMENTO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 2,
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "ASSUNTOS PESSOAIS": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "JOSIANO JOSE DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "JUSTIFICADA": 4,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "CAIXA / CASAS LOTÉRICAS": 2,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "JOSE CARLOS DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 3,
+        "NÃO.JUSTIFICADA": 2,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ATRASO": 2,
+        "ASSUNTOS PESSOAIS": 1,
+        "DAY OFF": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1
+      }
+    },
+    "JOSE CARLOS SOBRAL DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 51,
+        "JUSTIFICADA": 10
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 42,
+        "SUSPENSAO": 7,
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "SAIDA ANTES DO HORARIO": 2,
+        "ATRASO": 2,
+        "FALECIMENTO DE PARENTE": 2,
+        "DETRAN": 1,
+        "DOENTE SEM ATESTADO": 1
+      }
+    },
+    "JOSE CICERO DE ALMEIDA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "JOSE CLAUDEMIR BEZERRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 21,
+        "JUSTIFICADA": 30,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 29,
+        "ASSUNTOS PESSOAIS": 15,
+        "ATRASO": 4,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "DOENÇA SEM ATESTADO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "JOSE EDMILSON NASCIMENTO DE OLIVEIRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 5,
+        "JUSTIFICADA": 11
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 9,
+        "ASSUNTOS PESSOAIS": 3,
+        "ATRASO": 2,
+        "DETRAN": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "JOSE EDMILSON SILVA DE LIMA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 4,
+        "JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 5,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "JOSE EDUARDO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 17,
+        "JUSTIFICADA": 11,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 14,
+        "ATESTADO MEDICO DO COLABORADOR": 11,
+        "ATRASO": 2,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "JOSE ERALDO MARQUES DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 29,
+        "JUSTIFICADA": 7,
+        "ABONADA": 6
+      },
+      "por_motivo": {
+        "SAÍDA ANTES DO HORÁRIO": 24,
+        "ASSUNTOS PESSOAIS": 10,
+        "LICENÇA PATERNIDADE": 4,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "FALECIMENTO DE PARENTES": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "JOSE FILIPE BRITO SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 7,
+        "JUSTIFICADA": 9,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "ASSUNTOS PESSOAIS": 5,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DAY OFF": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "JOSE IGOR DA SILVA ALVES": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "JUSTIFICADA": 2,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "ASSUNTOS PESSOAIS": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "JOSE JEFFERSON DE MORAIS BEZERRA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 6,
+        "NÃO.JUSTIFICADA": 3,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "ASSUNTOS PESSOAIS": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "CAIXA / CASAS LOTÉRICAS": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "JOSE LUCENILDO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 10,
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 5
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "ASSUNTOS PESSOAIS": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "FALECIMENTO DE PARENTE": 2,
+        "DAY OFF": 1,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "JOSE MANOEL DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 18,
+        "ABONADA": 1,
+        "JUSTIFICADA": 9
+      },
+      "por_motivo": {
+        "SAÍDA ANTES DO HORÁRIO": 8,
+        "ATESTADO MEDICO DO COLABORADOR": 8,
+        "ASSUNTOS PESSOAIS": 5,
+        "ATRASO": 5,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "JOSE RENATO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 26,
+        "JUSTIFICADA": 7
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 16,
+        "SAÍDA ANTES DO HORÁRIO": 6,
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "DOENTE SEM ATESTADO": 2,
+        "ATRASO": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "JOSE SEVERINO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 9,
+        "JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 6,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "SAÍDA ANTES DO HORÁRIO": 2,
+        "ATRASO": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE CONJUGE AO MEDICO": 1
+      }
+    },
+    "JOSE WEVERTON OLIVEIRA NUNES": {
+      "por_classificacao": {
+        "JUSTIFICADA": 14,
+        "NÃO.JUSTIFICADA": 33
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 17,
+        "SAÍDA ANTES DO HORÁRIO": 14,
+        "ATESTADO MEDICO DO COLABORADOR": 13,
+        "SUSPENSAO": 1,
+        "EXAMES SOLICITADOS PELA EMPRESA": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "JOSEILDO OLIVEIRA LIMA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 4,
+        "JUSTIFICADA": 24
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 22,
+        "ASSUNTOS PESSOAIS": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "FALECIMENTO DE PARENTES": 1
+      }
+    },
+    "JOSELMO CARVALHO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 6,
+        "NÃO.JUSTIFICADA": 14
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 7,
+        "SAIDA ANTES DO HORARIO": 5,
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ATRASO": 2
+      }
+    },
+    "JOSINALDO VIEIRA DE LIMA JUNIOR": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 3,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "JOZENILDO VITALINO DE MELO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 17,
+        "JUSTIFICADA": 5
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 14,
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "OUTROS": 1
+      }
+    },
+    "JUNIOR CARLOS DE BRITO FERREIRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 5,
+        "JUSTIFICADA": 9,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "ASSUNTOS PESSOAIS": 4,
+        "LICENÇA PATERNIDADE": 4,
+        "BANCO/ LOTERICA": 2
+      }
+    },
+    "LEONARDO DA SILVA FERREIRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 18,
+        "JUSTIFICADA": 16
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 12,
+        "ASSUNTOS PESSOAIS": 9,
+        "SAIDA ANTES DO HORARIO": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "ACOMPANHAMENTO DE PARENTE": 3,
+        "FALECIMENTO DE PAI/MÂE": 2,
+        "ATRASO": 1,
+        "DOENTE SEM ATESTADO": 1
+      }
+    },
+    "LUCAS VINICIUS DA SILVA REGO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 11,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "ATESTADO DE ACOMPANHAMENTO DE CONJUGE AO MEDICO": 2,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO CONJUGE": 2,
+        "ASSUNTOS PESSOAIS": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "LINDAILSON SOARES DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 4,
+        "JUSTIFICADA": 20,
+        "NÃO.JUSTIFICADA": 3,
+        "Não informada": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 16,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "ASSUNTOS PESSOAIS": 3,
+        "AUTORIZADO PELO LÍDER": 2,
+        "FOLGA": 2,
+        "FISIOTERAPIA": 1,
+        "Não informado": 1
+      }
+    },
+    "LAURO VINICIUS ARAUJO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 8,
+        "ABONADA": 1,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 8,
+        "DAY OFF": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1
+      }
+    },
+    "LEONILSON RODRIGUES DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 23,
+        "JUSTIFICADA": 8,
+        "ABONADA": 4
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 18,
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "CAIXA / CASAS LOTÉRICAS": 4,
+        "BANCO/ LOTERICA": 2,
+        "DAY OFF - ANIVERSÁRIO": 2,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "DOENTE SEM ATESTADO": 1
+      }
+    },
+    "LOURIVAL IVANILDO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 7,
+        "JUSTIFICADA": 21
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 9,
+        "ATESTADO MEDICO DO COLABORADOR": 9,
+        "ASSUNTOS PESSOAIS": 6,
+        "FISIOTERAPIA": 2,
+        "DOAÇAO DE SANGUE": 1,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "LUCAS GUEDES BEZERRA": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 4,
+        "JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "DAY OFF": 1
+      }
+    },
+    "LUCIVALDO JOSE DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 1,
+        "DAY OFF": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "ALEXANDRE DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 4,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 1,
+        "DAY OFF": 1,
+        "FOLGA": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1
+      }
+    },
+    "ALISSON TAVARES DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 10,
+        "JUSTIFICADA": 7,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 6,
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "DOENTE SEM ATESTADO": 3,
+        "CAIXA / CASAS LOTÉRICAS": 2,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 1,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "EDICLECIO VITALINO DE MELO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 17,
+        "JUSTIFICADA": 8,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 13,
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "SAIDA ANTES DO HORARIO": 4,
+        "DETRAN": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "DOUGLAS DE ARAUJO LIMA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 27,
+        "JUSTIFICADA": 29
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 28,
+        "ASSUNTOS PESSOAIS": 19,
+        "DOENTE SEM ATESTADO": 5,
+        "SAIDA ANTES DO HORARIO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "OUTROS": 1
+      }
+    },
+    "DAVID DA SILVA MARQUES DE OLIVEIRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 7,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 6,
+        "DOENTE SEM ATESTADO": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1
+      }
+    },
+    "DANIEL SEVERINO DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 44
+      },
+      "por_motivo": {
+        "ATRASO": 37,
+        "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 4,
+        "ASSUNTOS PESSOAIS": 2,
+        "DAY OFF": 1,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "CLEBSON DA SILVA ALVES": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 3,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "CICERO FRANCISCO DA SILVA 2": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 15,
+        "JUSTIFICADA": 3,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 12,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "SAIDA ANTES DO HORARIO": 2,
+        "ADVENTISTA": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ATRASO": 1
+      }
+    },
+    "CICERO EDUARDO BEZERRA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 13,
+        "JUSTIFICADA": 32
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 27,
+        "ASSUNTOS PESSOAIS": 9,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 5,
+        "ATRASO": 2,
+        "DOENÇA SEM ATESTADO": 1,
+        "OUTROS": 1
+      }
+    },
+    "CICERO DA SILVA PEREIRA": {
+      "por_classificacao": {
+        "ABONADA": 3,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "BANCO/ LOTERICA": 2,
+        "DAY OFF": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "CICERO BEZERRA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 19,
+        "JUSTIFICADA": 11,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 9,
+        "ATESTADO MEDICO DO COLABORADOR": 8,
+        "ATRASO": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 4,
+        "OUTROS": 3,
+        "DOENÇA SEM ATESTADO": 2,
+        "SAIDA ANTES DO HORARIO": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE CONJUGE AO MEDICO": 1
+      }
+    },
+    "CICERO ANTONIO DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 1,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 1,
+        "DAY OFF": 1,
+        "EXAME OCUPACIONAL": 1
+      }
+    },
+    "CELIO NUNES DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 8,
+        "JUSTIFICADA": 3,
+        "ABONADA": 7
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 8,
+        "LICENÇA PATERNIDADE": 4,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "FOLGA": 2,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "ARTUR BERNARDO DE SOUZA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 21,
+        "JUSTIFICADA": 10
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 10,
+        "ATESTADO MEDICO DO COLABORADOR": 8,
+        "ATRASO": 5,
+        "SAIDA ANTES DO HORARIO": 4,
+        "EXAMES SOLICITADOS PELA EMPRESA": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "ARNALDO ANSELMO SOBRAL": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "JUSTIFICADA": 4,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "ASSUNTOS PESSOAIS": 3,
+        "DAY OFF": 1
+      }
+    },
+    "ANDERSON DA SILVA BARBOSA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 18,
+        "JUSTIFICADA": 16
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 14,
+        "ASSUNTOS PESSOAIS": 13,
+        "ATRASO": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "DOENTE SEM ATESTADO": 1
+      }
+    },
+    "AMARO FERREIRA DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 4,
+        "NÃO.JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 3,
+        "FALECIMENTO DE DEPENDENTES: PAIS/ AVÓS/ IRMÃOS/ CÒNJUGE/ FILHOS": 2,
+        "DAY OFF": 1
+      }
+    },
+    "ALISSON VALDOMIRO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 6,
+        "ABONADA": 1,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 2,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 2,
+        "DETRAN": 2,
+        "DAY OFF": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1,
+        "OUTROS": 1
+      }
+    },
+    "DENIS WASHINGTON BARBOSA DE OLIVEIRA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 26,
+        "ABONADA": 3,
+        "NÃO.JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 25,
+        "EXAMES SOLICITADOS PELA EMPRESA": 2,
+        "ATESTADO MEDICO": 2,
+        "DETRAN": 1,
+        "CERTIDAO DE CASAMENTO": 1,
+        "DOAÇÃO DE SANGUE": 1
+      }
+    },
+    "ADRIANO JOSE DOS SANTOS": {
+      "por_classificacao": {
+        "JUSTIFICADA": 3,
+        "NÃO.JUSTIFICADA": 6,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 5,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "EXAMES SOLICITADOS PELA EMPRESA": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "DAY OFF": 1,
+        "ATRASO": 1
+      }
+    },
+    "DOUGLAS VINICIUS RIBEIRO SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 3
+      }
+    },
+    "ALINE SANTOS CORDEIRO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 31,
+        "NÃO.JUSTIFICADA": 8,
+        "ABONADA": 4
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 26,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 4,
+        "DOENTE SEM ATESTADO": 4,
+        "ASSUNTOS PESSOAIS": 4,
+        "CAIXA / CASAS LOTÉRICAS": 3,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO FILHO": 1,
+        "REUNIÃO OU ATIVIDADES DO SINDICATO": 1
+      }
+    },
+    "ALAN MANOEL PEREIRA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 43,
+        "JUSTIFICADA": 15
+      },
+      "por_motivo": {
+        "ATRASO": 33,
+        "ATESTADO MEDICO DO COLABORADOR": 11,
+        "ASSUNTOS PESSOAIS": 6,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 2,
+        "DETRAN": 2,
+        "DOENTE SEM ATESTADO": 1,
+        "EXAME OCUPACIONAL": 1,
+        "DOENÇA SEM ATESTADO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "ADRIANO AFONSO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 2,
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 4
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 5,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "ATA BELO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 8,
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "DOAÇAO DE SANGUE": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "EXAME OCUPACIONAL": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "AURICLENES DOS SANTOS VILA NOVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 3,
+        "NÃO.JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "FALECIMENTO DE PARENTES": 2,
+        "EXAME OCUPACIONAL": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "CHARLES BRUNO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 26,
+        "NÃO.JUSTIFICADA": 28,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 23,
+        "ASSUNTOS PESSOAIS": 17,
+        "ATRASO": 5,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "DOENTE SEM ATESTADO": 2,
+        "SAIDA ANTES DO HORARIO": 2,
+        "EXAMES SOLICITADOS PELA EMPRESA": 1,
+        "FALECIMENTO DE SOGRO/A": 1,
+        "FALECIMENTO DE PARENTE": 1
+      }
+    },
+    "CARLOS ANDRE PEREIRA DE OLIVEIRA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 12,
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 9
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 13,
+        "ASSUNTOS PESSOAIS": 5,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ACOMPANHAMENTO DE FILHO AO MÉDICO": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "EDNA TRAJANO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 6,
+        "NÃO.JUSTIFICADA": 4,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "ASSUNTOS PESSOAIS": 4,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "JOSE CICERO CORDEIRO MERGULHAO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "JUSTIFICADA": 8,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 4,
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "FOLGA": 1
+      }
+    },
+    "MATEUS ALEXANDRE DA SILVA MACEDO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 15,
+        "ABONADA": 1,
+        "JUSTIFICADA": 10
+      },
+      "por_motivo": {
+        "DETRAN": 12,
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "ASSUNTOS PESSOAIS": 2,
+        "DAY OFF": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 1
+      }
+    },
+    "VINICIUS DA SILVA SOBRAL": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "SILVANO ALCANTRA CIRILO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 4,
+        "JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 4,
+        "ATESTADO MEDICO DO COLABORADOR": 3
+      }
+    },
+    "SANDRO FERREIRA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 8,
+        "JUSTIFICADA": 13
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 11,
+        "ASSUNTOS PESSOAIS": 5,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "OUTROS": 1
+      }
+    },
+    "RUBENS DA SILVA TORRES": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 13,
+        "JUSTIFICADA": 24
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 14,
+        "ASSUNTOS PESSOAIS": 8,
+        "ATESTADO ODONTOLÓGICO": 6,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 4,
+        "SAIDA ANTES DO HORARIO": 2,
+        "BANCO/ LOTERICA": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "Não informado": 1
+      }
+    },
+    "MARIA JUCILENE MARQUES CORREIA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 6,
+        "ABONADA": 1,
+        "JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 4,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "ATRASO": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "DAY OFF": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE CONJUGE AO MEDICO": 1
+      }
+    },
+    "MARCOS ANTONIO GUEDES BEZERRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 5,
+        "JUSTIFICADA": 5,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "ASSUNTOS PESSOAIS": 2,
+        "ATRASO": 1,
+        "ATESTADO MEDICO": 1,
+        "DAY OFF": 1,
+        "DETRAN": 1,
+        "OUTROS": 1
+      }
+    },
+    "VICTOR DA SILVA DOS SANTOS": {
+      "por_classificacao": {
+        "JUSTIFICADA": 24,
+        "NÃO.JUSTIFICADA": 39,
+        "ABONADA": 3,
+        "Não informada": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 21,
+        "ASSUNTOS PESSOAIS": 13,
+        "ATRASO": 13,
+        "SAÍDA ANTES DO HORÁRIO": 9,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 4,
+        "COMPRA DE CASA": 3,
+        "ATESTADO MEDICO": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "Não informado": 1,
+        "OUTROS": 1
+      }
+    },
+    "SEVERINO PEDRO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 26,
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 15,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 6,
+        "LICENÇA PATERNIDADE": 5,
+        "ASSUNTOS PESSOAIS": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "VAGNER MOURA DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 2,
+        "NÃO.JUSTIFICADA": 13,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ATRASO": 4,
+        "SAÍDA ANTES DO HORÁRIO": 4,
+        "ASSUNTOS PESSOAIS": 3,
+        "CONVOCAÇÃO DA JUSTIÇA ": 2,
+        "DOAÇAO DE SANGUE": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "DETRAN": 1,
+        "DAY OFF": 1
+      }
+    },
+    "JORGE LUIZ DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 4,
+        "JUSTIFICADA": 17,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 8,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 5,
+        "ASSUNTOS PESSOAIS": 4,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 2,
+        "ATESTADO MEDICO": 2,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "EDSON ANTONIO FERREIRA DA LUZ": {
+      "por_classificacao": {
+        "JUSTIFICADA": 8,
+        "NÃO.JUSTIFICADA": 6,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 8,
+        "ASSUNTOS PESSOAIS": 5,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DAY OFF": 1
+      }
+    },
+    "ELTON ANTONIO FELIX DE ANDRADE LIMA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 17,
+        "JUSTIFICADA": 16
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 15,
+        "ASSUNTOS PESSOAIS": 9,
+        "ATRASO": 8,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "JOAO HENRIQUE BATISTA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "ABONADA": 1,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "SAIDA ANTES DO HORARIO": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "JESLY SAMARA RODRIGUES DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "SAIDA ANTES DO HORARIO": 1,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 1,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "ERIBERTO SOUZA DA SILVA FILHO": {
+      "por_classificacao": {
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "ILAMAR JOSE DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 8,
+        "NÃO.JUSTIFICADA": 16
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 13,
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "SAIDA ANTES DO HORARIO": 2,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 1,
+        "DETRAN": 1
+      }
+    },
+    "WILLIAN PEDRO DO NASCIMENTO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 4,
+        "JUSTIFICADA": 2,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 3,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "ATRASO": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "JOSENILSON DA SILVA SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 16,
+        "JUSTIFICADA": 8
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 12,
+        "ATESTADO MEDICO DO COLABORADOR": 8,
+        "SUSPENSÃO": 2,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "JOSE RAFAEL DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 6,
+        "JUSTIFICADA": 7,
+        "ABONADA": 3
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "ASSUNTOS PESSOAIS": 5,
+        "FALECIMENTO DE DEPENDENTES: PAIS/ AVÓS/ IRMÃOS/ CÒNJUGE/ FILHOS": 2,
+        "DAY OFF": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "LAURA SAMARA DA CONCEICAO SILVA SANTOS": {
+      "por_classificacao": {
+        "ABONADA": 4,
+        "JUSTIFICADA": 61,
+        "NÃO.JUSTIFICADA": 8
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 30,
+        "ATESTADO MEDICO DO COLABORADOR": 26,
+        "ASSUNTOS PESSOAIS": 3,
+        "FOLGA": 3,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO FILHO": 3,
+        "SAÍDA ANTES DO HORÁRIO": 3,
+        "FALECIMENTO DE DEPENDENTES: PAIS/ AVÓS/ IRMÃOS/ CÒNJUGE/ FILHOS": 2,
+        "DAY OFF": 1,
+        "ACOMPANHAMENTO DE FILHO AO MÉDICO": 1,
+        "ATRASO": 1
+      }
+    },
+    "JOSENILDO ROBERTO DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "ASSUNTOS PESSOAIS": 2,
+        "DAY OFF": 1
+      }
+    },
+    "JOSENILDO ELIAS DA SILVA SANTANA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 40,
+        "JUSTIFICADA": 27,
+        "ABONADA": 5
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 26,
+        "ATESTADO MEDICO DO COLABORADOR": 20,
+        "ATRASO": 14,
+        "CERTIDAO DE CASAMENTO": 3,
+        "DOENTE SEM ATESTADO": 3,
+        "ATESTADO MEDICO": 2,
+        "BANCO/ LOTERICA": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "DAY OFF": 1
+      }
+    },
+    "JOSENILDO DA SILVA MILANEZ": {
+      "por_classificacao": {
+        "ABONADA": 3,
+        "NÃO.JUSTIFICADA": 14,
+        "JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 9,
+        "ATRASO": 3,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 2,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO FILHO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "JOSIVAN SILVA MONTEIRO": {
+      "por_classificacao": {
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "LUIZ CARLOS DOS SANTOS FILHO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 41,
+        "NÃO.JUSTIFICADA": 10,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 30,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 11,
+        "ASSUNTOS PESSOAIS": 7,
+        "ATRASO": 3,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "LUCIANO FARIAS DE BRITO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 13,
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 9,
+        "DOAÇAO DE SANGUE": 2,
+        "ASSUNTOS PESSOAIS": 2,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ATESTADO ODONTOLÓGICO": 1
+      }
+    },
+    "JOSE BELO DA SILVA FILHO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 2,
+        "NÃO.JUSTIFICADA": 5,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 3,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "LOURIVAL JUVENCIO DOS SANTOS": {
+      "por_classificacao": {
+        "JUSTIFICADA": 15,
+        "NÃO.JUSTIFICADA": 5,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 11,
+        "ASSUNTOS PESSOAIS": 4,
+        "FALECIMENTO DE PARENTES": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "DAY OFF - ANIVERSÁRIO": 2,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "JOSE MATHEUS COSTA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 15,
+        "JUSTIFICADA": 10
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 14,
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "DOENTE SEM ATESTADO": 1
+      }
+    },
+    "LUIZ ANTONIO ALVES": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 7,
+        "JUSTIFICADA": 8
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "SAIDA ANTES DO HORARIO": 4,
+        "ASSUNTOS PESSOAIS": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "CAIXA / CASAS LOTÉRICAS": 1
+      }
+    },
+    "JOSE CARLOS DA SILVA DO NASCIMENTO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 37,
+        "ABONADA": 1,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 36,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ATRASO": 1
+      }
+    },
+    "LUCAS DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 1,
+        "JUSTIFICADA": 5
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "ASSUNTOS PESSOAIS": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1
+      }
+    },
+    "ALAN DE LIMA FEITOZA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 14,
+        "JUSTIFICADA": 19,
+        "ABONADA": 3
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 11,
+        "ASSUNTOS PESSOAIS": 5,
+        "ATRASO": 3,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO CONJUGE": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "SAIDA ANTES DO HORARIO": 2,
+        "REUNIÃO OU ATIVIDADES DO SINDICATO": 2,
+        "EXAME OCUPACIONAL": 2,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO FILHO": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE CONJUGE AO MEDICO": 1,
+        "BANCO/ LOTERICA": 1,
+        "DOAÇAO DE SANGUE": 1,
+        "OUTROS": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "ANTONIO CICERO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 2
+      }
+    },
+    "EDEILSON EDMILSON DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "JUSTIFICADA": 8,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "ASSUNTOS PESSOAIS": 3,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "CLEITON ALVES DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 16,
+        "JUSTIFICADA": 7
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 13,
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "ATESTADO ODONTOLÓGICO": 3,
+        "SAIDA ANTES DO HORARIO": 1,
+        "OUTROS": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1
+      }
+    },
+    "CAETANO CICERO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 23,
+        "JUSTIFICADA": 17
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 19,
+        "ATESTADO MEDICO DO COLABORADOR": 13,
+        "ATRASO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "EXAMES SOLICITADOS PELA EMPRESA": 2,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DOENTE SEM ATESTADO": 1
+      }
+    },
+    "AYRAN LUIS SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 11,
+        "ABONADA": 3
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 10,
+        "CERTIDÃO DE CASAMENTO": 3,
+        "ATRASO": 1
+      }
+    },
+    "ADSON BEZERRA DE LIMA": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "JUSTIFICADA": 12,
+        "NÃO.JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 9,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 1,
+        "ATRASO": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "CLECIA ALBINO DE ALMEIDA SOUZA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 5,
+        "ABONADA": 3
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "CAIXA / CASAS LOTÉRICAS": 2,
+        "DAY OFF": 1
+      }
+    },
+    "CESAR ROBERTO SILVA DE ALMEIDA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 8,
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 8,
+        "ASSUNTOS PESSOAIS": 1,
+        "DOAÇAO DE SANGUE": 1
+      }
+    },
+    "CRISTIANE MARIA DAS DORES SANTOS SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 8,
+        "JUSTIFICADA": 16,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 14,
+        "ASSUNTOS PESSOAIS": 8,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "CICERO JOSE FLORENCIO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 15,
+        "ABONADA": 8,
+        "NÃO.JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 9,
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "CONVOCAÇÃO DA JUSTIÇA ": 5,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "DOENTE SEM ATESTADO": 1
+      }
+    },
+    "INACIO FREITAS DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 4,
+        "NÃO.JUSTIFICADA": 9,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 4,
+        "DETRAN": 4,
+        "ATRASO": 2,
+        "ATESTADO MEDICO": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1,
+        "DOENÇA SEM ATESTADO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "EDUARDO BARBOSA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 15,
+        "JUSTIFICADA": 12
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 11,
+        "ASSUNTOS PESSOAIS": 7,
+        "ATRASO": 4,
+        "SAIDA ANTES DO HORARIO": 4,
+        "ATESTADO MEDICO": 1
+      }
+    },
+    "EDMILSON LOPES DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 13,
+        "NÃO.JUSTIFICADA": 2,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 12,
+        "EXAMES SOLICITADOS PELA EMPRESA": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DAY OFF": 1,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "CARLOS VINICIUS DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 17,
+        "JUSTIFICADA": 9
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 10,
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "DOENTE SEM ATESTADO": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "ATRASO": 1,
+        "DETRAN": 1,
+        "EXAMES SOLICITADOS PELA EMPRESA": 1,
+        "DOENÇA SEM ATESTADO": 1,
+        "OUTROS": 1
+      }
+    },
+    "CLEIVISON MARCONE DA SILVA GOMES": {
+      "por_classificacao": {
+        "ABONADA": 3,
+        "JUSTIFICADA": 6,
+        "NÃO.JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 4,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO FILHO": 2,
+        "DOENTE SEM ATESTADO": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "ATRASO": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1,
+        "CONVOCAÇÃO DA JUSTIÇA ": 1,
+        "OUTROS": 1
+      }
+    },
+    "DENILSON CICERO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "SAIDA ANTES DO HORARIO": 2,
+        "ASSUNTOS PESSOAIS": 1,
+        "DAY OFF": 1
+      }
+    },
+    "DHEMERSON HALBERTO SILVA LIBERAL": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "DOENTE SEM ATESTADO": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "ANAILTON JESUS SOUZA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 13,
+        "JUSTIFICADA": 6
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 8,
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "DOENTE SEM ATESTADO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO FILHO": 1,
+        "OUTROS": 1,
+        "ACOMPANHAMENTO DE PARENTE": 1
+      }
+    },
+    "BENEDITO DA SILVA SIQUEIRA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 1,
+        "ABONADA": 5
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 3,
+        "FOLGA": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "ANDRE AFONSO BARBOSA DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 34,
+        "ABONADA": 5
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 26,
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "SAÍDA ANTES DO HORÁRIO": 3,
+        "DAY OFF": 1,
+        "ATRASO": 1,
+        "DECLARAÇÃO DE ACOMPANHAMENTO DE FILHO": 1
+      }
+    },
+    "WEDSON OLIVEIRA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 36,
+        "JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 18,
+        "BANCO/ LOTERICA": 3,
+        "SUSPENSAO": 3,
+        "CAIXA / CASAS LOTÉRICAS": 3,
+        "DOENTE SEM ATESTADO": 2,
+        "ATRASO": 2,
+        "OUTROS": 2,
+        "FALECIMENTO DE PARENTES": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1,
+        "DECLARAÇAO ODONTOLOGICA DO COLABORADOR": 1,
+        "DOENÇA SEM ATESTADO": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1
+      }
+    },
+    "WEDSON ARLINDO DE ANDRADE": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 10,
+        "JUSTIFICADA": 5
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 5,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "DOENTE SEM ATESTADO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ATRASO": 2,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "PATRICIA PAES PEDROSA": {
+      "por_classificacao": {
+        "ABONADA": 2,
+        "JUSTIFICADA": 6
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "WILAMAR HUGO DA COSTA BRITO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 28,
+        "NÃO.JUSTIFICADA": 16
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 25,
+        "RETORNO INSS": 12,
+        "OUTROS": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "SAÍDA ANTES DO HORÁRIO": 1,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "PEDRO HENRIQUE NUNES DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 17,
+        "NÃO.JUSTIFICADA": 21,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 12,
+        "ATRASO": 8,
+        "SAIDA ANTES DO HORARIO": 7,
+        "ASSUNTOS PESSOAIS": 3,
+        "ATESTADO ODONTOLÓGICO": 3,
+        "DOENTE SEM ATESTADO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "DAY OFF": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "JOSELMO BARBOSA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 20,
+        "JUSTIFICADA": 4,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "SAÍDA ANTES DO HORÁRIO": 10,
+        "ASSUNTOS PESSOAIS": 9,
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "DAY OFF": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "JOSE BIVALDO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 20,
+        "JUSTIFICADA": 5
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 10,
+        "SAÍDA ANTES DO HORÁRIO": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DOENTE SEM ATESTADO": 2,
+        "ATRASO": 2,
+        "CARTORIO": 1,
+        "FALECIMENTO DE PARENTES": 1
+      }
+    },
+    "LUCIENE QUITERIA DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 15,
+        "NÃO.JUSTIFICADA": 6
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 9,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 5,
+        "ASSUNTOS PESSOAIS": 2,
+        "ATRASO": 2,
+        "DETRAN": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "JOSE MIRANDA FERREIRA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 14,
+        "JUSTIFICADA": 19,
+        "Não informada": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 15,
+        "ASSUNTOS PESSOAIS": 11,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 5,
+        "BANCO/ LOTERICA": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "Não informado": 1
+      }
+    },
+    "JOSENILDO FRANCISCO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 23,
+        "ABONADA": 2,
+        "JUSTIFICADA": 9
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 16,
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "ATRASO": 4,
+        "DOAÇAO DE SANGUE": 2,
+        "SAIDA ANTES DO HORARIO": 2,
+        "DOENTE SEM ATESTADO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "FALECIMENTO DE PARENTE": 1
+      }
+    },
+    "RELENCLAUDIO SILVA DO NASCIMENTO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 6,
+        "JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 4,
+        "ATESTADO ODONTOLÓGICO": 3,
+        "SAIDA ANTES DO HORARIO": 2,
+        "DOAÇAO DE SANGUE": 1
+      }
+    },
+    "RUBEN GABRIEL DE MENEZES BARBOSA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 5,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "ASSUNTOS PESSOAIS": 2,
+        "DAY OFF": 1
+      }
+    },
+    "OZIEL ALVES DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 15,
+        "NÃO.JUSTIFICADA": 11,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 15,
+        "ATRASO": 5,
+        "BANCO/ LOTERICA": 2,
+        "DOENTE SEM ATESTADO": 2,
+        "ASSUNTOS PESSOAIS": 2,
+        "DAY OFF": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1
+      }
+    },
+    "RALISSON AMARO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 17,
+        "NÃO.JUSTIFICADA": 14
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 14,
+        "ASSUNTOS PESSOAIS": 5,
+        "SAIDA ANTES DO HORARIO": 3,
+        "OUTROS": 3,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 2,
+        "ATESTADO MEDICO": 1,
+        "DOENTE SEM ATESTADO": 1,
+        "SUSPENSAO": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "MARCELO DIONIZIO DE AGUIAR": {
+      "por_classificacao": {
+        "JUSTIFICADA": 14,
+        "NÃO.JUSTIFICADA": 2,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 4,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 2,
+        "ASSUNTOS PESSOAIS": 1,
+        "Não informado": 1,
+        "OUTROS": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "RENILSON JOSE DA SILVA NUNES": {
+      "por_classificacao": {
+        "JUSTIFICADA": 10,
+        "ABONADA": 4,
+        "NÃO.JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 3,
+        "FALECIMENTO DE DEPENDENTES: PAIS/ AVÓS/ IRMÃOS/ CÒNJUGE/ FILHOS": 3,
+        "LICENÇA PATERNIDADE": 3,
+        "DAY OFF": 1,
+        "ATRASO": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "FALECIMENTO DE PARENTE": 1
+      }
+    },
+    "TIAGO DE SENA BARBOSA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 32,
+        "JUSTIFICADA": 55,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 34,
+        "ASSUNTOS PESSOAIS": 18,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 13,
+        "DOENTE SEM ATESTADO": 7,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 5,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO FILHO": 3,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 2,
+        "DOENÇA SEM ATESTADO": 2,
+        "ATESTADO MEDICO": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "OUTROS": 1,
+        "ACOMPANHAMENTO DE FILHO AO MÉDICO": 1
+      }
+    },
+    "MAURICIO ALONSO DOS SANTOS": {
+      "por_classificacao": {
+        "JUSTIFICADA": 3,
+        "NÃO.JUSTIFICADA": 2,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "DAY OFF": 1
+      }
+    },
+    "MARCOS VINICIUS LIMA DO NASCIMENTO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 21,
+        "NÃO.JUSTIFICADA": 22
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 18,
+        "ASSUNTOS PESSOAIS": 10,
+        "DOENTE SEM ATESTADO": 6,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "SUSPENSAO": 2,
+        "BANCO/ LOTERICA": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 1,
+        "Não informado": 1,
+        "ATRASO": 1
+      }
+    },
+    "EMERSON MOREIRA DO NASCIMENTO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 30,
+        "JUSTIFICADA": 10,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATRASO": 16,
+        "ASSUNTOS PESSOAIS": 9,
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "SAIDA ANTES DO HORARIO": 3,
+        "DECLARAÇAO ODONTOLOGICA DO COLABORADOR": 2,
+        "DOENÇA SEM ATESTADO": 2,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "JOAO VITOR DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "JOAO BARROS NETO": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "DAY OFF": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1
+      }
+    },
+    "JHONATAS HENRIQUE DA SILVA BEZERRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 7,
+        "JUSTIFICADA": 10
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 9,
+        "ASSUNTOS PESSOAIS": 4,
+        "ATRASO": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "JACKSON JOSE OLIVEIRA DE FRANCA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 13,
+        "JUSTIFICADA": 15
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 14,
+        "ASSUNTOS PESSOAIS": 5,
+        "ATRASO": 2,
+        "SAÍDA ANTES DO HORÁRIO": 2,
+        "DOENTE SEM ATESTADO": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1,
+        "CARTORIO": 1,
+        "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "GIRLANDO JOAO DE OLIVEIRA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 11,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 10,
+        "DAY OFF": 1,
+        "ATESTADO ODONTOLÓGICO": 1
+      }
+    },
+    "EVANDRO LOURENCO DOS SANTOS": {
+      "por_classificacao": {
+        "ABONADA": 4,
+        "NÃO.JUSTIFICADA": 3,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "CERTIDÃO DE CASAMENTO": 3,
+        "ATRASO": 2,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "ALESSANDRO VITOR DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "JUSTIFICADA": 6,
+        "NÃO.JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "FALECIMENTO DE PARENTES": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "CARLOS ANDRE DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "ABONADA": 3
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 2,
+        "ATRASO": 2,
+        "FALECIMENTO DE PARENTES": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "EDIMILSON CORDEIRO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 14,
+        "NÃO.JUSTIFICADA": 10
+      },
+      "por_motivo": {
+        "FISIOTERAPIA": 7,
+        "ASSUNTOS PESSOAIS": 7,
+        "DOENTE SEM ATESTADO": 3,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "EXAMES SOLICITADOS PELA EMPRESA": 2,
+        "DECLARAÇAO MEDICA": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "ARTUR LUIZ NUNES DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 19,
+        "JUSTIFICADA": 48
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 47,
+        "ASSUNTOS PESSOAIS": 13,
+        "SAIDA ANTES DO HORARIO": 1,
+        "ATRASO": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE PAI/ MÃE AO MEDICO": 1,
+        "ACOMPANHAMENTO DE PARENTE": 1,
+        "OUTROS": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "ADENILDO ANTONIO SERAFIM": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "SAIDA ANTES DO HORARIO": 2,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1
+      }
+    },
+    "ARNAVIO AMARO FERREIRA": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "DAY OFF": 1,
+        "EXAME OCUPACIONAL": 1
+      }
+    },
+    "MARIA DAS GRACAS MONTEIRO ALMEIDA DE MELO": {
+      "por_classificacao": {
+        "ABONADA": 3,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "JOSE AGEU DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "JUSTIFICADA": 5
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "JOSE ANTONIO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 43,
+        "JUSTIFICADA": 17
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 23,
+        "ATRASO": 16,
+        "ATESTADO MEDICO DO COLABORADOR": 14,
+        "SAIDA ANTES DO HORARIO": 3,
+        "ATESTADO MEDICO": 1,
+        "SUSPENSAO": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO FILHO": 1
+      }
+    },
+    "SANDRO JOSE FERREIRA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 39,
+        "JUSTIFICADA": 11
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 27,
+        "ATESTADO MEDICO DO COLABORADOR": 10,
+        "DOENTE SEM ATESTADO": 9,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "Não informado": 1,
+        "OUTROS": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "JOSE RAMOS DO NASCIMENTO SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 3,
+        "NÃO.JUSTIFICADA": 17
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 15,
+        "ATRASO": 2,
+        "DECLARAÇAO MEDICA": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "EGNALDO JOSE DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 9,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 8,
+        "BANCO/ LOTERICA": 2,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 1
+      }
+    },
+    "EDUARDO HENRIQUE DE OLIVEIRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 5,
+        "ABONADA": 1,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 4,
+        "BANCO/ LOTERICA": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 1
+      }
+    },
+    "JOAO DA SILVA JUNIOR": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 9,
+        "JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "SAIDA ANTES DO HORARIO": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "ASSUNTOS PESSOAIS": 3,
+        "ATRASO": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "FALECIMENTO DE PARENTE": 1
+      }
+    },
+    "JAFE DE MACEDO SANTOS": {
+      "por_classificacao": {
+        "ABONADA": 3,
+        "JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "DAY OFF": 1,
+        "CURSO EXTERNO": 1,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "FABIANO JOSE DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ASSUNTOS PESSOAIS": 1,
+        "OUTROS": 1
+      }
+    },
+    "EDUARDO ERIVALDO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 18,
+        "JUSTIFICADA": 17,
+        "ABONADA": 4
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 13,
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 5,
+        "SAIDA ANTES DO HORARIO": 3,
+        "DOENTE SEM ATESTADO": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "LICENÇA PATERNIDADE": 2,
+        "ATRASO": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1,
+        "EXAME OCUPACIONAL": 1,
+        "DECLARAÇÃO DE ACOMPANHAMENTO DE ESPOSA": 1
+      }
+    },
+    "GEFFERSON GILMAR DIAS LEITE": {
+      "por_classificacao": {
+        "JUSTIFICADA": 16,
+        "NÃO.JUSTIFICADA": 11
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 10,
+        "ASSUNTOS PESSOAIS": 10,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 6,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "EMERSSON JOSE DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 3,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "RIVALDO PEREIRA DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 11,
+        "NÃO.JUSTIFICADA": 8
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 10,
+        "ASSUNTOS PESSOAIS": 3,
+        "ATRASO": 2,
+        "ATESTADO MEDICO": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DETRAN": 1,
+        "OUTROS": 1
+      }
+    },
+    "VITOR WANDSON DA SILVA REGO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 22,
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO ODONTOLÓGICO": 14,
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "DOAÇAO DE SANGUE": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE CONJUGE AO MEDICO": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "OUTROS": 1
+      }
+    },
+    "ALEXANDRO DE SANTANA": {
+      "por_classificacao": {
+        "ABONADA": 2,
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "FALECIMENTO DE DEPENDENTES: PAIS/ AVÓS/ IRMÃOS/ CÒNJUGE/ FILHOS": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "CELIO MANOEL DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "ADEILDO PEDRO DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "DAY OFF": 1
+      }
+    },
+    "ROBERTO SOUSA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 10,
+        "JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 6,
+        "SAIDA ANTES DO HORARIO": 3,
+        "BANCO/ LOTERICA": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "WELLINGTON ALVES GUIMARAES": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "SAIDA ANTES DO HORARIO": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "RENATO SILVA DO NASCIMENTO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 4,
+        "JUSTIFICADA": 6
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "DAY OFF": 2,
+        "BANCO/ LOTERICA": 2,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "IASMIN GABRIELY LOPES DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 1,
+        "DAY OFF": 1,
+        "ATRASO": 1
+      }
+    },
+    "JAILSON REGINO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "SAIDA ANTES DO HORARIO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "GLAUBER MONTEIRO DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "ABONADA": 8
+      },
+      "por_motivo": {
+        "LICENÇA PATERNIDADE": 6,
+        "ATRASO": 2,
+        "ASSUNTOS PESSOAIS": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "LUANA ELISA LIMEIRA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "LEONARDO NATAN SILVA SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 13,
+        "JUSTIFICADA": 15
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 13,
+        "ASSUNTOS PESSOAIS": 11,
+        "SAIDA ANTES DO HORARIO": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2
+      }
+    },
+    "LUCAS KAUA DOS SANTOS DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 41,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 22,
+        "ATRASO": 14,
+        "SAÍDA ANTES DO HORÁRIO": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "OUTROS": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "ANTONIO LUIZ DA SILVA NETO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 7,
+        "JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 6,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DOENTE SEM ATESTADO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "ANA CAROLLINA LEMOS SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 12,
+        "NÃO.JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 11,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "CARLOS DANIEL DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 11,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 11,
+        "ATESTADO MEDICO DO COLABORADOR": 1
+      }
+    },
+    "ADELSON MARTINS DOS SANTOS FILHO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 6
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "DAY OFF - ANIVERSÁRIO": 1,
+        "EXAME OCUPACIONAL": 1
+      }
+    },
+    "CICERO JOSE DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 14,
+        "NÃO.JUSTIFICADA": 4,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 11,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "ASSUNTOS PESSOAIS": 2,
+        "DAY OFF - ANIVERSÁRIO": 1,
+        "ATRASO": 1,
+        "OUTROS": 1
+      }
+    },
+    "ADEMILTON PEDRO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 25,
+        "NÃO.JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 25,
+        "OUTROS": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "EXAME OCUPACIONAL": 1
+      }
+    },
+    "ADILSON SILVA DE BARROS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "ABONADA": 2,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 2,
+        "BANCO/ LOTERICA": 2,
+        "DAY OFF - ANIVERSÁRIO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "MARCIO JOSE LIMA RUFINO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 35,
+        "NÃO.JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 31,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 4,
+        "ASSUNTOS PESSOAIS": 2,
+        "DOENTE SEM ATESTADO": 1,
+        "OUTROS": 1
+      }
+    },
+    "SERGIO BATISTA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 30,
+        "JUSTIFICADA": 13
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 25,
+        "ATESTADO MEDICO DO COLABORADOR": 11,
+        "DOENTE SEM ATESTADO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "CONVOCAÇAO DA JUSTIÇA/ AUDIENCIA": 1,
+        "BANCO/ LOTERICA": 1,
+        "OUTROS": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "PEDRO HENRIQUE DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 20,
+        "NÃO.JUSTIFICADA": 8
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 13,
+        "ACOMPANHAMENTO DE FILHO AO MÉDICO": 4,
+        "ASSUNTOS PESSOAIS": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "Não informado": 1,
+        "DECLARAÇAO DE ACOMPANHAMENTO DO FILHO": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "ATESTADO DE ACOMPANHAMENTO DE CONJUGE AO MEDICO": 1,
+        "DECLARAÇÃO DE ACOMPANHAMENTO DE FILHO": 1,
+        "SUSPENSÃO": 1
+      }
+    },
+    "MARIA EDUARDA EDILEUSA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 1,
+        "DAY OFF": 1
+      }
+    },
+    "JOSE ADMILSON DOS SANTOS JUNIOR": {
+      "por_classificacao": {
+        "Não informada": 1,
+        "NÃO.JUSTIFICADA": 9,
+        "JUSTIFICADA": 5,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 9,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DETRAN": 1,
+        "DOAÇAO DE SANGUE": 1,
+        "ATRASO": 1
+      }
+    },
+    "CARLOS DANIEL SERAFIM ALVES DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 39,
+        "NÃO.JUSTIFICADA": 35,
+        "ABONADA": 8
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 34,
+        "ASSUNTOS PESSOAIS": 24,
+        "LICENÇA PATERNIDADE": 5,
+        "DOENTE SEM ATESTADO": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "ATRASO": 3,
+        "AUTORIZADO PELO LÍDER": 3,
+        "SAÍDA ANTES DO HORÁRIO": 2,
+        "DETRAN": 1,
+        "DOENÇA SEM ATESTADO": 1,
+        "EXAME OCUPACIONAL": 1,
+        "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 1
+      }
+    },
+    "DAVI URBANO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 23,
+        "JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 13,
+        "ATRASO": 5,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 3,
+        "OUTROS": 2
+      }
+    },
+    "EDENILSON SANTOS SILVA NASCIMENTO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 1
+      }
+    },
+    "DANIEL DA SILVA GAMA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 15
+      },
+      "por_motivo": {
+        "ATRASO": 9,
+        "ASSUNTOS PESSOAIS": 5,
+        "OUTROS": 1
+      }
+    },
+    "DAFANNY GABRIELE DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 25
+      },
+      "por_motivo": {
+        "ATRASO": 25
+      }
+    },
+    "ANTONIO LUIZ OLIVEIRA LIMA FILHO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 5,
+        "JUSTIFICADA": 8
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "ASSUNTOS PESSOAIS": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "ANDRE FLORENCIO DE VASCONCELOS": {
+      "por_classificacao": {
+        "JUSTIFICADA": 5,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "ADRIANO CARLOS DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 3,
+        "ATESTADO MEDICO DO COLABORADOR": 2
+      }
+    },
+    "DIOGO DIDACIO SANTOS ALVES DE OLIVEIRA": {
+      "por_classificacao": {
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "FALECIMENTO DE DEPENDENTES: PAIS/ AVÓS/ IRMÃOS/ CÒNJUGE/ FILHOS": 1,
+        "DAY OFF": 1
+      }
+    },
+    "JOSEILSON ROBERTO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 14,
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 3
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 13,
+        "ASSUNTOS PESSOAIS": 3,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "JOSE GEOVANE DA SILVA GERMANO": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DAY OFF": 1
+      }
+    },
+    "JOSE PEDRO DA SILVA JUNIOR": {
+      "por_classificacao": {
+        "ABONADA": 8
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 6,
+        "DOAÇAO DE SANGUE": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "FELIPE ANTONINO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 7,
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 5
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "FOLGA": 2,
+        "DOAÇÃO DE SANGUE": 2,
+        "SUSPENSAO": 1,
+        "DAY OFF - ANIVERSÁRIO": 1,
+        "EXAME OCUPACIONAL": 1
+      }
+    },
+    "EMERSON CARLOS PEDRO DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 2,
+        "NÃO.JUSTIFICADA": 6,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ATRASO": 3,
+        "SAIDA ANTES DO HORARIO": 2,
+        "DAY OFF": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "FALECIMENTO DE PARENTE": 1
+      }
+    },
+    "ELIAS ANTONIO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 1,
+        "NÃO.JUSTIFICADA": 4,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "SAÍDA ANTES DO HORÁRIO": 2,
+        "ATESTADO DE ACOMPANHAMENTO DE FILHO AO MEDICO": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "DAY OFF - ANIVERSÁRIO": 1,
+        "OUTROS": 1
+      }
+    },
+    "JANACLEBSON GOIS DE MOURA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 4,
+        "ABONADA": 3,
+        "NÃO.JUSTIFICADA": 6
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 7,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "DAY OFF": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "GENILSON JURANDIR DE ALMEIDA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 2,
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DAY OFF - ANIVERSÁRIO": 1,
+        "FALECIMENTO DE PARENTE": 1
+      }
+    },
+    "JOSE LUCIDIO DE OLIVEIRA BARROS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 11,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 6,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "CAIXA / CASAS LOTÉRICAS": 2,
+        "SUSPENSAO": 1,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "REGINALDO PEREIRA DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 35,
+        "NÃO.JUSTIFICADA": 9
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 30,
+        "ASSUNTOS PESSOAIS": 5,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "OUTROS": 2,
+        "SAIDA ANTES DO HORARIO": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "MARCOS ANTONIO DA SILVA JUNIOR": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 11,
+        "JUSTIFICADA": 11
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 9,
+        "DOENTE SEM ATESTADO": 6,
+        "ASSUNTOS PESSOAIS": 5,
+        "SAIDA ANTES DO HORARIO": 1,
+        "Não informado": 1
+      }
+    },
+    "PAULO SEVERINO SOBRAL DE LIMA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 30
+      },
+      "por_motivo": {
+        "ATRASO": 13,
+        "SAIDA ANTES DO HORARIO": 6,
+        "ASSUNTOS PESSOAIS": 5,
+        "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 5,
+        "OUTROS": 1
+      }
+    },
+    "EZEQUIEL MELO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 23,
+        "JUSTIFICADA": 6
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 16,
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "SAIDA ANTES DO HORARIO": 3,
+        "DOAÇAO DE SANGUE": 2,
+        "ATRASO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 1,
+        "ACOMPANHAMENTO DE PARENTE": 1
+      }
+    },
+    "ISRAEL DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 2,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 2,
+        "ATRASO": 2
+      }
+    },
+    "PAULO MIGUEL DOS SANTOS": {
+      "por_classificacao": {
+        "JUSTIFICADA": 6,
+        "NÃO.JUSTIFICADA": 4,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "ASSUNTOS PESSOAIS": 2,
+        "DOENTE SEM ATESTADO": 2,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "CICERO RAMOS DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 10,
+        "JUSTIFICADA": 4,
+        "SUSPENSÃO": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 4,
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "SAIDA ANTES DO HORARIO": 2,
+        "DETRAN": 2,
+        "DOENTE SEM ATESTADO": 1,
+        "SUSPENSÃO": 1,
+        "FALECIMENTO DE PARENTE": 1
+      }
+    },
+    "JUCELIO LOURENCO DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 2,
+        "ABONADA": 9
+      },
+      "por_motivo": {
+        "FOLGA": 6,
+        "SAÍDA ANTES DO HORÁRIO": 3,
+        "ATRASO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "WANDERLEI ERINALDO DE SOUSA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "SAIDA ANTES DO HORARIO": 1
+      }
+    },
+    "LEANDRO JOSE FERREIRA DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 16,
+        "NÃO.JUSTIFICADA": 30,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 16,
+        "ASSUNTOS PESSOAIS": 13,
+        "DOENÇA SEM ATESTADO": 8,
+        "SAÍDA ANTES DO HORÁRIO": 6,
+        "ATESTADO DE ACOMPANHAMENTO DE PAI/ MÃE AO MEDICO": 1,
+        "ATRASO": 1,
+        "OUTROS": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "EVERTON MAYCON GOMES DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 31,
+        "JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 16,
+        "ATRASO": 5,
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "SAÍDA ANTES DO HORÁRIO": 3,
+        "DETRAN": 2,
+        "SUSPENSAO": 2,
+        "DOENÇA SEM ATESTADO": 1,
+        "OUTROS": 1,
+        "CAIXA / CASAS LOTÉRICAS": 1
+      }
+    },
+    "REGINALDO LIMA DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 8
+      },
+      "por_motivo": {
+        "FOLGA": 5,
+        "DAY OFF": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "Não informado": 1
+      }
+    },
+    "JOSE SENICLAUDIO DA SILVA PAIXAO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "ABONADA": 4
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 5,
+        "FOLGA": 1
+      }
+    },
+    "RIZONILDO BARBOSA DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DAY OFF": 1
+      }
+    },
+    "PAULO HENRIQUE DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ATRASO": 1
+      }
+    },
+    "MARINA TIMOTEO FLORENCIO": {
+      "por_classificacao": {
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "DAY OFF": 1
+      }
+    },
+    "MARCELO LIRA DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 1,
+        "NÃO.JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "OUTROS": 1
+      }
+    },
+    "JOSEMILSON FAUSTINO DE LIRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "CONVOCAÇÃO DA JUSTIÇA ": 1
+      }
+    },
+    "GEOVANE LIMA DA SILVA JUNIOR": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 4,
+        "ABONADA": 8,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 6,
+        "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 2,
+        "DETRAN": 1,
+        "ATRASO": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1,
+        "CURSO EXTERNO": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1
+      }
+    },
+    "ADEILDO JOSE DOS SANTOS": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 14,
+        "JUSTIFICADA": 9,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 14,
+        "ATESTADO MEDICO DO COLABORADOR": 4,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "DOENTE SEM ATESTADO": 2,
+        "EXAME OCUPACIONAL": 1
+      }
+    },
+    "DJALMA DOS SANTOS SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 7
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 7
+      }
+    },
+    "DANIEL CANDIDO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 2,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "FALECIMENTO DE DEPENDENTES: PAIS/ AVÓS/ IRMÃOS/ CÒNJUGE/ FILHOS": 2,
+        "EXAME OCUPACIONAL": 2,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "LUCAS DA SILVA RODRIGUES": {
+      "por_classificacao": {
+        "JUSTIFICADA": 15,
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 8,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 4,
+        "ATESTADO ODONTOLÓGICO": 3,
+        "OUTROS": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "JOSE VICTOR ALVES DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "JUSTIFICADA": 3,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 3,
+        "CAIXA / CASAS LOTÉRICAS": 2,
+        "DAY OFF - ANIVERSÁRIO": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 1
+      }
+    },
+    "JOSE ROMUALDO DO NASCIMENTO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 4,
+        "JUSTIFICADA": 9,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 9,
+        "ASSUNTOS PESSOAIS": 4,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "JEFFERSON JOSE DA SILVA 2": {
+      "por_classificacao": {
+        "JUSTIFICADA": 20,
+        "NÃO.JUSTIFICADA": 21,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 21,
+        "ASSUNTOS PESSOAIS": 12,
+        "DOENÇA SEM ATESTADO": 5,
+        "DOENTE SEM ATESTADO": 2,
+        "ATRASO": 2,
+        "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 1
+      }
+    },
+    "JOSE CICERO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 9,
+        "Não informada": 1,
+        "NÃO.JUSTIFICADA": 5,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 3,
+        "ATRASO": 3,
+        "Não informado": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "RIZONALDO MANOEL DOS SANTOS": {
+      "por_classificacao": {
+        "JUSTIFICADA": 1,
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "BANCO/ LOTERICA": 1,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "ASTON EMANUEL CAMPOS ROMAO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 16,
+        "ABONADA": 18
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 14,
+        "ATESTADO ODONTOLOGICO DO COLABORADOR": 10,
+        "ATESTADO ODONTOLÓGICO": 6,
+        "SAÍDA ANTES DO HORÁRIO": 2,
+        "FOLGA": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "THIAGO DE SOUZA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 32,
+        "JUSTIFICADA": 9
+      },
+      "por_motivo": {
+        "OUTROS": 20,
+        "ASSUNTOS PESSOAIS": 8,
+        "ATESTADO MEDICO DO COLABORADOR": 8,
+        "DOENTE SEM ATESTADO": 2,
+        "SAÍDA ANTES DO HORÁRIO": 2,
+        "SUSPENSAO": 1
+      }
+    },
+    "WELTON DE ALMEIDA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 46,
+        "JUSTIFICADA": 18
+      },
+      "por_motivo": {
+        "OUTROS": 20,
+        "SUSPENSAO": 9,
+        "ASSUNTOS PESSOAIS": 7,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 5,
+        "SAÍDA ANTES DO HORÁRIO": 5,
+        "LICENÇA PATERNIDADE": 5,
+        "ATRASO": 3,
+        "ACOMPANHAMENTO DE FILHO AO MÉDICO": 3,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 2,
+        "DECLARAÇÃO DE ACOMPANHAMENTO DE FILHO": 2,
+        "DOENTE SEM ATESTADO": 1
+      }
+    },
+    "CLEBSON CARDOSO DA SILVA CRUZ": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 38,
+        "JUSTIFICADA": 7,
+        "SUSPENSÃO": 1
+      },
+      "por_motivo": {
+        "OUTROS": 18,
+        "ASSUNTOS PESSOAIS": 14,
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "SUSPENSAO": 3,
+        "DOENÇA SEM ATESTADO": 3,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "ALISON DOS SANTOS SOUZA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 14,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "OUTROS": 7,
+        "ASSUNTOS PESSOAIS": 6,
+        "DECLARAÇÃO DE ACOMPANHAMENTO DE ESPOSA": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "ALEXANDRO SALVADOR DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 5,
+        "JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 4,
+        "EXAME OCUPACIONAL": 1,
+        "OUTROS": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "JULIANA CAMILLA DE SOUZA MUNIZ": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATRASO": 1,
+        "BANCO/ LOTERICA": 1
+      }
+    },
+    "PEDRO HENRIQUE DA SILVA OLIVEIRA": {
+      "por_classificacao": {
+        "ABONADA": 3
+      },
+      "por_motivo": {
+        "DAY OFF": 1,
+        "FOLGA": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "ERIKA PATRICIA SALES GUIMARAES": {
+      "por_classificacao": {
+        "JUSTIFICADA": 3,
+        "ABONADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DAY OFF": 1,
+        "CURSO EXTERNO": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "AURILAN DIAS PEREIRA DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 16,
+        "NÃO.JUSTIFICADA": 28
+      },
+      "por_motivo": {
+        "OUTROS": 23,
+        "ATESTADO MEDICO DO COLABORADOR": 16,
+        "DOENÇA SEM ATESTADO": 4,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "DAVI ALVES CAVALCANTE": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 8,
+        "JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "ATRASO": 3,
+        "ATESTADO ODONTOLÓGICO": 3,
+        "DOENÇA SEM ATESTADO": 2,
+        "SAÍDA ANTES DO HORÁRIO": 1,
+        "ATESTADO MEDICO DO COLABORADOR": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "OUTROS": 1
+      }
+    },
+    "EMERSON JOSE DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 1,
+        "NÃO.JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "EXAME OCUPACIONAL": 1,
+        "SAÍDA ANTES DO HORÁRIO": 1,
+        "OUTROS": 1
+      }
+    },
+    "EDMILSON JOSE BESERRA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 5,
+        "NÃO.JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "ATRASO": 1,
+        "OUTROS": 1
+      }
+    },
+    "ARAMIS AQUILES SIQUEIRA FERREIRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 26,
+        "SUSPENSÃO": 4
+      },
+      "por_motivo": {
+        "OUTROS": 23,
+        "SUSPENSÃO": 4,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "EDNALDO JOSE DA SILVA 2": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 18,
+        "JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "OUTROS": 11,
+        "ASSUNTOS PESSOAIS": 7,
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "EXAME OCUPACIONAL": 1
+      }
+    },
+    "GLEBSON AVELINO BATISTA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "DETRAN": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "ACOMPANHAMENTO DE ESPOSA AO MÉDICO": 1
+      }
+    },
+    "IGOR RANGEL FRANCISCO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3,
+        "JUSTIFICADA": 5
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "CAIXA / CASAS LOTÉRICAS": 1,
+        "DOENÇA SEM ATESTADO": 1,
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "JOSE CLEBSON QUEIROZ DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 18
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 18,
+        "CAIXA / CASAS LOTÉRICAS": 1
+      }
+    },
+    "JOBSON LINO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 27,
+        "NÃO.JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 27,
+        "ASSUNTOS PESSOAIS": 2,
+        "DOENÇA SEM ATESTADO": 1,
+        "ATRASO": 1
+      }
+    },
+    "JOSE CARLOS DE LIMA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 7
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "ASSUNTOS PESSOAIS": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "JOSE DIMAS VIEIRA FIRMINO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "CAIXA / CASAS LOTÉRICAS": 2,
+        "SAÍDA ANTES DO HORÁRIO": 1
+      }
+    },
+    "JOSE ALISON PEREIRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 28
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 28
+      }
+    },
+    "LUIZ FILIPI DA SILVA OLIVEIRA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 16,
+        "NÃO.JUSTIFICADA": 33
+      },
+      "por_motivo": {
+        "ATRASO": 28,
+        "ATESTADO ODONTOLÓGICO": 9,
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "ACOMPANHAMENTO DE FILHO AO MÉDICO": 2,
+        "OUTROS": 2,
+        "SAÍDA ANTES DO HORÁRIO": 2
+      }
+    },
+    "MARCELO DA SILVA ARRUDA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 8,
+        "JUSTIFICADA": 10
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 7,
+        "ATRASO": 5,
+        "OUTROS": 3,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3
+      }
+    },
+    "MARCILIO ANTONIO EVARISTO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 3
+      }
+    },
+    "MATEUS JOSE DOS SANTOS DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 21,
+        "JUSTIFICADA": 12
+      },
+      "por_motivo": {
+        "OUTROS": 14,
+        "ATESTADO MEDICO DO COLABORADOR": 11,
+        "SUSPENSÃO": 6,
+        "ATRASO": 1,
+        "ATESTADO ODONTOLÓGICO": 1
+      }
+    },
+    "RENATO PEDRO DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1,
+        "JUSTIFICADA": 7
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 6,
+        "DETRAN": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "ROGERIO GOMES DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 28,
+        "NÃO.JUSTIFICADA": 7
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 27,
+        "OUTROS": 4,
+        "SAÍDA ANTES DO HORÁRIO": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "ATESTADO ODONTOLÓGICO": 1,
+        "ATRASO": 1
+      }
+    },
+    "SEVERINO FRANCISCO DA SILVA FILHO": {
+      "por_classificacao": {
+        "JUSTIFICADA": 28,
+        "NÃO.JUSTIFICADA": 8
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 25,
+        "OUTROS": 5,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 3,
+        "SAÍDA ANTES DO HORÁRIO": 2,
+        "ATRASO": 1
+      }
+    },
+    "WARLEY ALEXANDRE BARBOSA DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 14
+      },
+      "por_motivo": {
+        "OUTROS": 14
+      }
+    },
+    "MARCOS JUNIOR RIBEIRO": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "OUTROS": 2,
+        "SUSPENSÃO": 1
+      }
+    },
+    "RACHEL BARROS PIRES": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 1
+      }
+    },
+    "RONALDO RODRIGUES DE OLIVEIRA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "OUTROS": 1
+      }
+    },
+    "DARLAN CAETANO DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 3
+      },
+      "por_motivo": {
+        "OUTROS": 2,
+        "DAY OFF - ANIVERSÁRIO": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "ELIAS MANOEL DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 2,
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ASSUNTOS PESSOAIS": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 1
+      }
+    },
+    "JESSICA PATRICIA DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 4,
+        "NÃO.JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "ASSUNTOS PESSOAIS": 2,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1
+      }
+    },
+    "ANDRE LUCAS SANTANA MONTEIRO": {
+      "por_classificacao": {
+        "ABONADA": 1,
+        "NÃO.JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "FALECIMENTO DE PARENTE": 1,
+        "ASSUNTOS PESSOAIS": 1,
+        "CERTIDÃO DE CASAMENTO": 1
+      }
+    },
+    "DAVI JONATAS DOS SANTOS SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 12,
+        "JUSTIFICADA": 2,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "SAÍDA ANTES DO HORÁRIO": 8,
+        "OUTROS": 2,
+        "ATESTADO MEDICO DO COLABORADOR": 2,
+        "ASSUNTOS PESSOAIS": 2,
+        "CAIXA / CASAS LOTÉRICAS": 1
+      }
+    },
+    "JOSE CARLOS DOS SANTOS": {
+      "por_classificacao": {
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "ATRASO": 1
+      }
+    },
+    "JOSE LEANDRO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 3,
+        "ABONADA": 2,
+        "NÃO.JUSTIFICADA": 2
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 3,
+        "DAY OFF - ANIVERSÁRIO": 2,
+        "ASSUNTOS PESSOAIS": 2
+      }
+    },
+    "KAIO ANDRE DA SILVA": {
+      "por_classificacao": {
+        "NÃO.JUSTIFICADA": 6,
+        "JUSTIFICADA": 6
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 5,
+        "ASSUNTOS PESSOAIS": 2,
+        "SAÍDA ANTES DO HORÁRIO": 2,
+        "OUTROS": 1,
+        "DECLARAÇAO MEDICA DO COLABORADOR": 1,
+        "DOENÇA SEM ATESTADO": 1
+      }
+    },
+    "SARAH RAQUEL DE MENDONCA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 4
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 4
+      }
+    },
+    "JOSE JUNIOR DA SILVA": {
+      "por_classificacao": {
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "EDNALDO DE LIMA BRAZ": {
+      "por_classificacao": {
+        "JUSTIFICADA": 1,
+        "ABONADA": 1
+      },
+      "por_motivo": {
+        "EXAME OCUPACIONAL": 1,
+        "DAY OFF - ANIVERSÁRIO": 1
+      }
+    },
+    "LEONARDO FERREIRA BARBOSA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "ATESTADO MEDICO DO COLABORADOR": 1
+      }
+    },
+    "CRISTIANO SEVERINO DA SILVA": {
+      "por_classificacao": {
+        "JUSTIFICADA": 1,
+        "NÃO.JUSTIFICADA": 1
+      },
+      "por_motivo": {
+        "EXAME OCUPACIONAL": 1,
+        "ATRASO": 1
+      }
+    }
   }
 }

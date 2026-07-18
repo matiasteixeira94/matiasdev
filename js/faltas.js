@@ -16,7 +16,7 @@
   const pctNaoJustificada = faltas.total_faltas ? (naoJustificadas / faltas.total_faltas) * 100 : 0;
   const mediaPorColaborador = faltas.colaboradores_ativos_total ? faltas.total_faltas / faltas.colaboradores_ativos_total : 0;
 
-  const state = { ano: null, mes: null, apenasAtivos: false };
+  const state = { ano: null, mes: null, apenasAtivos: false, colaborador: null };
 
   const content = document.getElementById("gp-content");
   content.innerHTML = `
@@ -69,6 +69,7 @@
           </div>
         </div>
       </div>
+      <p class="footnote" style="margin-top:-6px; margin-bottom:10px;">Clique no nome de um colaborador para detalhar as faltas dele por classificação e motivo, nos gráficos abaixo.</p>
       <div class="table-wrap">
         <table class="data">
           <thead><tr><th>Nome</th><th>Cargo</th><th>Setor</th><th class="num">Faltas</th><th>Situação</th></tr></thead>
@@ -83,13 +84,16 @@
         <div class="chart-host" id="chart-faltas-setor"></div>
       </div>
       <div class="card">
-        <div class="card-head"><div><div class="card-title">Faltas por classificação</div><div class="card-sub">Justificada, não justificada e abonada</div></div></div>
+        <div class="card-head">
+          <div><div class="card-title">Faltas por classificação</div><div class="card-sub" id="classificacao-sub">Justificada, não justificada e abonada</div></div>
+          <button class="btn btn-ghost" id="btn-limpar-colaborador" type="button" style="display:none;">✕ Limpar</button>
+        </div>
         <div class="chart-host" id="chart-faltas-classificacao"></div>
       </div>
     </div>
 
     <div class="card">
-      <div class="card-head"><div><div class="card-title">Principais motivos</div><div class="card-sub">Top 10 motivos de falta no período</div></div></div>
+      <div class="card-head"><div><div class="card-title">Principais motivos</div><div class="card-sub" id="motivo-sub">Top 10 motivos de falta no período</div></div></div>
       <div class="chart-host" id="chart-faltas-motivo"></div>
     </div>
   `;
@@ -142,13 +146,22 @@
       ? `Top 20 de ${GP.fmtInt(filtrados.length)} ativos com falta`
       : "Top 20 — histórico completo (ativos e desligados)";
     document.getElementById("ranking-tbody").innerHTML = top20.map((r) => `
-      <tr>
+      <tr class="linha-colaborador" data-nome="${r.nome}" style="cursor:pointer;${r.nome === state.colaborador ? " background:var(--accent-soft);" : ""}">
         <td>${r.nome}</td>
         <td>${r.cargo || "—"}</td>
         <td>${r.setor}</td>
         <td class="num">${GP.fmtInt(r.total)}</td>
         <td><span class="chip ${r.ativo ? "chip-good" : "chip-neutral"}">${r.ativo ? "Ativo" : "Desligado"}</span></td>
       </tr>`).join("") || `<tr><td colspan="5" class="footnote" style="padding:18px;">Nenhum colaborador no filtro atual.</td></tr>`;
+
+    document.querySelectorAll(".linha-colaborador").forEach((row) => {
+      row.addEventListener("click", () => {
+        const nome = row.dataset.nome;
+        state.colaborador = state.colaborador === nome ? null : nome;
+        renderRanking();
+        renderDetalheColaborador();
+      });
+    });
   }
 
   document.querySelectorAll("[data-filtro]").forEach((btn) => {
@@ -159,19 +172,40 @@
     });
   });
 
-  function renderSuporte() {
+  document.getElementById("btn-limpar-colaborador").addEventListener("click", () => {
+    state.colaborador = null;
+    renderRanking();
+    renderDetalheColaborador();
+  });
+
+  function renderSetor() {
     GPCharts.hbars(document.getElementById("chart-faltas-setor"), {
       items: Object.entries(faltas.por_setor).sort((a, b) => b[1] - a[1]).map(([label, value]) => ({ label, value, color: "var(--accent)" })),
       valueFormat: (v) => GP.fmtInt(v),
       showTarget: false,
     });
+  }
+
+  function renderDetalheColaborador() {
+    const detalhe = state.colaborador ? faltas.detalhe_colaborador[state.colaborador] : null;
+    const classificacao = detalhe ? detalhe.por_classificacao : faltas.por_classificacao;
+    const motivo = detalhe ? detalhe.por_motivo : faltas.por_motivo;
+
+    document.getElementById("classificacao-sub").textContent = detalhe
+      ? `${state.colaborador} — ${GP.fmtInt(faltas.ranking.find((r) => r.nome === state.colaborador)?.total ?? 0)} faltas`
+      : "Justificada, não justificada e abonada";
+    document.getElementById("motivo-sub").textContent = detalhe
+      ? `Motivos de falta de ${state.colaborador}`
+      : "Top 10 motivos de falta no período";
+    document.getElementById("btn-limpar-colaborador").style.display = detalhe ? "" : "none";
+
     GPCharts.hbars(document.getElementById("chart-faltas-classificacao"), {
-      items: Object.entries(faltas.por_classificacao).sort((a, b) => b[1] - a[1]).map(([label, value]) => ({ label, value, color: CLASSIF_COR[label] || "var(--ink-muted)" })),
+      items: Object.entries(classificacao).sort((a, b) => b[1] - a[1]).map(([label, value]) => ({ label, value, color: CLASSIF_COR[label] || "var(--ink-muted)" })),
       valueFormat: (v) => GP.fmtInt(v),
       showTarget: false,
     });
     GPCharts.hbars(document.getElementById("chart-faltas-motivo"), {
-      items: Object.entries(faltas.por_motivo).slice(0, 10).map(([label, value]) => ({ label, value, color: "var(--status-serious)" })),
+      items: Object.entries(motivo).slice(0, 10).map(([label, value]) => ({ label, value, color: "var(--status-serious)" })),
       valueFormat: (v) => GP.fmtInt(v),
       showTarget: false,
     });
@@ -179,6 +213,7 @@
 
   renderDrill();
   renderRanking();
-  renderSuporte();
+  renderSetor();
+  renderDetalheColaborador();
   window.addEventListener("resize", () => { clearTimeout(window.__gpResize); window.__gpResize = setTimeout(renderDrill, 200); });
 })();
