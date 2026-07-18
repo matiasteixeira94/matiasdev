@@ -77,12 +77,18 @@
     <div class="card">
       <div class="section-head" style="margin-bottom:14px;">
         <h2>Organograma — Produção CA</h2>
-        <span class="footnote">245 pessoas · julho de 2026</span>
+        <span class="footnote">245 pessoas · julho de 2026 · atualiza automaticamente</span>
       </div>
-      <div style="overflow-x:auto; border-radius:12px; border:1px solid var(--border);">
-        <img src="assets/images/organograma-producao.jpg" alt="Organograma da Produção CA — julho de 2026" style="display:block; width:100%; min-width:1100px;" />
+      <div style="position:relative; width:100%; padding-top:56.25%; border-radius:12px; overflow:hidden; border:1px solid var(--border);">
+        <iframe
+          loading="lazy"
+          src="https://www.canva.com/design/DAHFtxKZ6gY/NBbk7FGlcCtz2zeirleZzA/view?embed"
+          style="position:absolute; inset:0; width:100%; height:100%; border:none;"
+          allow="fullscreen"
+          allowfullscreen>
+        </iframe>
       </div>
-      <p class="footnote" style="margin-top:8px;">Clique com o botão direito e abra a imagem em uma nova aba para ampliar.</p>
+      <p class="footnote" style="margin-top:8px;">Visualizador ao vivo do Canva — dá para dar zoom e abrir em tela cheia direto no quadro acima; qualquer atualização feita no Canva aparece aqui automaticamente.</p>
     </div>
 
     <div class="card">
