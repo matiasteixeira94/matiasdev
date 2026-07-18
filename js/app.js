@@ -43,6 +43,7 @@ const GP = (() => {
     acabamentos: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2 8 12l-2 6 6-2L22 6Z"/><path d="M2 22l4-1 1-4"/></svg>',
     assistencia: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 1-5.4 5.4L4 17l3 3 5.3-5.3a4 4 0 0 1 5.4-5.4L14 13"/></svg>',
     pessoal: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+    celulaFeminina: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg>',
   };
 
   const NAV_ITEMS = [
@@ -52,6 +53,7 @@ const GP = (() => {
     { key: "acabamentos", href: "acabamentos.html", label: "Acabamentos" },
     { key: "assistencia", href: "assistencia-tecnica.html", label: "Assistência Técnica" },
     { key: "pessoal", href: "pessoal.html", label: "Quadro de Pessoal" },
+    { key: "celulaFeminina", href: "celula-feminina.html", label: "Célula Feminina" },
     { key: "faltas", href: "faltas.html", label: "Faltas e Absenteísmo" },
     { key: "seguranca", href: "seguranca.html", label: "Saúde e Segurança" },
   ];

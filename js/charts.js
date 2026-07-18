@@ -156,6 +156,10 @@ const GPCharts = (() => {
       svg.appendChild(t);
     }
 
+    // com muitas categorias, mostra só 1 a cada N rótulos pra não sobrepor
+    // (mesma lógica do barsLine).
+    const passo = Math.max(1, Math.ceil((categories.length * 34) / innerW));
+
     categories.forEach((cat, ci) => {
       const groupX = pad.l + ci * groupW;
       series.forEach((s, si) => {
@@ -174,9 +178,11 @@ const GPCharts = (() => {
         rect.addEventListener("mouseleave", () => hideTip(tip));
         svg.appendChild(rect);
       });
-      const t = el("text", { x: groupX + groupW / 2, y: height - 10, "text-anchor": "middle", class: "gp-axis-label" });
-      t.textContent = cat;
-      svg.appendChild(t);
+      if (ci % passo === 0) {
+        const t = el("text", { x: groupX + groupW / 2, y: height - 10, "text-anchor": "middle", class: "gp-axis-label" });
+        t.textContent = cat;
+        svg.appendChild(t);
+      }
     });
 
     host.appendChild(svg);
