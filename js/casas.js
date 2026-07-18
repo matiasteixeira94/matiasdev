@@ -350,31 +350,21 @@
     if (!stateLideres.selecionado) { host.innerHTML = ""; return; }
     const l = liderancas.liderancas.find((x) => x.nome === stateLideres.selecionado);
     if (!l) { host.innerHTML = ""; return; }
+    const supervisoresOrdenados = l.supervisores.slice().sort((a, b) => b.meta_2026_2 - a.meta_2026_2);
     host.innerHTML = `
       <div style="margin-top:16px; padding-top:16px; border-top:1px solid var(--border);">
         <div class="section-head" style="margin-bottom:12px;">
-          <h2 style="font-size:14.5px;">Supervisores de ${l.nome}</h2>
-          <span class="footnote">${GP.fmtInt(l.concluidas_total)} de ${GP.fmtInt(l.total_casas)} casas concluídas no total (${l.pendentes} pendentes)</span>
+          <h2 style="font-size:14.5px;">Distribuição de casas por supervisor — ${l.nome} · 2026.2</h2>
+          <span class="footnote">${GP.fmtInt(l.meta_2026_2)} casas planejadas no semestre, entre ${l.supervisores.length} supervisor(es)</span>
         </div>
-        <div class="table-wrap">
-          <table class="data">
-            <thead><tr><th>Supervisor</th><th class="num">Meta 2026.2</th><th class="num">Casas</th><th class="num">Concluídas</th><th class="num">Pendentes</th><th class="num">% concluído</th><th class="num">Produtividade média</th></tr></thead>
-            <tbody>
-              ${l.supervisores.map((s) => `
-                <tr>
-                  <td>${s.nome}</td>
-                  <td class="num">${GP.fmtInt(s.meta_2026_2)}</td>
-                  <td class="num">${GP.fmtInt(s.total_casas)}</td>
-                  <td class="num">${GP.fmtInt(s.concluidas)}</td>
-                  <td class="num">${GP.fmtInt(s.pendentes)}</td>
-                  <td class="num"><span class="chip ${s.pct_concluido >= 70 ? "chip-good" : s.pct_concluido >= 40 ? "chip-warning" : "chip-serious"}">${GP.fmtPct(s.pct_concluido, 0)}</span></td>
-                  <td class="num">${s.produtividade_media != null ? GP.fmtNum1(s.produtividade_media) : "—"}</td>
-                </tr>`).join("")}
-            </tbody>
-          </table>
-        </div>
+        <div class="chart-host" id="chart-lider-detalhe"></div>
       </div>
     `;
+    GPCharts.hbars(document.getElementById("chart-lider-detalhe"), {
+      items: supervisoresOrdenados.map((s) => ({ label: s.nome, value: s.meta_2026_2, color: "var(--accent)" })),
+      valueFormat: (v) => GP.fmtInt(v),
+      showTarget: false,
+    });
   }
 
   renderLideres();
