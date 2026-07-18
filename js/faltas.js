@@ -16,7 +16,7 @@
   const pctNaoJustificada = faltas.total_faltas ? (naoJustificadas / faltas.total_faltas) * 100 : 0;
   const mediaPorColaborador = faltas.colaboradores_ativos_total ? faltas.total_faltas / faltas.colaboradores_ativos_total : 0;
 
-  const state = { ano: null, mes: null };
+  const state = { ano: null, mes: null, apenasAtivos: false };
 
   const content = document.getElementById("gp-content");
   content.innerHTML = `
@@ -61,21 +61,18 @@
     <div class="card">
       <div class="section-head" style="margin-bottom:14px;">
         <h2>Colaboradores que mais faltaram</h2>
-        <span class="footnote">Top 20 — histórico completo (ativos e desligados)</span>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span class="footnote" id="ranking-contador"></span>
+          <div class="seg">
+            <button type="button" aria-pressed="true" data-filtro="todos">Todos</button>
+            <button type="button" aria-pressed="false" data-filtro="ativos">Ativos</button>
+          </div>
+        </div>
       </div>
       <div class="table-wrap">
         <table class="data">
           <thead><tr><th>Nome</th><th>Cargo</th><th>Setor</th><th class="num">Faltas</th><th>Situação</th></tr></thead>
-          <tbody>
-            ${faltas.ranking.slice(0, 20).map((r) => `
-              <tr>
-                <td>${r.nome}</td>
-                <td>${r.cargo || "—"}</td>
-                <td>${r.setor}</td>
-                <td class="num">${GP.fmtInt(r.total)}</td>
-                <td><span class="chip ${r.ativo ? "chip-good" : "chip-neutral"}">${r.ativo ? "Ativo" : "Desligado"}</span></td>
-              </tr>`).join("")}
-          </tbody>
+          <tbody id="ranking-tbody"></tbody>
         </table>
       </div>
     </div>
@@ -138,6 +135,30 @@
     renderDrill();
   });
 
+  function renderRanking() {
+    const filtrados = state.apenasAtivos ? faltas.ranking.filter((r) => r.ativo) : faltas.ranking;
+    const top20 = filtrados.slice(0, 20);
+    document.getElementById("ranking-contador").textContent = state.apenasAtivos
+      ? `Top 20 de ${GP.fmtInt(filtrados.length)} ativos com falta`
+      : "Top 20 — histórico completo (ativos e desligados)";
+    document.getElementById("ranking-tbody").innerHTML = top20.map((r) => `
+      <tr>
+        <td>${r.nome}</td>
+        <td>${r.cargo || "—"}</td>
+        <td>${r.setor}</td>
+        <td class="num">${GP.fmtInt(r.total)}</td>
+        <td><span class="chip ${r.ativo ? "chip-good" : "chip-neutral"}">${r.ativo ? "Ativo" : "Desligado"}</span></td>
+      </tr>`).join("") || `<tr><td colspan="5" class="footnote" style="padding:18px;">Nenhum colaborador no filtro atual.</td></tr>`;
+  }
+
+  document.querySelectorAll("[data-filtro]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.apenasAtivos = btn.dataset.filtro === "ativos";
+      document.querySelectorAll("[data-filtro]").forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+      renderRanking();
+    });
+  });
+
   function renderSuporte() {
     GPCharts.hbars(document.getElementById("chart-faltas-setor"), {
       items: Object.entries(faltas.por_setor).sort((a, b) => b[1] - a[1]).map(([label, value]) => ({ label, value, color: "var(--accent)" })),
@@ -157,6 +178,7 @@
   }
 
   renderDrill();
+  renderRanking();
   renderSuporte();
   window.addEventListener("resize", () => { clearTimeout(window.__gpResize); window.__gpResize = setTimeout(renderDrill, 200); });
 })();
