@@ -215,10 +215,67 @@
     {
       "nome": "Jucélio Lourenço",
       "foto": "assets/images/lideres/jucelio-lourenco.jpg",
-      "meta_2026_2": 104,
+      "meta_2026_2": 284,
       "realizado_2026_2": 0,
-      "faltam_2026_2": 104,
+      "faltam_2026_2": 284,
       "supervisores": [
+        {
+          "nome": "Josenildo Milanez",
+          "foto": null,
+          "meta_2026_2": 180,
+          "realizado_2026_2": 0,
+          "por_mes": [
+            {
+              "mes": "2026-07",
+              "label": "Julho/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-08",
+              "label": "Agosto/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-09",
+              "label": "Setembro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-10",
+              "label": "Outubro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-11",
+              "label": "Novembro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-12",
+              "label": "Dezembro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "sem-data",
+              "label": "Sem mês definido",
+              "meta": 180,
+              "realizado": 0,
+              "desvio": -180
+            }
+          ]
+        },
         {
           "nome": "Caio Cesar",
           "foto": "assets/images/supervisores/caio-cesar.jpg",
@@ -424,10 +481,67 @@
     {
       "nome": "Reginaldo Lima",
       "foto": "assets/images/lideres/reginaldo-lima.jpg",
-      "meta_2026_2": 136,
+      "meta_2026_2": 326,
       "realizado_2026_2": 0,
-      "faltam_2026_2": 136,
+      "faltam_2026_2": 326,
       "supervisores": [
+        {
+          "nome": "José Adnilson",
+          "foto": null,
+          "meta_2026_2": 190,
+          "realizado_2026_2": 0,
+          "por_mes": [
+            {
+              "mes": "2026-07",
+              "label": "Julho/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-08",
+              "label": "Agosto/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-09",
+              "label": "Setembro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-10",
+              "label": "Outubro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-11",
+              "label": "Novembro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-12",
+              "label": "Dezembro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "sem-data",
+              "label": "Sem mês definido",
+              "meta": 190,
+              "realizado": 0,
+              "desvio": -190
+            }
+          ]
+        },
         {
           "nome": "Maria Das Graças",
           "foto": null,

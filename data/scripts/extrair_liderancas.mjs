@@ -81,16 +81,28 @@ mapa.set(normalizar("Geovane Lima"), { liderNome: "Reginaldo Lima", liderChave: 
 // É a fonte da VERDADE de quem está ativo como supervisor este semestre.
 const wbControle = xlsx.readFile(fileControle);
 const rowsControle = xlsx.utils.sheet_to_json(wbControle.Sheets["CONTROLE"], { header: 1, defval: "", raw: false });
-const linhasControle = rowsControle.slice(7).filter((r) => r[1] && r[27] && r[26] && r[26] !== "-");
+const todasLinhas = rowsControle.slice(7).filter((r) => r[1] && r[27]);
 
-const metaPorSupervisor = new Map(); // supervisor normalizado -> { total, nomeBruto, porMes: Map<mes,count> }
-for (const r of linhasControle) {
+const metaPorSupervisor = new Map(); // supervisor normalizado -> { total, nomeBruto, porMes: Map<mes,count>, semData }
+for (const r of todasLinhas) {
   const key = normalizar(r[27]);
-  const atual = metaPorSupervisor.get(key) ?? { total: 0, nomeBruto: r[27], porMes: new Map() };
+  const atual = metaPorSupervisor.get(key) ?? { total: 0, nomeBruto: r[27], porMes: new Map(), semData: 0 };
   atual.total += 1;
-  const mesInfo = MESES.find((m) => m.controleMes === String(r[25]).trim());
+  const temAno = r[26] && r[26] !== "-";
+  const mesInfo = temAno ? MESES.find((m) => m.controleMes === String(r[25]).trim()) : null;
   if (mesInfo) atual.porMes.set(mesInfo.mes, (atual.porMes.get(mesInfo.mes) || 0) + 1);
+  // Linhas sem ANO calculado normalmente são fila de pipeline futuro (fora
+  // do horizonte deste semestre) e ficam de fora — MAS se um supervisor não
+  // tem NENHUMA linha com data (ex.: Josenildo Milanez, confirmado pelo
+  // usuário em 2026-07-18), a planilha não tem como informar o mês, então
+  // as casas dele entram mesmo assim, marcadas como "sem mês definido".
+  else if (!temAno) atual.semData += 1;
   metaPorSupervisor.set(key, atual);
+}
+for (const [key, info] of metaPorSupervisor) {
+  const totalComData = [...info.porMes.values()].reduce((a, v) => a + v, 0);
+  if (totalComData === 0 && info.semData === 0) metaPorSupervisor.delete(key);
+  else if (totalComData > 0) info.semData = 0; // tem data pra pelo menos uma parte: ignora o resto (fila futura normal)
 }
 
 const casas = JSON.parse(readFileSync(new URL("../processed/casas.json", import.meta.url), "utf8"));
@@ -117,10 +129,13 @@ for (const [supChave, info] of metaPorSupervisor.entries()) {
     const realizado = casasHist.filter((c) => c.status === "concluida" && (c.etapas?.acab1?.data ?? "").slice(0, 7) === mes).length;
     return { mes, label, meta, realizado, desvio: realizado - meta };
   });
+  if (info.semData > 0) {
+    porMes.push({ mes: "sem-data", label: "Sem mês definido", meta: info.semData, realizado: 0, desvio: -info.semData });
+  }
   grupos.get(liderInfo.liderChave).supervisores.push({
     nome: nomeProprio(info.nomeBruto),
     foto: FOTOS_SUPERVISORES[supChave] ?? null,
-    meta_2026_2: info.total,
+    meta_2026_2: porMes.reduce((a, m) => a + m.meta, 0),
     realizado_2026_2: porMes.reduce((a, m) => a + m.realizado, 0),
     por_mes: porMes,
   });
