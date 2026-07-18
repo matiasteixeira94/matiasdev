@@ -177,8 +177,37 @@ h1, h2, h3, .num-hero, .brand-word {
   display: flex; flex-direction: column; gap: 24px;
   position: sticky; top: 0; height: 100vh; overflow-y: auto;
 }
+
+/* ---- Menu mobile: sidebar vira gaveta deslizante + topbar com hambúrguer ---- */
+.mobile-topbar, .sidebar-backdrop { display: none; }
 @media (max-width: 900px) {
-  .sidebar { position: static; height: auto; border-right: none; border-bottom: 1px solid var(--border); }
+  .mobile-topbar {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 16px; position: sticky; top: 0; z-index: 40;
+    background: var(--surface-raised); border-bottom: 1px solid var(--border);
+  }
+  .mobile-topbar-toggle {
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    width: 36px; height: 36px; padding: 0;
+    border-radius: var(--radius-sm); border: 1px solid var(--border-strong);
+    background: var(--surface); color: var(--ink); cursor: pointer;
+  }
+  .mobile-topbar-toggle svg { width: 19px; height: 19px; }
+  .mobile-topbar-brand { display: flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 600; font-size: 14px; color: var(--ink); min-width: 0; }
+  .mobile-topbar-brand span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .sidebar {
+    position: fixed; top: 0; left: 0; height: 100dvh; width: 280px; max-width: 85vw;
+    z-index: 60; transform: translateX(-100%); transition: transform 0.22s ease;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+  }
+  .shell.sidebar-open .sidebar { transform: translateX(0); }
+
+  .sidebar-backdrop {
+    display: block; position: fixed; inset: 0; background: rgba(20,8,8,0.5); z-index: 55;
+    opacity: 0; pointer-events: none; transition: opacity 0.2s ease;
+  }
+  .shell.sidebar-open .sidebar-backdrop { opacity: 1; pointer-events: auto; }
 }
 
 .brand { display: flex; align-items: center; gap: 10px; padding: 4px 8px; }

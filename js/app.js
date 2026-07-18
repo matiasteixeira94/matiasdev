@@ -112,7 +112,17 @@ const GP = (() => {
       </a>`).join("");
 
     mount.innerHTML = `
-      <aside class="sidebar">
+      <div class="mobile-topbar">
+        <button class="mobile-topbar-toggle" id="gp-sidebar-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <a class="mobile-topbar-brand" href="inicio.html">
+          <div class="brand-mark" style="width:26px;height:26px;">${LOGO_MARK_SVG}</div>
+          <span>Gestão da Produção</span>
+        </a>
+      </div>
+      <div class="sidebar-backdrop" id="gp-sidebar-backdrop"></div>
+      <aside class="sidebar" id="gp-sidebar">
         <a class="brand" href="inicio.html" title="Voltar à tela inicial">
           <div class="brand-mark">${LOGO_MARK_SVG}</div>
           <div class="brand-word">Gestão da Produção<small>Viana &amp; Moura Construções</small></div>
@@ -149,7 +159,19 @@ const GP = (() => {
       </div>`;
 
     wireThemeToggle(document.getElementById("gp-theme-toggle"));
+    wireMobileSidebar(mount);
     return session;
+  }
+
+  function wireMobileSidebar(mount) {
+    const toggle = document.getElementById("gp-sidebar-toggle");
+    const backdrop = document.getElementById("gp-sidebar-backdrop");
+    if (!toggle || !backdrop) return;
+    const close = () => { mount.classList.remove("sidebar-open"); toggle.setAttribute("aria-expanded", "false"); };
+    const open = () => { mount.classList.add("sidebar-open"); toggle.setAttribute("aria-expanded", "true"); };
+    toggle.addEventListener("click", () => (mount.classList.contains("sidebar-open") ? close() : open()));
+    backdrop.addEventListener("click", close);
+    document.getElementById("gp-sidebar").addEventListener("click", (e) => { if (e.target.closest("a")) close(); });
   }
 
   async function loadJSON(name) {
@@ -186,3 +208,9 @@ const GP = (() => {
 })();
 
 GP.applyStoredTheme();
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  });
+}
