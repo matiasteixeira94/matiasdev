@@ -1,7 +1,7 @@
 {
   "atualizado_em": "2026-07-18",
   "periodo": "2026.2 (julho a dezembro de 2026)",
-  "fonte_meta": "Aba CONTROLE (cronograma) da planilha CONTROLE DE UGB - CA - 2026.2 — 1 linha por casa planejada",
+  "fonte_meta": "Aba CONTROLE (cronograma) da planilha CONTROLE DE UGB - CA - 2026.2 — 1 linha por casa planejada; lista de supervisores = quem tem casas nessa aba",
   "liderancas": [
     {
       "nome": "José Pedro",
@@ -11,56 +11,8 @@
       "faltam_2026_2": 108,
       "supervisores": [
         {
-          "nome": "Josemilson Faustino",
-          "meta_2026_2": 28,
-          "realizado_2026_2": 0,
-          "por_mes": [
-            {
-              "mes": "2026-07",
-              "label": "Julho/2026",
-              "meta": 2,
-              "realizado": 0,
-              "desvio": -2
-            },
-            {
-              "mes": "2026-08",
-              "label": "Agosto/2026",
-              "meta": 6,
-              "realizado": 0,
-              "desvio": -6
-            },
-            {
-              "mes": "2026-09",
-              "label": "Setembro/2026",
-              "meta": 4,
-              "realizado": 0,
-              "desvio": -4
-            },
-            {
-              "mes": "2026-10",
-              "label": "Outubro/2026",
-              "meta": 6,
-              "realizado": 0,
-              "desvio": -6
-            },
-            {
-              "mes": "2026-11",
-              "label": "Novembro/2026",
-              "meta": 6,
-              "realizado": 0,
-              "desvio": -6
-            },
-            {
-              "mes": "2026-12",
-              "label": "Dezembro/2026",
-              "meta": 4,
-              "realizado": 0,
-              "desvio": -4
-            }
-          ]
-        },
-        {
           "nome": "Jesly Samara",
+          "foto": null,
           "meta_2026_2": 28,
           "realizado_2026_2": 0,
           "por_mes": [
@@ -109,16 +61,17 @@
           ]
         },
         {
-          "nome": "Vagner Moura",
-          "meta_2026_2": 26,
+          "nome": "Josemilson Faustino",
+          "foto": null,
+          "meta_2026_2": 28,
           "realizado_2026_2": 0,
           "por_mes": [
             {
               "mes": "2026-07",
               "label": "Julho/2026",
-              "meta": 0,
+              "meta": 2,
               "realizado": 0,
-              "desvio": 0
+              "desvio": -2
             },
             {
               "mes": "2026-08",
@@ -159,6 +112,7 @@
         },
         {
           "nome": "Janaclebson Goes",
+          "foto": null,
           "meta_2026_2": 26,
           "realizado_2026_2": 0,
           "por_mes": [
@@ -205,6 +159,56 @@
               "desvio": -4
             }
           ]
+        },
+        {
+          "nome": "Vagner Moura",
+          "foto": null,
+          "meta_2026_2": 26,
+          "realizado_2026_2": 0,
+          "por_mes": [
+            {
+              "mes": "2026-07",
+              "label": "Julho/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-08",
+              "label": "Agosto/2026",
+              "meta": 6,
+              "realizado": 0,
+              "desvio": -6
+            },
+            {
+              "mes": "2026-09",
+              "label": "Setembro/2026",
+              "meta": 4,
+              "realizado": 0,
+              "desvio": -4
+            },
+            {
+              "mes": "2026-10",
+              "label": "Outubro/2026",
+              "meta": 6,
+              "realizado": 0,
+              "desvio": -6
+            },
+            {
+              "mes": "2026-11",
+              "label": "Novembro/2026",
+              "meta": 6,
+              "realizado": 0,
+              "desvio": -6
+            },
+            {
+              "mes": "2026-12",
+              "label": "Dezembro/2026",
+              "meta": 4,
+              "realizado": 0,
+              "desvio": -4
+            }
+          ]
         }
       ]
     },
@@ -216,7 +220,8 @@
       "faltam_2026_2": 104,
       "supervisores": [
         {
-          "nome": "Girlando João",
+          "nome": "Caio Cesar",
+          "foto": "assets/images/supervisores/caio-cesar.jpg",
           "meta_2026_2": 28,
           "realizado_2026_2": 0,
           "por_mes": [
@@ -265,7 +270,8 @@
           ]
         },
         {
-          "nome": "Caio Cesar",
+          "nome": "Girlando João",
+          "foto": "assets/images/supervisores/girlando-joao.jpg",
           "meta_2026_2": 28,
           "realizado_2026_2": 0,
           "por_mes": [
@@ -315,6 +321,7 @@
         },
         {
           "nome": "João Barros",
+          "foto": null,
           "meta_2026_2": 24,
           "realizado_2026_2": 0,
           "por_mes": [
@@ -364,6 +371,7 @@
         },
         {
           "nome": "Camily Vitoria",
+          "foto": null,
           "meta_2026_2": 24,
           "realizado_2026_2": 0,
           "por_mes": [
@@ -410,153 +418,6 @@
               "desvio": -2
             }
           ]
-        },
-        {
-          "nome": "Suellen Nathalia",
-          "meta_2026_2": 0,
-          "realizado_2026_2": 0,
-          "por_mes": [
-            {
-              "mes": "2026-07",
-              "label": "Julho/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-08",
-              "label": "Agosto/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-09",
-              "label": "Setembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-10",
-              "label": "Outubro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-11",
-              "label": "Novembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-12",
-              "label": "Dezembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            }
-          ]
-        },
-        {
-          "nome": "Jose Pedro",
-          "meta_2026_2": 0,
-          "realizado_2026_2": 0,
-          "por_mes": [
-            {
-              "mes": "2026-07",
-              "label": "Julho/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-08",
-              "label": "Agosto/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-09",
-              "label": "Setembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-10",
-              "label": "Outubro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-11",
-              "label": "Novembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-12",
-              "label": "Dezembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            }
-          ]
-        },
-        {
-          "nome": "Josenildo Milanez",
-          "meta_2026_2": 0,
-          "realizado_2026_2": 0,
-          "por_mes": [
-            {
-              "mes": "2026-07",
-              "label": "Julho/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-08",
-              "label": "Agosto/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-09",
-              "label": "Setembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-10",
-              "label": "Outubro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-11",
-              "label": "Novembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-12",
-              "label": "Dezembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            }
-          ]
         }
       ]
     },
@@ -569,6 +430,7 @@
       "supervisores": [
         {
           "nome": "Maria Das Graças",
+          "foto": null,
           "meta_2026_2": 30,
           "realizado_2026_2": 0,
           "por_mes": [
@@ -618,6 +480,7 @@
         },
         {
           "nome": "Laura Samara",
+          "foto": null,
           "meta_2026_2": 28,
           "realizado_2026_2": 0,
           "por_mes": [
@@ -666,7 +529,8 @@
           ]
         },
         {
-          "nome": "Benedito Da Silva",
+          "nome": "Geovane Lima",
+          "foto": "assets/images/supervisores/geovane-lima.jpg",
           "meta_2026_2": 26,
           "realizado_2026_2": 0,
           "por_mes": [
@@ -715,7 +579,8 @@
           ]
         },
         {
-          "nome": "Geovane Lima",
+          "nome": "Benedito Da Silva",
+          "foto": null,
           "meta_2026_2": 26,
           "realizado_2026_2": 0,
           "por_mes": [
@@ -765,6 +630,7 @@
         },
         {
           "nome": "João Vinicius",
+          "foto": "assets/images/supervisores/joao-vinicius.jpg",
           "meta_2026_2": 26,
           "realizado_2026_2": 0,
           "por_mes": [
@@ -809,202 +675,6 @@
               "meta": 4,
               "realizado": 0,
               "desvio": -4
-            }
-          ]
-        },
-        {
-          "nome": "André Afonso",
-          "meta_2026_2": 0,
-          "realizado_2026_2": 0,
-          "por_mes": [
-            {
-              "mes": "2026-07",
-              "label": "Julho/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-08",
-              "label": "Agosto/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-09",
-              "label": "Setembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-10",
-              "label": "Outubro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-11",
-              "label": "Novembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-12",
-              "label": "Dezembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            }
-          ]
-        },
-        {
-          "nome": "Eduardo Silva",
-          "meta_2026_2": 0,
-          "realizado_2026_2": 0,
-          "por_mes": [
-            {
-              "mes": "2026-07",
-              "label": "Julho/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-08",
-              "label": "Agosto/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-09",
-              "label": "Setembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-10",
-              "label": "Outubro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-11",
-              "label": "Novembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-12",
-              "label": "Dezembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            }
-          ]
-        },
-        {
-          "nome": "Gabrielly Maria",
-          "meta_2026_2": 0,
-          "realizado_2026_2": 0,
-          "por_mes": [
-            {
-              "mes": "2026-07",
-              "label": "Julho/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-08",
-              "label": "Agosto/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-09",
-              "label": "Setembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-10",
-              "label": "Outubro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-11",
-              "label": "Novembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-12",
-              "label": "Dezembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            }
-          ]
-        },
-        {
-          "nome": "José Adnilson",
-          "meta_2026_2": 0,
-          "realizado_2026_2": 0,
-          "por_mes": [
-            {
-              "mes": "2026-07",
-              "label": "Julho/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-08",
-              "label": "Agosto/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-09",
-              "label": "Setembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-10",
-              "label": "Outubro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-11",
-              "label": "Novembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-12",
-              "label": "Dezembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
             }
           ]
         }

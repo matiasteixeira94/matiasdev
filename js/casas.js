@@ -360,7 +360,12 @@
         </div>
         ${supervisoresOrdenados.map((s) => `
           <div>
-            <div style="font-weight:700; font-size:13px; margin-bottom:8px;">${s.nome}</div>
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+              ${s.foto
+                ? `<img src="${s.foto}" alt="${s.nome}" style="width:32px; height:32px; border-radius:50%; object-fit:cover; border:2px solid var(--border); flex-shrink:0;" />`
+                : `<div class="user-avatar" style="width:32px; height:32px; font-size:11px; flex-shrink:0;">${GP.initials(s.nome)}</div>`}
+              <div style="font-weight:700; font-size:13px;">${s.nome}</div>
+            </div>
             <div class="table-wrap">
               <table class="data">
                 <thead><tr><th>Mês</th><th class="num">Meta</th><th class="num">Realizado</th><th class="num">Desvio</th></tr></thead>
