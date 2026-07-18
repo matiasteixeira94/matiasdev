@@ -358,11 +358,12 @@
         </div>
         <div class="table-wrap">
           <table class="data">
-            <thead><tr><th>Supervisor</th><th class="num">Casas</th><th class="num">Concluídas</th><th class="num">Pendentes</th><th class="num">% concluído</th><th class="num">Produtividade média</th></tr></thead>
+            <thead><tr><th>Supervisor</th><th class="num">Meta 2026.2</th><th class="num">Casas</th><th class="num">Concluídas</th><th class="num">Pendentes</th><th class="num">% concluído</th><th class="num">Produtividade média</th></tr></thead>
             <tbody>
               ${l.supervisores.map((s) => `
                 <tr>
                   <td>${s.nome}</td>
+                  <td class="num">${GP.fmtInt(s.meta_2026_2)}</td>
                   <td class="num">${GP.fmtInt(s.total_casas)}</td>
                   <td class="num">${GP.fmtInt(s.concluidas)}</td>
                   <td class="num">${GP.fmtInt(s.pendentes)}</td>
