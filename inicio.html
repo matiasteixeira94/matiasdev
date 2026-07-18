@@ -23,21 +23,25 @@
   .cover-photo-aerial {
     clip-path: polygon(0 0, 45% 0, 60% 100%, 0 100%);
   }
-  /* A região da equipe é estreita (fatia diagonal), então a foto de grupo
-     larga não cabe inteira numa única janela de corte sem perder gente
-     nas pontas. Em vez de 1 recorte, são 2 metades da MESMA foto, cada
-     uma enviesada pra um lado (esquerda em cima, direita embaixo) — juntas
-     cobrem a foto inteira, com todo mundo aparecendo em algum dos dois. */
+  /* A região da equipe é uma fatia diagonal estreita — a foto de grupo
+     inteira não cabe num recorte só sem perder gente nas pontas. Por isso
+     são 2 arquivos de imagem PRÉ-RECORTADOS (gerados a partir da foto
+     original, não via CSS): um pega o lado esquerdo/centro do grupo, o
+     outro o centro/direito, com sobreposição no meio — juntos, cobrem
+     literalmente todo mundo que está na foto original. Cada <img> ocupa só
+     a caixa retangular que envolve seu próprio pedaço do losango (não a
+     hero inteira) — senão o object-fit:cover escala pela hero toda e a
+     foto fica ampliada demais dentro da fatia visível.  */
   .cover-photo-team-top, .cover-photo-team-bottom {
-    object-fit: cover;
+    position: absolute; object-fit: cover;
   }
   .cover-photo-team-top {
-    clip-path: polygon(45% 0, 100% 0, 100% 50%, 52.5% 50%);
-    object-position: 15% 32%;
+    left: 45%; top: 0; width: 55%; height: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 13.6% 100%);
   }
   .cover-photo-team-bottom {
-    clip-path: polygon(52.5% 50%, 100% 50%, 100% 100%, 60% 100%);
-    object-position: 85% 32%;
+    left: 52.5%; top: 50%; width: 47.5%; height: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15.8% 100%);
   }
   .cover-overlay {
     position: absolute; inset: 0;
@@ -93,8 +97,8 @@
 <body>
   <div class="cover-hero">
     <img class="cover-photo cover-photo-aerial" src="assets/images/capa-empreendimento.png" alt="Vista aérea de empreendimento residencial construído pela Viana &amp; Moura Construções" />
-    <img class="cover-photo cover-photo-team-top" src="assets/images/equipe-ugb-caruaru.jpg" alt="Equipe da UGB Caruaru em entrega de empreendimento" />
-    <img class="cover-photo cover-photo-team-bottom" src="assets/images/equipe-ugb-caruaru.jpg" alt="" aria-hidden="true" />
+    <img class="cover-photo cover-photo-team-top" src="assets/images/equipe-crop-top.jpg" alt="Equipe da UGB Caruaru em entrega de empreendimento" />
+    <img class="cover-photo cover-photo-team-bottom" src="assets/images/equipe-crop-bottom.jpg" alt="" aria-hidden="true" />
     <div class="cover-overlay"></div>
     <div class="cover-content">
       <img class="cover-logo-full" src="assets/images/logo-viana-moura.png" alt="Viana &amp; Moura Construções" />
