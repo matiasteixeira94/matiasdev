@@ -80,10 +80,13 @@
 
   document.getElementById("organograma-celula").innerHTML = dados.colaboradoras.map((c) => `
     <div class="card stat-tile" style="align-items:center; text-align:center; gap:10px;">
-      <div class="user-avatar" style="width:52px; height:52px; font-size:16px;">${GP.initials(c.nome)}</div>
+      ${c.foto
+        ? `<img src="${c.foto}" alt="${c.nome}" style="width:64px; height:64px; border-radius:50%; object-fit:cover; border:2px solid var(--border);" />`
+        : `<div class="user-avatar" style="width:52px; height:52px; font-size:16px;">${GP.initials(c.nome)}</div>`}
       <div>
         <div style="font-weight:700; font-size:13.5px;">${c.nome}</div>
         <div class="footnote">${c.funcao}</div>
+        ${c.tempo_empresa ? `<div class="footnote">${c.tempo_empresa} de empresa</div>` : ""}
       </div>
       <div style="display:flex; gap:6px; flex-wrap:wrap; justify-content:center;">
         ${c.destaque_cultura ? `<span class="chip chip-warning" title="Destaque de cultura">★ Cultura</span>` : ""}

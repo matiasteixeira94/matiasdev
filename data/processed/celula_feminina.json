@@ -8,46 +8,10 @@
   "funcao_padrao": "Servente Jr.",
   "colaboradoras": [
     {
-      "nome": "Edna Trajano",
-      "funcao": "Servente Jr.",
-      "destaque_cultura": false,
-      "destaque_produtividade": true,
-      "ponto_atencao": false,
-      "motivacao_maio": 100,
-      "motivacao_junho": 100,
-      "absenteismo_maio": 2,
-      "absenteismo_junho": 2,
-      "produtividade": {
-        "PVC": 38,
-        "Cerâmica": 53,
-        "Rejunte": 80,
-        "Alvenaria": 15,
-        "Reboco": 33,
-        "Massa Fina": 50
-      }
-    },
-    {
-      "nome": "Clecia Albino",
-      "funcao": "Servente Jr.",
-      "destaque_cultura": false,
-      "destaque_produtividade": true,
-      "ponto_atencao": false,
-      "motivacao_maio": 100,
-      "motivacao_junho": 100,
-      "absenteismo_maio": 1,
-      "absenteismo_junho": 2,
-      "produtividade": {
-        "PVC": 38,
-        "Cerâmica": 33,
-        "Rejunte": 40,
-        "Alvenaria": 5,
-        "Reboco": 25,
-        "Massa Fina": 45
-      }
-    },
-    {
       "nome": "Adriana Bezerra",
       "funcao": "Servente Jr.",
+      "foto": "assets/images/celula-feminina/adriana-bezerra.jpg",
+      "tempo_empresa": "1,1 anos",
       "destaque_cultura": false,
       "destaque_produtividade": false,
       "ponto_atencao": false,
@@ -65,103 +29,10 @@
       }
     },
     {
-      "nome": "Rosângela Oliveira",
-      "funcao": "Servente Jr.",
-      "destaque_cultura": false,
-      "destaque_produtividade": false,
-      "ponto_atencao": true,
-      "motivacao_maio": 100,
-      "motivacao_junho": 30,
-      "absenteismo_maio": 11,
-      "absenteismo_junho": 10,
-      "produtividade": {
-        "PVC": 44,
-        "Cerâmica": 60,
-        "Rejunte": 80,
-        "Alvenaria": 45,
-        "Reboco": 30,
-        "Massa Fina": 45
-      }
-    },
-    {
-      "nome": "Cristiane Maria",
-      "funcao": "Servente Jr.",
-      "destaque_cultura": true,
-      "destaque_produtividade": true,
-      "ponto_atencao": false,
-      "motivacao_maio": 100,
-      "motivacao_junho": 100,
-      "absenteismo_maio": 8,
-      "absenteismo_junho": 8,
-      "produtividade": {
-        "PVC": 67,
-        "Cerâmica": 82,
-        "Rejunte": 80,
-        "Alvenaria": 49,
-        "Reboco": 40,
-        "Massa Fina": 65
-      }
-    },
-    {
-      "nome": "Maria Jucilene",
-      "funcao": "Servente Jr.",
-      "destaque_cultura": true,
-      "destaque_produtividade": true,
-      "ponto_atencao": false,
-      "motivacao_maio": 100,
-      "motivacao_junho": 100,
-      "absenteismo_maio": 3,
-      "absenteismo_junho": 3,
-      "produtividade": {
-        "PVC": 28,
-        "Cerâmica": 34,
-        "Rejunte": 80,
-        "Alvenaria": 49,
-        "Reboco": 33,
-        "Massa Fina": 45
-      }
-    },
-    {
-      "nome": "Camila Pereira",
-      "funcao": "Servente Jr.",
-      "destaque_cultura": false,
-      "destaque_produtividade": false,
-      "ponto_atencao": true,
-      "motivacao_maio": 75,
-      "motivacao_junho": 90,
-      "absenteismo_maio": 9,
-      "absenteismo_junho": 7,
-      "produtividade": {
-        "PVC": 33,
-        "Cerâmica": 33,
-        "Rejunte": 60,
-        "Alvenaria": 15,
-        "Reboco": 15,
-        "Massa Fina": 30
-      }
-    },
-    {
-      "nome": "Erlaine Conceição",
-      "funcao": "Servente Jr.",
-      "destaque_cultura": false,
-      "destaque_produtividade": false,
-      "ponto_atencao": false,
-      "motivacao_maio": 100,
-      "motivacao_junho": 100,
-      "absenteismo_maio": 4,
-      "absenteismo_junho": 5,
-      "produtividade": {
-        "PVC": 55,
-        "Cerâmica": 27,
-        "Rejunte": 80,
-        "Alvenaria": 0,
-        "Reboco": 20,
-        "Massa Fina": 45
-      }
-    },
-    {
       "nome": "Aline Santos",
       "funcao": "Servente Jr.",
+      "foto": "assets/images/celula-feminina/aline-santos.jpg",
+      "tempo_empresa": "11 meses",
       "destaque_cultura": false,
       "destaque_produtividade": false,
       "ponto_atencao": false,
@@ -179,8 +50,115 @@
       }
     },
     {
+      "nome": "Camila Pereira",
+      "funcao": "Servente Jr.",
+      "foto": "assets/images/celula-feminina/camila-pereira.jpg",
+      "tempo_empresa": "1,1 anos",
+      "destaque_cultura": false,
+      "destaque_produtividade": false,
+      "ponto_atencao": true,
+      "motivacao_maio": 75,
+      "motivacao_junho": 90,
+      "absenteismo_maio": 9,
+      "absenteismo_junho": 7,
+      "produtividade": {
+        "PVC": 33,
+        "Cerâmica": 33,
+        "Rejunte": 60,
+        "Alvenaria": 15,
+        "Reboco": 15,
+        "Massa Fina": 30
+      }
+    },
+    {
+      "nome": "Clecia Albino",
+      "funcao": "Servente Jr.",
+      "foto": "assets/images/celula-feminina/clecia-albino.jpg",
+      "tempo_empresa": "11 meses",
+      "destaque_cultura": false,
+      "destaque_produtividade": true,
+      "ponto_atencao": false,
+      "motivacao_maio": 100,
+      "motivacao_junho": 100,
+      "absenteismo_maio": 1,
+      "absenteismo_junho": 2,
+      "produtividade": {
+        "PVC": 38,
+        "Cerâmica": 33,
+        "Rejunte": 40,
+        "Alvenaria": 5,
+        "Reboco": 25,
+        "Massa Fina": 45
+      }
+    },
+    {
+      "nome": "Cristiane Maria",
+      "funcao": "Servente Jr.",
+      "foto": "assets/images/celula-feminina/cristiane-maria.jpg",
+      "tempo_empresa": "1 ano",
+      "destaque_cultura": true,
+      "destaque_produtividade": true,
+      "ponto_atencao": false,
+      "motivacao_maio": 100,
+      "motivacao_junho": 100,
+      "absenteismo_maio": 8,
+      "absenteismo_junho": 8,
+      "produtividade": {
+        "PVC": 67,
+        "Cerâmica": 82,
+        "Rejunte": 80,
+        "Alvenaria": 49,
+        "Reboco": 40,
+        "Massa Fina": 65
+      }
+    },
+    {
+      "nome": "Edna Trajano",
+      "funcao": "Servente Jr.",
+      "foto": "assets/images/celula-feminina/edna-trajano.jpg",
+      "tempo_empresa": "1,1 anos",
+      "destaque_cultura": false,
+      "destaque_produtividade": true,
+      "ponto_atencao": false,
+      "motivacao_maio": 100,
+      "motivacao_junho": 100,
+      "absenteismo_maio": 2,
+      "absenteismo_junho": 2,
+      "produtividade": {
+        "PVC": 38,
+        "Cerâmica": 53,
+        "Rejunte": 80,
+        "Alvenaria": 15,
+        "Reboco": 33,
+        "Massa Fina": 50
+      }
+    },
+    {
+      "nome": "Erlaine Conceição",
+      "funcao": "Servente Jr.",
+      "foto": "assets/images/celula-feminina/erlaine-conceicao.jpg",
+      "tempo_empresa": "11 meses",
+      "destaque_cultura": false,
+      "destaque_produtividade": false,
+      "ponto_atencao": false,
+      "motivacao_maio": 100,
+      "motivacao_junho": 100,
+      "absenteismo_maio": 4,
+      "absenteismo_junho": 5,
+      "produtividade": {
+        "PVC": 55,
+        "Cerâmica": 27,
+        "Rejunte": 80,
+        "Alvenaria": 0,
+        "Reboco": 20,
+        "Massa Fina": 45
+      }
+    },
+    {
       "nome": "Geise Kelly",
       "funcao": "Servente Jr.",
+      "foto": "assets/images/celula-feminina/geise-kelly.jpg",
+      "tempo_empresa": "11 meses",
       "destaque_cultura": false,
       "destaque_produtividade": false,
       "ponto_atencao": false,
@@ -195,6 +173,48 @@
         "Alvenaria": 0,
         "Reboco": 0,
         "Massa Fina": 38
+      }
+    },
+    {
+      "nome": "Maria Jucilene",
+      "funcao": "Servente Jr.",
+      "foto": "assets/images/celula-feminina/maria-jucilene.jpg",
+      "tempo_empresa": "1 ano",
+      "destaque_cultura": true,
+      "destaque_produtividade": true,
+      "ponto_atencao": false,
+      "motivacao_maio": 100,
+      "motivacao_junho": 100,
+      "absenteismo_maio": 3,
+      "absenteismo_junho": 3,
+      "produtividade": {
+        "PVC": 28,
+        "Cerâmica": 34,
+        "Rejunte": 80,
+        "Alvenaria": 49,
+        "Reboco": 33,
+        "Massa Fina": 45
+      }
+    },
+    {
+      "nome": "Rosângela Oliveira",
+      "funcao": "Servente Jr.",
+      "foto": "assets/images/celula-feminina/rosangela-oliveira.jpg",
+      "tempo_empresa": "1,1 anos",
+      "destaque_cultura": false,
+      "destaque_produtividade": false,
+      "ponto_atencao": true,
+      "motivacao_maio": 100,
+      "motivacao_junho": 30,
+      "absenteismo_maio": 11,
+      "absenteismo_junho": 10,
+      "produtividade": {
+        "PVC": 44,
+        "Cerâmica": 60,
+        "Rejunte": 80,
+        "Alvenaria": 45,
+        "Reboco": 30,
+        "Massa Fina": 45
       }
     }
   ]

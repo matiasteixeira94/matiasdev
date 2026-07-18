@@ -3,7 +3,9 @@
  * Gera data/processed/celula_feminina.json com os dados gerais do
  * "Relatório Quinzenal 03 — 2026.1" da Célula Feminina (UGB Caruaru),
  * transcritos manualmente do relatório em Canva (não há planilha-fonte
- * pra esse relatório — ele é só um documento visual).
+ * pra esse relatório — ele é só um documento visual). As fotos em
+ * assets/images/celula-feminina/*.jpg também foram recortadas do mesmo
+ * relatório.
  *
  * Escopo deliberadamente reduzido: o relatório original também traz,
  * por colaboradora, comentários nominais sobre saúde (inclusive
@@ -11,8 +13,8 @@
  * problemas psicológicos) e o relato detalhado de uma apuração de
  * conduta inadequada entre colaboradores. Nada disso entra aqui — só os
  * indicadores gerais (motivação, absenteísmo, produtividade por
- * atividade) e o organograma (nome + função + selos), decisão tomada em
- * 2026-07-18 (ver [[privacidade_repo_publico]]).
+ * atividade), o organograma (nome + foto + função + selos) e o tempo de
+ * empresa, decisão tomada em 2026-07-18 (ver [[privacidade_repo_publico]]).
  *
  * Uso: node data/scripts/gerar_celula_feminina.mjs
  */
@@ -21,17 +23,19 @@ import { writeFileSync } from "fs";
 const ATIVIDADES = ["PVC", "Cerâmica", "Rejunte", "Alvenaria", "Reboco", "Massa Fina"];
 
 const colaboradoras = [
-  { nome: "Edna Trajano", destaqueProdutividade: true, motivacao: [100, 100], absenteismo: [2, 2], produtividade: [38, 53, 80, 15, 33, 50] },
-  { nome: "Clecia Albino", destaqueProdutividade: true, motivacao: [100, 100], absenteismo: [1, 2], produtividade: [38, 33, 40, 5, 25, 45] },
-  { nome: "Adriana Bezerra", motivacao: [90, 100], absenteismo: [4, 3], produtividade: [83, 33, 60, 0, 16, 25] },
-  { nome: "Rosângela Oliveira", pontoAtencao: true, motivacao: [100, 30], absenteismo: [11, 10], produtividade: [44, 60, 80, 45, 30, 45] },
-  { nome: "Cristiane Maria", destaqueCultura: true, destaqueProdutividade: true, motivacao: [100, 100], absenteismo: [8, 8], produtividade: [67, 82, 80, 49, 40, 65] },
-  { nome: "Maria Jucilene", destaqueCultura: true, destaqueProdutividade: true, motivacao: [100, 100], absenteismo: [3, 3], produtividade: [28, 34, 80, 49, 33, 45] },
-  { nome: "Camila Pereira", pontoAtencao: true, motivacao: [75, 90], absenteismo: [9, 7], produtividade: [33, 33, 60, 15, 15, 30] },
-  { nome: "Erlaine Conceição", motivacao: [100, 100], absenteismo: [4, 5], produtividade: [55, 27, 80, 0, 20, 45] },
-  { nome: "Aline Santos", motivacao: [null, 50], absenteismo: [18, 16], produtividade: [0, 0, 80, 0, 0, 0] },
-  { nome: "Geise Kelly", motivacao: [null, 50], absenteismo: [3, 2], produtividade: [28, 20, 80, 0, 0, 38] },
+  { nome: "Edna Trajano", foto: "edna-trajano", tempoEmpresa: "1,1 anos", destaqueProdutividade: true, motivacao: [100, 100], absenteismo: [2, 2], produtividade: [38, 53, 80, 15, 33, 50] },
+  { nome: "Clecia Albino", foto: "clecia-albino", tempoEmpresa: "11 meses", destaqueProdutividade: true, motivacao: [100, 100], absenteismo: [1, 2], produtividade: [38, 33, 40, 5, 25, 45] },
+  { nome: "Adriana Bezerra", foto: "adriana-bezerra", tempoEmpresa: "1,1 anos", motivacao: [90, 100], absenteismo: [4, 3], produtividade: [83, 33, 60, 0, 16, 25] },
+  { nome: "Rosângela Oliveira", foto: "rosangela-oliveira", tempoEmpresa: "1,1 anos", pontoAtencao: true, motivacao: [100, 30], absenteismo: [11, 10], produtividade: [44, 60, 80, 45, 30, 45] },
+  { nome: "Cristiane Maria", foto: "cristiane-maria", tempoEmpresa: "1 ano", destaqueCultura: true, destaqueProdutividade: true, motivacao: [100, 100], absenteismo: [8, 8], produtividade: [67, 82, 80, 49, 40, 65] },
+  { nome: "Maria Jucilene", foto: "maria-jucilene", tempoEmpresa: "1 ano", destaqueCultura: true, destaqueProdutividade: true, motivacao: [100, 100], absenteismo: [3, 3], produtividade: [28, 34, 80, 49, 33, 45] },
+  { nome: "Camila Pereira", foto: "camila-pereira", tempoEmpresa: "1,1 anos", pontoAtencao: true, motivacao: [75, 90], absenteismo: [9, 7], produtividade: [33, 33, 60, 15, 15, 30] },
+  { nome: "Erlaine Conceição", foto: "erlaine-conceicao", tempoEmpresa: "11 meses", motivacao: [100, 100], absenteismo: [4, 5], produtividade: [55, 27, 80, 0, 20, 45] },
+  { nome: "Aline Santos", foto: "aline-santos", tempoEmpresa: "11 meses", motivacao: [null, 50], absenteismo: [18, 16], produtividade: [0, 0, 80, 0, 0, 0] },
+  { nome: "Geise Kelly", foto: "geise-kelly", tempoEmpresa: "11 meses", motivacao: [null, 50], absenteismo: [3, 2], produtividade: [28, 20, 80, 0, 0, 38] },
 ];
+
+colaboradoras.sort((a, b) => a.nome.localeCompare(b.nome, "pt-BR"));
 
 const resultado = {
   atualizado_em: new Date().toISOString().slice(0, 10),
@@ -44,6 +48,8 @@ const resultado = {
   colaboradoras: colaboradoras.map((c) => ({
     nome: c.nome,
     funcao: "Servente Jr.",
+    foto: `assets/images/celula-feminina/${c.foto}.jpg`,
+    tempo_empresa: c.tempoEmpresa,
     destaque_cultura: !!c.destaqueCultura,
     destaque_produtividade: !!c.destaqueProdutividade,
     ponto_atencao: !!c.pontoAtencao,
