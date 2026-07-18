@@ -24,11 +24,11 @@ const ATIVIDADES = ["PVC", "Cerâmica", "Rejunte", "Alvenaria", "Reboco", "Massa
 
 const colaboradoras = [
   { nome: "Edna Trajano", foto: "edna-trajano", tempoEmpresa: "1,1 anos", destaqueProdutividade: true, motivacao: [100, 100], absenteismo: [2, 2], produtividade: [38, 53, 80, 15, 33, 50] },
-  { nome: "Clecia Albino", foto: "clecia-albino", tempoEmpresa: "11 meses", destaqueProdutividade: true, motivacao: [100, 100], absenteismo: [1, 2], produtividade: [38, 33, 40, 5, 25, 45] },
+  { nome: "Clecia Albino", foto: "clecia-albino", tempoEmpresa: "11 meses", destaqueCultura: true, motivacao: [100, 100], absenteismo: [1, 2], produtividade: [38, 33, 40, 5, 25, 45] },
   { nome: "Adriana Bezerra", foto: "adriana-bezerra", tempoEmpresa: "1,1 anos", motivacao: [90, 100], absenteismo: [4, 3], produtividade: [83, 33, 60, 0, 16, 25] },
   { nome: "Rosângela Oliveira", foto: "rosangela-oliveira", tempoEmpresa: "1,1 anos", pontoAtencao: true, motivacao: [100, 30], absenteismo: [11, 10], produtividade: [44, 60, 80, 45, 30, 45] },
   { nome: "Cristiane Maria", foto: "cristiane-maria", tempoEmpresa: "1 ano", destaqueCultura: true, destaqueProdutividade: true, motivacao: [100, 100], absenteismo: [8, 8], produtividade: [67, 82, 80, 49, 40, 65] },
-  { nome: "Maria Jucilene", foto: "maria-jucilene", tempoEmpresa: "1 ano", destaqueCultura: true, destaqueProdutividade: true, motivacao: [100, 100], absenteismo: [3, 3], produtividade: [28, 34, 80, 49, 33, 45] },
+  { nome: "Maria Jucilene", foto: "maria-jucilene", tempoEmpresa: "1 ano", destaqueCultura: true, motivacao: [100, 100], absenteismo: [3, 3], produtividade: [28, 34, 80, 49, 33, 45] },
   { nome: "Camila Pereira", foto: "camila-pereira", tempoEmpresa: "1,1 anos", pontoAtencao: true, motivacao: [75, 90], absenteismo: [9, 7], produtividade: [33, 33, 60, 15, 15, 30] },
   { nome: "Erlaine Conceição", foto: "erlaine-conceicao", tempoEmpresa: "11 meses", motivacao: [100, 100], absenteismo: [4, 5], produtividade: [55, 27, 80, 0, 20, 45] },
   { nome: "Aline Santos", foto: "aline-santos", tempoEmpresa: "11 meses", motivacao: [null, 50], absenteismo: [18, 16], produtividade: [0, 0, 80, 0, 0, 0] },
