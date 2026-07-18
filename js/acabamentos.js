@@ -47,6 +47,11 @@
     </div>
 
     <div class="card">
+      <div class="card-head"><div><div class="card-title">Casas com pendência por obra</div><div class="card-sub">% de casas vistoriadas que ainda têm algum problema em aberto</div></div></div>
+      <div class="chart-host" id="chart-acabamento-pendencia"></div>
+    </div>
+
+    <div class="card">
       <div class="card-head">
         <div><div class="card-title">Mapa de gestão — acabamento</div><div class="card-sub">Verde: sem pendência · Laranja: com pendência · Cinza: ainda sem vistoria registrada</div></div>
         <select class="select" id="filtro-mapa-acabamento">
@@ -168,6 +173,14 @@
       yFormat: (v) => `${Math.round(v * 10) / 10}%`,
       tooltipLabel: "Sem pendência",
       legendLabel: "% sem pendência (ordem de execução)",
+    });
+    GPCharts.barsLine(document.getElementById("chart-acabamento-pendencia"), {
+      items: ORDEM_EXECUCAO.map((e) => ({
+        label: e, value: vistoriadas[e] ? Math.round((comCount[e] / vistoriadas[e]) * 1000) / 10 : 0, color: "var(--status-warning)",
+      })),
+      yFormat: (v) => `${Math.round(v * 10) / 10}%`,
+      tooltipLabel: "Com pendência",
+      legendLabel: "% com pendência (ordem de execução)",
     });
     renderMapa();
     renderIndice();
