@@ -12,6 +12,15 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="apple-mobile-web-app-title" content="Gestão da Produção" />
+<style>
+  /* Fundo rosa bebê só nessa tela — as demais continuam com o bege padrão. */
+  :root { --page: #FBE1E8; }
+  :root[data-theme="light"] { --page: #FBE1E8; }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) { --page: #2E1720; }
+  }
+  :root[data-theme="dark"] { --page: #2E1720; }
+</style>
 </head>
 <body>
   <div class="shell" id="gp-shell"></div>
