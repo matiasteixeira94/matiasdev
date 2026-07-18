@@ -1,0 +1,186 @@
+{
+  "atualizado_em": "2026-07-18",
+  "periodo": "2026.2 (julho a dezembro de 2026)",
+  "liderancas": [
+    {
+      "nome": "José Pedro",
+      "foto": "assets/images/lideres/jose-pedro.jpg",
+      "total_casas": 573,
+      "concluidas_total": 436,
+      "pendentes": 137,
+      "meta_2026_2": 130,
+      "realizado_2026_2": 0,
+      "faltam_2026_2": 130,
+      "supervisores": [
+        {
+          "nome": "Vagner Moura",
+          "total_casas": 205,
+          "concluidas": 138,
+          "pendentes": 67,
+          "pct_concluido": 67.3,
+          "produtividade_media": 8
+        },
+        {
+          "nome": "Janaclebson Goes",
+          "total_casas": 194,
+          "concluidas": 130,
+          "pendentes": 64,
+          "pct_concluido": 67,
+          "produtividade_media": 8.2
+        },
+        {
+          "nome": "Geovane Lima",
+          "total_casas": 90,
+          "concluidas": 88,
+          "pendentes": 2,
+          "pct_concluido": 97.8,
+          "produtividade_media": 8.6
+        },
+        {
+          "nome": "Josemilson Faustino",
+          "total_casas": 76,
+          "concluidas": 74,
+          "pendentes": 2,
+          "pct_concluido": 97.4,
+          "produtividade_media": 8.3
+        },
+        {
+          "nome": "Jesly Samara",
+          "total_casas": 8,
+          "concluidas": 6,
+          "pendentes": 2,
+          "pct_concluido": 75,
+          "produtividade_media": 8.8
+        }
+      ]
+    },
+    {
+      "nome": "Jucélio Lourenço",
+      "foto": "assets/images/lideres/jucelio-lourenco.jpg",
+      "total_casas": 418,
+      "concluidas_total": 360,
+      "pendentes": 58,
+      "meta_2026_2": 55,
+      "realizado_2026_2": 0,
+      "faltam_2026_2": 55,
+      "supervisores": [
+        {
+          "nome": "Girlando João",
+          "total_casas": 140,
+          "concluidas": 86,
+          "pendentes": 54,
+          "pct_concluido": 61.4,
+          "produtividade_media": 8.4
+        },
+        {
+          "nome": "Suellen Nathalia",
+          "total_casas": 94,
+          "concluidas": 92,
+          "pendentes": 2,
+          "pct_concluido": 97.9,
+          "produtividade_media": 8.6
+        },
+        {
+          "nome": "Josenildo Milanez",
+          "total_casas": 90,
+          "concluidas": 90,
+          "pendentes": 0,
+          "pct_concluido": 100,
+          "produtividade_media": 8.4
+        },
+        {
+          "nome": "Jose Pedro",
+          "total_casas": 62,
+          "concluidas": 62,
+          "pendentes": 0,
+          "pct_concluido": 100,
+          "produtividade_media": 8.5
+        },
+        {
+          "nome": "João Barros",
+          "total_casas": 30,
+          "concluidas": 30,
+          "pendentes": 0,
+          "pct_concluido": 100,
+          "produtividade_media": 8.4
+        },
+        {
+          "nome": "Caio Cesar",
+          "total_casas": 2,
+          "concluidas": 0,
+          "pendentes": 2,
+          "pct_concluido": 0,
+          "produtividade_media": null
+        }
+      ]
+    },
+    {
+      "nome": "Reginaldo Lima",
+      "foto": "assets/images/lideres/reginaldo-lima.jpg",
+      "total_casas": 669,
+      "concluidas_total": 496,
+      "pendentes": 173,
+      "meta_2026_2": 163,
+      "realizado_2026_2": 0,
+      "faltam_2026_2": 163,
+      "supervisores": [
+        {
+          "nome": "André Afonso",
+          "total_casas": 167,
+          "concluidas": 124,
+          "pendentes": 43,
+          "pct_concluido": 74.3,
+          "produtividade_media": 8.1
+        },
+        {
+          "nome": "Benedito Da Silva",
+          "total_casas": 162,
+          "concluidas": 130,
+          "pendentes": 32,
+          "pct_concluido": 80.2,
+          "produtividade_media": 8.3
+        },
+        {
+          "nome": "Eduardo Silva",
+          "total_casas": 124,
+          "concluidas": 104,
+          "pendentes": 20,
+          "pct_concluido": 83.9,
+          "produtividade_media": 8.4
+        },
+        {
+          "nome": "Gabrielly Maria",
+          "total_casas": 88,
+          "concluidas": 86,
+          "pendentes": 2,
+          "pct_concluido": 97.7,
+          "produtividade_media": 8.7
+        },
+        {
+          "nome": "Laura Samara",
+          "total_casas": 76,
+          "concluidas": 4,
+          "pendentes": 72,
+          "pct_concluido": 5.3,
+          "produtividade_media": 8.2
+        },
+        {
+          "nome": "Maria Das Graças",
+          "total_casas": 30,
+          "concluidas": 28,
+          "pendentes": 2,
+          "pct_concluido": 93.3,
+          "produtividade_media": 8.2
+        },
+        {
+          "nome": "José Adnilson",
+          "total_casas": 22,
+          "concluidas": 20,
+          "pendentes": 2,
+          "pct_concluido": 90.9,
+          "produtividade_media": 9.3
+        }
+      ]
+    }
+  ]
+}

@@ -7,8 +7,8 @@
   });
   if (!session) return;
 
-  const [casasBrutas, mapaLotes, obrasReais, metas, metasMensais] = await Promise.all([
-    GP.loadJSON("casas.json"), GP.loadJSON("mapa_lotes.json"), GP.loadJSON("obras_reais.json"), GP.loadJSON("metas_2026_2.json"), GP.loadJSON("metas_mensais_2026_2.json"),
+  const [casasBrutas, mapaLotes, obrasReais, metas, metasMensais, liderancas] = await Promise.all([
+    GP.loadJSON("casas.json"), GP.loadJSON("mapa_lotes.json"), GP.loadJSON("obras_reais.json"), GP.loadJSON("metas_2026_2.json"), GP.loadJSON("metas_mensais_2026_2.json"), GP.loadJSON("liderancas.json"),
   ]);
   const lotesReais = Object.fromEntries(obrasReais.map((o) => [o.empreendimento, o.total]));
 
@@ -126,6 +126,15 @@
         <div class="stat-value">${GP.fmtInt(metas.casas.meta - metas.casas.realizado)}</div>
         <span class="chip chip-warning">Faltam para a meta</span>
       </div>
+    </div>
+
+    <div class="card">
+      <div class="section-head" style="margin-bottom:14px;">
+        <h2>Líderes de Produção</h2>
+        <span class="footnote">Meta de casas 2026.2 por liderança · clique na foto para ver os supervisores</span>
+      </div>
+      <div class="grid grid-3" id="lideres-row"></div>
+      <div id="lider-detalhe"></div>
     </div>
 
     <div class="card">
@@ -306,6 +315,68 @@
     state.busca = path.dataset.casa.toUpperCase();
     render();
   });
+
+  const stateLideres = { selecionado: null };
+
+  function renderLideres() {
+    document.getElementById("lideres-row").innerHTML = liderancas.liderancas.map((l) => `
+      <div class="card stat-tile" style="gap:10px;">
+        <div style="display:flex; align-items:center; gap:10px;">
+          ${l.foto
+            ? `<img src="${l.foto}" alt="${l.nome}" data-lider="${l.nome}" class="lider-foto" style="width:56px; height:56px; border-radius:50%; object-fit:cover; border:2px solid var(--border); cursor:pointer; flex-shrink:0;" />`
+            : `<div class="user-avatar lider-foto" data-lider="${l.nome}" style="width:56px; height:56px; font-size:15px; cursor:pointer; flex-shrink:0;">${GP.initials(l.nome)}</div>`}
+          <div style="min-width:0;">
+            <div style="font-weight:700; font-size:14px;">${l.nome}</div>
+            <div class="footnote">${GP.fmtInt(l.total_casas)} casas · ${l.supervisores.length} supervisores</div>
+          </div>
+        </div>
+        <div class="grid grid-3" style="gap:6px;">
+          <div><div class="footnote">Meta 2026.2</div><div style="font-weight:700; font-size:18px;">${GP.fmtInt(l.meta_2026_2)}</div></div>
+          <div><div class="footnote">Alcançado</div><div style="font-weight:700; font-size:18px; color:var(--status-good);">${GP.fmtInt(l.realizado_2026_2)}</div></div>
+          <div><div class="footnote">Faltam</div><div style="font-weight:700; font-size:18px; color:var(--status-warning);">${GP.fmtInt(l.faltam_2026_2)}</div></div>
+        </div>
+      </div>`).join("");
+
+    document.querySelectorAll(".lider-foto").forEach((el) => {
+      el.addEventListener("click", () => {
+        stateLideres.selecionado = stateLideres.selecionado === el.dataset.lider ? null : el.dataset.lider;
+        renderLiderDetalhe();
+      });
+    });
+  }
+
+  function renderLiderDetalhe() {
+    const host = document.getElementById("lider-detalhe");
+    if (!stateLideres.selecionado) { host.innerHTML = ""; return; }
+    const l = liderancas.liderancas.find((x) => x.nome === stateLideres.selecionado);
+    if (!l) { host.innerHTML = ""; return; }
+    host.innerHTML = `
+      <div style="margin-top:16px; padding-top:16px; border-top:1px solid var(--border);">
+        <div class="section-head" style="margin-bottom:12px;">
+          <h2 style="font-size:14.5px;">Supervisores de ${l.nome}</h2>
+          <span class="footnote">${GP.fmtInt(l.concluidas_total)} de ${GP.fmtInt(l.total_casas)} casas concluídas no total (${l.pendentes} pendentes)</span>
+        </div>
+        <div class="table-wrap">
+          <table class="data">
+            <thead><tr><th>Supervisor</th><th class="num">Casas</th><th class="num">Concluídas</th><th class="num">Pendentes</th><th class="num">% concluído</th><th class="num">Produtividade média</th></tr></thead>
+            <tbody>
+              ${l.supervisores.map((s) => `
+                <tr>
+                  <td>${s.nome}</td>
+                  <td class="num">${GP.fmtInt(s.total_casas)}</td>
+                  <td class="num">${GP.fmtInt(s.concluidas)}</td>
+                  <td class="num">${GP.fmtInt(s.pendentes)}</td>
+                  <td class="num"><span class="chip ${s.pct_concluido >= 70 ? "chip-good" : s.pct_concluido >= 40 ? "chip-warning" : "chip-serious"}">${GP.fmtPct(s.pct_concluido, 0)}</span></td>
+                  <td class="num">${s.produtividade_media != null ? GP.fmtNum1(s.produtividade_media) : "—"}</td>
+                </tr>`).join("")}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+  }
+
+  renderLideres();
 
   function render() {
     const filtradas = casas.filter((c) =>
