@@ -327,7 +327,7 @@
             : `<div class="user-avatar lider-foto" data-lider="${l.nome}" style="width:56px; height:56px; font-size:15px; cursor:pointer; flex-shrink:0;">${GP.initials(l.nome)}</div>`}
           <div style="min-width:0;">
             <div style="font-weight:700; font-size:14px;">${l.nome}</div>
-            <div class="footnote">${GP.fmtInt(l.total_casas)} casas · ${l.supervisores.length} supervisores</div>
+            <div class="footnote">${l.supervisores.length} supervisor(es)</div>
           </div>
         </div>
         <div class="grid grid-3" style="gap:6px;">
@@ -351,20 +351,39 @@
     const l = liderancas.liderancas.find((x) => x.nome === stateLideres.selecionado);
     if (!l) { host.innerHTML = ""; return; }
     const supervisoresOrdenados = l.supervisores.slice().sort((a, b) => b.meta_2026_2 - a.meta_2026_2);
+
     host.innerHTML = `
-      <div style="margin-top:16px; padding-top:16px; border-top:1px solid var(--border);">
-        <div class="section-head" style="margin-bottom:12px;">
-          <h2 style="font-size:14.5px;">Distribuição de casas por supervisor — ${l.nome} · 2026.2</h2>
+      <div style="margin-top:16px; padding-top:16px; border-top:1px solid var(--border); display:flex; flex-direction:column; gap:16px;">
+        <div class="section-head">
+          <h2 style="font-size:14.5px;">Meta mensal por supervisor — ${l.nome} · 2026.2</h2>
           <span class="footnote">${GP.fmtInt(l.meta_2026_2)} casas planejadas no semestre, entre ${l.supervisores.length} supervisor(es)</span>
         </div>
-        <div class="chart-host" id="chart-lider-detalhe"></div>
+        ${supervisoresOrdenados.map((s) => `
+          <div>
+            <div style="font-weight:700; font-size:13px; margin-bottom:8px;">${s.nome}</div>
+            <div class="table-wrap">
+              <table class="data">
+                <thead><tr><th>Mês</th><th class="num">Meta</th><th class="num">Realizado</th><th class="num">Desvio</th></tr></thead>
+                <tbody>
+                  ${s.por_mes.map((m) => `
+                    <tr>
+                      <td>${m.label}</td>
+                      <td class="num">${GP.fmtInt(m.meta)}</td>
+                      <td class="num">${GP.fmtInt(m.realizado)}</td>
+                      <td class="num"><span class="chip ${m.desvio >= 0 ? "chip-good" : "chip-warning"}">${m.desvio > 0 ? "+" : ""}${GP.fmtInt(m.desvio)}</span></td>
+                    </tr>`).join("")}
+                  <tr style="font-weight:700;">
+                    <td>Total 2026.2</td>
+                    <td class="num">${GP.fmtInt(s.meta_2026_2)}</td>
+                    <td class="num">${GP.fmtInt(s.realizado_2026_2)}</td>
+                    <td class="num">${GP.fmtInt(s.realizado_2026_2 - s.meta_2026_2)}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>`).join("")}
       </div>
     `;
-    GPCharts.hbars(document.getElementById("chart-lider-detalhe"), {
-      items: supervisoresOrdenados.map((s) => ({ label: s.nome, value: s.meta_2026_2, color: "var(--accent)" })),
-      valueFormat: (v) => GP.fmtInt(v),
-      showTarget: false,
-    });
   }
 
   renderLideres();
