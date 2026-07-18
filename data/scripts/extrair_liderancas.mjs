@@ -48,12 +48,17 @@ for (const [supervisor, lider] of rowsLid.slice(1)) {
 }
 
 // Aba CONTROLE: 1 linha por casa planejada pro semestre; header na linha 6
-// (0-based), dados a partir da linha 7. Coluna 1 = id da casa, 27 = supervisor.
+// (0-based), dados a partir da linha 7. Coluna 1 = id da casa, 26 = ano de
+// término, 27 = supervisor. Além das casas já com lote real, a aba também
+// lista uma fila de casas-placeholder ("CASA12", "CASA11"...) que ainda não
+// têm data de término calculada (ANO = "-") — são projeção de pipeline além
+// do horizonte atual, não meta deste semestre, então ficam de fora.
 const wbControle = xlsx.readFile(fileControle);
 const rowsControle = xlsx.utils.sheet_to_json(wbControle.Sheets["CONTROLE"], { header: 1, defval: "", raw: false });
 const metaPorSupervisor = new Map(); // supervisor normalizado -> { count, nomeBruto }
 for (const r of rowsControle.slice(7)) {
   if (!r[1] || !r[27]) continue;
+  if (!r[26] || r[26] === "-") continue;
   const key = normalizar(r[27]);
   const atual = metaPorSupervisor.get(key) ?? { count: 0, nomeBruto: r[27] };
   atual.count += 1;

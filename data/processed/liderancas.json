@@ -66,19 +66,10 @@
       "total_casas": 418,
       "concluidas_total": 360,
       "pendentes": 58,
-      "meta_2026_2": 284,
+      "meta_2026_2": 104,
       "realizado_2026_2": 0,
-      "faltam_2026_2": 284,
+      "faltam_2026_2": 104,
       "supervisores": [
-        {
-          "nome": "Josenildo Milanez",
-          "meta_2026_2": 180,
-          "total_casas": 90,
-          "concluidas": 90,
-          "pendentes": 0,
-          "pct_concluido": 100,
-          "produtividade_media": 8.4
-        },
         {
           "nome": "Girlando João",
           "meta_2026_2": 28,
@@ -132,6 +123,15 @@
           "pendentes": 0,
           "pct_concluido": 100,
           "produtividade_media": 8.5
+        },
+        {
+          "nome": "Josenildo Milanez",
+          "meta_2026_2": 0,
+          "total_casas": 90,
+          "concluidas": 90,
+          "pendentes": 0,
+          "pct_concluido": 100,
+          "produtividade_media": 8.4
         }
       ]
     },
@@ -141,19 +141,10 @@
       "total_casas": 669,
       "concluidas_total": 496,
       "pendentes": 173,
-      "meta_2026_2": 300,
+      "meta_2026_2": 110,
       "realizado_2026_2": 0,
-      "faltam_2026_2": 300,
+      "faltam_2026_2": 110,
       "supervisores": [
-        {
-          "nome": "José Adnilson",
-          "meta_2026_2": 190,
-          "total_casas": 22,
-          "concluidas": 20,
-          "pendentes": 2,
-          "pct_concluido": 90.9,
-          "produtividade_media": 9.3
-        },
         {
           "nome": "Maria Das Graças",
           "meta_2026_2": 30,
@@ -216,6 +207,15 @@
           "pendentes": 2,
           "pct_concluido": 97.7,
           "produtividade_media": 8.7
+        },
+        {
+          "nome": "José Adnilson",
+          "meta_2026_2": 0,
+          "total_casas": 22,
+          "concluidas": 20,
+          "pendentes": 2,
+          "pct_concluido": 90.9,
+          "produtividade_media": 9.3
         }
       ]
     }
