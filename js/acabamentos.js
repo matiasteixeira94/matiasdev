@@ -12,7 +12,6 @@
   ]);
 
   const ORDEM_EXECUCAO = ["Laranjeiras", "Cerejeiras", "Oliveiras", "Amoreiras"];
-  const OBRA_COR = { Amoreiras: "var(--cat-alvenaria)", Oliveiras: "var(--cat-acabamento)", Cerejeiras: "var(--cat-estrutura)", Laranjeiras: "var(--cat-administrativo)" };
 
   const totalLotes = Object.fromEntries(ORDEM_EXECUCAO.map((e) => [e, mapaLotes[e]?.lotes.length ?? 0]));
   const semPorLote = {}, comPorLote = {};
@@ -40,11 +39,6 @@
     </p>
 
     <div class="grid grid-4" id="kpi-row"></div>
-
-    <div class="card">
-      <div class="card-head"><div><div class="card-title">Casas sem pendência por obra</div><div class="card-sub">% de casas vistoriadas com checklist final de entrega limpo</div></div></div>
-      <div class="chart-host" id="chart-acabamento"></div>
-    </div>
 
     <div class="card">
       <div class="card-head"><div><div class="card-title">Casas com pendência por obra</div><div class="card-sub">% de casas vistoriadas que ainda têm algum problema em aberto</div></div></div>
@@ -166,14 +160,6 @@
   }
 
   function renderGrafico() {
-    GPCharts.barsLine(document.getElementById("chart-acabamento"), {
-      items: ORDEM_EXECUCAO.map((e) => ({
-        label: e, value: vistoriadas[e] ? Math.round((semCount[e] / vistoriadas[e]) * 1000) / 10 : 0, color: OBRA_COR[e],
-      })),
-      yFormat: (v) => `${Math.round(v * 10) / 10}%`,
-      tooltipLabel: "Sem pendência",
-      legendLabel: "% sem pendência (ordem de execução)",
-    });
     GPCharts.barsLine(document.getElementById("chart-acabamento-pendencia"), {
       items: ORDEM_EXECUCAO.map((e) => ({
         label: e, value: vistoriadas[e] ? Math.round((comCount[e] / vistoriadas[e]) * 1000) / 10 : 0, color: "var(--status-warning)",
