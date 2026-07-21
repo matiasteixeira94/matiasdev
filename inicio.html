@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gestão da Produção · Viana &amp; Moura Construções</title>
+<title>Entrar · Gestão da Produção</title>
 <link rel="stylesheet" href="css/styles.css" />
 <link rel="manifest" href="manifest.json" />
 <meta name="theme-color" content="#A23A3E" />
@@ -14,112 +14,95 @@
 <meta name="apple-mobile-web-app-title" content="Gestão da Produção" />
 <style>
   html, body { height: 100%; }
-  body { overflow-x: hidden; }
 
-  .cover-hero { position: relative; min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; }
-  .cover-photo {
-    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%;
+  .login-hero {
+    position: relative; min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px;
   }
-  .cover-photo-aerial {
-    clip-path: polygon(0 0, 45% 0, 60% 100%, 0 100%);
+  .login-bg {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    filter: blur(18px) brightness(1.06) saturate(0.9); transform: scale(1.08);
   }
-  /* A região da equipe é uma fatia diagonal estreita — a foto de grupo
-     inteira não cabe num recorte só sem perder gente nas pontas. Por isso
-     são 2 arquivos de imagem PRÉ-RECORTADOS (gerados a partir da foto
-     original, não via CSS): um pega o lado esquerdo/centro do grupo, o
-     outro o centro/direito, com sobreposição no meio — juntos, cobrem
-     literalmente todo mundo que está na foto original. Cada <img> ocupa só
-     a caixa retangular que envolve seu próprio pedaço do losango (não a
-     hero inteira) — senão o object-fit:cover escala pela hero toda e a
-     foto fica ampliada demais dentro da fatia visível.  */
-  .cover-photo-team-top, .cover-photo-team-bottom {
-    position: absolute; object-fit: cover;
+  .login-bg-overlay { position: absolute; inset: 0; background: rgba(244, 231, 201, 0.55); }
+  :root[data-theme="dark"] .login-bg-overlay { background: rgba(18, 14, 12, 0.62); }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .login-bg-overlay { background: rgba(18, 14, 12, 0.62); }
   }
-  .cover-photo-team-top {
-    left: 45%; top: 0; width: 55%; height: 50%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 13.6% 100%);
-  }
-  .cover-photo-team-bottom {
-    left: 52.5%; top: 50%; width: 47.5%; height: 50%;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 15.8% 100%);
-  }
-  .cover-overlay {
-    position: absolute; inset: 0;
-    background:
-      linear-gradient(0deg, rgba(18, 8, 8, 0.94) 0%, rgba(35, 15, 15, 0.72) 32%, rgba(50, 18, 19, 0.28) 62%, rgba(60, 20, 20, 0.12) 100%);
-  }
-  .cover-content {
+
+  .login-card {
     position: relative; z-index: 1;
-    padding: 56px clamp(20px, 6vw, 72px) 48px;
-    display: flex; flex-direction: column; gap: 18px;
-    max-width: 760px;
-    color: #FBF1E3;
+    width: 100%; max-width: 380px;
+    background: var(--surface-raised); border-radius: 18px;
+    box-shadow: 0 24px 60px rgba(30, 14, 12, 0.28);
+    padding: 36px 32px 30px;
+    display: flex; flex-direction: column; align-items: center; gap: 22px;
   }
-  .cover-logo-full {
-    height: clamp(64px, 9vw, 92px); width: auto; align-self: flex-start;
-    filter: drop-shadow(0 2px 10px rgba(0,0,0,0.45));
+  .login-logo { width: 148px; height: auto; }
+  .login-form { width: 100%; display: flex; flex-direction: column; gap: 12px; }
+  .login-field {
+    width: 100%; padding: 13px 14px; border-radius: 10px;
+    border: 1px solid var(--border-strong); background: var(--page);
+    color: var(--ink); font-size: 14.5px; font-family: inherit;
   }
-  .cover-title {
-    font-family: var(--font-display); font-weight: 600; letter-spacing: 0.01em; text-wrap: balance;
-    font-size: clamp(30px, 5vw, 50px); line-height: 1.02; margin: 4px 0 6px;
+  .login-field:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .login-error {
+    font-size: 12.5px; color: var(--status-critical); text-align: center;
+    min-height: 16px;
   }
-  .cover-org {
-    display: flex; flex-direction: column; gap: 6px;
-    font-size: 15px; line-height: 1.5; color: rgba(251, 241, 227, 0.92);
-    border-top: 1px solid rgba(251, 241, 227, 0.22);
-    padding-top: 16px; margin-top: 4px;
+  .login-submit {
+    width: 100%; padding: 13px 14px; margin-top: 6px; border: none; border-radius: 10px;
+    background: var(--accent); color: var(--accent-ink); font-size: 15px; font-weight: 700;
+    cursor: pointer; transition: background 0.12s ease;
   }
-  .cover-org b { color: #FBF1E3; font-weight: 700; }
-  .cover-nav { display: flex; margin-top: 14px; }
-  .cover-cta {
-    display: inline-flex; align-items: center; gap: 10px;
-    padding: 15px 28px; font-size: 15.5px; font-weight: 700; letter-spacing: 0.01em;
-    border-radius: 999px; border: none;
-    color: #2B1400; background: #E3B354;
-    box-shadow: 0 10px 28px rgba(227, 179, 84, 0.28);
-    transition: transform 0.14s ease, box-shadow 0.14s ease, background 0.14s ease;
+  .login-submit:hover { background: var(--accent-strong); }
+  .login-forgot {
+    font-size: 12.5px; color: var(--accent); text-align: center; background: none; border: none;
+    cursor: pointer; font-family: inherit; padding: 2px;
   }
-  .cover-cta:hover { background: #EFC670; transform: translateY(-1px); box-shadow: 0 14px 34px rgba(227, 179, 84, 0.38); }
-  .cover-cta svg { width: 18px; height: 18px; }
-
-  @media (max-width: 900px) {
-    /* Em telas estreitas a diagonal fica apertada demais — some a foto da
-       equipe e volta a foto aérea a ocupar o quadro inteiro. */
-    .cover-photo-aerial { clip-path: none; }
-    .cover-photo-team-top, .cover-photo-team-bottom { display: none; }
-  }
-  @media (max-width: 560px) {
-    .cover-content { padding: 40px 20px 36px; gap: 14px; }
-    .cover-org { font-size: 13.5px; }
+  .login-forgot:hover { text-decoration: underline; }
+  .login-hint {
+    font-size: 11.5px; color: var(--ink-muted); text-align: center; max-width: 300px;
+    min-height: 14px;
   }
 </style>
 </head>
 <body>
-  <div class="cover-hero">
-    <img class="cover-photo cover-photo-aerial" src="assets/images/capa-empreendimento.png" alt="Vista aérea de empreendimento residencial construído pela Viana &amp; Moura Construções" />
-    <img class="cover-photo cover-photo-team-top" src="assets/images/equipe-crop-top.jpg" alt="Equipe da UGB Caruaru em entrega de empreendimento" />
-    <img class="cover-photo cover-photo-team-bottom" src="assets/images/equipe-crop-bottom.jpg" alt="" aria-hidden="true" />
-    <div class="cover-overlay"></div>
-    <div class="cover-content">
-      <img class="cover-logo-full" src="assets/images/logo-viana-moura.png" alt="Viana &amp; Moura Construções" />
-      <h1 class="cover-title">Gestão da Produção</h1>
-      <div class="cover-org">
-        <div><b>Gerente de UGB:</b> Alisson Matias</div>
-        <div><b>Supervisores Líderes:</b> José Pedro, Jucélio Lourenço, Patrícia Paes e Reginaldo Lima</div>
-      </div>
-      <nav class="cover-nav">
-        <a href="index.html" class="cover-cta">
-          Acessar Gestão
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
-        </a>
-      </nav>
+  <div class="login-hero">
+    <img class="login-bg" src="assets/images/capa-empreendimento.png" alt="" aria-hidden="true" />
+    <div class="login-bg-overlay" aria-hidden="true"></div>
+    <div class="login-card">
+      <img class="login-logo" src="assets/images/logo-viana-moura.png" alt="Viana &amp; Moura Construções" />
+      <form class="login-form" id="login-form" autocomplete="off">
+        <input class="login-field" id="login-usuario" type="text" placeholder="Usuário" autocomplete="username" required />
+        <input class="login-field" id="login-senha" type="password" placeholder="Senha" autocomplete="current-password" required />
+        <div class="login-error" id="login-error"></div>
+        <button class="login-submit" type="submit">Entrar</button>
+      </form>
+      <button class="login-forgot" id="login-esqueci" type="button">Esqueci minha senha</button>
+      <div class="login-hint" id="login-hint"></div>
     </div>
   </div>
 
+  <script src="js/app.js"></script>
   <script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => { navigator.serviceWorker.register("sw.js").catch(() => {}); });
-    }
+    "use strict";
+    if (GP.getSession()) window.location.href = "index.html";
+
+    const form = document.getElementById("login-form");
+    const erro = document.getElementById("login-error");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const usuario = document.getElementById("login-usuario").value;
+      const senha = document.getElementById("login-senha").value;
+      const session = GP.login(usuario, senha);
+      if (!session) { erro.textContent = "Usuário ou senha inválidos."; return; }
+      window.location.href = "index.html";
+    });
+
+    document.getElementById("login-esqueci").addEventListener("click", () => {
+      document.getElementById("login-hint").textContent = "Fale com o gerente de UGB (Alisson Matias) para redefinir sua senha.";
+    });
   </script>
 </body>
 </html>

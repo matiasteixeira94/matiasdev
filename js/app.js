@@ -64,11 +64,27 @@ const GP = (() => {
   function setSession(session) { localStorage.setItem(SESSION_KEY, JSON.stringify(session)); }
   function clearSession() { localStorage.removeItem(SESSION_KEY); }
 
-  const DEFAULT_SESSION = { nome: "Matias Teixeira" };
+  // Login fixo (protótipo estático, sem backend) — ver inicio.html.
+  const USUARIOS = [
+    { usuario: "alissonmatias", senha: "producao26", nome: "Alisson Matias" },
+    { usuario: "producaoca", senha: "producaoca", nome: "Produção CA" },
+  ];
+
+  function login(usuario, senha) {
+    const encontrado = USUARIOS.find((u) => u.usuario === String(usuario ?? "").trim().toLowerCase() && u.senha === senha);
+    if (!encontrado) return null;
+    const session = { nome: encontrado.nome, usuario: encontrado.usuario };
+    setSession(session);
+    return session;
+  }
+  function logout() {
+    clearSession();
+    window.location.href = "inicio.html";
+  }
 
   function requireAuth() {
-    let s = getSession();
-    if (!s) { s = { ...DEFAULT_SESSION }; setSession(s); }
+    const s = getSession();
+    if (!s) { window.location.href = "inicio.html"; return null; }
     return s;
   }
 
@@ -141,6 +157,10 @@ const GP = (() => {
           <button class="btn btn-ghost" id="gp-theme-toggle" style="justify-content:flex-start" type="button">
             <span aria-hidden="true" id="gp-theme-icon">☾</span><span>Alternar tema</span>
           </button>
+          <button class="btn btn-ghost" id="gp-logout" style="justify-content:flex-start" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/></svg>
+            <span>Sair</span>
+          </button>
           <div class="user-card">
             <div class="user-avatar">${initials(session.nome)}</div>
             <div class="user-meta">
@@ -161,6 +181,7 @@ const GP = (() => {
       </div>`;
 
     wireThemeToggle(document.getElementById("gp-theme-toggle"));
+    document.getElementById("gp-logout").addEventListener("click", logout);
     wireMobileSidebar(mount);
     return session;
   }
@@ -203,7 +224,7 @@ const GP = (() => {
 
   return {
     NAV_ITEMS, GRUPO_LABEL, GRUPO_VAR, LOGO_MARK_SVG,
-    getSession, setSession, clearSession, requireAuth,
+    getSession, setSession, clearSession, requireAuth, login, logout,
     applyStoredTheme, wireThemeToggle, renderShell, initials,
     loadJSON, fmtInt, fmtNum1, fmtPct, fmtBRL, fmtDate, fmtDateShort, within, isoDaysAgo,
   };
