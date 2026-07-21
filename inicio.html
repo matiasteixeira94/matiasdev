@@ -47,6 +47,15 @@
   }
   .login-field:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
   .login-field-otp { text-align: center; letter-spacing: 0.4em; font-size: 20px; font-weight: 700; }
+  .login-field-wrap { position: relative; width: 100%; }
+  .login-field-wrap .login-field { padding-right: 42px; }
+  .login-toggle-senha {
+    position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+    width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;
+    background: none; border: none; cursor: pointer; color: var(--ink-muted); padding: 0;
+  }
+  .login-toggle-senha:hover { color: var(--ink); }
+  .login-toggle-senha svg { width: 18px; height: 18px; }
   .login-error {
     font-size: 12.5px; color: var(--status-critical); text-align: center;
     min-height: 16px;
@@ -81,7 +90,12 @@
 
       <form class="login-form" id="login-form" autocomplete="off">
         <input class="login-field" id="login-usuario" type="text" placeholder="Usuário" autocomplete="username" required />
-        <input class="login-field" id="login-senha" type="password" placeholder="Senha" autocomplete="current-password" required />
+        <div class="login-field-wrap">
+          <input class="login-field" id="login-senha" type="password" placeholder="Senha" autocomplete="current-password" required />
+          <button class="login-toggle-senha" id="toggle-senha" type="button" tabindex="-1" aria-label="Mostrar senha">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </button>
+        </div>
         <div class="login-error" id="login-error"></div>
         <button class="login-submit" id="login-submit" type="submit">Entrar</button>
       </form>
@@ -117,6 +131,17 @@
 
     let credenciais = null; // { usuario, senha } — guardado em memória só pra "reenviar código"
     let token = null;
+
+    const ICON_OLHO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"/><circle cx="12" cy="12" r="3"/></svg>';
+    const ICON_OLHO_FECHADO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.9 4.24A9.1 9.1 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><path d="M6.61 6.61A18.5 18.5 0 0 0 1 12s4 8 11 8a9.26 9.26 0 0 0 5.39-1.61"/><line x1="1" y1="1" x2="23" y2="23"/></svg>';
+    const campoSenha = document.getElementById("login-senha");
+    const botaoToggleSenha = document.getElementById("toggle-senha");
+    botaoToggleSenha.addEventListener("click", () => {
+      const mostrar = campoSenha.type === "password";
+      campoSenha.type = mostrar ? "text" : "password";
+      botaoToggleSenha.innerHTML = mostrar ? ICON_OLHO_FECHADO : ICON_OLHO;
+      botaoToggleSenha.setAttribute("aria-label", mostrar ? "Ocultar senha" : "Mostrar senha");
+    });
 
     async function pedirCodigo(usuario, senha) {
       erroSenha.textContent = "";
