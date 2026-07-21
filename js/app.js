@@ -8,6 +8,7 @@ const GP = (() => {
   // só (mesmo formato {usuario,nome}, mas sem ter passado pela verificação).
   const SESSION_KEY = "gp_session_v2";
   const THEME_KEY = "gp_theme";
+  const IDLE_TIMEOUT_MS = 30 * 60 * 1000; // 30 minutos sem interação → desloga sozinho
 
   // Logomarca — duas espigas trançadas (identidade Viana & Moura). Coluna direita
   // mais alta que a esquerda, como no manual de marca; renderizada só em ouro
@@ -82,6 +83,18 @@ const GP = (() => {
     window.location.href = "inicio.html";
   }
 
+  function wireIdleLogout() {
+    let timer;
+    const reiniciar = () => {
+      clearTimeout(timer);
+      timer = setTimeout(logout, IDLE_TIMEOUT_MS);
+    };
+    ["mousemove", "mousedown", "keydown", "scroll", "touchstart"].forEach((evento) => {
+      document.addEventListener(evento, reiniciar, { passive: true });
+    });
+    reiniciar();
+  }
+
   function requireAuth() {
     const s = getSession();
     if (!s) { window.location.href = "inicio.html"; return null; }
@@ -120,6 +133,7 @@ const GP = (() => {
   function renderShell({ activeKey, eyebrow, title, actionsHtml }) {
     const session = requireAuth();
     if (!session) return null;
+    wireIdleLogout();
 
     const mount = document.getElementById("gp-shell");
     if (!mount) return session;
