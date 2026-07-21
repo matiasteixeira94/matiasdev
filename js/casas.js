@@ -335,6 +335,7 @@
           <div><div class="footnote">Alcançado</div><div style="font-weight:700; font-size:18px; color:var(--status-good);">${GP.fmtInt(l.realizado_2026_2)}</div></div>
           <div><div class="footnote">Faltam</div><div style="font-weight:700; font-size:18px; color:var(--status-warning);">${GP.fmtInt(l.faltam_2026_2)}</div></div>
         </div>
+        ${l.backlog_sem_data > 0 ? `<div class="footnote">+ ${GP.fmtInt(l.backlog_sem_data)} casa(s) na fila, ainda sem mês definido</div>` : ""}
       </div>`).join("");
 
     document.querySelectorAll(".lider-foto").forEach((el) => {
@@ -386,6 +387,7 @@
                 </tbody>
               </table>
             </div>
+            ${s.backlog_sem_data > 0 ? `<div class="footnote" style="margin-top:6px;">+ ${GP.fmtInt(s.backlog_sem_data)} casa(s) já na fila deste supervisor, mas ainda sem mês calculado na planilha — não entram na meta 2026.2 acima.</div>` : ""}
           </div>`).join("")}
       </div>
     `;

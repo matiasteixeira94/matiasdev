@@ -1,7 +1,7 @@
 {
-  "atualizado_em": "2026-07-18",
+  "atualizado_em": "2026-07-21",
   "periodo": "2026.2 (julho a dezembro de 2026)",
-  "fonte_meta": "Aba CONTROLE (cronograma) da planilha CONTROLE DE UGB - CA - 2026.2 — 1 linha por casa planejada; lista de supervisores = quem tem casas nessa aba",
+  "fonte_meta": "Aba CONTROLE (cronograma) da planilha CONTROLE DE UGB - CA - 2026.2 — 1 linha por casa planejada; lista de supervisores = quem tem casas nessa aba. meta_2026_2 conta só linhas com mês/ano calculado (soma bate com a meta oficial do semestre); casas na fila sem data ainda entram em backlog_sem_data, à parte.",
   "liderancas": [
     {
       "nome": "José Pedro",
@@ -9,12 +9,14 @@
       "meta_2026_2": 108,
       "realizado_2026_2": 0,
       "faltam_2026_2": 108,
+      "backlog_sem_data": 0,
       "supervisores": [
         {
           "nome": "Jesly Samara",
           "foto": null,
           "meta_2026_2": 28,
           "realizado_2026_2": 0,
+          "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
@@ -65,6 +67,7 @@
           "foto": null,
           "meta_2026_2": 28,
           "realizado_2026_2": 0,
+          "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
@@ -115,6 +118,7 @@
           "foto": null,
           "meta_2026_2": 26,
           "realizado_2026_2": 0,
+          "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
@@ -165,6 +169,7 @@
           "foto": null,
           "meta_2026_2": 26,
           "realizado_2026_2": 0,
+          "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
@@ -215,72 +220,17 @@
     {
       "nome": "Jucélio Lourenço",
       "foto": "assets/images/lideres/jucelio-lourenco.jpg",
-      "meta_2026_2": 284,
+      "meta_2026_2": 104,
       "realizado_2026_2": 0,
-      "faltam_2026_2": 284,
+      "faltam_2026_2": 104,
+      "backlog_sem_data": 180,
       "supervisores": [
-        {
-          "nome": "Josenildo Milanez",
-          "foto": null,
-          "meta_2026_2": 180,
-          "realizado_2026_2": 0,
-          "por_mes": [
-            {
-              "mes": "2026-07",
-              "label": "Julho/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-08",
-              "label": "Agosto/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-09",
-              "label": "Setembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-10",
-              "label": "Outubro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-11",
-              "label": "Novembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "2026-12",
-              "label": "Dezembro/2026",
-              "meta": 0,
-              "realizado": 0,
-              "desvio": 0
-            },
-            {
-              "mes": "sem-data",
-              "label": "Sem mês definido",
-              "meta": 180,
-              "realizado": 0,
-              "desvio": -180
-            }
-          ]
-        },
         {
           "nome": "Caio Cesar",
           "foto": "assets/images/supervisores/caio-cesar.jpg",
           "meta_2026_2": 28,
           "realizado_2026_2": 0,
+          "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
@@ -331,6 +281,7 @@
           "foto": "assets/images/supervisores/girlando-joao.jpg",
           "meta_2026_2": 28,
           "realizado_2026_2": 0,
+          "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
@@ -381,6 +332,7 @@
           "foto": null,
           "meta_2026_2": 24,
           "realizado_2026_2": 0,
+          "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
@@ -431,6 +383,7 @@
           "foto": null,
           "meta_2026_2": 24,
           "realizado_2026_2": 0,
+          "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
@@ -475,21 +428,13 @@
               "desvio": -2
             }
           ]
-        }
-      ]
-    },
-    {
-      "nome": "Reginaldo Lima",
-      "foto": "assets/images/lideres/reginaldo-lima.jpg",
-      "meta_2026_2": 326,
-      "realizado_2026_2": 0,
-      "faltam_2026_2": 326,
-      "supervisores": [
+        },
         {
-          "nome": "José Adnilson",
+          "nome": "Josenildo Milanez",
           "foto": null,
-          "meta_2026_2": 190,
+          "meta_2026_2": 0,
           "realizado_2026_2": 0,
+          "backlog_sem_data": 180,
           "por_mes": [
             {
               "mes": "2026-07",
@@ -532,28 +477,32 @@
               "meta": 0,
               "realizado": 0,
               "desvio": 0
-            },
-            {
-              "mes": "sem-data",
-              "label": "Sem mês definido",
-              "meta": 190,
-              "realizado": 0,
-              "desvio": -190
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "nome": "Reginaldo Lima",
+      "foto": "assets/images/lideres/reginaldo-lima.jpg",
+      "meta_2026_2": 136,
+      "realizado_2026_2": 2,
+      "faltam_2026_2": 134,
+      "backlog_sem_data": 190,
+      "supervisores": [
         {
           "nome": "Maria Das Graças",
           "foto": null,
           "meta_2026_2": 30,
-          "realizado_2026_2": 0,
+          "realizado_2026_2": 2,
+          "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
               "label": "Julho/2026",
               "meta": 2,
-              "realizado": 0,
-              "desvio": -2
+              "realizado": 2,
+              "desvio": 0
             },
             {
               "mes": "2026-08",
@@ -597,6 +546,7 @@
           "foto": null,
           "meta_2026_2": 28,
           "realizado_2026_2": 0,
+          "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
@@ -647,6 +597,7 @@
           "foto": "assets/images/supervisores/geovane-lima.jpg",
           "meta_2026_2": 26,
           "realizado_2026_2": 0,
+          "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
@@ -697,6 +648,7 @@
           "foto": null,
           "meta_2026_2": 26,
           "realizado_2026_2": 0,
+          "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
@@ -747,6 +699,7 @@
           "foto": "assets/images/supervisores/joao-vinicius.jpg",
           "meta_2026_2": 26,
           "realizado_2026_2": 0,
+          "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
@@ -789,6 +742,57 @@
               "meta": 4,
               "realizado": 0,
               "desvio": -4
+            }
+          ]
+        },
+        {
+          "nome": "José Adnilson",
+          "foto": null,
+          "meta_2026_2": 0,
+          "realizado_2026_2": 0,
+          "backlog_sem_data": 190,
+          "por_mes": [
+            {
+              "mes": "2026-07",
+              "label": "Julho/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-08",
+              "label": "Agosto/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-09",
+              "label": "Setembro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-10",
+              "label": "Outubro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-11",
+              "label": "Novembro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-12",
+              "label": "Dezembro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
             }
           ]
         }
