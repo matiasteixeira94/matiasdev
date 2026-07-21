@@ -3,7 +3,10 @@
 "use strict";
 
 const GP = (() => {
-  const SESSION_KEY = "gp_session";
+  // v2: mudou de nome de propósito quando a 2ª etapa (WhatsApp) entrou —
+  // invalida de uma vez qualquer sessão criada pelo login antigo de 1 etapa
+  // só (mesmo formato {usuario,nome}, mas sem ter passado pela verificação).
+  const SESSION_KEY = "gp_session_v2";
   const THEME_KEY = "gp_theme";
 
   // Logomarca — duas espigas trançadas (identidade Viana & Moura). Coluna direita
