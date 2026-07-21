@@ -76,7 +76,7 @@ const rowsHistorico = await lerCsv(argHistorico, URL_HISTORICO);
 
 const H1 = rowsChamados[0];
 const C = {
-  id: col(H1, "ID"), tipoChamado: col(H1, "Tipo Chamado"), ugb: col(H1, "UGB"),
+  id: col(H1, "ID"), tipo: col(H1, "Tipo"), tipoChamado: col(H1, "Tipo Chamado"), ugb: col(H1, "UGB"),
   problema: col(H1, "Problema"), status: col(H1, "Status"), procedente: col(H1, "Procedente"),
   gravidade: col(H1, "Gravidade"), dataAbertura: col(H1, "DataAberturaChamado"),
   prazoCombAval: col(H1, "PrazoCombAvaliacao"), prazoMaxAval: col(H1, "PrazoMaxAvaliacao"),
@@ -110,6 +110,11 @@ const cancelados = itens.filter((r) => STATUS_CANCELADO.has(String(r[C.status]).
 const avaliados = itens.filter((r) => ["Procedente", "Nao Procedente", "Sem Acordo"].includes(String(r[C.procedente]).trim()));
 const procedentes = avaliados.filter((r) => String(r[C.procedente]).trim() === "Procedente");
 
+// "Tipo" distingue chamados de casa (produção) dos de infraestrutura do
+// empreendimento (ruas, calçadas, áreas comuns — não ligados a uma casa
+// específica de um cliente).
+const idsInfra = new Set(itens.filter((r) => String(r[C.tipo]).trim() === "Infra").map((r) => String(r[C.id]).trim()));
+
 const temposAtendimento = concluidos
   .map((r) => {
     const de = dataValida(r[C.dataAbertura]), ate = dataValida(r[C.dataTermino]);
@@ -124,6 +129,7 @@ const totais = {
   concluidos: concluidos.length,
   nao_procedentes: naoProcedentesStatus.length,
   cancelados: cancelados.length,
+  chamados_infra: idsInfra.size,
   taxa_procedencia_pct: pct(procedentes.length, avaliados.length),
   tempo_medio_atendimento_dias: media(temposAtendimento),
 };

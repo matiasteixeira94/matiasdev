@@ -32,7 +32,7 @@
         demais unidades da Viana &amp; Moura ficam fora deste site. Sempre agregado — nunca associado a nome de
         cliente ou ao texto livre da avaliação de campo.
       </p>
-      <div class="grid grid-4">
+      <div class="grid grid-auto">
         <div class="stat-tile">
           <div class="stat-label">Chamados únicos</div>
           <div class="stat-value">${GP.fmtInt(totais.chamados_unicos)}</div>
@@ -52,6 +52,11 @@
           <div class="stat-label">Tempo médio de atendimento</div>
           <div class="stat-value">${totais.tempo_medio_atendimento_dias} dias</div>
           <span class="footnote">abertura até execução (concluídos)</span>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-label">Chamados de Infra</div>
+          <div class="stat-value">${GP.fmtInt(totais.chamados_infra)}</div>
+          <span class="footnote">não ligados a uma casa específica (ruas, áreas comuns etc.)</span>
         </div>
       </div>
     </div>

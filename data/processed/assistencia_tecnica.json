@@ -13,6 +13,7 @@
     "concluidos": 28408,
     "nao_procedentes": 1823,
     "cancelados": 4941,
+    "chamados_infra": 609,
     "taxa_procedencia_pct": 91.2,
     "tempo_medio_atendimento_dias": 19.3
   },
