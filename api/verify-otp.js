@@ -2,7 +2,7 @@
 // assinado gerado em send-otp.js. Sem estado no servidor — tudo que precisa
 // pra validar (usuário, código, validade) está no próprio token, protegido
 // por HMAC (não dá pra forjar sem conhecer OTP_SECRET).
-import { createHmac, timingSafeEqual } from "node:crypto";
+import { createHash, createHmac, timingSafeEqual } from "node:crypto";
 import { USUARIOS } from "./_usuarios.js";
 
 export default async function handler(req, res) {
@@ -18,8 +18,8 @@ export default async function handler(req, res) {
 
   const partes = decoded.split(".");
   if (partes.length !== 4) return res.status(400).json({ erro: "Código inválido, peça um novo." });
-  const [usuario, otpEsperado, expStr, assinatura] = partes;
-  const payload = `${usuario}.${otpEsperado}.${expStr}`;
+  const [usuario, hashEsperado, expStr, assinatura] = partes;
+  const payload = `${usuario}.${hashEsperado}.${expStr}`;
   const assinaturaEsperada = createHmac("sha256", OTP_SECRET).update(payload).digest("hex");
 
   const a = Buffer.from(assinatura, "hex");
@@ -28,7 +28,11 @@ export default async function handler(req, res) {
     return res.status(401).json({ erro: "Código inválido, peça um novo." });
   }
   if (Date.now() > Number(expStr)) return res.status(401).json({ erro: "Código expirado — peça um novo." });
-  if (String(codigo).trim() !== otpEsperado) return res.status(401).json({ erro: "Código incorreto." });
+
+  const hashRecebido = createHash("sha256").update(`${String(codigo).trim()}.${OTP_SECRET}`).digest("hex");
+  const c = Buffer.from(hashRecebido, "hex");
+  const d = Buffer.from(hashEsperado, "hex");
+  if (c.length !== d.length || !timingSafeEqual(c, d)) return res.status(401).json({ erro: "Código incorreto." });
 
   const encontrado = USUARIOS.find((u) => u.usuario === usuario);
   if (!encontrado) return res.status(401).json({ erro: "Usuário não encontrado." });

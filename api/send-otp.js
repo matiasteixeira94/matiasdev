@@ -2,7 +2,7 @@
 // e manda um código de 6 dígitos pro WhatsApp do gerente de UGB via Z-API.
 // O token retornado carrega o código + validade assinados (HMAC) — não fica
 // nada em banco de dados, então não precisa de armazenamento persistente.
-import { createHmac, randomInt } from "node:crypto";
+import { createHash, createHmac, randomInt } from "node:crypto";
 import { USUARIOS } from "./_usuarios.js";
 
 const VALIDADE_MS = 5 * 60 * 1000;
@@ -23,7 +23,12 @@ export default async function handler(req, res) {
 
   const codigo = String(randomInt(100000, 1000000));
   const exp = Date.now() + VALIDADE_MS;
-  const payload = `${encontrado.usuario}.${codigo}.${exp}`;
+  // O token vai pro navegador (visível na aba Rede) — nunca pode carregar o
+  // código em texto puro, senão qualquer um decodifica o base64 e loga sem
+  // nunca ver o WhatsApp. Guarda só o hash (com o segredo do servidor
+  // misturado, pra não dar pra forçar as 900 mil combinações offline).
+  const hashCodigo = createHash("sha256").update(`${codigo}.${OTP_SECRET}`).digest("hex");
+  const payload = `${encontrado.usuario}.${hashCodigo}.${exp}`;
   const assinatura = createHmac("sha256", OTP_SECRET).update(payload).digest("hex");
   const token = Buffer.from(`${payload}.${assinatura}`).toString("base64url");
 
@@ -40,6 +45,7 @@ export default async function handler(req, res) {
     );
     if (!resposta.ok) throw new Error(`Z-API respondeu HTTP ${resposta.status}`);
   } catch (e) {
+    console.error("Falha ao enviar OTP via Z-API:", e.message);
     return res.status(502).json({ erro: "Falha ao enviar o código pelo WhatsApp. Tente novamente em instantes." });
   }
 
