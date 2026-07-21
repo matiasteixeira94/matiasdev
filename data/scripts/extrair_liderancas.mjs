@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Cruza a planilha "Liderança CA.xlsx" (aba Lideres: Supervisor -> Líder)
+ * Cruza a planilha "Liderança CA.xlsx" (aba "Dados": SUPERVISORES -> SUPERVISOR LÍDER;
+ * versões antigas do arquivo usavam a aba "Lideres", ainda aceita como fallback)
  * com a aba CONTROLE da planilha de controle de UGB (cronograma —
  * quantidade de casas que cada supervisor vai executar no semestre) e
  * com data/processed/casas.json (realizado real) pra gerar
@@ -71,22 +72,6 @@ for (const [supervisor, lider] of rowsLid.slice(1)) {
   if (!supervisor || !lider) continue;
   mapa.set(normalizar(supervisor), { liderNome: nomeProprio(lider), liderChave: normalizar(lider) });
 }
-
-// Correção manual confirmada pelo usuário em 2026-07-18: a planilha
-// Liderança CA lista Geovane Lima como supervisor de José Pedro, mas na
-// prática ele é supervisor de Reginaldo Lima.
-mapa.set(normalizar("Geovane Lima"), { liderNome: "Reginaldo Lima", liderChave: normalizar("Reginaldo Lima") });
-
-// Correção manual confirmada pelo usuário em 2026-07-21: a planilha
-// Liderança CA (versão atualizada, aba "Dados") ficou sem a Laura Samara —
-// ela continua liderada por Reginaldo Lima.
-mapa.set(normalizar("Laura Samara"), { liderNome: "Reginaldo Lima", liderChave: normalizar("Reginaldo Lima") });
-
-// Correção manual confirmada pelo usuário em 2026-07-21: a planilha
-// Liderança CA (versão atualizada) lista João Vinicius e Benedito Da Silva
-// como supervisores de José Pedro, mas na prática são de Reginaldo Lima.
-mapa.set(normalizar("João Vinicius"), { liderNome: "Reginaldo Lima", liderChave: normalizar("Reginaldo Lima") });
-mapa.set(normalizar("Benedito Da Silva"), { liderNome: "Reginaldo Lima", liderChave: normalizar("Reginaldo Lima") });
 
 // Aba CONTROLE: header na linha 6 (0-based), dados a partir da linha 7.
 // Coluna 1 = id da casa, 25 = mês, 26 = ano de término, 27 = supervisor.
