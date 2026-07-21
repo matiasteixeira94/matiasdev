@@ -5,10 +5,10 @@
       "label": "Julho/2026",
       "casas": {
         "meta": 14,
-        "realizado": 0
+        "realizado": 2
       },
       "muros": {
-        "meta": 46,
+        "meta": 64,
         "realizado": 8
       }
     },
@@ -68,7 +68,7 @@
         "realizado": 0
       },
       "muros": {
-        "meta": 40,
+        "meta": 20,
         "realizado": 0
       }
     }

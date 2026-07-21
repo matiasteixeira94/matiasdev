@@ -4609,7 +4609,7 @@
     ]
   },
   "Oliveiras": {
-    "concluidos": 505,
+    "concluidos": 448,
     "lotes": [
       {
         "empreendimento": "Oliveiras",
@@ -4677,9 +4677,9 @@
       {
         "empreendimento": "Oliveiras",
         "numero": 10,
-        "ga": "BOPE",
+        "ga": "MOTIVAÇÃO",
         "supervisor": "LAURA SAMARA",
-        "data": "2025-11-10"
+        "data": "2026-01-09"
       },
       {
         "empreendimento": "Oliveiras",
@@ -4687,13 +4687,6 @@
         "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
         "data": "2025-11-11"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 12,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "LAURA SAMARA",
-        "data": "2026-01-09"
       },
       {
         "empreendimento": "Oliveiras",
@@ -4711,13 +4704,6 @@
       },
       {
         "empreendimento": "Oliveiras",
-        "numero": 15,
-        "ga": "BOPE",
-        "supervisor": "LAURA SAMARA",
-        "data": "2026-01-07"
-      },
-      {
-        "empreendimento": "Oliveiras",
         "numero": 16,
         "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
@@ -4728,7 +4714,7 @@
         "numero": 17,
         "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
-        "data": "2025-11-13"
+        "data": "2026-01-07"
       },
       {
         "empreendimento": "Oliveiras",
@@ -4774,13 +4760,6 @@
       },
       {
         "empreendimento": "Oliveiras",
-        "numero": 24,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-29"
-      },
-      {
-        "empreendimento": "Oliveiras",
         "numero": 25,
         "ga": "MOTIVAÇÃO",
         "supervisor": "LAURA SAMARA",
@@ -4799,13 +4778,6 @@
         "ga": "MOTIVAÇÃO",
         "supervisor": "LAURA SAMARA",
         "data": "2026-01-20"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 28,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-29"
       },
       {
         "empreendimento": "Oliveiras",
@@ -5369,13 +5341,6 @@
       },
       {
         "empreendimento": "Oliveiras",
-        "numero": 109,
-        "ga": "BOPE",
-        "supervisor": "LAURA SAMARA",
-        "data": "2026-01-12"
-      },
-      {
-        "empreendimento": "Oliveiras",
         "numero": 110,
         "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
@@ -5460,13 +5425,6 @@
       },
       {
         "empreendimento": "Oliveiras",
-        "numero": 122,
-        "ga": "BOPE",
-        "supervisor": "LAURA SAMARA",
-        "data": "2026-01-12"
-      },
-      {
-        "empreendimento": "Oliveiras",
         "numero": 123,
         "ga": "MOTIVAÇÃO",
         "supervisor": "LAURA SAMARA",
@@ -5520,20 +5478,6 @@
         "ga": "MOTIVAÇÃO",
         "supervisor": "LAURA SAMARA",
         "data": "2026-03-16"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 131,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-01"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 132,
-        "ga": "BOPE",
-        "supervisor": "LAURA SAMARA",
-        "data": "2026-01-13"
       },
       {
         "empreendimento": "Oliveiras",
@@ -5674,13 +5618,6 @@
         "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
         "data": "2026-02-24"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 153,
-        "ga": "BOPE",
-        "supervisor": "LAURA SAMARA",
-        "data": "2026-01-13"
       },
       {
         "empreendimento": "Oliveiras",
@@ -6140,30 +6077,30 @@
       {
         "empreendimento": "Oliveiras",
         "numero": 219,
-        "ga": "MOTIVAÇÃO",
+        "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
-        "data": "2025-11-17"
+        "data": "2026-01-12"
       },
       {
         "empreendimento": "Oliveiras",
         "numero": 220,
-        "ga": "MOTIVAÇÃO",
+        "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
-        "data": "2025-11-12"
+        "data": "2026-01-12"
       },
       {
         "empreendimento": "Oliveiras",
         "numero": 221,
-        "ga": "MOTIVAÇÃO",
+        "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
-        "data": "2025-11-11"
+        "data": "2026-01-13"
       },
       {
         "empreendimento": "Oliveiras",
         "numero": 222,
-        "ga": "MOTIVAÇÃO",
+        "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
-        "data": "2025-11-11"
+        "data": "2026-01-13"
       },
       {
         "empreendimento": "Oliveiras",
@@ -6252,9 +6189,9 @@
       {
         "empreendimento": "Oliveiras",
         "numero": 235,
-        "ga": "MOTIVAÇÃO",
+        "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
-        "data": "2025-12-11"
+        "data": "2026-03-17"
       },
       {
         "empreendimento": "Oliveiras",
@@ -6328,13 +6265,6 @@
       },
       {
         "empreendimento": "Oliveiras",
-        "numero": 246,
-        "ga": "BOPE",
-        "supervisor": "LAURA SAMARA",
-        "data": "2026-03-17"
-      },
-      {
-        "empreendimento": "Oliveiras",
         "numero": 247,
         "ga": "MOTIVAÇÃO",
         "supervisor": "LAURA SAMARA",
@@ -6381,13 +6311,6 @@
         "ga": "MOTIVAÇÃO",
         "supervisor": "LAURA SAMARA",
         "data": "2026-02-23"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 254,
-        "ga": "BOPE",
-        "supervisor": "LAURA SAMARA",
-        "data": "2026-02-21"
       },
       {
         "empreendimento": "Oliveiras",
@@ -6469,9 +6392,9 @@
       {
         "empreendimento": "Oliveiras",
         "numero": 266,
-        "ga": "MOTIVAÇÃO",
+        "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
-        "data": "2026-01-08"
+        "data": "2026-02-21"
       },
       {
         "empreendimento": "Oliveiras",
@@ -6664,62 +6587,6 @@
       },
       {
         "empreendimento": "Oliveiras",
-        "numero": 294,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-19"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 295,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-19"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 296,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-20"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 297,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-20"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 298,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-21"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 299,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-21"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 300,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-28"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 301,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-29"
-      },
-      {
-        "empreendimento": "Oliveiras",
         "numero": 302,
         "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
@@ -6836,34 +6703,6 @@
         "ga": "MOTIVAÇÃO",
         "supervisor": "LAURA SAMARA",
         "data": "2026-01-16"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 319,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-01"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 320,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-02"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 321,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-02"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 322,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-03"
       },
       {
         "empreendimento": "Oliveiras",
@@ -7102,13 +6941,6 @@
         "ga": "MOTIVAÇÃO",
         "supervisor": "LAURA SAMARA",
         "data": "2026-02-27"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 357,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-03"
       },
       {
         "empreendimento": "Oliveiras",
@@ -7392,104 +7224,6 @@
       },
       {
         "empreendimento": "Oliveiras",
-        "numero": 398,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-25"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 399,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-25"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 400,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-26"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 401,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-26"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 402,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-27"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 403,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-27"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 404,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-28"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 405,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-28"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 406,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-25"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 407,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-25"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 408,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-26"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 409,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-26"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 410,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-27"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 411,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-27"
-      },
-      {
-        "empreendimento": "Oliveiras",
         "numero": 412,
         "ga": "MOTIVAÇÃO",
         "supervisor": "LAURA SAMARA",
@@ -7557,13 +7291,6 @@
         "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
         "data": "2026-04-23"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 422,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-04"
       },
       {
         "empreendimento": "Oliveiras",
@@ -7707,90 +7434,6 @@
       },
       {
         "empreendimento": "Oliveiras",
-        "numero": 443,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-04"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 444,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-01"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 445,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-22"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 446,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-22"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 447,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-19"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 448,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-19"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 449,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-20"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 450,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-20"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 451,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-21"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 452,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-21"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 453,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-05-22"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 454,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-01"
-      },
-      {
-        "empreendimento": "Oliveiras",
         "numero": 455,
         "ga": "MOTIVAÇÃO",
         "supervisor": "LAURA SAMARA",
@@ -7858,13 +7501,6 @@
         "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
         "data": "2026-04-07"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 465,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-02"
       },
       {
         "empreendimento": "Oliveiras",
@@ -7994,41 +7630,6 @@
       },
       {
         "empreendimento": "Oliveiras",
-        "numero": 484,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-02"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 485,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-03"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 486,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-03"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 487,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-04"
-      },
-      {
-        "empreendimento": "Oliveiras",
-        "numero": 488,
-        "ga": "BOPE",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-04"
-      },
-      {
-        "empreendimento": "Oliveiras",
         "numero": 489,
         "ga": "BOPE",
         "supervisor": "LAURA SAMARA",
@@ -8149,371 +7750,63 @@
     ]
   },
   "Amoreiras": {
-    "concluidos": 52,
+    "concluidos": 8,
     "lotes": [
       {
         "empreendimento": "Amoreiras",
-        "numero": 16,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-29"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 17,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-30"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 18,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-30"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 21,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-30"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 27,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-08"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 28,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-08"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 29,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-08"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 30,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-09"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 31,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-09"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 32,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-09"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 33,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-10"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 34,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-10"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 35,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-11"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 54,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-11"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 55,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-12"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 56,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-12"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 57,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-15"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 58,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-15"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 59,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-15"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 60,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-16"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 61,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-16"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 62,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-16"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 63,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-17"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 64,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-17"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 65,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-17"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 66,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-18"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 67,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-18"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 123,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-18"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 124,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-19"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 125,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-19"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 126,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-22"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 127,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-22"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 128,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-22"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 129,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-23"
-      },
-      {
-        "empreendimento": "Amoreiras",
         "numero": 130,
-        "ga": null,
-        "supervisor": null,
-        "data": "2026-07-17"
+        "ga": "MOTIVAÇÃO",
+        "supervisor": "FLAVIANNY KETHILLY",
+        "data": "2026-07-14"
       },
       {
         "empreendimento": "Amoreiras",
         "numero": 131,
-        "ga": null,
-        "supervisor": null,
-        "data": "2026-07-17"
+        "ga": "MOTIVAÇÃO",
+        "supervisor": "FLAVIANNY KETHILLY",
+        "data": "2026-07-14"
       },
       {
         "empreendimento": "Amoreiras",
         "numero": 132,
-        "ga": null,
-        "supervisor": null,
-        "data": "2026-07-17"
+        "ga": "MOTIVAÇÃO",
+        "supervisor": "FLAVIANNY KETHILLY",
+        "data": "2026-07-15"
       },
       {
         "empreendimento": "Amoreiras",
         "numero": 133,
-        "ga": null,
-        "supervisor": null,
-        "data": "2026-07-17"
+        "ga": "MOTIVAÇÃO",
+        "supervisor": "FLAVIANNY KETHILLY",
+        "data": "2026-07-15"
       },
       {
         "empreendimento": "Amoreiras",
         "numero": 134,
-        "ga": null,
-        "supervisor": null,
-        "data": "2026-07-17"
+        "ga": "MOTIVAÇÃO",
+        "supervisor": "FLAVIANNY KETHILLY",
+        "data": "2026-07-16"
       },
       {
         "empreendimento": "Amoreiras",
         "numero": 135,
-        "ga": null,
-        "supervisor": null,
-        "data": "2026-07-17"
+        "ga": "MOTIVAÇÃO",
+        "supervisor": "FLAVIANNY KETHILLY",
+        "data": "2026-07-16"
       },
       {
         "empreendimento": "Amoreiras",
         "numero": 136,
-        "ga": null,
-        "supervisor": null,
+        "ga": "MOTIVAÇÃO",
+        "supervisor": "FLAVIANNY KETHILLY",
         "data": "2026-07-17"
       },
       {
         "empreendimento": "Amoreiras",
         "numero": 137,
-        "ga": null,
-        "supervisor": null,
+        "ga": "MOTIVAÇÃO",
+        "supervisor": "FLAVIANNY KETHILLY",
         "data": "2026-07-17"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 167,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-23"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 168,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-23"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 169,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-25"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 170,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-25"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 171,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-25"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 172,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-26"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 173,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-26"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 174,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-26"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 175,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-29"
-      },
-      {
-        "empreendimento": "Amoreiras",
-        "numero": 176,
-        "ga": "MOTIVAÇÃO",
-        "supervisor": "CARLOS ANDRÉ",
-        "data": "2026-06-29"
       }
     ]
   }
