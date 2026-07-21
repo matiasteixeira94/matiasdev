@@ -43,9 +43,10 @@
   .login-field {
     width: 100%; padding: 13px 14px; border-radius: 10px;
     border: 1px solid var(--border-strong); background: var(--page);
-    color: var(--ink); font-size: 14.5px; font-family: inherit;
+    color: var(--ink); font-size: 14.5px; font-family: inherit; text-align: left;
   }
   .login-field:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .login-field-otp { text-align: center; letter-spacing: 0.4em; font-size: 20px; font-weight: 700; }
   .login-error {
     font-size: 12.5px; color: var(--status-critical); text-align: center;
     min-height: 16px;
@@ -56,6 +57,7 @@
     cursor: pointer; transition: background 0.12s ease;
   }
   .login-submit:hover { background: var(--accent-strong); }
+  .login-submit:disabled { opacity: 0.6; cursor: default; }
   .login-forgot {
     font-size: 12.5px; color: var(--accent); text-align: center; background: none; border: none;
     cursor: pointer; font-family: inherit; padding: 2px;
@@ -65,6 +67,9 @@
     font-size: 11.5px; color: var(--ink-muted); text-align: center; max-width: 300px;
     min-height: 14px;
   }
+  .login-otp-intro { font-size: 12.5px; color: var(--ink-secondary); text-align: center; max-width: 300px; }
+  .login-otp-links { display: flex; gap: 16px; }
+  [hidden] { display: none !important; }
 </style>
 </head>
 <body>
@@ -73,12 +78,25 @@
     <div class="login-bg-overlay" aria-hidden="true"></div>
     <div class="login-card">
       <img class="login-logo" src="assets/images/logo-viana-moura.png" alt="Viana &amp; Moura Construções" />
+
       <form class="login-form" id="login-form" autocomplete="off">
         <input class="login-field" id="login-usuario" type="text" placeholder="Usuário" autocomplete="username" required />
         <input class="login-field" id="login-senha" type="password" placeholder="Senha" autocomplete="current-password" required />
         <div class="login-error" id="login-error"></div>
-        <button class="login-submit" type="submit">Entrar</button>
+        <button class="login-submit" id="login-submit" type="submit">Entrar</button>
       </form>
+
+      <form class="login-form" id="otp-form" autocomplete="off" hidden>
+        <p class="login-otp-intro">Digite o código de 6 dígitos enviado no WhatsApp do gerente de UGB.</p>
+        <input class="login-field login-field-otp" id="otp-codigo" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="••••••" required />
+        <div class="login-error" id="otp-error"></div>
+        <button class="login-submit" id="otp-submit" type="submit">Confirmar</button>
+        <div class="login-otp-links">
+          <button class="login-forgot" id="otp-reenviar" type="button">Reenviar código</button>
+          <button class="login-forgot" id="otp-voltar" type="button">Voltar</button>
+        </div>
+      </form>
+
       <button class="login-forgot" id="login-esqueci" type="button">Esqueci minha senha</button>
       <div class="login-hint" id="login-hint"></div>
     </div>
@@ -89,15 +107,84 @@
     "use strict";
     if (GP.getSession()) window.location.href = "index.html";
 
-    const form = document.getElementById("login-form");
-    const erro = document.getElementById("login-error");
-    form.addEventListener("submit", (e) => {
+    const passoSenha = document.getElementById("login-form");
+    const passoOtp = document.getElementById("otp-form");
+    const erroSenha = document.getElementById("login-error");
+    const erroOtp = document.getElementById("otp-error");
+    const botaoSenha = document.getElementById("login-submit");
+    const botaoOtp = document.getElementById("otp-submit");
+    const campoCodigo = document.getElementById("otp-codigo");
+
+    let credenciais = null; // { usuario, senha } — guardado em memória só pra "reenviar código"
+    let token = null;
+
+    async function pedirCodigo(usuario, senha) {
+      erroSenha.textContent = "";
+      botaoSenha.disabled = true;
+      try {
+        const resposta = await fetch("/api/send-otp", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ usuario, senha }),
+        });
+        const dados = await resposta.json().catch(() => ({}));
+        if (!resposta.ok) { erroSenha.textContent = dados.erro || "Não foi possível enviar o código."; return false; }
+        token = dados.token;
+        return true;
+      } catch {
+        erroSenha.textContent = "Falha de conexão. Tente novamente.";
+        return false;
+      } finally {
+        botaoSenha.disabled = false;
+      }
+    }
+
+    passoSenha.addEventListener("submit", async (e) => {
       e.preventDefault();
       const usuario = document.getElementById("login-usuario").value;
       const senha = document.getElementById("login-senha").value;
-      const session = GP.login(usuario, senha);
-      if (!session) { erro.textContent = "Usuário ou senha inválidos."; return; }
-      window.location.href = "index.html";
+      const ok = await pedirCodigo(usuario, senha);
+      if (!ok) return;
+      credenciais = { usuario, senha };
+      passoSenha.hidden = true;
+      passoOtp.hidden = false;
+      erroOtp.textContent = "";
+      campoCodigo.value = "";
+      campoCodigo.focus();
+    });
+
+    passoOtp.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      erroOtp.textContent = "";
+      botaoOtp.disabled = true;
+      try {
+        const resposta = await fetch("/api/verify-otp", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ token, codigo: campoCodigo.value }),
+        });
+        const dados = await resposta.json().catch(() => ({}));
+        if (!resposta.ok) { erroOtp.textContent = dados.erro || "Código inválido."; return; }
+        GP.setSession({ usuario: dados.usuario, nome: dados.nome });
+        window.location.href = "index.html";
+      } catch {
+        erroOtp.textContent = "Falha de conexão. Tente novamente.";
+      } finally {
+        botaoOtp.disabled = false;
+      }
+    });
+
+    document.getElementById("otp-reenviar").addEventListener("click", async () => {
+      if (!credenciais) return;
+      erroOtp.textContent = "";
+      const ok = await pedirCodigo(credenciais.usuario, credenciais.senha);
+      erroOtp.textContent = ok ? "Novo código enviado." : (erroSenha.textContent || "Não foi possível reenviar.");
+    });
+
+    document.getElementById("otp-voltar").addEventListener("click", () => {
+      passoOtp.hidden = true;
+      passoSenha.hidden = false;
+      token = null;
     });
 
     document.getElementById("login-esqueci").addEventListener("click", () => {

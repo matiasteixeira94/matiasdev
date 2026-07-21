@@ -59,24 +59,21 @@ const GP = (() => {
   ];
 
   function getSession() {
-    try { return JSON.parse(localStorage.getItem(SESSION_KEY)); } catch { return null; }
+    let s;
+    try { s = JSON.parse(localStorage.getItem(SESSION_KEY)); } catch { s = null; }
+    // Sessão só é criada depois do login em duas etapas (usuário/senha +
+    // código do WhatsApp, verificados no servidor — ver api/verify-otp.js e
+    // inicio.html). Qualquer coisa sem essa forma (sessão de antes dessa
+    // tela existir, adulterada etc.) é tratada como deslogado e limpa.
+    if (!s || typeof s.usuario !== "string" || typeof s.nome !== "string") {
+      if (s) clearSession();
+      return null;
+    }
+    return s;
   }
   function setSession(session) { localStorage.setItem(SESSION_KEY, JSON.stringify(session)); }
   function clearSession() { localStorage.removeItem(SESSION_KEY); }
 
-  // Login fixo (protótipo estático, sem backend) — ver inicio.html.
-  const USUARIOS = [
-    { usuario: "alissonmatias", senha: "producao26", nome: "Alisson Matias" },
-    { usuario: "producaoca", senha: "producaoca", nome: "Produção CA" },
-  ];
-
-  function login(usuario, senha) {
-    const encontrado = USUARIOS.find((u) => u.usuario === String(usuario ?? "").trim().toLowerCase() && u.senha === senha);
-    if (!encontrado) return null;
-    const session = { nome: encontrado.nome, usuario: encontrado.usuario };
-    setSession(session);
-    return session;
-  }
   function logout() {
     clearSession();
     window.location.href = "inicio.html";
@@ -224,7 +221,7 @@ const GP = (() => {
 
   return {
     NAV_ITEMS, GRUPO_LABEL, GRUPO_VAR, LOGO_MARK_SVG,
-    getSession, setSession, clearSession, requireAuth, login, logout,
+    getSession, setSession, clearSession, requireAuth, logout,
     applyStoredTheme, wireThemeToggle, renderShell, initials,
     loadJSON, fmtInt, fmtNum1, fmtPct, fmtBRL, fmtDate, fmtDateShort, within, isoDaysAgo,
   };

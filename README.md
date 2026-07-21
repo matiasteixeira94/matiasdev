@@ -66,11 +66,50 @@ npx http-server . -p 8080
 npx serve -l 8080
 ```
 
-Depois acesse `http://localhost:8080/index.html` — sem tela de login: a
-sessão de demonstração (perfil **Administrador**) é criada automaticamente
-no primeiro acesso. Para simular os outros perfis (**Gestor** ou
-**Supervisor de obra**, com escopo restrito a uma obra), use o seletor de
-perfil no rodapé da barra lateral.
+Depois acesse `http://localhost:8080/inicio.html` — tela de login (usuário +
+senha + código de WhatsApp, ver seção abaixo). Um servidor estático puro
+(`http-server`/`serve`) não roda as funções serverless de `api/`, então o
+login completo só funciona rodando com `vercel dev` (precisa de `vercel
+login` e do projeto linkado) ou já em produção na Vercel.
+
+## Login e segunda validação por WhatsApp
+
+Login em duas etapas, sem conta de usuário nem banco de dados:
+
+1. **Usuário/senha** — validados em `api/send-otp.js` (nunca no navegador).
+   Credenciais cadastradas em `api/_usuarios.js` (mantido em sincronia manual
+   com o mesmo conceito, sem senha, em `js/app.js`).
+2. **Código de 6 dígitos por WhatsApp** — enviado sempre para o WhatsApp do
+   gerente de UGB (Alisson Matias) via [Z-API](https://z-api.io), qualquer
+   que seja o usuário logando. `api/verify-otp.js` confere o código contra
+   um token assinado (HMAC), sem precisar guardar nada em banco — o token
+   expira em 5 minutos.
+
+Variáveis de ambiente necessárias (configurar em **Vercel → Project →
+Settings → Environment Variables**):
+
+| Variável | O que é |
+|---|---|
+| `ZAPI_INSTANCE_ID` | ID da instância Z-API (painel Z-API, após criar a instância) |
+| `ZAPI_TOKEN` | Token da instância (mesmo painel) |
+| `ZAPI_CLIENT_TOKEN` | "Client-Token" de segurança da conta Z-API (Segurança → Client-Token no painel) |
+| `ALISSON_WHATSAPP_NUMBER` | Número que recebe os códigos, formato `55DDNNNNNNNNN` (ex.: `5581999999999`) |
+| `OTP_SECRET` | Uma string aleatória longa qualquer (ex.: gerada com `openssl rand -hex 32`), só pra assinar o token — não precisa decorar |
+
+Passo a passo no Z-API:
+1. Criar conta em [z-api.io](https://z-api.io) e uma instância.
+2. Conectar um número de WhatsApp à instância escaneando o QR code — **use
+   um número diferente do que vai receber os códigos** (não dá pra mandar
+   mensagem de um número pra ele mesmo). Pode ser um chip dedicado só pra
+   isso.
+3. Copiar o ID da instância e o Token na tela da instância, e o Client-Token
+   em Segurança.
+4. Adicionar as 5 variáveis acima no projeto na Vercel e fazer um novo
+   deploy (ou "Redeploy") pra elas entrarem em vigor.
+
+**Sem essas variáveis configuradas, ninguém consegue logar** — `api/send-otp.js`
+recusa o pedido com um erro claro em vez de travar, mas a segunda etapa do
+login simplesmente não funciona até isso ser configurado.
 
 ## Regenerar os dados de demonstração
 
