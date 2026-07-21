@@ -2,9 +2,9 @@
   {
     "empreendimento": "Amoreiras",
     "total": 503,
-    "concluida": 79,
-    "pct_concluido": 15.7,
-    "produtividade_media": 8.79
+    "concluida": 191,
+    "pct_concluido": 38,
+    "produtividade_media": 8.91
   },
   {
     "empreendimento": "Oliveiras",
@@ -16,8 +16,8 @@
   {
     "empreendimento": "Cerejeiras",
     "total": 500,
-    "concluida": 499,
-    "pct_concluido": 99.8,
+    "concluida": 500,
+    "pct_concluido": 100,
     "produtividade_media": 8.34
   },
   {
