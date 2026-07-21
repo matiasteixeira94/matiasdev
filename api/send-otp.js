@@ -4,6 +4,7 @@
 // nada em banco de dados, então não precisa de armazenamento persistente.
 import { createHash, createHmac, randomInt } from "node:crypto";
 import { USUARIOS } from "./_usuarios.js";
+import { verificarSenha } from "./_senha.js";
 import { obterIp, limiteExcedido } from "./_rateLimit.js";
 
 const VALIDADE_MS = 5 * 60 * 1000;
@@ -17,10 +18,11 @@ export default async function handler(req, res) {
   }
 
   const { usuario, senha } = req.body ?? {};
-  const encontrado = USUARIOS.find(
-    (u) => u.usuario === String(usuario ?? "").trim().toLowerCase() && u.senha === senha
-  );
-  if (!encontrado) return res.status(401).json({ erro: "Usuário ou senha inválidos." });
+  const usuarioNormalizado = String(usuario ?? "").trim().toLowerCase();
+  const encontrado = USUARIOS.find((u) => u.usuario === usuarioNormalizado);
+  if (!encontrado || !verificarSenha(senha, encontrado.senhaHash)) {
+    return res.status(401).json({ erro: "Usuário ou senha inválidos." });
+  }
 
   const { ZAPI_INSTANCE_ID, ZAPI_TOKEN, ZAPI_CLIENT_TOKEN, ALISSON_WHATSAPP_NUMBER, OTP_SECRET } = process.env;
   if (!ZAPI_INSTANCE_ID || !ZAPI_TOKEN || !ZAPI_CLIENT_TOKEN || !ALISSON_WHATSAPP_NUMBER || !OTP_SECRET) {
