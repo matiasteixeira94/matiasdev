@@ -4,11 +4,17 @@
 // nada em banco de dados, então não precisa de armazenamento persistente.
 import { createHash, createHmac, randomInt } from "node:crypto";
 import { USUARIOS } from "./_usuarios.js";
+import { obterIp, limiteExcedido } from "./_rateLimit.js";
 
 const VALIDADE_MS = 5 * 60 * 1000;
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ erro: "Método não permitido" });
+
+  const ip = obterIp(req);
+  if (limiteExcedido(ip, { max: 5, janelaMs: 15 * 60 * 1000 })) {
+    return res.status(429).json({ erro: "Muitas tentativas. Aguarde alguns minutos e tente de novo." });
+  }
 
   const { usuario, senha } = req.body ?? {};
   const encontrado = USUARIOS.find(

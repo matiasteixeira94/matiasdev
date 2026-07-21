@@ -4,9 +4,15 @@
 // por HMAC (não dá pra forjar sem conhecer OTP_SECRET).
 import { createHash, createHmac, timingSafeEqual } from "node:crypto";
 import { USUARIOS } from "./_usuarios.js";
+import { obterIp, limiteExcedido } from "./_rateLimit.js";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).json({ erro: "Método não permitido" });
+
+  const ip = obterIp(req);
+  if (limiteExcedido(ip, { max: 10, janelaMs: 5 * 60 * 1000 })) {
+    return res.status(429).json({ erro: "Muitas tentativas. Peça um código novo e aguarde alguns minutos." });
+  }
 
   const { token, codigo } = req.body ?? {};
   const { OTP_SECRET } = process.env;
