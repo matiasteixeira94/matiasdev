@@ -3,73 +3,73 @@
     {
       "mes": "2026-01",
       "label": "Janeiro/2026",
-      "planejado": 265,
-      "realizado": 258
+      "planejado": 321.8,
+      "realizado": 297
     },
     {
       "mes": "2026-02",
       "label": "Fevereiro/2026",
-      "planejado": 265,
-      "realizado": 257
+      "planejado": 321.8,
+      "realizado": 294
     },
     {
       "mes": "2026-03",
       "label": "Março/2026",
-      "planejado": 265,
-      "realizado": 272
+      "planejado": 321.8,
+      "realizado": 308
     },
     {
       "mes": "2026-04",
       "label": "Abril/2026",
-      "planejado": 265,
-      "realizado": 264
+      "planejado": 321.8,
+      "realizado": 301
     },
     {
       "mes": "2026-05",
       "label": "Maio/2026",
-      "planejado": 265,
-      "realizado": 270
+      "planejado": 321.8,
+      "realizado": 305
     },
     {
       "mes": "2026-06",
       "label": "Junho/2026",
-      "planejado": 265,
-      "realizado": 272
+      "planejado": 321.8,
+      "realizado": 308
     },
     {
       "mes": "2026-07",
       "label": "Julho/2026",
-      "planejado": 265,
+      "planejado": 321.8,
       "realizado": 0
     },
     {
       "mes": "2026-08",
       "label": "Agosto/2026",
-      "planejado": 265,
+      "planejado": 321.8,
       "realizado": 0
     },
     {
       "mes": "2026-09",
       "label": "Setembro/2026",
-      "planejado": 265,
+      "planejado": 279.25,
       "realizado": 0
     },
     {
       "mes": "2026-10",
       "label": "Outubro/2026",
-      "planejado": 265,
+      "planejado": 279.25,
       "realizado": 0
     },
     {
       "mes": "2026-11",
       "label": "Novembro/2026",
-      "planejado": 265,
+      "planejado": 278.25,
       "realizado": 0
     },
     {
       "mes": "2026-12",
       "label": "Dezembro/2026",
-      "planejado": 265,
+      "planejado": 278.25,
       "realizado": 0
     }
   ],
@@ -79,73 +79,73 @@
         {
           "mes": "2026-01",
           "label": "Janeiro/2026",
-          "planejado": 5,
+          "planejado": 21.8,
           "realizado": 5
         },
         {
           "mes": "2026-02",
           "label": "Fevereiro/2026",
-          "planejado": 5,
+          "planejado": 21.8,
           "realizado": 5
         },
         {
           "mes": "2026-03",
           "label": "Março/2026",
-          "planejado": 5,
+          "planejado": 21.8,
           "realizado": 5
         },
         {
           "mes": "2026-04",
           "label": "Abril/2026",
-          "planejado": 5,
+          "planejado": 21.8,
           "realizado": 4
         },
         {
           "mes": "2026-05",
           "label": "Maio/2026",
-          "planejado": 5,
+          "planejado": 21.8,
           "realizado": 5
         },
         {
           "mes": "2026-06",
           "label": "Junho/2026",
-          "planejado": 5,
+          "planejado": 21.8,
           "realizado": 5
         },
         {
           "mes": "2026-07",
           "label": "Julho/2026",
-          "planejado": 5,
+          "planejado": 21.8,
           "realizado": 0
         },
         {
           "mes": "2026-08",
           "label": "Agosto/2026",
-          "planejado": 5,
+          "planejado": 21.8,
           "realizado": 0
         },
         {
           "mes": "2026-09",
           "label": "Setembro/2026",
-          "planejado": 5,
+          "planejado": 19.25,
           "realizado": 0
         },
         {
           "mes": "2026-10",
           "label": "Outubro/2026",
-          "planejado": 5,
+          "planejado": 19.25,
           "realizado": 0
         },
         {
           "mes": "2026-11",
           "label": "Novembro/2026",
-          "planejado": 5,
+          "planejado": 18.25,
           "realizado": 0
         },
         {
           "mes": "2026-12",
           "label": "Dezembro/2026",
-          "planejado": 5,
+          "planejado": 18.25,
           "realizado": 0
         }
       ]
@@ -155,49 +155,49 @@
         {
           "mes": "2026-01",
           "label": "Janeiro/2026",
-          "planejado": 27,
-          "realizado": 36
+          "planejado": 67,
+          "realizado": 75
         },
         {
           "mes": "2026-02",
           "label": "Fevereiro/2026",
-          "planejado": 27,
-          "realizado": 36
+          "planejado": 67,
+          "realizado": 73
         },
         {
           "mes": "2026-03",
           "label": "Março/2026",
-          "planejado": 27,
-          "realizado": 36
+          "planejado": 67,
+          "realizado": 72
         },
         {
           "mes": "2026-04",
           "label": "Abril/2026",
-          "planejado": 27,
-          "realizado": 40
+          "planejado": 67,
+          "realizado": 77
         },
         {
           "mes": "2026-05",
           "label": "Maio/2026",
-          "planejado": 27,
-          "realizado": 37
+          "planejado": 67,
+          "realizado": 72
         },
         {
           "mes": "2026-06",
           "label": "Junho/2026",
-          "planejado": 27,
-          "realizado": 35
+          "planejado": 67,
+          "realizado": 71
         },
         {
           "mes": "2026-07",
           "label": "Julho/2026",
-          "planejado": 27,
+          "planejado": 67,
           "realizado": 0
         },
         {
           "mes": "2026-08",
           "label": "Agosto/2026",
-          "planejado": 27,
+          "planejado": 67,
           "realizado": 0
         },
         {
