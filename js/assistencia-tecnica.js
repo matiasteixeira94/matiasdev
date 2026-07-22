@@ -39,10 +39,16 @@
   }
 
   // Funil de status (do histórico de mudanças de status, não do status
-  // atual): quantos chamados já passaram por cada etapa alguma vez. Mesmo
-  // agrupamento em 4 grupos do cartão acima, mas cada grupo aqui soma as 5
-  // etapas — os grupos são conjuntos disjuntos de empreendimentos, então
-  // somar não conta nenhum chamado 2x.
+  // atual, não histórico: "Inserido" contado do jeito antigo (quem já
+  // passou por ali alguma vez) sempre fica perto do total de chamados,
+  // porque é o 1º passo de quase todo chamado — não diz quem está parado.
+  // Por isso cada etapa aqui é o STATUS ATUAL do chamado (por_status, já
+  // por chamado — ver totais.em_aberto/por_status em
+  // extrair_assistencia_tecnica.mjs), não "alguma vez no histórico".
+  const STATUS_LABEL_PARA_CHAVE = {
+    "Inserido": "inseridos", "Avaliado": "avaliados", "Agendado": "agendados",
+    "Finalizado Não Procedente": "nao_procedentes", "Realizado": "realizados",
+  };
   const GRUPOS_FUNIL = ["Laranjeiras", "Cerejeiras", "Oliveiras", "Loteamento"];
   const funilPorGrupo = {
     Laranjeiras: { inseridos: 0, avaliados: 0, agendados: 0, nao_procedentes: 0, realizados: 0 },
@@ -52,9 +58,11 @@
   };
   for (const emp of dados.empreendimentos) {
     if (emp === "Todos") continue;
-    const f = dados.por_empreendimento[emp].funil_status;
     const grupo = GRUPOS_PRINCIPAIS.includes(emp) ? emp : "Loteamento";
-    for (const chave of Object.keys(f)) funilPorGrupo[grupo][chave] += f[chave];
+    for (const { status, total } of dados.por_empreendimento[emp].por_status) {
+      const chave = STATUS_LABEL_PARA_CHAVE[status];
+      if (chave) funilPorGrupo[grupo][chave] += total;
+    }
   }
 
   const state = { empreendimento: "Todos", funilGrupo: "Laranjeiras" };
@@ -97,7 +105,7 @@
 
       <div class="card">
         <div class="card-head" style="margin-bottom:14px;">
-          <div><div class="card-title">Nº de chamados por etapa</div><div class="card-sub">Do histórico — quantos chamados já passaram por cada etapa alguma vez (não é o status atual)</div></div>
+          <div><div class="card-title">Nº de chamados por etapa</div><div class="card-sub">Chamados parados agora em cada etapa (status atual)</div></div>
           <div class="seg">
             ${GRUPOS_FUNIL.map((g) => `<button type="button" aria-pressed="${g === state.funilGrupo}" data-funil-grupo="${g}">${g}</button>`).join("")}
           </div>

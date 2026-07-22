@@ -264,19 +264,6 @@ function calcularAgregados(itensSubset) {
       if (tecnico) realizadosPorTecnico.set(tecnico, (realizadosPorTecnico.get(tecnico) || 0) + 1);
     }
   }
-  // Funil por etapa do histórico: quantos chamados já PASSARAM por cada
-  // status alguma vez (não o status atual) — vem do arquivo de histórico
-  // (historicoChamadosAssistenciaTecnica.csv), 1 evento por mudança de
-  // status. Um chamado "Realizado" também conta em Inserido/Agendado/
-  // Avaliado, porque passou por essas etapas antes de terminar.
-  const STATUS_FUNIL = ["Inserido", "Avaliado", "Agendado", "Finalizado Não Procedente", "Realizado"];
-  const funilStatus = {};
-  for (const status of STATUS_FUNIL) {
-    let count = 0;
-    for (const [, lista] of eventosPorId) if (lista.some((e) => e.status === status)) count++;
-    funilStatus[status] = count;
-  }
-
   const porTecnico = [...realizadosPorTecnico.entries()]
     .map(([nome, realizados]) => ({ nome, realizados }))
     .sort((a, b) => b.realizados - a.realizados)
@@ -285,13 +272,6 @@ function calcularAgregados(itensSubset) {
   return {
     periodo: { de: datasAbertura[0] ?? null, ate: datasAbertura[datasAbertura.length - 1] ?? null },
     totais,
-    funil_status: {
-      inseridos: funilStatus["Inserido"],
-      avaliados: funilStatus["Avaliado"],
-      agendados: funilStatus["Agendado"],
-      nao_procedentes: funilStatus["Finalizado Não Procedente"],
-      realizados: funilStatus["Realizado"],
-    },
     por_status: porStatus,
     por_categoria: porCategoria,
     por_gravidade: porGravidade,
