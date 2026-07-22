@@ -22,21 +22,20 @@
   // volume, que é útil pro cálculo mas não pra escolher num select).
   const empreendimentosOrdenados = ["Todos", ...dados.empreendimentos.filter((e) => e !== "Todos").sort((a, b) => a.localeCompare(b, "pt-BR"))];
 
-  // Cartões fixos de "casas com solicitação aberta" por empreendimento —
+  // Cartões fixos de "chamados que faltam finalizar" por empreendimento —
   // Laranjeiras, Cerejeiras e Oliveiras cada um com o seu, e "Loteamento"
   // junta todo o resto (Xique-xique, Andorinha, Lagoa de Pedra, Amoreiras e
   // os itens sem empreendimento identificado). Independe do filtro
-  // selecionado abaixo — é sempre a visão dos 4 grupos. Conta CASAS
-  // distintas (não itens nem chamados) porque cada casa costuma ter vários
-  // itens/chamados abertos ao mesmo tempo, e o que importa aqui é "quantos
-  // clientes estão esperando atendimento".
+  // selecionado abaixo — é sempre a visão dos 4 grupos. Conta CHAMADOS (não
+  // itens) que ainda não chegaram em Realizado/Não Procedente/Cancelado —
+  // ver totais.em_aberto em extrair_assistencia_tecnica.mjs.
   const GRUPOS_PRINCIPAIS = ["Laranjeiras", "Cerejeiras", "Oliveiras"];
   const abertoPorGrupo = { Laranjeiras: 0, Cerejeiras: 0, Oliveiras: 0, Loteamento: 0 };
   for (const emp of dados.empreendimentos) {
     if (emp === "Todos") continue;
-    const casas = dados.por_empreendimento[emp].totais.casas_com_solicitacao_aberta;
-    if (GRUPOS_PRINCIPAIS.includes(emp)) abertoPorGrupo[emp] += casas;
-    else abertoPorGrupo.Loteamento += casas;
+    const chamados = dados.por_empreendimento[emp].totais.em_aberto;
+    if (GRUPOS_PRINCIPAIS.includes(emp)) abertoPorGrupo[emp] += chamados;
+    else abertoPorGrupo.Loteamento += chamados;
   }
 
   // Funil de status (do histórico de mudanças de status, não do status
@@ -74,7 +73,7 @@
     content.innerHTML = `
       <div class="card">
         <div class="card-head" style="margin-bottom:14px;">
-          <div><div class="card-title">Casas com solicitação aberta por empreendimento</div><div class="card-sub">Clique num empreendimento pra ver o detalhe. "Loteamento" junta Amoreiras, Xique-xique, Andorinha e Lagoa de Pedra</div></div>
+          <div><div class="card-title">Chamados que faltam finalizar por empreendimento</div><div class="card-sub">Clique num empreendimento pra ver o detalhe. "Loteamento" junta Amoreiras, Xique-xique, Andorinha e Lagoa de Pedra</div></div>
         </div>
         <div class="grid grid-4">
           <div class="stat-tile" style="cursor:pointer;" data-emp="Laranjeiras">
@@ -103,7 +102,7 @@
             ${GRUPOS_FUNIL.map((g) => `<button type="button" aria-pressed="${g === state.funilGrupo}" data-funil-grupo="${g}">${g}</button>`).join("")}
           </div>
         </div>
-        <div class="grid grid-auto">
+        <div class="grid" style="grid-template-columns: repeat(5, 1fr);">
           <div class="stat-tile">
             <div class="stat-label">Inseridos</div>
             <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].inseridos)}</div>
