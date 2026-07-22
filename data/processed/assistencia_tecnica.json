@@ -42,6 +42,13 @@
         "taxa_procedencia_pct": 91.2,
         "tempo_medio_atendimento_dias": 19.3
       },
+      "funil_status": {
+        "inseridos": 14034,
+        "avaliados": 8372,
+        "agendados": 7131,
+        "nao_procedentes": 1218,
+        "realizados": 4209
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -441,6 +448,13 @@
         "taxa_procedencia_pct": 90.9,
         "tempo_medio_atendimento_dias": 15.2
       },
+      "funil_status": {
+        "inseridos": 1595,
+        "avaliados": 952,
+        "agendados": 1081,
+        "nao_procedentes": 219,
+        "realizados": 661
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -832,6 +846,13 @@
         "taxa_procedencia_pct": 86.6,
         "tempo_medio_atendimento_dias": 22.2
       },
+      "funil_status": {
+        "inseridos": 3148,
+        "avaliados": 1783,
+        "agendados": 1417,
+        "nao_procedentes": 257,
+        "realizados": 840
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -1178,6 +1199,13 @@
         "chamados_infra": 65,
         "taxa_procedencia_pct": 90.2,
         "tempo_medio_atendimento_dias": 17.3
+      },
+      "funil_status": {
+        "inseridos": 1816,
+        "avaliados": 1160,
+        "agendados": 1327,
+        "nao_procedentes": 264,
+        "realizados": 814
       },
       "por_status": [
         {
@@ -1570,6 +1598,13 @@
         "taxa_procedencia_pct": 95.9,
         "tempo_medio_atendimento_dias": 22.8
       },
+      "funil_status": {
+        "inseridos": 1516,
+        "avaliados": 1083,
+        "agendados": 573,
+        "nao_procedentes": 44,
+        "realizados": 331
+      },
       "por_status": [
         {
           "status": "Avaliado",
@@ -1804,6 +1839,13 @@
         "chamados_infra": 113,
         "taxa_procedencia_pct": 92.6,
         "tempo_medio_atendimento_dias": 14.3
+      },
+      "funil_status": {
+        "inseridos": 1872,
+        "avaliados": 1185,
+        "agendados": 973,
+        "nao_procedentes": 103,
+        "realizados": 573
       },
       "por_status": [
         {
@@ -2083,6 +2125,13 @@
         "chamados_infra": 49,
         "taxa_procedencia_pct": 89.3,
         "tempo_medio_atendimento_dias": 12.9
+      },
+      "funil_status": {
+        "inseridos": 930,
+        "avaliados": 539,
+        "agendados": 639,
+        "nao_procedentes": 131,
+        "realizados": 368
       },
       "por_status": [
         {
@@ -2471,6 +2520,13 @@
         "taxa_procedencia_pct": 99.4,
         "tempo_medio_atendimento_dias": 17.6
       },
+      "funil_status": {
+        "inseridos": 1406,
+        "avaliados": 651,
+        "agendados": 66,
+        "nao_procedentes": 0,
+        "realizados": 13
+      },
       "por_status": [
         {
           "status": "Avaliado",
@@ -2669,6 +2725,13 @@
         "chamados_infra": 22,
         "taxa_procedencia_pct": 89.6,
         "tempo_medio_atendimento_dias": 27.8
+      },
+      "funil_status": {
+        "inseridos": 340,
+        "avaliados": 170,
+        "agendados": 196,
+        "nao_procedentes": 30,
+        "realizados": 121
       },
       "por_status": [
         {
@@ -3029,6 +3092,13 @@
         "taxa_procedencia_pct": 91.5,
         "tempo_medio_atendimento_dias": 13.7
       },
+      "funil_status": {
+        "inseridos": 384,
+        "avaliados": 246,
+        "agendados": 279,
+        "nao_procedentes": 48,
+        "realizados": 172
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -3379,6 +3449,13 @@
         "chamados_infra": 14,
         "taxa_procedencia_pct": 91.9,
         "tempo_medio_atendimento_dias": 15.9
+      },
+      "funil_status": {
+        "inseridos": 314,
+        "avaliados": 222,
+        "agendados": 243,
+        "nao_procedentes": 38,
+        "realizados": 156
       },
       "por_status": [
         {
@@ -3755,6 +3832,13 @@
         "taxa_procedencia_pct": 81.2,
         "tempo_medio_atendimento_dias": 76
       },
+      "funil_status": {
+        "inseridos": 116,
+        "avaliados": 68,
+        "agendados": 77,
+        "nao_procedentes": 26,
+        "realizados": 29
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -4062,6 +4146,13 @@
         "taxa_procedencia_pct": 90.3,
         "tempo_medio_atendimento_dias": 13.2
       },
+      "funil_status": {
+        "inseridos": 221,
+        "avaliados": 95,
+        "agendados": 108,
+        "nao_procedentes": 28,
+        "realizados": 61
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -4352,6 +4443,13 @@
         "chamados_infra": 18,
         "taxa_procedencia_pct": 93.4,
         "tempo_medio_atendimento_dias": 15.5
+      },
+      "funil_status": {
+        "inseridos": 167,
+        "avaliados": 78,
+        "agendados": 89,
+        "nao_procedentes": 15,
+        "realizados": 53
       },
       "por_status": [
         {
@@ -4652,6 +4750,13 @@
         "taxa_procedencia_pct": 100,
         "tempo_medio_atendimento_dias": null
       },
+      "funil_status": {
+        "inseridos": 90,
+        "avaliados": 90,
+        "agendados": 0,
+        "nao_procedentes": 0,
+        "realizados": 0
+      },
       "por_status": [
         {
           "status": "Avaliado",
@@ -4789,6 +4894,13 @@
         "chamados_infra": 17,
         "taxa_procedencia_pct": 85.4,
         "tempo_medio_atendimento_dias": 20.8
+      },
+      "funil_status": {
+        "inseridos": 48,
+        "avaliados": 19,
+        "agendados": 26,
+        "nao_procedentes": 8,
+        "realizados": 3
       },
       "por_status": [
         {
@@ -5061,6 +5173,13 @@
         "taxa_procedencia_pct": 85.8,
         "tempo_medio_atendimento_dias": 22.8
       },
+      "funil_status": {
+        "inseridos": 52,
+        "avaliados": 26,
+        "agendados": 31,
+        "nao_procedentes": 4,
+        "realizados": 13
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -5320,6 +5439,13 @@
         "taxa_procedencia_pct": 67.3,
         "tempo_medio_atendimento_dias": 321
       },
+      "funil_status": {
+        "inseridos": 8,
+        "avaliados": 5,
+        "agendados": 5,
+        "nao_procedentes": 3,
+        "realizados": 1
+      },
       "por_status": [
         {
           "status": "Finalizado Não Procedente",
@@ -5459,6 +5585,13 @@
         "taxa_procedencia_pct": null,
         "tempo_medio_atendimento_dias": null
       },
+      "funil_status": {
+        "inseridos": 2,
+        "avaliados": 0,
+        "agendados": 1,
+        "nao_procedentes": 0,
+        "realizados": 0
+      },
       "por_status": [
         {
           "status": "Excluído",
@@ -5532,6 +5665,13 @@
         "chamados_infra": 0,
         "taxa_procedencia_pct": null,
         "tempo_medio_atendimento_dias": null
+      },
+      "funil_status": {
+        "inseridos": 9,
+        "avaliados": 0,
+        "agendados": 0,
+        "nao_procedentes": 0,
+        "realizados": 0
       },
       "por_status": [
         {

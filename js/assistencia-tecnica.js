@@ -39,7 +39,26 @@
     else abertoPorGrupo.Loteamento += casas;
   }
 
-  const state = { empreendimento: "Todos" };
+  // Funil de status (do histórico de mudanças de status, não do status
+  // atual): quantos chamados já passaram por cada etapa alguma vez. Mesmo
+  // agrupamento em 4 grupos do cartão acima, mas cada grupo aqui soma as 5
+  // etapas — os grupos são conjuntos disjuntos de empreendimentos, então
+  // somar não conta nenhum chamado 2x.
+  const GRUPOS_FUNIL = ["Laranjeiras", "Cerejeiras", "Oliveiras", "Loteamento"];
+  const funilPorGrupo = {
+    Laranjeiras: { inseridos: 0, avaliados: 0, agendados: 0, nao_procedentes: 0, realizados: 0 },
+    Cerejeiras: { inseridos: 0, avaliados: 0, agendados: 0, nao_procedentes: 0, realizados: 0 },
+    Oliveiras: { inseridos: 0, avaliados: 0, agendados: 0, nao_procedentes: 0, realizados: 0 },
+    Loteamento: { inseridos: 0, avaliados: 0, agendados: 0, nao_procedentes: 0, realizados: 0 },
+  };
+  for (const emp of dados.empreendimentos) {
+    if (emp === "Todos") continue;
+    const f = dados.por_empreendimento[emp].funil_status;
+    const grupo = GRUPOS_PRINCIPAIS.includes(emp) ? emp : "Loteamento";
+    for (const chave of Object.keys(f)) funilPorGrupo[grupo][chave] += f[chave];
+  }
+
+  const state = { empreendimento: "Todos", funilGrupo: "Laranjeiras" };
   const content = document.getElementById("gp-content");
 
   function irParaEmpreendimento(emp) {
@@ -73,6 +92,37 @@
           <div class="stat-tile">
             <div class="stat-label">Loteamento</div>
             <div class="stat-value">${GP.fmtInt(abertoPorGrupo.Loteamento)}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head" style="margin-bottom:14px;">
+          <div><div class="card-title">Nº de chamados por etapa</div><div class="card-sub">Do histórico — quantos chamados já passaram por cada etapa alguma vez (não é o status atual)</div></div>
+          <div class="seg">
+            ${GRUPOS_FUNIL.map((g) => `<button type="button" aria-pressed="${g === state.funilGrupo}" data-funil-grupo="${g}">${g}</button>`).join("")}
+          </div>
+        </div>
+        <div class="grid grid-auto">
+          <div class="stat-tile">
+            <div class="stat-label">Inseridos</div>
+            <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].inseridos)}</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-label">Avaliados</div>
+            <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].avaliados)}</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-label">Agendados</div>
+            <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].agendados)}</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-label">Não procedente</div>
+            <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].nao_procedentes)}</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-label">Realizado</div>
+            <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].realizados)}</div>
           </div>
         </div>
       </div>
@@ -231,6 +281,12 @@
     });
     content.querySelectorAll("[data-emp]").forEach((el) => {
       el.addEventListener("click", () => irParaEmpreendimento(el.dataset.emp));
+    });
+    content.querySelectorAll("[data-funil-grupo]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        state.funilGrupo = btn.dataset.funilGrupo;
+        render();
+      });
     });
 
     renderGraficos(d);
