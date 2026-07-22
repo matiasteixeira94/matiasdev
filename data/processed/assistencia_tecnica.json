@@ -41,6 +41,10 @@
         "taxa_procedencia_pct": 91,
         "tempo_medio_atendimento_dias": 19.3
       },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 2366,
+        "nao_procedentes": 38
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -440,6 +444,10 @@
         "taxa_procedencia_pct": 90.9,
         "tempo_medio_atendimento_dias": 15.2
       },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 10,
+        "nao_procedentes": 2
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -831,6 +839,10 @@
         "taxa_procedencia_pct": 86.6,
         "tempo_medio_atendimento_dias": 22.2
       },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 520,
+        "nao_procedentes": 4
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -1177,6 +1189,10 @@
         "chamados_infra": 65,
         "taxa_procedencia_pct": 90.2,
         "tempo_medio_atendimento_dias": 17.3
+      },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 336,
+        "nao_procedentes": 17
       },
       "por_status": [
         {
@@ -1569,6 +1585,10 @@
         "taxa_procedencia_pct": 95.9,
         "tempo_medio_atendimento_dias": 22.9
       },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 624,
+        "nao_procedentes": 2
+      },
       "por_status": [
         {
           "status": "Avaliado",
@@ -1803,6 +1823,10 @@
         "chamados_infra": 113,
         "taxa_procedencia_pct": 92.6,
         "tempo_medio_atendimento_dias": 14.3
+      },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 452,
+        "nao_procedentes": 4
       },
       "por_status": [
         {
@@ -2082,6 +2106,10 @@
         "chamados_infra": 49,
         "taxa_procedencia_pct": 89.3,
         "tempo_medio_atendimento_dias": 12.9
+      },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 9,
+        "nao_procedentes": 1
       },
       "por_status": [
         {
@@ -2470,6 +2498,10 @@
         "taxa_procedencia_pct": 89.6,
         "tempo_medio_atendimento_dias": 27.8
       },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 9,
+        "nao_procedentes": 0
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -2829,6 +2861,10 @@
         "taxa_procedencia_pct": 99.3,
         "tempo_medio_atendimento_dias": 18.1
       },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 347,
+        "nao_procedentes": 6
+      },
       "por_status": [
         {
           "status": "Avaliado",
@@ -3027,6 +3063,10 @@
         "chamados_infra": 39,
         "taxa_procedencia_pct": 91.5,
         "tempo_medio_atendimento_dias": 13.7
+      },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 16,
+        "nao_procedentes": 0
       },
       "por_status": [
         {
@@ -3378,6 +3418,10 @@
         "chamados_infra": 14,
         "taxa_procedencia_pct": 91.9,
         "tempo_medio_atendimento_dias": 15.9
+      },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 9,
+        "nao_procedentes": 0
       },
       "por_status": [
         {
@@ -3754,6 +3798,10 @@
         "taxa_procedencia_pct": 81.2,
         "tempo_medio_atendimento_dias": 76
       },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 4,
+        "nao_procedentes": 1
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -4061,6 +4109,10 @@
         "taxa_procedencia_pct": 90.3,
         "tempo_medio_atendimento_dias": 13.2
       },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 5,
+        "nao_procedentes": 0
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -4351,6 +4403,10 @@
         "chamados_infra": 18,
         "taxa_procedencia_pct": 93.4,
         "tempo_medio_atendimento_dias": 15.5
+      },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 9,
+        "nao_procedentes": 0
       },
       "por_status": [
         {
@@ -4651,6 +4707,10 @@
         "taxa_procedencia_pct": 85.4,
         "tempo_medio_atendimento_dias": 20.8
       },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 5,
+        "nao_procedentes": 1
+      },
       "por_status": [
         {
           "status": "Excluído",
@@ -4922,6 +4982,10 @@
         "taxa_procedencia_pct": 85.8,
         "tempo_medio_atendimento_dias": 22.8
       },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 9,
+        "nao_procedentes": 0
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -5181,6 +5245,10 @@
         "taxa_procedencia_pct": 67.3,
         "tempo_medio_atendimento_dias": 321
       },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 0,
+        "nao_procedentes": 0
+      },
       "por_status": [
         {
           "status": "Finalizado Não Procedente",
@@ -5320,6 +5388,10 @@
         "taxa_procedencia_pct": null,
         "tempo_medio_atendimento_dias": null
       },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 0,
+        "nao_procedentes": 0
+      },
       "por_status": [
         {
           "status": "Excluído",
@@ -5393,6 +5465,10 @@
         "chamados_infra": 2,
         "taxa_procedencia_pct": 100,
         "tempo_medio_atendimento_dias": null
+      },
+      "avaliacao_atual": {
+        "aguardando_realizacao": 2,
+        "nao_procedentes": 0
       },
       "por_status": [
         {

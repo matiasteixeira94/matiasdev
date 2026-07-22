@@ -188,6 +188,15 @@ function calcularAgregados(itensSubset) {
   const avaliados = itensSubset.filter((r) => ["Procedente", "Nao Procedente", "Sem Acordo"].includes(String(r[C.procedente]).trim()));
   const procedentes = avaliados.filter((r) => String(r[C.procedente]).trim() === "Procedente");
 
+  // Dentro do status atual "Avaliado" (supervisor já foi verificar), separa
+  // quem foi dado como procedente (falta executar o reparo — aguardando
+  // realização de verdade) de quem não foi (não deveria contar como "falta
+  // executar", porque não vai ser executado) — confirmado com o usuário em
+  // 2026-07-22 que esses dois casos estavam misturados num só número.
+  const avaliadosAtual = representantes.filter((r) => String(r[C.status]).trim() === "Avaliado");
+  const avaliadosProcedentes = avaliadosAtual.filter((r) => String(r[C.procedente]).trim() === "Procedente");
+  const avaliadosNaoProcedentes = avaliadosAtual.filter((r) => String(r[C.procedente]).trim() !== "Procedente");
+
   const idsInfra = new Set(itensSubset.filter((r) => String(r[C.tipo]).trim() === "Infra").map((r) => String(r[C.id]).trim()));
 
   // tempo de atendimento usa os itens (não só os representantes) porque a
@@ -297,6 +306,10 @@ function calcularAgregados(itensSubset) {
   return {
     periodo: { de: datasAbertura[0] ?? null, ate: datasAbertura[datasAbertura.length - 1] ?? null },
     totais,
+    avaliacao_atual: {
+      aguardando_realizacao: avaliadosProcedentes.length,
+      nao_procedentes: avaliadosNaoProcedentes.length,
+    },
     por_status: porStatus,
     por_categoria: porCategoria,
     por_gravidade: porGravidade,

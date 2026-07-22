@@ -39,16 +39,17 @@
   }
 
   // Etapa atual de cada chamado, com o nome de quem está "esperando o quê":
-  // um chamado com status atual "Inserido" ainda não foi agendado (está
-  // aguardando agendamento); "Agendado" já tem visita marcada, falta
-  // avaliar (aguardando avaliação); "Avaliado" já foi avaliado, falta
-  // executar o reparo (aguardando realização). "Inseridos" aqui é o total
-  // de chamados abertos no período (todo status), não só quem está parado
-  // nessa etapa — ver totais.chamados_unicos/por_status em
-  // extrair_assistencia_tecnica.mjs.
+  // "Inserido" ainda não foi agendado (aguardando agendamento); "Agendado"
+  // já tem visita marcada, falta o supervisor avaliar (aguardando
+  // avaliação); dentro de "Avaliado" (supervisor já foi verificar), só quem
+  // foi dado como PROCEDENTE é que ainda falta executar (aguardando
+  // realização) — quem foi avaliado e não é procedente vai pra "não
+  // procedentes" em vez de ficar misturado como se fosse trabalho pendente
+  // (avaliacao_atual, calculado em extrair_assistencia_tecnica.mjs).
+  // "Inseridos" aqui é o total de chamados abertos no período (todo
+  // status), não só quem está parado nessa etapa.
   const STATUS_LABEL_PARA_CHAVE = {
-    "Inserido": "aguardando_agendamento", "Agendado": "aguardando_avaliacao", "Avaliado": "aguardando_realizacao",
-    "Finalizado Não Procedente": "nao_procedentes",
+    "Inserido": "aguardando_agendamento", "Agendado": "aguardando_avaliacao",
   };
   const GRUPOS_FUNIL = ["Geral", "Laranjeiras", "Cerejeiras", "Oliveiras", "Loteamento"];
   const funilPorGrupo = {
@@ -58,21 +59,22 @@
     Oliveiras: { inseridos: 0, aguardando_agendamento: 0, aguardando_avaliacao: 0, aguardando_realizacao: 0, nao_procedentes: 0 },
     Loteamento: { inseridos: 0, aguardando_agendamento: 0, aguardando_avaliacao: 0, aguardando_realizacao: 0, nao_procedentes: 0 },
   };
+  function acumularFunil(alvo, d) {
+    alvo.inseridos += d.totais.chamados_unicos;
+    for (const { status, total } of d.por_status) {
+      const chave = STATUS_LABEL_PARA_CHAVE[status];
+      if (chave) alvo[chave] += total;
+    }
+    alvo.aguardando_realizacao += d.avaliacao_atual.aguardando_realizacao;
+    alvo.nao_procedentes += d.avaliacao_atual.nao_procedentes;
+  }
   // "Geral" vem direto do agregado "Todos" do JSON (já é a soma de tudo),
   // em vez de somar os 4 grupos de novo.
-  funilPorGrupo.Geral.inseridos = dados.por_empreendimento.Todos.totais.chamados_unicos;
-  for (const { status, total } of dados.por_empreendimento.Todos.por_status) {
-    const chave = STATUS_LABEL_PARA_CHAVE[status];
-    if (chave) funilPorGrupo.Geral[chave] += total;
-  }
+  acumularFunil(funilPorGrupo.Geral, dados.por_empreendimento.Todos);
   for (const emp of dados.empreendimentos) {
     if (emp === "Todos") continue;
     const grupo = GRUPOS_PRINCIPAIS.includes(emp) ? emp : "Loteamento";
-    funilPorGrupo[grupo].inseridos += dados.por_empreendimento[emp].totais.chamados_unicos;
-    for (const { status, total } of dados.por_empreendimento[emp].por_status) {
-      const chave = STATUS_LABEL_PARA_CHAVE[status];
-      if (chave) funilPorGrupo[grupo][chave] += total;
-    }
+    acumularFunil(funilPorGrupo[grupo], dados.por_empreendimento[emp]);
   }
 
   const state = { empreendimento: "Todos", funilGrupo: "Geral" };
@@ -114,9 +116,9 @@
       </div>
 
       <div class="card">
-        <div class="card-head" style="margin-bottom:14px;">
-          <div><div class="card-title">Chamados por etapa</div><div class="card-sub">"Inseridos" é o total aberto no período; os demais são quem está parado em cada etapa agora</div></div>
-          <div class="seg">
+        <div class="card-head" style="margin-bottom:14px; flex-wrap: wrap;">
+          <div><div class="card-title">Chamados por etapa</div><div class="card-sub">"Inseridos" é o total aberto no período; os demais são quem está parado em cada etapa agora — "Aguardando Realização" e "Não Procedente" já separam quem foi avaliado como procedente de quem não foi</div></div>
+          <div class="seg" style="flex-wrap: wrap;">
             ${GRUPOS_FUNIL.map((g) => `<button type="button" aria-pressed="${g === state.funilGrupo}" data-funil-grupo="${g}">${g}</button>`).join("")}
           </div>
         </div>
