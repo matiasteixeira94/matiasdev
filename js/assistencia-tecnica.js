@@ -18,6 +18,24 @@
   };
   const corStatus = (s) => STATUS_COR[s] || "var(--accent)";
 
+  // "Todos" sempre primeiro; o resto em ordem alfabética (o JSON traz por
+  // volume, que é útil pro cálculo mas não pra escolher num select).
+  const empreendimentosOrdenados = ["Todos", ...dados.empreendimentos.filter((e) => e !== "Todos").sort((a, b) => a.localeCompare(b, "pt-BR"))];
+
+  // Cartões fixos de "em aberto" por empreendimento — Laranjeiras, Cerejeiras
+  // e Oliveiras cada um com o seu, e "Loteamento" junta todo o resto (as
+  // frentes Xique-xique, Andorinha, Lagoa de Pedra, Amoreiras e os itens
+  // sem empreendimento identificado). Independe do filtro selecionado
+  // acima — é sempre a visão dos 4 grupos.
+  const GRUPOS_PRINCIPAIS = ["Laranjeiras", "Cerejeiras", "Oliveiras"];
+  const abertoPorGrupo = { Laranjeiras: 0, Cerejeiras: 0, Oliveiras: 0, Loteamento: 0 };
+  for (const emp of dados.empreendimentos) {
+    if (emp === "Todos") continue;
+    const emAberto = dados.por_empreendimento[emp].totais.em_aberto;
+    if (GRUPOS_PRINCIPAIS.includes(emp)) abertoPorGrupo[emp] += emAberto;
+    else abertoPorGrupo.Loteamento += emAberto;
+  }
+
   const state = { empreendimento: "Todos" };
   const content = document.getElementById("gp-content");
 
@@ -27,11 +45,35 @@
 
     content.innerHTML = `
       <div class="card">
+        <div class="card-head" style="margin-bottom:14px;">
+          <div><div class="card-title">Chamados em aberto por empreendimento</div><div class="card-sub">"Loteamento" junta Amoreiras, Xique-xique, Andorinha e Lagoa de Pedra</div></div>
+        </div>
+        <div class="grid grid-4">
+          <div class="stat-tile">
+            <div class="stat-label">Laranjeiras</div>
+            <div class="stat-value">${GP.fmtInt(abertoPorGrupo.Laranjeiras)}</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-label">Cerejeiras</div>
+            <div class="stat-value">${GP.fmtInt(abertoPorGrupo.Cerejeiras)}</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-label">Oliveiras</div>
+            <div class="stat-value">${GP.fmtInt(abertoPorGrupo.Oliveiras)}</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-label">Loteamento</div>
+            <div class="stat-value">${GP.fmtInt(abertoPorGrupo.Loteamento)}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
         <div class="card-head" style="margin-bottom:4px;">
           <div><div class="card-title">Chamados de assistência técnica</div></div>
           <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
             <select class="select" id="filtro-empreendimento">
-              ${dados.empreendimentos.map((e) => `<option value="${e}" ${e === state.empreendimento ? "selected" : ""}>${e === "Todos" ? "Todos os empreendimentos" : e}</option>`).join("")}
+              ${empreendimentosOrdenados.map((e) => `<option value="${e}" ${e === state.empreendimento ? "selected" : ""}>${e === "Todos" ? "Todos os empreendimentos" : e}</option>`).join("")}
             </select>
             <span class="chip chip-neutral">Dados reais e agregados — UGB Caruaru</span>
           </div>
