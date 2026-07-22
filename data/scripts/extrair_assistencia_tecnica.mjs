@@ -19,6 +19,11 @@
  * empreendimento, pra tela ter um seletor sem precisar mandar dado bruto
  * pro navegador.
  *
+ * Chamados sobre uma casa específica (todo Tipo, exceto "Infra") só entram
+ * se a casa já tiver entregaReal preenchido no relatorio_de_casas7.csv (uma
+ * casa não pode ter chamado de assistência técnica antes de ser entregue ao
+ * cliente) — ver foiEntregueOuNaoEhSobreCasa() abaixo.
+ *
  * Uso:
  *   node data/scripts/extrair_assistencia_tecnica.mjs
  *   node data/scripts/extrair_assistencia_tecnica.mjs chamados.csv historico.csv casas.csv   # a partir de arquivos já baixados
@@ -90,19 +95,7 @@ const C = {
   dataAval: col(H1, "DataAvaliaçãoChamado"), prazoCombTermino: col(H1, "PrazoCombTermino"),
   prazoMaxTermino: col(H1, "PrazoMaxTermino"), dataTermino: col(H1, "DataTerminoChamado"),
 };
-// Escopo: só a UGB Caruaru (código "CA" na planilha — inclui a variante
-// "CA01(2)"), que é a unidade que o restante do site cobre (ver
-// gerar_resumo_obras.mjs: "Só os 4 condomínios entregues pela UGB Caruaru").
-// As demais UGBs (GA, IG, SC, BJ, ITA) são outras unidades da Viana & Moura,
-// fora do escopo deste site.
-const itens = rowsChamados.slice(1).filter((r) => String(r[C.id] ?? "").trim() && String(r[C.ugb]).trim().toUpperCase().startsWith("CA"));
-
-const H2 = rowsHistorico[0];
-const HC = { id: col(H2, "ID"), data: col(H2, "Data"), status: col(H2, "Status"), usuario: col(H2, "Usuário") };
-const idsCaruaru = new Set(itens.map((r) => String(r[C.id]).trim()));
-const eventos = rowsHistorico.slice(1).filter((r) => String(r[HC.id] ?? "").trim() && idsCaruaru.has(String(r[HC.id]).trim()));
-
-// ---------- Casa_ID -> Empreendimento (relatorio_de_casas7.csv) ----------
+// ---------- Casa_ID -> Empreendimento / entrega real (relatorio_de_casas7.csv) ----------
 // Nomes vindos da planilha em formatos diferentes pro mesmo condomínio
 // (mesmo critério de gerar_resumo_obras.mjs); os demais (Xique-xique,
 // Andorinha, Lagoa de Pedra) ficam com o nome já usado na planilha.
@@ -114,20 +107,52 @@ const NOME_CANONICO = {
   "CONDOMINIO VIDEIRAS": "Videiras",
 };
 const HM = rowsCasasMapa[0];
-const M = { id: col(HM, "id"), ugb: col(HM, "UGB"), empreendimento: col(HM, "Empreendimento") };
+const M = { id: col(HM, "id"), ugb: col(HM, "UGB"), empreendimento: col(HM, "Empreendimento"), entregaReal: col(HM, "entregaReal") };
 const empreendimentoPorCasaId = new Map();
+const entregueCasaId = new Set();
 for (const r of rowsCasasMapa.slice(1)) {
   if (!String(r[M.ugb]).trim().toUpperCase().startsWith("CA")) continue;
   const id = String(r[M.id]).trim();
   if (!id) continue;
   const bruto = String(r[M.empreendimento]).trim();
   empreendimentoPorCasaId.set(id, NOME_CANONICO[bruto.toUpperCase()] ?? bruto);
+  if (String(r[M.entregaReal] ?? "").trim()) entregueCasaId.add(id);
 }
 const NAO_IDENTIFICADO = "Não identificado";
 function empreendimentoDoItem(r) {
   const casaId = String(r[C.casaId] ?? "").trim().replace(/\.0+$/, "");
   return empreendimentoPorCasaId.get(casaId) ?? NAO_IDENTIFICADO;
 }
+
+// Escopo: só a UGB Caruaru (código "CA" na planilha — inclui a variante
+// "CA01(2)"), que é a unidade que o restante do site cobre (ver
+// gerar_resumo_obras.mjs: "Só os 4 condomínios entregues pela UGB Caruaru").
+// As demais UGBs (GA, IG, SC, BJ, ITA) são outras unidades da Viana & Moura,
+// fora do escopo deste site.
+//
+// Chamados que são sobre uma casa específica (todo Tipo, exceto "Infra" —
+// ruas, áreas comuns etc., que não têm uma casa dona) só entram se a casa
+// já tiver entregaReal preenchido no relatorio_de_casas7.csv — confirmado
+// com o usuário em 2026-07-22 que uma casa não pode gerar chamado de
+// assistência técnica antes de ser entregue ao cliente. Sem esse filtro,
+// ~235 dos chamados "Avaliado" do Oliveiras eram de casas vendidas mas
+// ainda sem entrega registrada (98 Tipo="Casa" + 137 Tipo="outros"),
+// inflando os números por etapa.
+function foiEntregueOuNaoEhSobreCasa(r) {
+  if (String(r[C.tipo]).trim() === "Infra") return true;
+  const casaId = String(r[C.casaId] ?? "").trim().replace(/\.0+$/, "");
+  return entregueCasaId.has(casaId);
+}
+const itens = rowsChamados.slice(1).filter((r) =>
+  String(r[C.id] ?? "").trim() &&
+  String(r[C.ugb]).trim().toUpperCase().startsWith("CA") &&
+  foiEntregueOuNaoEhSobreCasa(r)
+);
+
+const H2 = rowsHistorico[0];
+const HC = { id: col(H2, "ID"), data: col(H2, "Data"), status: col(H2, "Status"), usuario: col(H2, "Usuário") };
+const idsCaruaru = new Set(itens.map((r) => String(r[C.id]).trim()));
+const eventos = rowsHistorico.slice(1).filter((r) => String(r[HC.id] ?? "").trim() && idsCaruaru.has(String(r[HC.id]).trim()));
 
 // ---------- Cálculo de indicadores (reaproveitado por "Todos" e por empreendimento) ----------
 function calcularAgregados(itensSubset) {
@@ -311,7 +336,7 @@ for (const emp of empreendimentosOrdenados) porEmpreendimento[emp] = calcularAgr
 
 const resultado = {
   atualizado_em: new Date().toISOString().slice(0, 10),
-  fonte: "chamadosAssistenciaTecnica3.csv + historicoChamadosAssistenciaTecnica.csv + relatorio_de_casas7.csv (dados.vianaemoura.com.br) — agregado, sem nome de cliente",
+  fonte: "chamadosAssistenciaTecnica3.csv + historicoChamadosAssistenciaTecnica.csv + relatorio_de_casas7.csv (dados.vianaemoura.com.br) — agregado, sem nome de cliente. Chamados sobre uma casa (todo Tipo, exceto Infra) só entram se a casa tiver entregaReal preenchido no relatorio_de_casas7.csv",
   escopo: "UGB Caruaru (CA)",
   empreendimentos: ["Todos", ...empreendimentosOrdenados],
   por_empreendimento: porEmpreendimento,

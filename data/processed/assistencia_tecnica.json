@@ -1,6 +1,6 @@
 {
   "atualizado_em": "2026-07-22",
-  "fonte": "chamadosAssistenciaTecnica3.csv + historicoChamadosAssistenciaTecnica.csv + relatorio_de_casas7.csv (dados.vianaemoura.com.br) — agregado, sem nome de cliente",
+  "fonte": "chamadosAssistenciaTecnica3.csv + historicoChamadosAssistenciaTecnica.csv + relatorio_de_casas7.csv (dados.vianaemoura.com.br) — agregado, sem nome de cliente. Chamados sobre uma casa (todo Tipo, exceto Infra) só entram se a casa tiver entregaReal preenchido no relatorio_de_casas7.csv",
   "escopo": "UGB Caruaru (CA)",
   "empreendimentos": [
     "Todos",
@@ -10,19 +10,18 @@
     "Cerejeiras",
     "Laranjeiras",
     "Xique-xique II (Etapa 1)",
-    "Oliveiras",
     "Lagoa de Pedra II",
+    "Oliveiras",
     "Xique-xique (Etapa 5)",
     "Xique-xique (Etapa 6)",
     "Lagoa de Pedra",
     "Xique-xique (Etapa 4)",
     "Xique-xique (Etapa 3)",
-    "Amoreiras",
     "Xique-xique (Etapa 1)",
     "Xique-xique (Etapa 2)",
     "Andorinha II",
     "Andorinha II.2",
-    "Não identificado"
+    "Amoreiras"
   ],
   "por_empreendimento": {
     "Todos": {
@@ -31,33 +30,33 @@
         "ate": "2026-07-22"
       },
       "totais": {
-        "itens_relatados": 49709,
-        "chamados_unicos": 14444,
-        "em_aberto": 5520,
-        "casas_com_solicitacao_aberta": 3088,
-        "concluidos": 4506,
+        "itens_relatados": 48091,
+        "chamados_unicos": 13822,
+        "em_aberto": 4919,
+        "casas_com_solicitacao_aberta": 2744,
+        "concluidos": 4485,
         "nao_procedentes": 1216,
         "cancelados": 3202,
         "chamados_infra": 614,
-        "taxa_procedencia_pct": 91.2,
+        "taxa_procedencia_pct": 91,
         "tempo_medio_atendimento_dias": 19.3
       },
       "por_status": [
         {
           "status": "Realizado",
-          "total": 4506
-        },
-        {
-          "status": "Avaliado",
-          "total": 2739
+          "total": 4485
         },
         {
           "status": "Excluído",
           "total": 2479
         },
         {
+          "status": "Avaliado",
+          "total": 2404
+        },
+        {
           "status": "Inserido",
-          "total": 1487
+          "total": 1221
         },
         {
           "status": "Finalizado Não Procedente",
@@ -91,73 +90,73 @@
       "por_categoria": [
         {
           "categoria": "Parede",
-          "total": 13989
+          "total": 13871
         },
         {
           "categoria": "Pintura Interna",
-          "total": 5922
-        },
-        {
-          "categoria": "Cerâmica e Rodapé",
-          "total": 4461
+          "total": 5918
         },
         {
           "categoria": "Pintura Externa",
-          "total": 4414
+          "total": 4412
+        },
+        {
+          "categoria": "Cerâmica e Rodapé",
+          "total": 4284
         },
         {
           "categoria": "Instalação de Água",
-          "total": 4396
+          "total": 4236
         },
         {
           "categoria": "Portas Internas",
-          "total": 2508
+          "total": 2411
         },
         {
           "categoria": "Portas Externas e Janelas",
-          "total": 2350
-        },
-        {
-          "categoria": "Não informado",
-          "total": 1648
+          "total": 2250
         },
         {
           "categoria": "Instalações Elétricas",
-          "total": 1613
+          "total": 1548
+        },
+        {
+          "categoria": "Não informado",
+          "total": 1451
         },
         {
           "categoria": "Instalação de Esgoto",
-          "total": 1480
+          "total": 1358
         },
         {
           "categoria": "Coberta - Telha",
-          "total": 1349
+          "total": 1319
         },
         {
           "categoria": "Calçada e Degraus da Casa",
-          "total": 1252
+          "total": 980
         },
         {
           "categoria": "Outras categorias",
-          "total": 4327
+          "total": 4053
         }
       ],
       "por_gravidade": [
         {
           "gravidade": "1 (mais urgente)",
-          "total": 23947
+          "total": 22824
         },
         {
           "gravidade": "3",
-          "total": 3682
+          "total": 3404
         },
         {
           "gravidade": "2",
-          "total": 18659
+          "total": 18637
         },
         {
           "gravidade": "Não informada",
-          "total": 3421
+          "total": 3226
         }
       ],
       "evolucao_mensal": [
@@ -211,7 +210,7 @@
         },
         {
           "mes": "2023-06",
-          "total": 909
+          "total": 907
         },
         {
           "mes": "2023-07",
@@ -223,7 +222,7 @@
         },
         {
           "mes": "2023-09",
-          "total": 814
+          "total": 813
         },
         {
           "mes": "2023-10",
@@ -235,7 +234,7 @@
         },
         {
           "mes": "2023-12",
-          "total": 1352
+          "total": 1347
         },
         {
           "mes": "2024-01",
@@ -279,7 +278,7 @@
         },
         {
           "mes": "2024-11",
-          "total": 963
+          "total": 958
         },
         {
           "mes": "2024-12",
@@ -327,50 +326,50 @@
         },
         {
           "mes": "2025-11",
-          "total": 926
+          "total": 922
         },
         {
           "mes": "2025-12",
-          "total": 516
+          "total": 503
         },
         {
           "mes": "2026-01",
-          "total": 2897
+          "total": 2620
         },
         {
           "mes": "2026-02",
-          "total": 810
+          "total": 750
         },
         {
           "mes": "2026-03",
-          "total": 984
+          "total": 861
         },
         {
           "mes": "2026-04",
-          "total": 863
+          "total": 628
         },
         {
           "mes": "2026-05",
-          "total": 854
+          "total": 393
         },
         {
           "mes": "2026-06",
-          "total": 906
+          "total": 661
         },
         {
           "mes": "2026-07",
-          "total": 792
+          "total": 605
         }
       ],
       "sla": {
         "avaliacao_no_prazo_combinado_pct": 99.4,
-        "avaliacao_no_prazo_combinado_amostra": 32445,
+        "avaliacao_no_prazo_combinado_amostra": 32435,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 32445,
+        "avaliacao_no_prazo_maximo_amostra": 32435,
         "termino_no_prazo_combinado_pct": 98.7,
-        "termino_no_prazo_combinado_amostra": 27409,
-        "termino_no_prazo_maximo_pct": 90,
-        "termino_no_prazo_maximo_amostra": 28435
+        "termino_no_prazo_combinado_amostra": 27399,
+        "termino_no_prazo_maximo_pct": 90.2,
+        "termino_no_prazo_maximo_amostra": 28361
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 2.8,
@@ -379,7 +378,7 @@
       },
       "pesquisa_satisfacao": {
         "respondida_pct": 97.1,
-        "amostra": 4209
+        "amostra": 4207
       },
       "por_tecnico": [
         {
@@ -388,7 +387,7 @@
         },
         {
           "nome": "Pedro Henrique da Silva Oliveira",
-          "realizados": 1849
+          "realizados": 1848
         },
         {
           "nome": "Jose Pedro da Silva Junior",
@@ -396,7 +395,7 @@
         },
         {
           "nome": "Nayara Michele Silva De Lima",
-          "realizados": 39
+          "realizados": 38
         },
         {
           "nome": "Maria Karolyny Bezerra Lima",
@@ -821,10 +820,10 @@
         "ate": "2026-07-21"
       },
       "totais": {
-        "itens_relatados": 7156,
-        "chamados_unicos": 3149,
-        "em_aberto": 1300,
-        "casas_com_solicitacao_aberta": 658,
+        "itens_relatados": 7148,
+        "chamados_unicos": 3146,
+        "em_aberto": 1297,
+        "casas_com_solicitacao_aberta": 657,
         "concluidos": 932,
         "nao_procedentes": 256,
         "cancelados": 661,
@@ -839,11 +838,11 @@
         },
         {
           "status": "Inserido",
-          "total": 568
+          "total": 567
         },
         {
           "status": "Avaliado",
-          "total": 526
+          "total": 524
         },
         {
           "status": "Excluído",
@@ -873,7 +872,7 @@
       "por_categoria": [
         {
           "categoria": "Parede",
-          "total": 1834
+          "total": 1828
         },
         {
           "categoria": "Instalação de Água",
@@ -881,11 +880,11 @@
         },
         {
           "categoria": "Cerâmica e Rodapé",
-          "total": 781
+          "total": 780
         },
         {
           "categoria": "Portas Internas",
-          "total": 665
+          "total": 664
         },
         {
           "categoria": "Portas Externas e Janelas",
@@ -931,11 +930,11 @@
         },
         {
           "gravidade": "3",
-          "total": 939
+          "total": 938
         },
         {
           "gravidade": "2",
-          "total": 1966
+          "total": 1959
         },
         {
           "gravidade": "Não informada",
@@ -949,7 +948,7 @@
         },
         {
           "mes": "2023-06",
-          "total": 317
+          "total": 315
         },
         {
           "mes": "2023-07",
@@ -961,7 +960,7 @@
         },
         {
           "mes": "2023-09",
-          "total": 149
+          "total": 148
         },
         {
           "mes": "2023-10",
@@ -973,7 +972,7 @@
         },
         {
           "mes": "2023-12",
-          "total": 613
+          "total": 608
         },
         {
           "mes": "2024-01",
@@ -1559,16 +1558,16 @@
         "ate": "2026-07-17"
       },
       "totais": {
-        "itens_relatados": 5157,
-        "chamados_unicos": 1516,
+        "itens_relatados": 5147,
+        "chamados_unicos": 1514,
         "em_aberto": 799,
         "casas_com_solicitacao_aberta": 450,
-        "concluidos": 400,
+        "concluidos": 398,
         "nao_procedentes": 44,
         "cancelados": 273,
         "chamados_infra": 83,
         "taxa_procedencia_pct": 95.9,
-        "tempo_medio_atendimento_dias": 22.8
+        "tempo_medio_atendimento_dias": 22.9
       },
       "por_status": [
         {
@@ -1577,7 +1576,7 @@
         },
         {
           "status": "Realizado",
-          "total": 400
+          "total": 398
         },
         {
           "status": "Excluído",
@@ -1615,11 +1614,11 @@
       "por_categoria": [
         {
           "categoria": "Cerâmica e Rodapé",
-          "total": 830
+          "total": 828
         },
         {
           "categoria": "Instalação de Água",
-          "total": 750
+          "total": 748
         },
         {
           "categoria": "Portas Internas",
@@ -1631,11 +1630,11 @@
         },
         {
           "categoria": "Parede",
-          "total": 422
+          "total": 420
         },
         {
           "categoria": "Forro em PVC",
-          "total": 321
+          "total": 320
         },
         {
           "categoria": "Calçada e Degraus da Casa",
@@ -1643,7 +1642,7 @@
         },
         {
           "categoria": "Instalação de Esgoto",
-          "total": 274
+          "total": 273
         },
         {
           "categoria": "Banheiro",
@@ -1651,7 +1650,7 @@
         },
         {
           "categoria": "Pintura Interna",
-          "total": 205
+          "total": 203
         },
         {
           "categoria": "Limpeza de Casa",
@@ -1673,7 +1672,7 @@
         },
         {
           "gravidade": "1 (mais urgente)",
-          "total": 4334
+          "total": 4324
         },
         {
           "gravidade": "2",
@@ -1727,7 +1726,7 @@
         },
         {
           "mes": "2026-02",
-          "total": 253
+          "total": 252
         },
         {
           "mes": "2026-03",
@@ -1735,7 +1734,7 @@
         },
         {
           "mes": "2026-04",
-          "total": 248
+          "total": 239
         },
         {
           "mes": "2026-05",
@@ -1751,28 +1750,28 @@
         }
       ],
       "sla": {
-        "avaliacao_no_prazo_combinado_pct": 98.7,
-        "avaliacao_no_prazo_combinado_amostra": 1733,
+        "avaliacao_no_prazo_combinado_pct": 98.8,
+        "avaliacao_no_prazo_combinado_amostra": 1723,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 1733,
+        "avaliacao_no_prazo_maximo_amostra": 1723,
         "termino_no_prazo_combinado_pct": 99.7,
-        "termino_no_prazo_combinado_amostra": 1461,
-        "termino_no_prazo_maximo_pct": 80.5,
-        "termino_no_prazo_maximo_amostra": 1732
+        "termino_no_prazo_combinado_amostra": 1451,
+        "termino_no_prazo_maximo_pct": 80.4,
+        "termino_no_prazo_maximo_amostra": 1722
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 4.9,
-        "agendamento_ate_avaliacao": 9.9,
-        "avaliacao_ate_realizado": 10.9
+        "agendamento_ate_avaliacao": 9.8,
+        "avaliacao_ate_realizado": 11
       },
       "pesquisa_satisfacao": {
         "respondida_pct": 92.7,
-        "amostra": 331
+        "amostra": 329
       },
       "por_tecnico": [
         {
           "nome": "Pedro Henrique da Silva Oliveira",
-          "realizados": 170
+          "realizados": 169
         },
         {
           "nome": "Jose Pedro da Silva Junior",
@@ -1784,7 +1783,7 @@
         },
         {
           "nome": "Nayara Michele Silva De Lima",
-          "realizados": 6
+          "realizados": 5
         }
       ]
     },
@@ -2454,205 +2453,6 @@
         }
       ]
     },
-    "Oliveiras": {
-      "periodo": {
-        "de": "2025-09-19",
-        "ate": "2026-07-22"
-      },
-      "totais": {
-        "itens_relatados": 3668,
-        "chamados_unicos": 1418,
-        "em_aberto": 1191,
-        "casas_com_solicitacao_aberta": 505,
-        "concluidos": 71,
-        "nao_procedentes": 0,
-        "cancelados": 156,
-        "chamados_infra": 21,
-        "taxa_procedencia_pct": 99.4,
-        "tempo_medio_atendimento_dias": 17.6
-      },
-      "por_status": [
-        {
-          "status": "Avaliado",
-          "total": 588
-        },
-        {
-          "status": "Inserido",
-          "total": 583
-        },
-        {
-          "status": "Excluído",
-          "total": 153
-        },
-        {
-          "status": "Realizado",
-          "total": 71
-        },
-        {
-          "status": "Agendado",
-          "total": 18
-        },
-        {
-          "status": "Cancelado",
-          "total": 3
-        },
-        {
-          "status": "Cliente Não Disponível",
-          "total": 2
-        }
-      ],
-      "por_categoria": [
-        {
-          "categoria": "Instalação de Água",
-          "total": 528
-        },
-        {
-          "categoria": "Calçada e Degraus da Casa",
-          "total": 525
-        },
-        {
-          "categoria": "Cerâmica e Rodapé",
-          "total": 410
-        },
-        {
-          "categoria": "Não informado",
-          "total": 325
-        },
-        {
-          "categoria": "Portas Internas",
-          "total": 312
-        },
-        {
-          "categoria": "Parede",
-          "total": 254
-        },
-        {
-          "categoria": "Limpeza de Casa",
-          "total": 243
-        },
-        {
-          "categoria": "Instalação de Esgoto",
-          "total": 232
-        },
-        {
-          "categoria": "Banheiro",
-          "total": 230
-        },
-        {
-          "categoria": "Forro em PVC",
-          "total": 158
-        },
-        {
-          "categoria": "Instalações Elétricas",
-          "total": 153
-        },
-        {
-          "categoria": "Portas Externas e Janelas",
-          "total": 149
-        },
-        {
-          "categoria": "Outras categorias",
-          "total": 149
-        }
-      ],
-      "por_gravidade": [
-        {
-          "gravidade": "1 (mais urgente)",
-          "total": 2595
-        },
-        {
-          "gravidade": "3",
-          "total": 680
-        },
-        {
-          "gravidade": "2",
-          "total": 56
-        },
-        {
-          "gravidade": "Não informada",
-          "total": 337
-        }
-      ],
-      "evolucao_mensal": [
-        {
-          "mes": "2025-09",
-          "total": 2
-        },
-        {
-          "mes": "2025-11",
-          "total": 53
-        },
-        {
-          "mes": "2025-12",
-          "total": 96
-        },
-        {
-          "mes": "2026-01",
-          "total": 1658
-        },
-        {
-          "mes": "2026-02",
-          "total": 313
-        },
-        {
-          "mes": "2026-03",
-          "total": 263
-        },
-        {
-          "mes": "2026-04",
-          "total": 329
-        },
-        {
-          "mes": "2026-05",
-          "total": 351
-        },
-        {
-          "mes": "2026-06",
-          "total": 178
-        },
-        {
-          "mes": "2026-07",
-          "total": 425
-        }
-      ],
-      "sla": {
-        "avaliacao_no_prazo_combinado_pct": 95.8,
-        "avaliacao_no_prazo_combinado_amostra": 334,
-        "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 334,
-        "termino_no_prazo_combinado_pct": 100,
-        "termino_no_prazo_combinado_amostra": 47,
-        "termino_no_prazo_maximo_pct": 48.4,
-        "termino_no_prazo_maximo_amostra": 399
-      },
-      "tempos_medios_dias": {
-        "abertura_ate_agendamento": 7.8,
-        "agendamento_ate_avaliacao": 3.4,
-        "avaliacao_ate_realizado": 6
-      },
-      "pesquisa_satisfacao": {
-        "respondida_pct": 7.7,
-        "amostra": 13
-      },
-      "por_tecnico": [
-        {
-          "nome": "Pedro Henrique da Silva Oliveira",
-          "realizados": 10
-        },
-        {
-          "nome": "Nayara Michele Silva De Lima",
-          "realizados": 1
-        },
-        {
-          "nome": "Patricia Paes Pedrosa",
-          "realizados": 1
-        },
-        {
-          "nome": "André Afonso Barbosa da Silva",
-          "realizados": 1
-        }
-      ]
-    },
     "Lagoa de Pedra II": {
       "periodo": {
         "de": "2022-06-03",
@@ -3009,6 +2809,205 @@
         {
           "nome": "Maria Karolyny Bezerra Lima",
           "realizados": 2
+        }
+      ]
+    },
+    "Oliveiras": {
+      "periodo": {
+        "de": "2025-09-19",
+        "ate": "2026-07-22"
+      },
+      "totais": {
+        "itens_relatados": 2713,
+        "chamados_unicos": 908,
+        "em_aberto": 700,
+        "casas_com_solicitacao_aberta": 251,
+        "concluidos": 52,
+        "nao_procedentes": 0,
+        "cancelados": 156,
+        "chamados_infra": 21,
+        "taxa_procedencia_pct": 99.3,
+        "tempo_medio_atendimento_dias": 18.1
+      },
+      "por_status": [
+        {
+          "status": "Avaliado",
+          "total": 353
+        },
+        {
+          "status": "Inserido",
+          "total": 327
+        },
+        {
+          "status": "Excluído",
+          "total": 153
+        },
+        {
+          "status": "Realizado",
+          "total": 52
+        },
+        {
+          "status": "Agendado",
+          "total": 18
+        },
+        {
+          "status": "Cancelado",
+          "total": 3
+        },
+        {
+          "status": "Cliente Não Disponível",
+          "total": 2
+        }
+      ],
+      "por_categoria": [
+        {
+          "categoria": "Instalação de Água",
+          "total": 417
+        },
+        {
+          "categoria": "Cerâmica e Rodapé",
+          "total": 322
+        },
+        {
+          "categoria": "Portas Internas",
+          "total": 270
+        },
+        {
+          "categoria": "Calçada e Degraus da Casa",
+          "total": 265
+        },
+        {
+          "categoria": "Parede",
+          "total": 206
+        },
+        {
+          "categoria": "Banheiro",
+          "total": 196
+        },
+        {
+          "categoria": "Limpeza de Casa",
+          "total": 196
+        },
+        {
+          "categoria": "Não informado",
+          "total": 188
+        },
+        {
+          "categoria": "Instalação de Esgoto",
+          "total": 172
+        },
+        {
+          "categoria": "Forro em PVC",
+          "total": 123
+        },
+        {
+          "categoria": "Instalações Elétricas",
+          "total": 121
+        },
+        {
+          "categoria": "Portas Externas e Janelas",
+          "total": 102
+        },
+        {
+          "categoria": "Outras categorias",
+          "total": 135
+        }
+      ],
+      "por_gravidade": [
+        {
+          "gravidade": "1 (mais urgente)",
+          "total": 2054
+        },
+        {
+          "gravidade": "3",
+          "total": 406
+        },
+        {
+          "gravidade": "2",
+          "total": 50
+        },
+        {
+          "gravidade": "Não informada",
+          "total": 203
+        }
+      ],
+      "evolucao_mensal": [
+        {
+          "mes": "2025-09",
+          "total": 2
+        },
+        {
+          "mes": "2025-11",
+          "total": 53
+        },
+        {
+          "mes": "2025-12",
+          "total": 83
+        },
+        {
+          "mes": "2026-01",
+          "total": 1381
+        },
+        {
+          "mes": "2026-02",
+          "total": 254
+        },
+        {
+          "mes": "2026-03",
+          "total": 142
+        },
+        {
+          "mes": "2026-04",
+          "total": 188
+        },
+        {
+          "mes": "2026-05",
+          "total": 8
+        },
+        {
+          "mes": "2026-06",
+          "total": 177
+        },
+        {
+          "mes": "2026-07",
+          "total": 425
+        }
+      ],
+      "sla": {
+        "avaliacao_no_prazo_combinado_pct": 95.8,
+        "avaliacao_no_prazo_combinado_amostra": 334,
+        "avaliacao_no_prazo_maximo_pct": 100,
+        "avaliacao_no_prazo_maximo_amostra": 334,
+        "termino_no_prazo_combinado_pct": 100,
+        "termino_no_prazo_combinado_amostra": 47,
+        "termino_no_prazo_maximo_pct": 51.6,
+        "termino_no_prazo_maximo_amostra": 335
+      },
+      "tempos_medios_dias": {
+        "abertura_ate_agendamento": 7.8,
+        "agendamento_ate_avaliacao": 3.4,
+        "avaliacao_ate_realizado": 6
+      },
+      "pesquisa_satisfacao": {
+        "respondida_pct": 7.7,
+        "amostra": 13
+      },
+      "por_tecnico": [
+        {
+          "nome": "Pedro Henrique da Silva Oliveira",
+          "realizados": 10
+        },
+        {
+          "nome": "Nayara Michele Silva De Lima",
+          "realizados": 1
+        },
+        {
+          "nome": "Patricia Paes Pedrosa",
+          "realizados": 1
+        },
+        {
+          "nome": "André Afonso Barbosa da Silva",
+          "realizados": 1
         }
       ]
     },
@@ -4635,144 +4634,6 @@
         }
       ]
     },
-    "Amoreiras": {
-      "periodo": {
-        "de": "2026-03-18",
-        "ate": "2026-07-15"
-      },
-      "totais": {
-        "itens_relatados": 638,
-        "chamados_unicos": 100,
-        "em_aberto": 100,
-        "casas_com_solicitacao_aberta": 90,
-        "concluidos": 0,
-        "nao_procedentes": 0,
-        "cancelados": 0,
-        "chamados_infra": 2,
-        "taxa_procedencia_pct": 100,
-        "tempo_medio_atendimento_dias": null
-      },
-      "por_status": [
-        {
-          "status": "Avaliado",
-          "total": 100
-        }
-      ],
-      "por_categoria": [
-        {
-          "categoria": "Cerâmica e Rodapé",
-          "total": 86
-        },
-        {
-          "categoria": "Limpeza de Casa",
-          "total": 71
-        },
-        {
-          "categoria": "Parede",
-          "total": 62
-        },
-        {
-          "categoria": "Instalação de Esgoto",
-          "total": 61
-        },
-        {
-          "categoria": "Portas Internas",
-          "total": 54
-        },
-        {
-          "categoria": "Portas Externas e Janelas",
-          "total": 53
-        },
-        {
-          "categoria": "Não informado",
-          "total": 51
-        },
-        {
-          "categoria": "Instalação de Água",
-          "total": 47
-        },
-        {
-          "categoria": "Banheiro",
-          "total": 45
-        },
-        {
-          "categoria": "Forro em PVC",
-          "total": 40
-        },
-        {
-          "categoria": "Instalações Elétricas",
-          "total": 33
-        },
-        {
-          "categoria": "Coberta - Telha",
-          "total": 20
-        },
-        {
-          "categoria": "Outras categorias",
-          "total": 15
-        }
-      ],
-      "por_gravidade": [
-        {
-          "gravidade": "Não informada",
-          "total": 52
-        },
-        {
-          "gravidade": "1 (mais urgente)",
-          "total": 574
-        },
-        {
-          "gravidade": "3",
-          "total": 3
-        },
-        {
-          "gravidade": "2",
-          "total": 9
-        }
-      ],
-      "evolucao_mensal": [
-        {
-          "mes": "2026-03",
-          "total": 2
-        },
-        {
-          "mes": "2026-04",
-          "total": 87
-        },
-        {
-          "mes": "2026-05",
-          "total": 118
-        },
-        {
-          "mes": "2026-06",
-          "total": 244
-        },
-        {
-          "mes": "2026-07",
-          "total": 187
-        }
-      ],
-      "sla": {
-        "avaliacao_no_prazo_combinado_pct": null,
-        "avaliacao_no_prazo_combinado_amostra": 0,
-        "avaliacao_no_prazo_maximo_pct": null,
-        "avaliacao_no_prazo_maximo_amostra": 0,
-        "termino_no_prazo_combinado_pct": null,
-        "termino_no_prazo_combinado_amostra": 0,
-        "termino_no_prazo_maximo_pct": null,
-        "termino_no_prazo_maximo_amostra": 0
-      },
-      "tempos_medios_dias": {
-        "abertura_ate_agendamento": null,
-        "agendamento_ate_avaliacao": null,
-        "avaliacao_ate_realizado": null
-      },
-      "pesquisa_satisfacao": {
-        "respondida_pct": null,
-        "amostra": 0
-      },
-      "por_tecnico": []
-    },
     "Xique-xique (Etapa 1)": {
       "periodo": {
         "de": "2022-07-10",
@@ -5516,49 +5377,45 @@
       },
       "por_tecnico": []
     },
-    "Não identificado": {
+    "Amoreiras": {
       "periodo": {
-        "de": "2024-11-12",
-        "ate": "2025-11-18"
+        "de": "2026-04-29",
+        "ate": "2026-04-29"
       },
       "totais": {
-        "itens_relatados": 9,
-        "chamados_unicos": 9,
-        "em_aberto": 9,
-        "casas_com_solicitacao_aberta": 1,
+        "itens_relatados": 2,
+        "chamados_unicos": 2,
+        "em_aberto": 2,
+        "casas_com_solicitacao_aberta": 2,
         "concluidos": 0,
         "nao_procedentes": 0,
         "cancelados": 0,
-        "chamados_infra": 0,
-        "taxa_procedencia_pct": null,
+        "chamados_infra": 2,
+        "taxa_procedencia_pct": 100,
         "tempo_medio_atendimento_dias": null
       },
       "por_status": [
         {
-          "status": "Inserido",
-          "total": 9
+          "status": "Avaliado",
+          "total": 2
         }
       ],
       "por_categoria": [
         {
-          "categoria": "Não informado",
-          "total": 9
+          "categoria": "Pavimentação",
+          "total": 2
         }
       ],
       "por_gravidade": [
         {
-          "gravidade": "Não informada",
-          "total": 9
+          "gravidade": "1 (mais urgente)",
+          "total": 2
         }
       ],
       "evolucao_mensal": [
         {
-          "mes": "2024-11",
-          "total": 5
-        },
-        {
-          "mes": "2025-11",
-          "total": 4
+          "mes": "2026-04",
+          "total": 2
         }
       ],
       "sla": {
