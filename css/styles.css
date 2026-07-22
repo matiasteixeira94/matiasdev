@@ -375,6 +375,10 @@ h1, h2, h3, .num-hero, .brand-word {
 
 /* tabelas */
 .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-md); }
+/* Modificador pra tabelas longas (ex.: Registro de casas) — limita a
+   altura e rola verticalmente em vez de esticar a página inteira; o
+   cabeçalho (position:sticky em table.data th) fica visível ao rolar. */
+.table-wrap-scroll { max-height: 520px; overflow-y: auto; }
 table.data { font-size: 13px; min-width: 640px; }
 table.data th {
   text-align: left; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em;

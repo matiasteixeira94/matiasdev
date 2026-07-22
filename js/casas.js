@@ -214,7 +214,7 @@
         <h2>Registro de casas</h2>
         <span class="footnote" id="contador-casas"></span>
       </div>
-      <div class="table-wrap">
+      <div class="table-wrap table-wrap-scroll">
         <table class="data" id="tabela-casas">
           <thead>
             <tr>
