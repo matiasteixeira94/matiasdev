@@ -137,19 +137,38 @@ function calcularAgregados(itensSubset) {
   const idsUnicos = idsSubset;
   const datasAbertura = itensSubset.map((r) => dataValida(r[C.dataAbertura])).filter(Boolean).sort();
 
-  const emAberto = itensSubset.filter((r) => {
+  // Cada chamado tem em média ~3,4 itens (problemas relatados na mesma
+  // visita) e todos os itens de um mesmo chamado sempre têm o mesmo Status e
+  // o mesmo Casa_ID (confirmado nos dados: 0 chamados com status ou casa
+  // "mistos" entre os itens). Por isso status/casa são contados por CHAMADO
+  // (1 linha representante por ID), nunca por item — senão um chamado com 5
+  // itens conta 5x nos totais de "em aberto"/"concluídos"/etc., inflando o
+  // número de casas/chamados que realmente estão aguardando atendimento.
+  const chamadosPorId = new Map();
+  for (const r of itensSubset) {
+    const id = String(r[C.id]).trim();
+    if (!chamadosPorId.has(id)) chamadosPorId.set(id, r); // 1ª ocorrência representa o chamado inteiro
+  }
+  const representantes = [...chamadosPorId.values()];
+
+  const emAberto = representantes.filter((r) => {
     const s = String(r[C.status]).trim();
     return s !== STATUS_CONCLUIDO && s !== STATUS_NAO_PROCEDENTE && !STATUS_CANCELADO.has(s);
   });
-  const concluidos = itensSubset.filter((r) => String(r[C.status]).trim() === STATUS_CONCLUIDO);
-  const naoProcedentesStatus = itensSubset.filter((r) => String(r[C.status]).trim() === STATUS_NAO_PROCEDENTE);
-  const cancelados = itensSubset.filter((r) => STATUS_CANCELADO.has(String(r[C.status]).trim()));
+  const concluidosChamados = representantes.filter((r) => String(r[C.status]).trim() === STATUS_CONCLUIDO);
+  const naoProcedentesStatus = representantes.filter((r) => String(r[C.status]).trim() === STATUS_NAO_PROCEDENTE);
+  const cancelados = representantes.filter((r) => STATUS_CANCELADO.has(String(r[C.status]).trim()));
+  const casasComSolicitacaoAberta = new Set(emAberto.map((r) => String(r[C.casaId]).trim()));
 
   const avaliados = itensSubset.filter((r) => ["Procedente", "Nao Procedente", "Sem Acordo"].includes(String(r[C.procedente]).trim()));
   const procedentes = avaliados.filter((r) => String(r[C.procedente]).trim() === "Procedente");
 
   const idsInfra = new Set(itensSubset.filter((r) => String(r[C.tipo]).trim() === "Infra").map((r) => String(r[C.id]).trim()));
 
+  // tempo de atendimento usa os itens (não só os representantes) porque a
+  // média não muda com valores duplicados — mas dá no mesmo, e evita ter
+  // que reprocessar as datas de novo.
+  const concluidos = itensSubset.filter((r) => String(r[C.status]).trim() === STATUS_CONCLUIDO);
   const temposAtendimento = concluidos
     .map((r) => {
       const de = dataValida(r[C.dataAbertura]), ate = dataValida(r[C.dataTermino]);
@@ -161,7 +180,8 @@ function calcularAgregados(itensSubset) {
     itens_relatados: itensSubset.length,
     chamados_unicos: idsUnicos.size,
     em_aberto: emAberto.length,
-    concluidos: concluidos.length,
+    casas_com_solicitacao_aberta: casasComSolicitacaoAberta.size,
+    concluidos: concluidosChamados.length,
     nao_procedentes: naoProcedentesStatus.length,
     cancelados: cancelados.length,
     chamados_infra: idsInfra.size,
@@ -169,8 +189,9 @@ function calcularAgregados(itensSubset) {
     tempo_medio_atendimento_dias: media(temposAtendimento),
   };
 
+  // Por chamado (1 vez cada), não por item — mesmo motivo do em_aberto acima.
   const contagemStatus = new Map();
-  for (const r of itensSubset) {
+  for (const r of representantes) {
     const s = String(r[C.status]).trim() || "Outros";
     contagemStatus.set(s, (contagemStatus.get(s) || 0) + 1);
   }

@@ -22,22 +22,31 @@
   // volume, que é útil pro cálculo mas não pra escolher num select).
   const empreendimentosOrdenados = ["Todos", ...dados.empreendimentos.filter((e) => e !== "Todos").sort((a, b) => a.localeCompare(b, "pt-BR"))];
 
-  // Cartões fixos de "em aberto" por empreendimento — Laranjeiras, Cerejeiras
-  // e Oliveiras cada um com o seu, e "Loteamento" junta todo o resto (as
-  // frentes Xique-xique, Andorinha, Lagoa de Pedra, Amoreiras e os itens
-  // sem empreendimento identificado). Independe do filtro selecionado
-  // acima — é sempre a visão dos 4 grupos.
+  // Cartões fixos de "casas com solicitação aberta" por empreendimento —
+  // Laranjeiras, Cerejeiras e Oliveiras cada um com o seu, e "Loteamento"
+  // junta todo o resto (Xique-xique, Andorinha, Lagoa de Pedra, Amoreiras e
+  // os itens sem empreendimento identificado). Independe do filtro
+  // selecionado abaixo — é sempre a visão dos 4 grupos. Conta CASAS
+  // distintas (não itens nem chamados) porque cada casa costuma ter vários
+  // itens/chamados abertos ao mesmo tempo, e o que importa aqui é "quantos
+  // clientes estão esperando atendimento".
   const GRUPOS_PRINCIPAIS = ["Laranjeiras", "Cerejeiras", "Oliveiras"];
   const abertoPorGrupo = { Laranjeiras: 0, Cerejeiras: 0, Oliveiras: 0, Loteamento: 0 };
   for (const emp of dados.empreendimentos) {
     if (emp === "Todos") continue;
-    const emAberto = dados.por_empreendimento[emp].totais.em_aberto;
-    if (GRUPOS_PRINCIPAIS.includes(emp)) abertoPorGrupo[emp] += emAberto;
-    else abertoPorGrupo.Loteamento += emAberto;
+    const casas = dados.por_empreendimento[emp].totais.casas_com_solicitacao_aberta;
+    if (GRUPOS_PRINCIPAIS.includes(emp)) abertoPorGrupo[emp] += casas;
+    else abertoPorGrupo.Loteamento += casas;
   }
 
   const state = { empreendimento: "Todos" };
   const content = document.getElementById("gp-content");
+
+  function irParaEmpreendimento(emp) {
+    state.empreendimento = emp;
+    render();
+    document.getElementById("filtro-empreendimento").scrollIntoView({ behavior: "smooth", block: "center" });
+  }
 
   function render() {
     const d = dados.por_empreendimento[state.empreendimento];
@@ -46,18 +55,18 @@
     content.innerHTML = `
       <div class="card">
         <div class="card-head" style="margin-bottom:14px;">
-          <div><div class="card-title">Chamados em aberto por empreendimento</div><div class="card-sub">"Loteamento" junta Amoreiras, Xique-xique, Andorinha e Lagoa de Pedra</div></div>
+          <div><div class="card-title">Casas com solicitação aberta por empreendimento</div><div class="card-sub">Clique num empreendimento pra ver o detalhe. "Loteamento" junta Amoreiras, Xique-xique, Andorinha e Lagoa de Pedra</div></div>
         </div>
         <div class="grid grid-4">
-          <div class="stat-tile">
+          <div class="stat-tile" style="cursor:pointer;" data-emp="Laranjeiras">
             <div class="stat-label">Laranjeiras</div>
             <div class="stat-value">${GP.fmtInt(abertoPorGrupo.Laranjeiras)}</div>
           </div>
-          <div class="stat-tile">
+          <div class="stat-tile" style="cursor:pointer;" data-emp="Cerejeiras">
             <div class="stat-label">Cerejeiras</div>
             <div class="stat-value">${GP.fmtInt(abertoPorGrupo.Cerejeiras)}</div>
           </div>
-          <div class="stat-tile">
+          <div class="stat-tile" style="cursor:pointer;" data-emp="Oliveiras">
             <div class="stat-label">Oliveiras</div>
             <div class="stat-value">${GP.fmtInt(abertoPorGrupo.Oliveiras)}</div>
           </div>
@@ -93,7 +102,7 @@
           <div class="stat-tile">
             <div class="stat-label">Em aberto</div>
             <div class="stat-value">${GP.fmtInt(totais.em_aberto)}</div>
-            <span class="footnote">itens ainda sem desfecho</span>
+            <span class="footnote">${GP.fmtInt(totais.casas_com_solicitacao_aberta)} casas aguardando atendimento</span>
           </div>
           <div class="stat-tile">
             <div class="stat-label">Taxa de procedência</div>
@@ -219,6 +228,9 @@
     document.getElementById("filtro-empreendimento").addEventListener("change", (e) => {
       state.empreendimento = e.target.value;
       render();
+    });
+    content.querySelectorAll("[data-emp]").forEach((el) => {
+      el.addEventListener("click", () => irParaEmpreendimento(el.dataset.emp));
     });
 
     renderGraficos(d);

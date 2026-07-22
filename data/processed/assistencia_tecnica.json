@@ -28,59 +28,60 @@
     "Todos": {
       "periodo": {
         "de": "2022-06-01",
-        "ate": "2026-07-21"
+        "ate": "2026-07-22"
       },
       "totais": {
-        "itens_relatados": 49592,
-        "chamados_unicos": 14429,
-        "em_aberto": 14386,
-        "concluidos": 28419,
-        "nao_procedentes": 1823,
-        "cancelados": 4964,
-        "chamados_infra": 611,
+        "itens_relatados": 49709,
+        "chamados_unicos": 14444,
+        "em_aberto": 5520,
+        "casas_com_solicitacao_aberta": 3088,
+        "concluidos": 4506,
+        "nao_procedentes": 1216,
+        "cancelados": 3202,
+        "chamados_infra": 614,
         "taxa_procedencia_pct": 91.2,
         "tempo_medio_atendimento_dias": 19.3
       },
       "por_status": [
         {
           "status": "Realizado",
-          "total": 28419
+          "total": 4506
         },
         {
           "status": "Avaliado",
-          "total": 10398
+          "total": 2739
         },
         {
           "status": "Excluído",
-          "total": 4241
+          "total": 2479
         },
         {
           "status": "Inserido",
-          "total": 2156
+          "total": 1487
         },
         {
           "status": "Finalizado Não Procedente",
-          "total": 1823
-        },
-        {
-          "status": "Cliente Não Disponível",
-          "total": 915
+          "total": 1216
         },
         {
           "status": "Cancelado",
           "total": 723
         },
         {
-          "status": "Cliente Não Contactado",
-          "total": 650
+          "status": "Cliente Não Disponível",
+          "total": 720
         },
         {
-          "status": "Assistência Especial Aguardando",
-          "total": 205
+          "status": "Cliente Não Contactado",
+          "total": 509
         },
         {
           "status": "Agendado",
-          "total": 60
+          "total": 50
+        },
+        {
+          "status": "Assistência Especial Aguardando",
+          "total": 13
         },
         {
           "status": "Outros",
@@ -90,61 +91,61 @@
       "por_categoria": [
         {
           "categoria": "Parede",
-          "total": 13976
+          "total": 13989
         },
         {
           "categoria": "Pintura Interna",
-          "total": 5918
+          "total": 5922
         },
         {
           "categoria": "Cerâmica e Rodapé",
-          "total": 4424
+          "total": 4461
         },
         {
           "categoria": "Pintura Externa",
-          "total": 4410
+          "total": 4414
         },
         {
           "categoria": "Instalação de Água",
-          "total": 4384
+          "total": 4396
         },
         {
           "categoria": "Portas Internas",
-          "total": 2505
+          "total": 2508
         },
         {
           "categoria": "Portas Externas e Janelas",
-          "total": 2346
+          "total": 2350
         },
         {
           "categoria": "Não informado",
-          "total": 1644
+          "total": 1648
         },
         {
           "categoria": "Instalações Elétricas",
-          "total": 1606
+          "total": 1613
         },
         {
           "categoria": "Instalação de Esgoto",
-          "total": 1474
+          "total": 1480
         },
         {
           "categoria": "Coberta - Telha",
-          "total": 1347
+          "total": 1349
         },
         {
           "categoria": "Calçada e Degraus da Casa",
-          "total": 1250
+          "total": 1252
         },
         {
           "categoria": "Outras categorias",
-          "total": 4308
+          "total": 4327
         }
       ],
       "por_gravidade": [
         {
           "gravidade": "1 (mais urgente)",
-          "total": 23835
+          "total": 23947
         },
         {
           "gravidade": "3",
@@ -152,11 +153,11 @@
         },
         {
           "gravidade": "2",
-          "total": 18658
+          "total": 18659
         },
         {
           "gravidade": "Não informada",
-          "total": 3417
+          "total": 3421
         }
       ],
       "evolucao_mensal": [
@@ -354,22 +355,22 @@
         },
         {
           "mes": "2026-06",
-          "total": 893
+          "total": 906
         },
         {
           "mes": "2026-07",
-          "total": 688
+          "total": 792
         }
       ],
       "sla": {
         "avaliacao_no_prazo_combinado_pct": 99.4,
-        "avaliacao_no_prazo_combinado_amostra": 32379,
+        "avaliacao_no_prazo_combinado_amostra": 32445,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 32379,
+        "avaliacao_no_prazo_maximo_amostra": 32445,
         "termino_no_prazo_combinado_pct": 98.7,
-        "termino_no_prazo_combinado_amostra": 27378,
+        "termino_no_prazo_combinado_amostra": 27409,
         "termino_no_prazo_maximo_pct": 90,
-        "termino_no_prazo_maximo_amostra": 28404
+        "termino_no_prazo_maximo_amostra": 28435
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 2.8,
@@ -377,8 +378,8 @@
         "avaliacao_ate_realizado": 18.6
       },
       "pesquisa_satisfacao": {
-        "respondida_pct": 97.3,
-        "amostra": 4203
+        "respondida_pct": 97.1,
+        "amostra": 4209
       },
       "por_tecnico": [
         {
@@ -387,7 +388,7 @@
         },
         {
           "nome": "Pedro Henrique da Silva Oliveira",
-          "realizados": 1843
+          "realizados": 1849
         },
         {
           "nome": "Jose Pedro da Silva Junior",
@@ -431,10 +432,11 @@
       "totais": {
         "itens_relatados": 7168,
         "chamados_unicos": 1595,
-        "em_aberto": 270,
-        "concluidos": 5585,
-        "nao_procedentes": 294,
-        "cancelados": 1019,
+        "em_aberto": 207,
+        "casas_com_solicitacao_aberta": 146,
+        "concluidos": 659,
+        "nao_procedentes": 219,
+        "cancelados": 510,
         "chamados_infra": 52,
         "taxa_procedencia_pct": 90.9,
         "tempo_medio_atendimento_dias": 15.2
@@ -442,15 +444,15 @@
       "por_status": [
         {
           "status": "Realizado",
-          "total": 5585
+          "total": 659
         },
         {
           "status": "Excluído",
-          "total": 877
+          "total": 368
         },
         {
           "status": "Finalizado Não Procedente",
-          "total": 294
+          "total": 219
         },
         {
           "status": "Cancelado",
@@ -458,19 +460,19 @@
         },
         {
           "status": "Cliente Não Disponível",
-          "total": 118
+          "total": 94
         },
         {
           "status": "Cliente Não Contactado",
-          "total": 101
-        },
-        {
-          "status": "Avaliado",
-          "total": 35
+          "total": 87
         },
         {
           "status": "Inserido",
-          "total": 15
+          "total": 13
+        },
+        {
+          "status": "Avaliado",
+          "total": 12
         },
         {
           "status": "Outros",
@@ -816,15 +818,16 @@
     "Xique-xique III": {
       "periodo": {
         "de": "2023-05-26",
-        "ate": "2026-07-16"
+        "ate": "2026-07-21"
       },
       "totais": {
-        "itens_relatados": 7153,
-        "chamados_unicos": 3146,
-        "em_aberto": 2544,
-        "concluidos": 3329,
-        "nao_procedentes": 336,
-        "cancelados": 944,
+        "itens_relatados": 7156,
+        "chamados_unicos": 3149,
+        "em_aberto": 1300,
+        "casas_com_solicitacao_aberta": 658,
+        "concluidos": 932,
+        "nao_procedentes": 256,
+        "cancelados": 661,
         "chamados_infra": 71,
         "taxa_procedencia_pct": 86.6,
         "tempo_medio_atendimento_dias": 22.2
@@ -832,39 +835,39 @@
       "por_status": [
         {
           "status": "Realizado",
-          "total": 3329
+          "total": 932
         },
         {
           "status": "Inserido",
-          "total": 1198
+          "total": 568
         },
         {
           "status": "Avaliado",
-          "total": 1067
+          "total": 526
         },
         {
           "status": "Excluído",
-          "total": 793
+          "total": 510
         },
         {
           "status": "Finalizado Não Procedente",
-          "total": 336
-        },
-        {
-          "status": "Cliente Não Disponível",
-          "total": 190
+          "total": 256
         },
         {
           "status": "Cancelado",
           "total": 151
         },
         {
+          "status": "Cliente Não Disponível",
+          "total": 148
+        },
+        {
           "status": "Cliente Não Contactado",
-          "total": 75
+          "total": 56
         },
         {
           "status": "Assistência Especial Aguardando",
-          "total": 14
+          "total": 2
         }
       ],
       "por_categoria": [
@@ -910,7 +913,7 @@
         },
         {
           "categoria": "Não informado",
-          "total": 225
+          "total": 228
         },
         {
           "categoria": "Banheiro",
@@ -936,7 +939,7 @@
         },
         {
           "gravidade": "Não informada",
-          "total": 228
+          "total": 231
         }
       ],
       "evolucao_mensal": [
@@ -1094,7 +1097,7 @@
         },
         {
           "mes": "2026-07",
-          "total": 26
+          "total": 29
         }
       ],
       "sla": {
@@ -1167,10 +1170,11 @@
       "totais": {
         "itens_relatados": 7090,
         "chamados_unicos": 2202,
-        "em_aberto": 1625,
-        "concluidos": 4516,
-        "nao_procedentes": 326,
-        "cancelados": 623,
+        "em_aberto": 642,
+        "casas_com_solicitacao_aberta": 443,
+        "concluidos": 864,
+        "nao_procedentes": 263,
+        "cancelados": 433,
         "chamados_infra": 65,
         "taxa_procedencia_pct": 90.2,
         "tempo_medio_atendimento_dias": 17.3
@@ -1178,27 +1182,27 @@
       "por_status": [
         {
           "status": "Realizado",
-          "total": 4516
+          "total": 864
         },
         {
           "status": "Avaliado",
-          "total": 1270
+          "total": 353
         },
         {
           "status": "Excluído",
-          "total": 502
+          "total": 312
         },
         {
           "status": "Finalizado Não Procedente",
-          "total": 326
+          "total": 263
         },
         {
           "status": "Cliente Não Disponível",
-          "total": 169
+          "total": 135
         },
         {
           "status": "Cliente Não Contactado",
-          "total": 155
+          "total": 124
         },
         {
           "status": "Cancelado",
@@ -1210,7 +1214,7 @@
         },
         {
           "status": "Assistência Especial Aguardando",
-          "total": 3
+          "total": 2
         }
       ],
       "por_categoria": [
@@ -1557,38 +1561,39 @@
       "totais": {
         "itens_relatados": 5157,
         "chamados_unicos": 1516,
-        "em_aberto": 3060,
-        "concluidos": 1725,
-        "nao_procedentes": 46,
-        "cancelados": 326,
+        "em_aberto": 799,
+        "casas_com_solicitacao_aberta": 450,
+        "concluidos": 400,
+        "nao_procedentes": 44,
+        "cancelados": 273,
         "chamados_infra": 83,
         "taxa_procedencia_pct": 95.9,
-        "tempo_medio_atendimento_dias": 22.9
+        "tempo_medio_atendimento_dias": 22.8
       },
       "por_status": [
         {
           "status": "Avaliado",
-          "total": 2856
+          "total": 626
         },
         {
           "status": "Realizado",
-          "total": 1725
+          "total": 400
         },
         {
           "status": "Excluído",
-          "total": 296
+          "total": 243
         },
         {
           "status": "Inserido",
-          "total": 100
+          "total": 88
         },
         {
           "status": "Cliente Não Disponível",
-          "total": 74
+          "total": 59
         },
         {
           "status": "Finalizado Não Procedente",
-          "total": 46
+          "total": 44
         },
         {
           "status": "Cancelado",
@@ -1596,11 +1601,11 @@
         },
         {
           "status": "Agendado",
-          "total": 23
+          "total": 21
         },
         {
           "status": "Cliente Não Contactado",
-          "total": 6
+          "total": 4
         },
         {
           "status": "Assistência Especial Aguardando",
@@ -1751,9 +1756,9 @@
         "avaliacao_no_prazo_maximo_pct": 100,
         "avaliacao_no_prazo_maximo_amostra": 1733,
         "termino_no_prazo_combinado_pct": 99.7,
-        "termino_no_prazo_combinado_amostra": 1454,
-        "termino_no_prazo_maximo_pct": 80.4,
-        "termino_no_prazo_maximo_amostra": 1725
+        "termino_no_prazo_combinado_amostra": 1461,
+        "termino_no_prazo_maximo_pct": 80.5,
+        "termino_no_prazo_maximo_amostra": 1732
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 4.9,
@@ -1761,13 +1766,13 @@
         "avaliacao_ate_realizado": 10.9
       },
       "pesquisa_satisfacao": {
-        "respondida_pct": 93,
-        "amostra": 330
+        "respondida_pct": 92.7,
+        "amostra": 331
       },
       "por_tecnico": [
         {
           "nome": "Pedro Henrique da Silva Oliveira",
-          "realizados": 169
+          "realizados": 170
         },
         {
           "nome": "Jose Pedro da Silva Junior",
@@ -1791,10 +1796,11 @@
       "totais": {
         "itens_relatados": 4977,
         "chamados_unicos": 1872,
-        "em_aberto": 2190,
-        "concluidos": 2121,
-        "nao_procedentes": 138,
-        "cancelados": 528,
+        "em_aberto": 748,
+        "casas_com_solicitacao_aberta": 398,
+        "concluidos": 596,
+        "nao_procedentes": 103,
+        "cancelados": 425,
         "chamados_infra": 113,
         "taxa_procedencia_pct": 92.6,
         "tempo_medio_atendimento_dias": 14.3
@@ -1802,31 +1808,31 @@
       "por_status": [
         {
           "status": "Realizado",
-          "total": 2121
+          "total": 596
         },
         {
           "status": "Avaliado",
-          "total": 1840
+          "total": 456
         },
         {
           "status": "Excluído",
-          "total": 491
+          "total": 388
         },
         {
           "status": "Inserido",
-          "total": 153
+          "total": 145
         },
         {
           "status": "Finalizado Não Procedente",
-          "total": 138
+          "total": 103
         },
         {
           "status": "Cliente Não Disponível",
-          "total": 134
+          "total": 98
         },
         {
           "status": "Cliente Não Contactado",
-          "total": 52
+          "total": 39
         },
         {
           "status": "Cancelado",
@@ -1834,7 +1840,7 @@
         },
         {
           "status": "Agendado",
-          "total": 11
+          "total": 10
         }
       ],
       "por_categoria": [
@@ -2069,10 +2075,11 @@
       "totais": {
         "itens_relatados": 4060,
         "chamados_unicos": 930,
-        "em_aberto": 275,
-        "concluidos": 3130,
-        "nao_procedentes": 185,
-        "cancelados": 470,
+        "em_aberto": 191,
+        "casas_com_solicitacao_aberta": 138,
+        "concluidos": 366,
+        "nao_procedentes": 131,
+        "cancelados": 242,
         "chamados_infra": 49,
         "taxa_procedencia_pct": 89.3,
         "tempo_medio_atendimento_dias": 12.9
@@ -2080,39 +2087,39 @@
       "por_status": [
         {
           "status": "Realizado",
-          "total": 3130
+          "total": 366
         },
         {
           "status": "Excluído",
-          "total": 414
+          "total": 186
         },
         {
           "status": "Finalizado Não Procedente",
-          "total": 185
+          "total": 131
         },
         {
           "status": "Cliente Não Disponível",
-          "total": 108
+          "total": 86
         },
         {
           "status": "Cliente Não Contactado",
-          "total": 100
+          "total": 73
         },
         {
           "status": "Cancelado",
           "total": 56
         },
         {
-          "status": "Avaliado",
-          "total": 36
-        },
-        {
           "status": "Inserido",
           "total": 20
         },
         {
-          "status": "Assistência Especial Aguardando",
+          "status": "Avaliado",
           "total": 10
+        },
+        {
+          "status": "Assistência Especial Aguardando",
+          "total": 1
         },
         {
           "status": "Agendado",
@@ -2450,39 +2457,40 @@
     "Oliveiras": {
       "periodo": {
         "de": "2025-09-19",
-        "ate": "2026-07-21"
+        "ate": "2026-07-22"
       },
       "totais": {
-        "itens_relatados": 3597,
-        "chamados_unicos": 1410,
-        "em_aberto": 3060,
-        "concluidos": 375,
+        "itens_relatados": 3668,
+        "chamados_unicos": 1418,
+        "em_aberto": 1191,
+        "casas_com_solicitacao_aberta": 505,
+        "concluidos": 71,
         "nao_procedentes": 0,
-        "cancelados": 162,
-        "chamados_infra": 19,
+        "cancelados": 156,
+        "chamados_infra": 21,
         "taxa_procedencia_pct": 99.4,
-        "tempo_medio_atendimento_dias": 17.7
+        "tempo_medio_atendimento_dias": 17.6
       },
       "por_status": [
         {
           "status": "Avaliado",
-          "total": 2432
+          "total": 588
         },
         {
           "status": "Inserido",
-          "total": 601
-        },
-        {
-          "status": "Realizado",
-          "total": 375
+          "total": 583
         },
         {
           "status": "Excluído",
-          "total": 159
+          "total": 153
+        },
+        {
+          "status": "Realizado",
+          "total": 71
         },
         {
           "status": "Agendado",
-          "total": 25
+          "total": 18
         },
         {
           "status": "Cancelado",
@@ -2495,28 +2503,28 @@
       ],
       "por_categoria": [
         {
-          "categoria": "Calçada e Degraus da Casa",
-          "total": 524
+          "categoria": "Instalação de Água",
+          "total": 528
         },
         {
-          "categoria": "Instalação de Água",
-          "total": 521
+          "categoria": "Calçada e Degraus da Casa",
+          "total": 525
         },
         {
           "categoria": "Cerâmica e Rodapé",
-          "total": 379
+          "total": 410
         },
         {
           "categoria": "Não informado",
-          "total": 324
+          "total": 325
         },
         {
           "categoria": "Portas Internas",
-          "total": 311
+          "total": 312
         },
         {
           "categoria": "Parede",
-          "total": 245
+          "total": 254
         },
         {
           "categoria": "Limpeza de Casa",
@@ -2532,37 +2540,37 @@
         },
         {
           "categoria": "Forro em PVC",
-          "total": 155
+          "total": 158
         },
         {
           "categoria": "Instalações Elétricas",
-          "total": 149
+          "total": 153
         },
         {
           "categoria": "Portas Externas e Janelas",
-          "total": 147
+          "total": 149
         },
         {
           "categoria": "Outras categorias",
-          "total": 137
+          "total": 149
         }
       ],
       "por_gravidade": [
         {
           "gravidade": "1 (mais urgente)",
-          "total": 2525
+          "total": 2595
         },
         {
           "gravidade": "3",
-          "total": 681
+          "total": 680
         },
         {
           "gravidade": "2",
-          "total": 55
+          "total": 56
         },
         {
           "gravidade": "Não informada",
-          "total": 336
+          "total": 337
         }
       ],
       "evolucao_mensal": [
@@ -2600,36 +2608,36 @@
         },
         {
           "mes": "2026-06",
-          "total": 165
+          "total": 178
         },
         {
           "mes": "2026-07",
-          "total": 367
+          "total": 425
         }
       ],
       "sla": {
-        "avaliacao_no_prazo_combinado_pct": 94.8,
-        "avaliacao_no_prazo_combinado_amostra": 268,
+        "avaliacao_no_prazo_combinado_pct": 95.8,
+        "avaliacao_no_prazo_combinado_amostra": 334,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 268,
+        "avaliacao_no_prazo_maximo_amostra": 334,
         "termino_no_prazo_combinado_pct": 100,
-        "termino_no_prazo_combinado_amostra": 23,
-        "termino_no_prazo_maximo_pct": 45.1,
-        "termino_no_prazo_maximo_amostra": 375
+        "termino_no_prazo_combinado_amostra": 47,
+        "termino_no_prazo_maximo_pct": 48.4,
+        "termino_no_prazo_maximo_amostra": 399
       },
       "tempos_medios_dias": {
-        "abertura_ate_agendamento": 7.4,
-        "agendamento_ate_avaliacao": 2.8,
-        "avaliacao_ate_realizado": 3.9
+        "abertura_ate_agendamento": 7.8,
+        "agendamento_ate_avaliacao": 3.4,
+        "avaliacao_ate_realizado": 6
       },
       "pesquisa_satisfacao": {
-        "respondida_pct": 12.5,
-        "amostra": 8
+        "respondida_pct": 7.7,
+        "amostra": 13
       },
       "por_tecnico": [
         {
           "nome": "Pedro Henrique da Silva Oliveira",
-          "realizados": 5
+          "realizados": 10
         },
         {
           "nome": "Nayara Michele Silva De Lima",
@@ -2653,10 +2661,11 @@
       "totais": {
         "itens_relatados": 2825,
         "chamados_unicos": 340,
-        "em_aberto": 121,
-        "concluidos": 2321,
-        "nao_procedentes": 110,
-        "cancelados": 273,
+        "em_aberto": 68,
+        "casas_com_solicitacao_aberta": 50,
+        "concluidos": 121,
+        "nao_procedentes": 30,
+        "cancelados": 121,
         "chamados_infra": 22,
         "taxa_procedencia_pct": 89.6,
         "tempo_medio_atendimento_dias": 27.8
@@ -2664,31 +2673,31 @@
       "por_status": [
         {
           "status": "Realizado",
-          "total": 2321
+          "total": 121
         },
         {
           "status": "Excluído",
-          "total": 215
-        },
-        {
-          "status": "Finalizado Não Procedente",
-          "total": 110
+          "total": 63
         },
         {
           "status": "Cancelado",
           "total": 58
         },
         {
-          "status": "Avaliado",
-          "total": 52
+          "status": "Cliente Não Contactado",
+          "total": 34
         },
         {
-          "status": "Cliente Não Contactado",
-          "total": 42
+          "status": "Finalizado Não Procedente",
+          "total": 30
         },
         {
           "status": "Cliente Não Disponível",
-          "total": 24
+          "total": 22
+        },
+        {
+          "status": "Avaliado",
+          "total": 9
         },
         {
           "status": "Inserido",
@@ -3011,10 +3020,11 @@
       "totais": {
         "itens_relatados": 2555,
         "chamados_unicos": 384,
-        "em_aberto": 94,
-        "concluidos": 2163,
-        "nao_procedentes": 79,
-        "cancelados": 219,
+        "em_aberto": 81,
+        "casas_com_solicitacao_aberta": 65,
+        "concluidos": 172,
+        "nao_procedentes": 48,
+        "cancelados": 83,
         "chamados_infra": 39,
         "taxa_procedencia_pct": 91.5,
         "tempo_medio_atendimento_dias": 13.7
@@ -3022,23 +3032,23 @@
       "por_status": [
         {
           "status": "Realizado",
-          "total": 2163
+          "total": 172
         },
         {
           "status": "Excluído",
-          "total": 195
+          "total": 59
         },
         {
           "status": "Finalizado Não Procedente",
-          "total": 79
+          "total": 48
         },
         {
           "status": "Cliente Não Contactado",
-          "total": 42
+          "total": 35
         },
         {
           "status": "Cliente Não Disponível",
-          "total": 31
+          "total": 25
         },
         {
           "status": "Cancelado",
@@ -3361,10 +3371,11 @@
       "totais": {
         "itens_relatados": 1399,
         "chamados_unicos": 314,
-        "em_aberto": 51,
-        "concluidos": 1174,
-        "nao_procedentes": 56,
-        "cancelados": 118,
+        "em_aberto": 42,
+        "casas_com_solicitacao_aberta": 30,
+        "concluidos": 165,
+        "nao_procedentes": 38,
+        "cancelados": 69,
         "chamados_infra": 14,
         "taxa_procedencia_pct": 91.9,
         "tempo_medio_atendimento_dias": 15.9
@@ -3372,23 +3383,23 @@
       "por_status": [
         {
           "status": "Realizado",
-          "total": 1174
+          "total": 165
         },
         {
           "status": "Excluído",
-          "total": 107
+          "total": 58
         },
         {
           "status": "Finalizado Não Procedente",
-          "total": 56
+          "total": 38
         },
         {
           "status": "Cliente Não Disponível",
-          "total": 26
+          "total": 21
         },
         {
           "status": "Cliente Não Contactado",
-          "total": 13
+          "total": 11
         },
         {
           "status": "Cancelado",
@@ -3396,7 +3407,7 @@
         },
         {
           "status": "Avaliado",
-          "total": 11
+          "total": 9
         },
         {
           "status": "Inserido",
@@ -3735,10 +3746,11 @@
       "totais": {
         "itens_relatados": 1096,
         "chamados_unicos": 116,
-        "em_aberto": 221,
-        "concluidos": 687,
-        "nao_procedentes": 137,
-        "cancelados": 51,
+        "em_aberto": 30,
+        "casas_com_solicitacao_aberta": 24,
+        "concluidos": 29,
+        "nao_procedentes": 26,
+        "cancelados": 31,
         "chamados_infra": 6,
         "taxa_procedencia_pct": 81.2,
         "tempo_medio_atendimento_dias": 76
@@ -3746,35 +3758,35 @@
       "por_status": [
         {
           "status": "Realizado",
-          "total": 687
-        },
-        {
-          "status": "Assistência Especial Aguardando",
-          "total": 150
+          "total": 29
         },
         {
           "status": "Finalizado Não Procedente",
-          "total": 137
+          "total": 26
         },
         {
           "status": "Excluído",
-          "total": 45
-        },
-        {
-          "status": "Avaliado",
-          "total": 45
+          "total": 25
         },
         {
           "status": "Cliente Não Disponível",
-          "total": 12
+          "total": 8
         },
         {
           "status": "Cliente Não Contactado",
-          "total": 9
+          "total": 7
         },
         {
           "status": "Cancelado",
           "total": 6
+        },
+        {
+          "status": "Assistência Especial Aguardando",
+          "total": 5
+        },
+        {
+          "status": "Avaliado",
+          "total": 5
         },
         {
           "status": "Inserido",
@@ -4041,10 +4053,11 @@
       "totais": {
         "itens_relatados": 835,
         "chamados_unicos": 221,
-        "em_aberto": 38,
-        "concluidos": 651,
-        "nao_procedentes": 38,
-        "cancelados": 108,
+        "em_aberto": 32,
+        "casas_com_solicitacao_aberta": 30,
+        "concluidos": 61,
+        "nao_procedentes": 28,
+        "cancelados": 100,
         "chamados_infra": 22,
         "taxa_procedencia_pct": 90.3,
         "tempo_medio_atendimento_dias": 13.2
@@ -4052,7 +4065,7 @@
       "por_status": [
         {
           "status": "Realizado",
-          "total": 651
+          "total": 61
         },
         {
           "status": "Cancelado",
@@ -4060,19 +4073,19 @@
         },
         {
           "status": "Excluído",
-          "total": 48
+          "total": 40
         },
         {
           "status": "Finalizado Não Procedente",
-          "total": 38
+          "total": 28
         },
         {
           "status": "Cliente Não Contactado",
-          "total": 14
+          "total": 11
         },
         {
           "status": "Cliente Não Disponível",
-          "total": 12
+          "total": 9
         },
         {
           "status": "Inserido",
@@ -4331,10 +4344,11 @@
       "totais": {
         "itens_relatados": 654,
         "chamados_unicos": 167,
-        "em_aberto": 50,
-        "concluidos": 511,
-        "nao_procedentes": 19,
-        "cancelados": 74,
+        "em_aberto": 35,
+        "casas_com_solicitacao_aberta": 25,
+        "concluidos": 53,
+        "nao_procedentes": 15,
+        "cancelados": 64,
         "chamados_infra": 18,
         "taxa_procedencia_pct": 93.4,
         "tempo_medio_atendimento_dias": 15.5
@@ -4342,27 +4356,27 @@
       "por_status": [
         {
           "status": "Realizado",
-          "total": 511
+          "total": 53
         },
         {
           "status": "Excluído",
-          "total": 57
-        },
-        {
-          "status": "Cliente Não Contactado",
-          "total": 27
-        },
-        {
-          "status": "Finalizado Não Procedente",
-          "total": 19
+          "total": 47
         },
         {
           "status": "Cancelado",
           "total": 17
         },
         {
+          "status": "Cliente Não Contactado",
+          "total": 16
+        },
+        {
+          "status": "Finalizado Não Procedente",
+          "total": 15
+        },
+        {
           "status": "Avaliado",
-          "total": 13
+          "total": 9
         },
         {
           "status": "Cliente Não Disponível",
@@ -4627,9 +4641,10 @@
         "ate": "2026-07-15"
       },
       "totais": {
-        "itens_relatados": 596,
-        "chamados_unicos": 97,
-        "em_aberto": 596,
+        "itens_relatados": 638,
+        "chamados_unicos": 100,
+        "em_aberto": 100,
+        "casas_com_solicitacao_aberta": 90,
         "concluidos": 0,
         "nao_procedentes": 0,
         "cancelados": 0,
@@ -4640,61 +4655,61 @@
       "por_status": [
         {
           "status": "Avaliado",
-          "total": 596
+          "total": 100
         }
       ],
       "por_categoria": [
         {
           "categoria": "Cerâmica e Rodapé",
-          "total": 80
+          "total": 86
         },
         {
           "categoria": "Limpeza de Casa",
-          "total": 65
+          "total": 71
         },
         {
           "categoria": "Parede",
-          "total": 58
+          "total": 62
         },
         {
           "categoria": "Instalação de Esgoto",
-          "total": 55
+          "total": 61
         },
         {
           "categoria": "Portas Internas",
-          "total": 52
+          "total": 54
         },
         {
           "categoria": "Portas Externas e Janelas",
-          "total": 51
+          "total": 53
         },
         {
           "categoria": "Não informado",
           "total": 51
         },
         {
-          "categoria": "Banheiro",
-          "total": 42
+          "categoria": "Instalação de Água",
+          "total": 47
         },
         {
-          "categoria": "Instalação de Água",
-          "total": 42
+          "categoria": "Banheiro",
+          "total": 45
         },
         {
           "categoria": "Forro em PVC",
-          "total": 37
+          "total": 40
         },
         {
           "categoria": "Instalações Elétricas",
-          "total": 30
+          "total": 33
         },
         {
           "categoria": "Coberta - Telha",
-          "total": 19
+          "total": 20
         },
         {
           "categoria": "Outras categorias",
-          "total": 14
+          "total": 15
         }
       ],
       "por_gravidade": [
@@ -4704,7 +4719,7 @@
         },
         {
           "gravidade": "1 (mais urgente)",
-          "total": 532
+          "total": 574
         },
         {
           "gravidade": "3",
@@ -4734,7 +4749,7 @@
         },
         {
           "mes": "2026-07",
-          "total": 145
+          "total": 187
         }
       ],
       "sla": {
@@ -4766,30 +4781,23 @@
       "totais": {
         "itens_relatados": 161,
         "chamados_unicos": 48,
-        "em_aberto": 106,
-        "concluidos": 23,
-        "nao_procedentes": 11,
-        "cancelados": 21,
+        "em_aberto": 22,
+        "casas_com_solicitacao_aberta": 17,
+        "concluidos": 3,
+        "nao_procedentes": 8,
+        "cancelados": 15,
         "chamados_infra": 17,
         "taxa_procedencia_pct": 85.4,
         "tempo_medio_atendimento_dias": 20.8
       },
       "por_status": [
         {
-          "status": "Avaliado",
-          "total": 88
-        },
-        {
-          "status": "Realizado",
-          "total": 23
-        },
-        {
           "status": "Excluído",
-          "total": 19
+          "total": 13
         },
         {
           "status": "Finalizado Não Procedente",
-          "total": 11
+          "total": 8
         },
         {
           "status": "Inserido",
@@ -4800,8 +4808,16 @@
           "total": 6
         },
         {
+          "status": "Avaliado",
+          "total": 6
+        },
+        {
           "status": "Cliente Não Disponível",
-          "total": 5
+          "total": 3
+        },
+        {
+          "status": "Realizado",
+          "total": 3
         },
         {
           "status": "Cancelado",
@@ -5031,46 +5047,47 @@
     "Xique-xique (Etapa 2)": {
       "periodo": {
         "de": "2022-06-09",
-        "ate": "2026-07-21"
+        "ate": "2026-07-22"
       },
       "totais": {
-        "itens_relatados": 155,
-        "chamados_unicos": 52,
-        "em_aberto": 50,
-        "concluidos": 68,
-        "nao_procedentes": 16,
-        "cancelados": 21,
-        "chamados_infra": 18,
+        "itens_relatados": 156,
+        "chamados_unicos": 53,
+        "em_aberto": 22,
+        "casas_com_solicitacao_aberta": 17,
+        "concluidos": 13,
+        "nao_procedentes": 4,
+        "cancelados": 14,
+        "chamados_infra": 19,
         "taxa_procedencia_pct": 85.8,
         "tempo_medio_atendimento_dias": 22.8
       },
       "por_status": [
         {
           "status": "Realizado",
-          "total": 68
-        },
-        {
-          "status": "Avaliado",
-          "total": 36
+          "total": 13
         },
         {
           "status": "Excluído",
-          "total": 17
+          "total": 10
         },
         {
-          "status": "Finalizado Não Procedente",
-          "total": 16
+          "status": "Avaliado",
+          "total": 9
         },
         {
           "status": "Cliente Não Contactado",
-          "total": 8
+          "total": 6
         },
         {
           "status": "Inserido",
-          "total": 4
+          "total": 5
         },
         {
           "status": "Cancelado",
+          "total": 4
+        },
+        {
+          "status": "Finalizado Não Procedente",
           "total": 4
         },
         {
@@ -5093,7 +5110,7 @@
         },
         {
           "categoria": "Pavimentação",
-          "total": 17
+          "total": 18
         },
         {
           "categoria": "Coberta - Telha",
@@ -5143,7 +5160,7 @@
         },
         {
           "gravidade": "3",
-          "total": 15
+          "total": 16
         },
         {
           "gravidade": "Não informada",
@@ -5245,7 +5262,7 @@
         },
         {
           "mes": "2026-07",
-          "total": 2
+          "total": 3
         }
       ],
       "sla": {
@@ -5294,33 +5311,34 @@
       "totais": {
         "itens_relatados": 103,
         "chamados_unicos": 8,
-        "em_aberto": 26,
-        "concluidos": 40,
-        "nao_procedentes": 32,
-        "cancelados": 5,
+        "em_aberto": 1,
+        "casas_com_solicitacao_aberta": 1,
+        "concluidos": 1,
+        "nao_procedentes": 3,
+        "cancelados": 3,
         "chamados_infra": 1,
         "taxa_procedencia_pct": 67.3,
         "tempo_medio_atendimento_dias": 321
       },
       "por_status": [
         {
-          "status": "Realizado",
-          "total": 40
-        },
-        {
           "status": "Finalizado Não Procedente",
-          "total": 32
-        },
-        {
-          "status": "Assistência Especial Aguardando",
-          "total": 26
+          "total": 3
         },
         {
           "status": "Excluído",
-          "total": 4
+          "total": 2
         },
         {
           "status": "Cancelado",
+          "total": 1
+        },
+        {
+          "status": "Realizado",
+          "total": 1
+        },
+        {
+          "status": "Assistência Especial Aguardando",
           "total": 1
         }
       ],
@@ -5433,6 +5451,7 @@
         "itens_relatados": 2,
         "chamados_unicos": 2,
         "em_aberto": 0,
+        "casas_com_solicitacao_aberta": 0,
         "concluidos": 0,
         "nao_procedentes": 0,
         "cancelados": 2,
@@ -5506,6 +5525,7 @@
         "itens_relatados": 9,
         "chamados_unicos": 9,
         "em_aberto": 9,
+        "casas_com_solicitacao_aberta": 1,
         "concluidos": 0,
         "nao_procedentes": 0,
         "cancelados": 0,
