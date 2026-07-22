@@ -38,34 +38,44 @@
     else abertoPorGrupo.Loteamento += chamados;
   }
 
-  // Funil de status (do histórico de mudanças de status, não do status
-  // atual, não histórico: "Inserido" contado do jeito antigo (quem já
-  // passou por ali alguma vez) sempre fica perto do total de chamados,
-  // porque é o 1º passo de quase todo chamado — não diz quem está parado.
-  // Por isso cada etapa aqui é o STATUS ATUAL do chamado (por_status, já
-  // por chamado — ver totais.em_aberto/por_status em
-  // extrair_assistencia_tecnica.mjs), não "alguma vez no histórico".
+  // Etapa atual de cada chamado, com o nome de quem está "esperando o quê":
+  // um chamado com status atual "Inserido" ainda não foi agendado (está
+  // aguardando agendamento); "Agendado" já tem visita marcada, falta
+  // avaliar (aguardando avaliação); "Avaliado" já foi avaliado, falta
+  // executar o reparo (aguardando realização). "Inseridos" aqui é o total
+  // de chamados abertos no período (todo status), não só quem está parado
+  // nessa etapa — ver totais.chamados_unicos/por_status em
+  // extrair_assistencia_tecnica.mjs.
   const STATUS_LABEL_PARA_CHAVE = {
-    "Inserido": "inseridos", "Avaliado": "avaliados", "Agendado": "agendados",
-    "Finalizado Não Procedente": "nao_procedentes", "Realizado": "realizados",
+    "Inserido": "aguardando_agendamento", "Agendado": "aguardando_avaliacao", "Avaliado": "aguardando_realizacao",
+    "Finalizado Não Procedente": "nao_procedentes",
   };
-  const GRUPOS_FUNIL = ["Laranjeiras", "Cerejeiras", "Oliveiras", "Loteamento"];
+  const GRUPOS_FUNIL = ["Geral", "Laranjeiras", "Cerejeiras", "Oliveiras", "Loteamento"];
   const funilPorGrupo = {
-    Laranjeiras: { inseridos: 0, avaliados: 0, agendados: 0, nao_procedentes: 0, realizados: 0 },
-    Cerejeiras: { inseridos: 0, avaliados: 0, agendados: 0, nao_procedentes: 0, realizados: 0 },
-    Oliveiras: { inseridos: 0, avaliados: 0, agendados: 0, nao_procedentes: 0, realizados: 0 },
-    Loteamento: { inseridos: 0, avaliados: 0, agendados: 0, nao_procedentes: 0, realizados: 0 },
+    Geral: { inseridos: 0, aguardando_agendamento: 0, aguardando_avaliacao: 0, aguardando_realizacao: 0, nao_procedentes: 0 },
+    Laranjeiras: { inseridos: 0, aguardando_agendamento: 0, aguardando_avaliacao: 0, aguardando_realizacao: 0, nao_procedentes: 0 },
+    Cerejeiras: { inseridos: 0, aguardando_agendamento: 0, aguardando_avaliacao: 0, aguardando_realizacao: 0, nao_procedentes: 0 },
+    Oliveiras: { inseridos: 0, aguardando_agendamento: 0, aguardando_avaliacao: 0, aguardando_realizacao: 0, nao_procedentes: 0 },
+    Loteamento: { inseridos: 0, aguardando_agendamento: 0, aguardando_avaliacao: 0, aguardando_realizacao: 0, nao_procedentes: 0 },
   };
+  // "Geral" vem direto do agregado "Todos" do JSON (já é a soma de tudo),
+  // em vez de somar os 4 grupos de novo.
+  funilPorGrupo.Geral.inseridos = dados.por_empreendimento.Todos.totais.chamados_unicos;
+  for (const { status, total } of dados.por_empreendimento.Todos.por_status) {
+    const chave = STATUS_LABEL_PARA_CHAVE[status];
+    if (chave) funilPorGrupo.Geral[chave] += total;
+  }
   for (const emp of dados.empreendimentos) {
     if (emp === "Todos") continue;
     const grupo = GRUPOS_PRINCIPAIS.includes(emp) ? emp : "Loteamento";
+    funilPorGrupo[grupo].inseridos += dados.por_empreendimento[emp].totais.chamados_unicos;
     for (const { status, total } of dados.por_empreendimento[emp].por_status) {
       const chave = STATUS_LABEL_PARA_CHAVE[status];
       if (chave) funilPorGrupo[grupo][chave] += total;
     }
   }
 
-  const state = { empreendimento: "Todos", funilGrupo: "Laranjeiras" };
+  const state = { empreendimento: "Todos", funilGrupo: "Geral" };
   const content = document.getElementById("gp-content");
 
   function irParaEmpreendimento(emp) {
@@ -105,31 +115,31 @@
 
       <div class="card">
         <div class="card-head" style="margin-bottom:14px;">
-          <div><div class="card-title">Nº de chamados por etapa</div><div class="card-sub">Chamados parados agora em cada etapa (status atual)</div></div>
+          <div><div class="card-title">Chamados por etapa</div><div class="card-sub">"Inseridos" é o total aberto no período; os demais são quem está parado em cada etapa agora</div></div>
           <div class="seg">
             ${GRUPOS_FUNIL.map((g) => `<button type="button" aria-pressed="${g === state.funilGrupo}" data-funil-grupo="${g}">${g}</button>`).join("")}
           </div>
         </div>
         <div class="grid" style="grid-template-columns: repeat(5, 1fr);">
           <div class="stat-tile">
-            <div class="stat-label">Inseridos</div>
+            <div class="stat-label">Chamados Inseridos</div>
             <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].inseridos)}</div>
           </div>
           <div class="stat-tile">
-            <div class="stat-label">Avaliados</div>
-            <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].avaliados)}</div>
+            <div class="stat-label">Aguardando Agendamento</div>
+            <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].aguardando_agendamento)}</div>
           </div>
           <div class="stat-tile">
-            <div class="stat-label">Agendados</div>
-            <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].agendados)}</div>
+            <div class="stat-label">Aguardando Avaliação</div>
+            <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].aguardando_avaliacao)}</div>
           </div>
           <div class="stat-tile">
-            <div class="stat-label">Não procedente</div>
+            <div class="stat-label">Aguardando Realização</div>
+            <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].aguardando_realizacao)}</div>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-label">Não Procedente</div>
             <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].nao_procedentes)}</div>
-          </div>
-          <div class="stat-tile">
-            <div class="stat-label">Realizado</div>
-            <div class="stat-value">${GP.fmtInt(funilPorGrupo[state.funilGrupo].realizados)}</div>
           </div>
         </div>
       </div>
