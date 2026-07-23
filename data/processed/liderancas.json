@@ -223,7 +223,7 @@
       "meta_2026_2": 104,
       "realizado_2026_2": 2,
       "faltam_2026_2": 102,
-      "backlog_sem_data": 180,
+      "backlog_sem_data": 182,
       "supervisores": [
         {
           "nome": "Caio Cesar",
@@ -435,6 +435,57 @@
           "meta_2026_2": 0,
           "realizado_2026_2": 0,
           "backlog_sem_data": 180,
+          "por_mes": [
+            {
+              "mes": "2026-07",
+              "label": "Julho/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-08",
+              "label": "Agosto/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-09",
+              "label": "Setembro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-10",
+              "label": "Outubro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-11",
+              "label": "Novembro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            },
+            {
+              "mes": "2026-12",
+              "label": "Dezembro/2026",
+              "meta": 0,
+              "realizado": 0,
+              "desvio": 0
+            }
+          ]
+        },
+        {
+          "nome": "Suellen Nathalia",
+          "foto": null,
+          "meta_2026_2": 0,
+          "realizado_2026_2": 0,
+          "backlog_sem_data": 2,
           "por_mes": [
             {
               "mes": "2026-07",
