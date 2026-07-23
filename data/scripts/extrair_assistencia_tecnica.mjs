@@ -199,6 +199,19 @@ function calcularAgregados(itensSubset) {
 
   const idsInfra = new Set(itensSubset.filter((r) => String(r[C.tipo]).trim() === "Infra").map((r) => String(r[C.id]).trim()));
 
+  // Funil "Abertura -> Avaliação -> Finalização", igual ao gráfico
+  // "Avaliação de chamados" do dashboard oficial de Power BI (lá é por UGB,
+  // aqui é por empreendimento). "Avaliação" conta quem já teve uma
+  // avaliação registrada alguma vez (DataAvaliaçãoChamado preenchida),
+  // independente do status atual — por isso não é só o balde "Avaliado".
+  const avaliadosAlgumaVez = representantes.filter((r) => dataValida(r[C.dataAval]));
+  const funilAvaliacao = {
+    abertura: idsUnicos.size,
+    avaliacao: avaliadosAlgumaVez.length,
+    finalizacao: concluidosChamados.length,
+    finalizacao_pct: pct(concluidosChamados.length, idsUnicos.size),
+  };
+
   // tempo de atendimento usa os itens (não só os representantes) porque a
   // média não muda com valores duplicados — mas dá no mesmo, e evita ter
   // que reprocessar as datas de novo.
@@ -242,6 +255,20 @@ function calcularAgregados(itensSubset) {
   const porCategoria = categoriasOrdenadas.slice(0, TOP_CATEGORIAS).map(([categoria, total]) => ({ categoria, total }));
   const restoCategorias = categoriasOrdenadas.slice(TOP_CATEGORIAS).reduce((a, [, v]) => a + v, 0);
   if (restoCategorias > 0) porCategoria.push({ categoria: "Outras categorias", total: restoCategorias });
+
+  // Ranking detalhado (problema completo, sem cortar em ">") — igual ao
+  // "ABERTURA POR PROBLEMA" da página Resumo Geral do dashboard oficial de
+  // Power BI, mais granular que por_categoria acima.
+  const porProblemaMap = new Map();
+  for (const r of itensSubset) {
+    const problema = String(r[C.problema] ?? "").trim() || "Não informado";
+    porProblemaMap.set(problema, (porProblemaMap.get(problema) || 0) + 1);
+  }
+  const problemasOrdenados = [...porProblemaMap.entries()].sort((a, b) => b[1] - a[1]);
+  const TOP_PROBLEMAS = 15;
+  const porProblemaDetalhado = problemasOrdenados.slice(0, TOP_PROBLEMAS).map(([problema, total]) => ({ problema, total }));
+  const restoProblemas = problemasOrdenados.slice(TOP_PROBLEMAS).reduce((a, [, v]) => a + v, 0);
+  if (restoProblemas > 0) porProblemaDetalhado.push({ problema: "Outros problemas", total: restoProblemas });
 
   const porGravidadeMap = new Map();
   for (const r of itensSubset) {
@@ -315,8 +342,10 @@ function calcularAgregados(itensSubset) {
       aguardando_realizacao: avaliadosProcedentes.length,
       nao_procedentes: avaliadosNaoProcedentes.length,
     },
+    funil_avaliacao: funilAvaliacao,
     por_status: porStatus,
     por_categoria: porCategoria,
+    por_problema_detalhado: porProblemaDetalhado,
     por_gravidade: porGravidade,
     evolucao_mensal: evolucaoMensal,
     sla: {

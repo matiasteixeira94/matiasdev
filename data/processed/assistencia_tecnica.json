@@ -45,6 +45,12 @@
         "aguardando_realizacao": 2366,
         "nao_procedentes": 38
       },
+      "funil_avaliacao": {
+        "abertura": 13822,
+        "avaliacao": 8423,
+        "finalizacao": 4485,
+        "finalizacao_pct": 32.4
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -143,6 +149,72 @@
         {
           "categoria": "Outras categorias",
           "total": 4053
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Não informado",
+          "total": 1451
+        },
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 1357
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 2",
+          "total": 1330
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 1",
+          "total": 1276
+        },
+        {
+          "problema": "Parede > Fissura - Fachada Frontal",
+          "total": 1222
+        },
+        {
+          "problema": "Parede > Fissura - Cozinha",
+          "total": 1131
+        },
+        {
+          "problema": "Instalação de Água > Vaso e/ou Lavatório - Banheiro",
+          "total": 1053
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Cozinha",
+          "total": 921
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 1",
+          "total": 921
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Frontal",
+          "total": 909
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 2",
+          "total": 851
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Traseira",
+          "total": 781
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Lateral Sala/Cozinha",
+          "total": 776
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Sala",
+          "total": 754
+        },
+        {
+          "problema": "Parede > Fissura - Fachada Traseira",
+          "total": 708
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 32650
         }
       ],
       "por_gravidade": [
@@ -448,6 +520,12 @@
         "aguardando_realizacao": 10,
         "nao_procedentes": 2
       },
+      "funil_avaliacao": {
+        "abertura": 1595,
+        "avaliacao": 952,
+        "finalizacao": 659,
+        "finalizacao_pct": 41.3
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -538,6 +616,72 @@
         {
           "categoria": "Outras categorias",
           "total": 197
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Parede > Fissura - Fachada Frontal",
+          "total": 364
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 1",
+          "total": 340
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 2",
+          "total": 327
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 1",
+          "total": 310
+        },
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 306
+        },
+        {
+          "problema": "Parede > Fissura - Cozinha",
+          "total": 303
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Cozinha",
+          "total": 284
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 2",
+          "total": 252
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Frontal",
+          "total": 247
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Sala",
+          "total": 231
+        },
+        {
+          "problema": "Parede > Fissura - Banheiro",
+          "total": 219
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Lateral Sala/Cozinha",
+          "total": 217
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Traseira",
+          "total": 213
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Banheiro",
+          "total": 204
+        },
+        {
+          "problema": "Não informado",
+          "total": 189
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 3162
         }
       ],
       "por_gravidade": [
@@ -843,6 +987,12 @@
         "aguardando_realizacao": 520,
         "nao_procedentes": 4
       },
+      "funil_avaliacao": {
+        "abertura": 3146,
+        "avaliacao": 1782,
+        "finalizacao": 932,
+        "finalizacao_pct": 29.6
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -933,6 +1083,72 @@
         {
           "categoria": "Outras categorias",
           "total": 303
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 361
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 2",
+          "total": 299
+        },
+        {
+          "problema": "Instalação de Água > Vaso e/ou Lavatório - Banheiro",
+          "total": 254
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 1",
+          "total": 247
+        },
+        {
+          "problema": "Não informado",
+          "total": 228
+        },
+        {
+          "problema": "Portas Internas > Grades e Alisares",
+          "total": 218
+        },
+        {
+          "problema": "Parede > Acabamento do Reboco",
+          "total": 170
+        },
+        {
+          "problema": "Parede > Fissura - Cozinha",
+          "total": 157
+        },
+        {
+          "problema": "Instalação de Esgoto > Caixa de Inspeção com fissuras ou quebras",
+          "total": 152
+        },
+        {
+          "problema": "Portas Internas > Alisares",
+          "total": 132
+        },
+        {
+          "problema": "Cerâmica e Rodapé > Rejunte - Banheiro",
+          "total": 119
+        },
+        {
+          "problema": "Instalação de Água > Caixa DÁgua - Lote",
+          "total": 104
+        },
+        {
+          "problema": "Cerâmica e Rodapé > Rejunte - Cozinha",
+          "total": 89
+        },
+        {
+          "problema": "Cerâmica e Rodapé > Quebrada - Sala",
+          "total": 78
+        },
+        {
+          "problema": "Parede > Fissura",
+          "total": 77
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 4463
         }
       ],
       "por_gravidade": [
@@ -1194,6 +1410,12 @@
         "aguardando_realizacao": 336,
         "nao_procedentes": 17
       },
+      "funil_avaliacao": {
+        "abertura": 2202,
+        "avaliacao": 1546,
+        "finalizacao": 864,
+        "finalizacao_pct": 39.2
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -1284,6 +1506,72 @@
         {
           "categoria": "Outras categorias",
           "total": 375
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Instalação de Água > Vaso e/ou Lavatório - Banheiro",
+          "total": 302
+        },
+        {
+          "problema": "Parede > Fissura - Fachada Frontal",
+          "total": 238
+        },
+        {
+          "problema": "Parede > Fissura",
+          "total": 225
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 2",
+          "total": 224
+        },
+        {
+          "problema": "Não informado",
+          "total": 195
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 2",
+          "total": 162
+        },
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 161
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Frontal",
+          "total": 153
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 1",
+          "total": 150
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 1",
+          "total": 139
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Lateral Sala/Cozinha",
+          "total": 136
+        },
+        {
+          "problema": "Parede > Fissura - Cozinha",
+          "total": 124
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Traseira",
+          "total": 123
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Sala",
+          "total": 118
+        },
+        {
+          "problema": "Parede > Acabamento do Reboco",
+          "total": 117
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 4523
         }
       ],
       "por_gravidade": [
@@ -1589,6 +1877,12 @@
         "aguardando_realizacao": 624,
         "nao_procedentes": 2
       },
+      "funil_avaliacao": {
+        "abertura": 1514,
+        "avaliacao": 1081,
+        "finalizacao": 398,
+        "finalizacao_pct": 26.3
+      },
       "por_status": [
         {
           "status": "Avaliado",
@@ -1683,6 +1977,72 @@
         {
           "categoria": "Outras categorias",
           "total": 513
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Instalação de Água > Torneiras e Registros",
+          "total": 184
+        },
+        {
+          "problema": "Instalação de Água > Balcão da Cozinha e Tanque",
+          "total": 156
+        },
+        {
+          "problema": "Forro em PVC > Imperfeições",
+          "total": 152
+        },
+        {
+          "problema": "Portas Externas e Janelas > Fechadura",
+          "total": 149
+        },
+        {
+          "problema": "Não informado",
+          "total": 137
+        },
+        {
+          "problema": "Portas Internas > Alisares",
+          "total": 124
+        },
+        {
+          "problema": "Cerâmica e Rodapé > Quebrada",
+          "total": 116
+        },
+        {
+          "problema": "Cerâmica e Rodapé > Rejunte",
+          "total": 110
+        },
+        {
+          "problema": "Banheiro > Louças",
+          "total": 108
+        },
+        {
+          "problema": "Calçada e Degraus da Casa > Acabamento",
+          "total": 105
+        },
+        {
+          "problema": "Parede > Acabamento do Reboco",
+          "total": 103
+        },
+        {
+          "problema": "Banheiro > Caixa de descarga",
+          "total": 103
+        },
+        {
+          "problema": "Portas Internas > Imperfeições",
+          "total": 94
+        },
+        {
+          "problema": "Instalação de Esgoto > Caixa de Inspeção com fissuras ou quebras",
+          "total": 86
+        },
+        {
+          "problema": "Cerâmica e Rodapé > Nivelamento",
+          "total": 83
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 3337
         }
       ],
       "por_gravidade": [
@@ -1828,6 +2188,12 @@
         "aguardando_realizacao": 452,
         "nao_procedentes": 4
       },
+      "funil_avaliacao": {
+        "abertura": 1872,
+        "avaliacao": 1185,
+        "finalizacao": 596,
+        "finalizacao_pct": 31.8
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -1918,6 +2284,72 @@
         {
           "categoria": "Outras categorias",
           "total": 568
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Não informado",
+          "total": 181
+        },
+        {
+          "problema": "Portas Internas > Alisares",
+          "total": 146
+        },
+        {
+          "problema": "Instalação de Água > Vaso e/ou Lavatório - Banheiro",
+          "total": 142
+        },
+        {
+          "problema": "Portas Internas > Grades e Alisares",
+          "total": 106
+        },
+        {
+          "problema": "Limpeza de Casa > Limpeza do Lote",
+          "total": 97
+        },
+        {
+          "problema": "Limpeza de Casa > Limpeza de  Portas e Janelas",
+          "total": 91
+        },
+        {
+          "problema": "Calçada e Degraus da Casa > Limpeza",
+          "total": 87
+        },
+        {
+          "problema": "Calçada e Degraus da Casa > Acabamento",
+          "total": 79
+        },
+        {
+          "problema": "Limpeza de Casa > Acabamento Elétrico",
+          "total": 77
+        },
+        {
+          "problema": "Cerâmica e Rodapé > Rejunte - Cozinha",
+          "total": 75
+        },
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 74
+        },
+        {
+          "problema": "Cerâmica e Rodapé > Limpeza",
+          "total": 72
+        },
+        {
+          "problema": "Cerâmica e Rodapé > Rejunte - Banheiro",
+          "total": 67
+        },
+        {
+          "problema": "Calçada e Degraus da Casa > Fissuras e quinas quebradas",
+          "total": 65
+        },
+        {
+          "problema": "Instalação de Água > Torneiras e Registros - Banheiro",
+          "total": 63
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 3555
         }
       ],
       "por_gravidade": [
@@ -2111,6 +2543,12 @@
         "aguardando_realizacao": 9,
         "nao_procedentes": 1
       },
+      "funil_avaliacao": {
+        "abertura": 930,
+        "avaliacao": 539,
+        "finalizacao": 366,
+        "finalizacao_pct": 39.4
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -2205,6 +2643,72 @@
         {
           "categoria": "Outras categorias",
           "total": 118
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Parede > Fissura - Fachada Frontal",
+          "total": 196
+        },
+        {
+          "problema": "Parede > Fissura - Fachada Traseira",
+          "total": 168
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Frontal",
+          "total": 148
+        },
+        {
+          "problema": "Parede > Fissura - Cozinha",
+          "total": 143
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Traseira",
+          "total": 141
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Lateral Sala/Cozinha",
+          "total": 132
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Cozinha",
+          "total": 127
+        },
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 123
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 1",
+          "total": 115
+        },
+        {
+          "problema": "Parede > Fissura - Lateral Sala/Cozinha",
+          "total": 109
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 1",
+          "total": 104
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 2",
+          "total": 103
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Fachada Traseira",
+          "total": 101
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Lateral Sala/Cozinha",
+          "total": 97
+        },
+        {
+          "problema": "Não informado",
+          "total": 87
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 2166
         }
       ],
       "por_gravidade": [
@@ -2502,6 +3006,12 @@
         "aguardando_realizacao": 9,
         "nao_procedentes": 0
       },
+      "funil_avaliacao": {
+        "abertura": 340,
+        "avaliacao": 170,
+        "finalizacao": 121,
+        "finalizacao_pct": 35.6
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -2592,6 +3102,72 @@
         {
           "categoria": "Outras categorias",
           "total": 17
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Parede > Salinas/ Manchas - Quarto 1",
+          "total": 136
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Sala",
+          "total": 127
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Quarto 2",
+          "total": 122
+        },
+        {
+          "problema": "Pintura Interna > Acabamento - Quarto 1",
+          "total": 119
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 1",
+          "total": 118
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 1",
+          "total": 105
+        },
+        {
+          "problema": "Pintura Interna > Acabamento - Quarto 2",
+          "total": 102
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Lateral Banheiro",
+          "total": 101
+        },
+        {
+          "problema": "Pintura Interna > Acabamento - Sala",
+          "total": 98
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Cozinha",
+          "total": 92
+        },
+        {
+          "problema": "Não informado",
+          "total": 88
+        },
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 88
+        },
+        {
+          "problema": "Parede > Fissura - Cozinha",
+          "total": 86
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Lateral Sala/Cozinha",
+          "total": 84
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 2",
+          "total": 84
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 1275
         }
       ],
       "por_gravidade": [
@@ -2865,6 +3441,12 @@
         "aguardando_realizacao": 347,
         "nao_procedentes": 6
       },
+      "funil_avaliacao": {
+        "abertura": 908,
+        "avaliacao": 407,
+        "finalizacao": 52,
+        "finalizacao_pct": 5.7
+      },
       "por_status": [
         {
           "status": "Avaliado",
@@ -2947,6 +3529,72 @@
         {
           "categoria": "Outras categorias",
           "total": 135
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Calçada e Degraus da Casa > Nivelamento - Sala",
+          "total": 248
+        },
+        {
+          "problema": "Não informado",
+          "total": 188
+        },
+        {
+          "problema": "Instalação de Água > Torneiras e Registros",
+          "total": 176
+        },
+        {
+          "problema": "Parede > Acabamento do Reboco",
+          "total": 146
+        },
+        {
+          "problema": "Limpeza de Casa > Limpeza de  Portas e Janelas",
+          "total": 129
+        },
+        {
+          "problema": "Cerâmica e Rodapé > Rejunte",
+          "total": 125
+        },
+        {
+          "problema": "Portas Internas > Alisares",
+          "total": 117
+        },
+        {
+          "problema": "Instalação de Água > Balcão da cozinha e Tanque",
+          "total": 99
+        },
+        {
+          "problema": "Instalação de Esgoto > Acabamento interno das Caixas de inspeção",
+          "total": 98
+        },
+        {
+          "problema": "Instalações Elétricas > Acabamentos",
+          "total": 89
+        },
+        {
+          "problema": "Banheiro > Declividade",
+          "total": 84
+        },
+        {
+          "problema": "Portas Internas > Grades e Alisares",
+          "total": 79
+        },
+        {
+          "problema": "Banheiro > Caixa de descarga",
+          "total": 64
+        },
+        {
+          "problema": "Forro em PVC > Imperfeições",
+          "total": 59
+        },
+        {
+          "problema": "Instalação de Esgoto > Caixa de Inspeção com fissuras ou quebras",
+          "total": 51
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 961
         }
       ],
       "por_gravidade": [
@@ -3068,6 +3716,12 @@
         "aguardando_realizacao": 16,
         "nao_procedentes": 0
       },
+      "funil_avaliacao": {
+        "abertura": 384,
+        "avaliacao": 246,
+        "finalizacao": 172,
+        "finalizacao_pct": 44.8
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -3154,6 +3808,72 @@
         {
           "categoria": "Outras categorias",
           "total": 49
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Parede > Salinas/ Manchas - Fachada Traseira",
+          "total": 182
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Lateral Sala/Cozinha",
+          "total": 138
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Fachada Frontal",
+          "total": 115
+        },
+        {
+          "problema": "Parede > Fissura - Fachada Frontal",
+          "total": 108
+        },
+        {
+          "problema": "Parede > Fissura - Fachada Traseira",
+          "total": 101
+        },
+        {
+          "problema": "Parede > Fissura - Cozinha",
+          "total": 96
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Cozinha",
+          "total": 89
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Cozinha",
+          "total": 83
+        },
+        {
+          "problema": "Pintura Externa > Acabamento - Lateral Sala/Cozinha",
+          "total": 74
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Frontal",
+          "total": 73
+        },
+        {
+          "problema": "Pintura Interna > Acabamento - Cozinha",
+          "total": 72
+        },
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 69
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 1",
+          "total": 69
+        },
+        {
+          "problema": "Pintura Externa > Acabamento - Fachada Traseira",
+          "total": 67
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Traseira",
+          "total": 66
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 1153
         }
       ],
       "por_gravidade": [
@@ -3423,6 +4143,12 @@
         "aguardando_realizacao": 9,
         "nao_procedentes": 0
       },
+      "funil_avaliacao": {
+        "abertura": 314,
+        "avaliacao": 222,
+        "finalizacao": 165,
+        "finalizacao_pct": 52.5
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -3509,6 +4235,72 @@
         {
           "categoria": "Outras categorias",
           "total": 25
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Parede > Fissura - Fachada Frontal",
+          "total": 73
+        },
+        {
+          "problema": "Parede > Fissura - Cozinha",
+          "total": 72
+        },
+        {
+          "problema": "Parede > Fissura - Lateral Sala/Cozinha",
+          "total": 66
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 2",
+          "total": 61
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Cozinha",
+          "total": 61
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Frontal",
+          "total": 59
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Traseira",
+          "total": 56
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Lateral Sala/Cozinha",
+          "total": 53
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 1",
+          "total": 50
+        },
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 49
+        },
+        {
+          "problema": "Instalação de Água > Vaso e/ou Lavatório - Banheiro",
+          "total": 47
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 2",
+          "total": 46
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 1",
+          "total": 45
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Sala",
+          "total": 33
+        },
+        {
+          "problema": "Parede > Fissura - Fachada Traseira",
+          "total": 26
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 602
         }
       ],
       "por_gravidade": [
@@ -3802,6 +4594,12 @@
         "aguardando_realizacao": 4,
         "nao_procedentes": 1
       },
+      "funil_avaliacao": {
+        "abertura": 116,
+        "avaliacao": 68,
+        "finalizacao": 29,
+        "finalizacao_pct": 25
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -3892,6 +4690,72 @@
         {
           "categoria": "Outras categorias",
           "total": 13
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Parede > Salinas/ Manchas - Sala",
+          "total": 68
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Quarto 2",
+          "total": 66
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Quarto 1",
+          "total": 56
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Cozinha",
+          "total": 50
+        },
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 42
+        },
+        {
+          "problema": "Pintura Interna > Acabamento - Sala",
+          "total": 40
+        },
+        {
+          "problema": "Pintura Interna > Acabamento - Quarto 2",
+          "total": 39
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Lateral Banheiro",
+          "total": 35
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Cozinha",
+          "total": 35
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Fachada Frontal",
+          "total": 34
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 2",
+          "total": 34
+        },
+        {
+          "problema": "Parede > Fissura - Cozinha",
+          "total": 33
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 1",
+          "total": 33
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 2",
+          "total": 32
+        },
+        {
+          "problema": "Pintura Interna > Acabamento - Quarto 1",
+          "total": 31
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 468
         }
       ],
       "por_gravidade": [
@@ -4113,6 +4977,12 @@
         "aguardando_realizacao": 5,
         "nao_procedentes": 0
       },
+      "funil_avaliacao": {
+        "abertura": 221,
+        "avaliacao": 95,
+        "finalizacao": 61,
+        "finalizacao_pct": 27.6
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -4199,6 +5069,72 @@
         {
           "categoria": "Outras categorias",
           "total": 17
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Não informado",
+          "total": 71
+        },
+        {
+          "problema": "Parede > Fissura - Fachada Traseira",
+          "total": 58
+        },
+        {
+          "problema": "Parede > Fissura - Fachada Frontal",
+          "total": 55
+        },
+        {
+          "problema": "Parede > Fissura - Lateral Sala/Cozinha",
+          "total": 40
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Traseira",
+          "total": 36
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Frontal",
+          "total": 35
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Lateral Sala/Cozinha",
+          "total": 33
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Fachada Traseira",
+          "total": 29
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Cozinha",
+          "total": 27
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Lateral Sala/Cozinha",
+          "total": 26
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Cozinha",
+          "total": 25
+        },
+        {
+          "problema": "Parede > Fissura - Cozinha",
+          "total": 23
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 1",
+          "total": 18
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Fachada Frontal",
+          "total": 18
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 2",
+          "total": 16
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 325
         }
       ],
       "por_gravidade": [
@@ -4408,6 +5344,12 @@
         "aguardando_realizacao": 9,
         "nao_procedentes": 0
       },
+      "funil_avaliacao": {
+        "abertura": 167,
+        "avaliacao": 78,
+        "finalizacao": 53,
+        "finalizacao_pct": 31.7
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -4494,6 +5436,72 @@
         {
           "categoria": "Outras categorias",
           "total": 25
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Parede > Fissura - Fachada Frontal",
+          "total": 49
+        },
+        {
+          "problema": "Não informado",
+          "total": 29
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 1",
+          "total": 28
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 2",
+          "total": 24
+        },
+        {
+          "problema": "Parede > Fissura - Fachada Traseira",
+          "total": 24
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 1",
+          "total": 24
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Frontal",
+          "total": 23
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 2",
+          "total": 22
+        },
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 21
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Lateral Sala/Cozinha",
+          "total": 20
+        },
+        {
+          "problema": "Parede > Fissura - Lateral Sala/Cozinha",
+          "total": 19
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Traseira",
+          "total": 19
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Fachada Traseira",
+          "total": 19
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Lateral Sala/Cozinha",
+          "total": 15
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Cozinha",
+          "total": 15
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 303
         }
       ],
       "por_gravidade": [
@@ -4711,6 +5719,12 @@
         "aguardando_realizacao": 5,
         "nao_procedentes": 1
       },
+      "funil_avaliacao": {
+        "abertura": 48,
+        "avaliacao": 19,
+        "finalizacao": 3,
+        "finalizacao_pct": 6.3
+      },
       "por_status": [
         {
           "status": "Excluído",
@@ -4801,6 +5815,72 @@
         {
           "categoria": "Outras categorias",
           "total": 5
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Parede > Fissura - Quarto 1",
+          "total": 13
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 2",
+          "total": 9
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 1",
+          "total": 9
+        },
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 8
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 2",
+          "total": 8
+        },
+        {
+          "problema": "Parede > Fissura - Lateral Sala/Cozinha",
+          "total": 6
+        },
+        {
+          "problema": "Parede > Fissura - Lateral Banheiro",
+          "total": 6
+        },
+        {
+          "problema": "Pavimentação > Rua",
+          "total": 5
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Sala",
+          "total": 5
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Lateral Sala/Cozinha",
+          "total": 4
+        },
+        {
+          "problema": "Pavimentação > Abatimento",
+          "total": 4
+        },
+        {
+          "problema": "Cerâmica e Rodapé > Aderência - Sala",
+          "total": 3
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Frontal",
+          "total": 3
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Traseira",
+          "total": 3
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Lateral Banheiro",
+          "total": 3
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 72
         }
       ],
       "por_gravidade": [
@@ -4986,6 +6066,12 @@
         "aguardando_realizacao": 9,
         "nao_procedentes": 0
       },
+      "funil_avaliacao": {
+        "abertura": 53,
+        "avaliacao": 26,
+        "finalizacao": 13,
+        "finalizacao_pct": 24.5
+      },
       "por_status": [
         {
           "status": "Realizado",
@@ -5072,6 +6158,72 @@
         {
           "categoria": "Outras categorias",
           "total": 1
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Pavimentação > Abatimento",
+          "total": 9
+        },
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 8
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 2",
+          "total": 8
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 1",
+          "total": 7
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Quarto 2",
+          "total": 6
+        },
+        {
+          "problema": "Parede > Fissura - Cozinha",
+          "total": 5
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Fachada Traseira",
+          "total": 5
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Lateral Sala/Cozinha",
+          "total": 5
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Lateral Banheiro",
+          "total": 5
+        },
+        {
+          "problema": "Pintura Externa > Acabamento Fissura  - Fachada Traseira",
+          "total": 5
+        },
+        {
+          "problema": "Parede > Fissura - Lateral Sala/Cozinha",
+          "total": 5
+        },
+        {
+          "problema": "Parede > Fissura - Fachada Traseira",
+          "total": 5
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Sala",
+          "total": 4
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Cozinha",
+          "total": 4
+        },
+        {
+          "problema": "Não informado",
+          "total": 4
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 71
         }
       ],
       "por_gravidade": [
@@ -5249,6 +6401,12 @@
         "aguardando_realizacao": 0,
         "nao_procedentes": 0
       },
+      "funil_avaliacao": {
+        "abertura": 8,
+        "avaliacao": 5,
+        "finalizacao": 1,
+        "finalizacao_pct": 12.5
+      },
       "por_status": [
         {
           "status": "Finalizado Não Procedente",
@@ -5299,6 +6457,72 @@
         {
           "categoria": "Instalação de Esgoto",
           "total": 1
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Parede > Salinas/ Manchas - Quarto 1",
+          "total": 10
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Quarto 2",
+          "total": 10
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Sala",
+          "total": 8
+        },
+        {
+          "problema": "Pintura Interna > Acabamento - Quarto 2",
+          "total": 7
+        },
+        {
+          "problema": "Pintura Interna > Acabamento - Sala",
+          "total": 6
+        },
+        {
+          "problema": "Pintura Interna > Acabamento - Quarto 1",
+          "total": 6
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Cozinha",
+          "total": 5
+        },
+        {
+          "problema": "Parede > Fissura - Fachada Traseira",
+          "total": 4
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Lateral Banheiro",
+          "total": 4
+        },
+        {
+          "problema": "Pintura Interna > Acabamento Fissura  - Cozinha",
+          "total": 4
+        },
+        {
+          "problema": "Parede > Fissura - Sala",
+          "total": 3
+        },
+        {
+          "problema": "Parede > Fissura - Quarto 1",
+          "total": 3
+        },
+        {
+          "problema": "Parede > Salinas/ Manchas - Lateral Sala/Cozinha",
+          "total": 3
+        },
+        {
+          "problema": "Pintura Interna > Acabamento - Cozinha",
+          "total": 3
+        },
+        {
+          "problema": "Parede > Fissura - Cozinha",
+          "total": 2
+        },
+        {
+          "problema": "Outros problemas",
+          "total": 25
         }
       ],
       "por_gravidade": [
@@ -5392,6 +6616,12 @@
         "aguardando_realizacao": 0,
         "nao_procedentes": 0
       },
+      "funil_avaliacao": {
+        "abertura": 2,
+        "avaliacao": 0,
+        "finalizacao": 0,
+        "finalizacao_pct": 0
+      },
       "por_status": [
         {
           "status": "Excluído",
@@ -5405,6 +6635,16 @@
         },
         {
           "categoria": "Instalação de Esgoto",
+          "total": 1
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Instalação de Água > Tubulação enterrada - Lote",
+          "total": 1
+        },
+        {
+          "problema": "Instalação de Esgoto > Vazamento - Área de Serviço",
           "total": 1
         }
       ],
@@ -5470,6 +6710,12 @@
         "aguardando_realizacao": 2,
         "nao_procedentes": 0
       },
+      "funil_avaliacao": {
+        "abertura": 2,
+        "avaliacao": 2,
+        "finalizacao": 0,
+        "finalizacao_pct": 0
+      },
       "por_status": [
         {
           "status": "Avaliado",
@@ -5479,6 +6725,12 @@
       "por_categoria": [
         {
           "categoria": "Pavimentação",
+          "total": 2
+        }
+      ],
+      "por_problema_detalhado": [
+        {
+          "problema": "Pavimentação > Rejunte",
           "total": 2
         }
       ],

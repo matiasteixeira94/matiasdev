@@ -77,6 +77,25 @@
     acumularFunil(funilPorGrupo[grupo], dados.por_empreendimento[emp]);
   }
 
+  // "Avaliação de chamados por Empreendimento" — igual ao gráfico do
+  // dashboard oficial de Power BI (lá é por UGB; aqui já é só UGB Caruaru,
+  // então faz mais sentido por empreendimento). Todo o histórico, não só o
+  // semestre atual — mesmo período do resto da tela.
+  const avaliacaoPorGrupo = {
+    Laranjeiras: { abertura: 0, avaliacao: 0, finalizacao: 0 },
+    Cerejeiras: { abertura: 0, avaliacao: 0, finalizacao: 0 },
+    Oliveiras: { abertura: 0, avaliacao: 0, finalizacao: 0 },
+    Loteamento: { abertura: 0, avaliacao: 0, finalizacao: 0 },
+  };
+  for (const emp of dados.empreendimentos) {
+    if (emp === "Todos") continue;
+    const grupo = GRUPOS_PRINCIPAIS.includes(emp) ? emp : "Loteamento";
+    const f = dados.por_empreendimento[emp].funil_avaliacao;
+    avaliacaoPorGrupo[grupo].abertura += f.abertura;
+    avaliacaoPorGrupo[grupo].avaliacao += f.avaliacao;
+    avaliacaoPorGrupo[grupo].finalizacao += f.finalizacao;
+  }
+
   const state = { empreendimento: "Todos", funilGrupo: "Geral" };
   const content = document.getElementById("gp-content");
 
@@ -147,6 +166,13 @@
       </div>
 
       <div class="card">
+        <div class="card-head" style="margin-bottom:14px;">
+          <div><div class="card-title">Avaliação de chamados por empreendimento</div><div class="card-sub">Abertura → Avaliação → Finalização — todo o histórico</div></div>
+        </div>
+        <div class="chart-host" id="chart-avaliacao-empreendimento"></div>
+      </div>
+
+      <div class="card">
         <div class="card-head" style="margin-bottom:4px;">
           <div><div class="card-title">Chamados de assistência técnica</div></div>
           <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
@@ -210,6 +236,13 @@
           <div><div class="card-title">Categorias de problema mais frequentes</div></div>
         </div>
         <div class="chart-host" id="chart-categoria"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head" style="margin-bottom:14px;">
+          <div><div class="card-title">Ranking de abertura por problema</div><div class="card-sub">Problema específico completo, não só a categoria</div></div>
+        </div>
+        <div class="chart-host" id="chart-problema-detalhado"></div>
       </div>
 
       <div class="card">
@@ -328,6 +361,22 @@
       items: d.por_categoria.map((c) => ({ label: c.categoria, value: c.total, color: "var(--accent)" })),
       valueFormat: (v) => GP.fmtInt(v),
       showTarget: false,
+    });
+
+    GPCharts.hbars(document.getElementById("chart-problema-detalhado"), {
+      items: d.por_problema_detalhado.map((p) => ({ label: p.problema, value: p.total, color: "var(--accent)" })),
+      valueFormat: (v) => GP.fmtInt(v),
+      showTarget: false,
+    });
+
+    GPCharts.bars(document.getElementById("chart-avaliacao-empreendimento"), {
+      categories: Object.keys(avaliacaoPorGrupo),
+      series: [
+        { name: "Abertura", color: "var(--border-strong)", values: Object.values(avaliacaoPorGrupo).map((g) => g.abertura) },
+        { name: "Avaliação", color: "var(--gold)", values: Object.values(avaliacaoPorGrupo).map((g) => g.avaliacao) },
+        { name: "Finalização", color: "var(--status-good)", values: Object.values(avaliacaoPorGrupo).map((g) => g.finalizacao) },
+      ],
+      yFormat: (v) => GP.fmtInt(v),
     });
 
     GPCharts.hbars(document.getElementById("chart-gravidade"), {
