@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-07-21",
+  "atualizado_em": "2026-07-23",
   "periodo": "2026.2 (julho a dezembro de 2026)",
   "fonte_meta": "Aba CONTROLE (cronograma) da planilha CONTROLE DE UGB - CA - 2026.2 — 1 linha por casa planejada; lista de supervisores = quem tem casas nessa aba. meta_2026_2 conta só linhas com mês/ano calculado (soma bate com a meta oficial do semestre); casas na fila sem data ainda entram em backlog_sem_data, à parte.",
   "liderancas": [
@@ -79,16 +79,16 @@
             {
               "mes": "2026-08",
               "label": "Agosto/2026",
-              "meta": 6,
+              "meta": 4,
               "realizado": 0,
-              "desvio": -6
+              "desvio": -4
             },
             {
               "mes": "2026-09",
               "label": "Setembro/2026",
-              "meta": 4,
+              "meta": 6,
               "realizado": 0,
-              "desvio": -4
+              "desvio": -6
             },
             {
               "mes": "2026-10",
@@ -221,23 +221,23 @@
       "nome": "Jucélio Lourenço",
       "foto": "assets/images/lideres/jucelio-lourenco.jpg",
       "meta_2026_2": 104,
-      "realizado_2026_2": 0,
-      "faltam_2026_2": 104,
+      "realizado_2026_2": 2,
+      "faltam_2026_2": 102,
       "backlog_sem_data": 180,
       "supervisores": [
         {
           "nome": "Caio Cesar",
           "foto": "assets/images/supervisores/caio-cesar.jpg",
           "meta_2026_2": 28,
-          "realizado_2026_2": 0,
+          "realizado_2026_2": 2,
           "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
               "label": "Julho/2026",
               "meta": 2,
-              "realizado": 0,
-              "desvio": -2
+              "realizado": 2,
+              "desvio": 0
             },
             {
               "mes": "2026-08",
@@ -293,16 +293,16 @@
             {
               "mes": "2026-08",
               "label": "Agosto/2026",
-              "meta": 6,
+              "meta": 4,
               "realizado": 0,
-              "desvio": -6
+              "desvio": -4
             },
             {
               "mes": "2026-09",
               "label": "Setembro/2026",
-              "meta": 4,
+              "meta": 6,
               "realizado": 0,
-              "desvio": -4
+              "desvio": -6
             },
             {
               "mes": "2026-10",
@@ -486,8 +486,8 @@
       "nome": "Reginaldo Lima",
       "foto": "assets/images/lideres/reginaldo-lima.jpg",
       "meta_2026_2": 136,
-      "realizado_2026_2": 2,
-      "faltam_2026_2": 134,
+      "realizado_2026_2": 4,
+      "faltam_2026_2": 132,
       "backlog_sem_data": 190,
       "supervisores": [
         {
@@ -500,16 +500,16 @@
             {
               "mes": "2026-07",
               "label": "Julho/2026",
-              "meta": 2,
+              "meta": 4,
               "realizado": 2,
-              "desvio": 0
+              "desvio": -2
             },
             {
               "mes": "2026-08",
               "label": "Agosto/2026",
-              "meta": 6,
+              "meta": 4,
               "realizado": 0,
-              "desvio": -6
+              "desvio": -4
             },
             {
               "mes": "2026-09",
@@ -545,15 +545,15 @@
           "nome": "Laura Samara",
           "foto": null,
           "meta_2026_2": 28,
-          "realizado_2026_2": 0,
+          "realizado_2026_2": 2,
           "backlog_sem_data": 0,
           "por_mes": [
             {
               "mes": "2026-07",
               "label": "Julho/2026",
               "meta": 2,
-              "realizado": 0,
-              "desvio": -2
+              "realizado": 2,
+              "desvio": 0
             },
             {
               "mes": "2026-08",
@@ -572,16 +572,16 @@
             {
               "mes": "2026-10",
               "label": "Outubro/2026",
-              "meta": 8,
+              "meta": 6,
               "realizado": 0,
-              "desvio": -8
+              "desvio": -6
             },
             {
               "mes": "2026-11",
               "label": "Novembro/2026",
-              "meta": 4,
+              "meta": 6,
               "realizado": 0,
-              "desvio": -4
+              "desvio": -6
             },
             {
               "mes": "2026-12",
