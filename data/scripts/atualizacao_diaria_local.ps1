@@ -12,7 +12,7 @@ $repo = "C:\Users\Viana e Moura\Documents\Projetos\matiasdev\matiasdev"
 $pasta1 = "C:\Users\Viana e Moura\Desktop\Dropbox\01. INDUSTRIAL - PRODUÇÃO\2026\CONTROLE\1º semestre"
 $pasta2 = "C:\Users\Viana e Moura\Desktop\Dropbox\01. INDUSTRIAL - PRODUÇÃO\2026\CONTROLE\2º semestre"
 $casas1 = Join-Path $pasta1 "CONTROLE DE UGB - CA - 2026.1.xlsm"
-$casas2 = Join-Path $pasta2 "CONTROLE DE UGB - CA - 2026.2.xlsm"
+$casas2 = Join-Path $pasta2 "CONTROLE DE UGB -CA- 2026.2.xlsm"
 $muros = Join-Path $pasta2 "CONTROLE DE UGB - CA - 2026.2 - Muros.xlsm"
 $log = Join-Path $repo "data\scripts\_log_atualizacao_diaria.txt"
 
