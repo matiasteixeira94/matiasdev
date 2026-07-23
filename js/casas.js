@@ -7,10 +7,17 @@
   });
   if (!session) return;
 
-  const [casasBrutas, mapaLotes, obrasReais, metas, metasMensais, liderancas] = await Promise.all([
-    GP.loadJSON("casas.json"), GP.loadJSON("mapa_lotes.json"), GP.loadJSON("obras_reais.json"), GP.loadJSON("metas_2026_2.json"), GP.loadJSON("metas_mensais_2026_2.json"), GP.loadJSON("liderancas.json"),
+  const [casasBrutas, mapaLotes, obrasReais, metas2026_1, metasMensais2026_1, metas2026_2, metasMensais2026_2, liderancas] = await Promise.all([
+    GP.loadJSON("casas.json"), GP.loadJSON("mapa_lotes.json"), GP.loadJSON("obras_reais.json"),
+    GP.loadJSON("metas_2026_1.json"), GP.loadJSON("metas_mensais_2026_1.json"),
+    GP.loadJSON("metas_2026_2.json"), GP.loadJSON("metas_mensais_2026_2.json"),
+    GP.loadJSON("liderancas.json"),
   ]);
   const lotesReais = Object.fromEntries(obrasReais.map((o) => [o.empreendimento, o.total]));
+
+  const SEMESTRES = ["2026.1", "2026.2"];
+  const metasPorSemestre = { "2026.1": metas2026_1, "2026.2": metas2026_2 };
+  const metasMensaisPorSemestre = { "2026.1": metasMensais2026_1, "2026.2": metasMensais2026_2 };
 
   // Só os 4 condomínios em acompanhamento hoje — planilhas antigas (Xique-xique
   // etc.) e variações de nome do mesmo empreendimento são unificadas/descartadas aqui.
@@ -100,7 +107,7 @@
   const STATUS_LABEL = { concluida: "Concluída", em_producao: "Em produção", nao_iniciada: "Não iniciada" };
   const STATUS_CHIP = { concluida: "chip-good", em_producao: "chip-warning", nao_iniciada: "chip-neutral" };
 
-  const state = { empreendimento: "todos", equipe: "todos", supervisor: "todos", status: "todos", busca: "" };
+  const state = { empreendimento: "todos", equipe: "todos", supervisor: "todos", status: "todos", busca: "", semestre: "2026.2" };
 
   const content = document.getElementById("gp-content");
   content.innerHTML = `
@@ -110,23 +117,7 @@
       ${EMPREENDIMENTOS.length} empreendimentos.
     </p>
 
-    <div class="grid grid-3">
-      <div class="card stat-tile">
-        <div class="stat-label">Meta 2026.2</div>
-        <div class="stat-value">${GP.fmtInt(metas.casas.meta)}</div>
-        <span class="footnote">casas — julho a dezembro de 2026</span>
-      </div>
-      <div class="card stat-tile">
-        <div class="stat-label">Evolução da Meta</div>
-        <div class="stat-value">${GP.fmtInt(metas.casas.realizado)}<small>${GP.fmtPct((metas.casas.realizado / metas.casas.meta) * 100, 0)}</small></div>
-        <span class="chip ${metas.casas.realizado > 0 ? "chip-good" : "chip-neutral"}">Realizado no período</span>
-      </div>
-      <div class="card stat-tile">
-        <div class="stat-label">Delta da Meta</div>
-        <div class="stat-value">${GP.fmtInt(metas.casas.meta - metas.casas.realizado)}</div>
-        <span class="chip chip-warning">Faltam para a meta</span>
-      </div>
-    </div>
+    <div id="secao-meta"></div>
 
     <div class="card">
       <div class="section-head" style="margin-bottom:14px;">
@@ -135,34 +126,6 @@
       </div>
       <div class="grid grid-3" id="lideres-row"></div>
       <div id="lider-detalhe"></div>
-    </div>
-
-    <div class="card">
-      <div class="card-head"><div><div class="card-title">Meta mensal — 2026.2</div><div class="card-sub">Meta (planejado/projetado) x realizado por mês — desvio = realizado − meta</div></div></div>
-      <div class="table-wrap">
-        <table class="data">
-          <thead>
-            <tr><th>Mês</th><th class="num">Meta</th><th class="num">Realizado</th><th class="num">Desvio</th></tr>
-          </thead>
-          <tbody>
-            ${metasMensais.meses.map((m) => {
-              const desvio = m.casas.realizado - m.casas.meta;
-              return `<tr>
-                <td>${m.label}</td>
-                <td class="num">${GP.fmtInt(m.casas.meta)}</td>
-                <td class="num">${GP.fmtInt(m.casas.realizado)}</td>
-                <td class="num"><span class="chip ${desvio >= 0 ? "chip-good" : "chip-warning"}">${desvio > 0 ? "+" : ""}${GP.fmtInt(desvio)}</span></td>
-              </tr>`;
-            }).join("")}
-            <tr style="font-weight:700;">
-              <td>Total 2026.2</td>
-              <td class="num">${GP.fmtInt(metas.casas.meta)}</td>
-              <td class="num">${GP.fmtInt(metas.casas.realizado)}</td>
-              <td class="num">${GP.fmtInt(metas.casas.realizado - metas.casas.meta)}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </div>
 
     <div class="filter-bar">
@@ -219,7 +182,7 @@
           <thead>
             <tr>
               <th>Casa</th><th>Empreendimento</th><th>Equipe (GA)</th><th>Supervisor</th>
-              <th>Status</th><th>Progresso</th><th>Etapa atual</th><th>Início</th>
+              <th>Status</th><th>Progresso</th><th>Etapa atual</th><th>Início</th><th class="num">Produtividade</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -395,6 +358,73 @@
 
   renderLideres();
 
+  function renderMetaSemestre() {
+    const metas = metasPorSemestre[state.semestre];
+    const metasMensais = metasMensaisPorSemestre[state.semestre];
+    document.getElementById("secao-meta").innerHTML = `
+      <div class="card">
+        <div class="card-head" style="margin-bottom:14px;">
+          <div><div class="card-title">Meta de casas</div><div class="card-sub">${metas.periodo}</div></div>
+          <div class="seg">
+            ${SEMESTRES.map((s) => `<button type="button" aria-pressed="${s === state.semestre}" data-semestre="${s}">${s}</button>`).join("")}
+          </div>
+        </div>
+        <div class="grid grid-3">
+          <div class="stat-tile">
+            <div class="stat-label">Meta ${state.semestre}</div>
+            <div class="stat-value">${GP.fmtInt(metas.casas.meta)}</div>
+            <span class="footnote">casas no semestre</span>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-label">Evolução da Meta</div>
+            <div class="stat-value">${GP.fmtInt(metas.casas.realizado)}<small>${GP.fmtPct((metas.casas.realizado / metas.casas.meta) * 100, 0)}</small></div>
+            <span class="chip ${metas.casas.realizado > 0 ? "chip-good" : "chip-neutral"}">Realizado no período</span>
+          </div>
+          <div class="stat-tile">
+            <div class="stat-label">Delta da Meta</div>
+            <div class="stat-value">${GP.fmtInt(metas.casas.meta - metas.casas.realizado)}</div>
+            <span class="chip chip-warning">Faltam para a meta</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><div><div class="card-title">Meta mensal — ${state.semestre}</div><div class="card-sub">Meta (planejado/projetado) x realizado por mês — desvio = realizado − meta</div></div></div>
+        <div class="table-wrap">
+          <table class="data">
+            <thead>
+              <tr><th>Mês</th><th class="num">Meta</th><th class="num">Realizado</th><th class="num">Desvio</th></tr>
+            </thead>
+            <tbody>
+              ${metasMensais.meses.map((m) => {
+                const desvio = m.casas.realizado - m.casas.meta;
+                return `<tr>
+                  <td>${m.label}</td>
+                  <td class="num">${GP.fmtInt(m.casas.meta)}</td>
+                  <td class="num">${GP.fmtInt(m.casas.realizado)}</td>
+                  <td class="num"><span class="chip ${desvio >= 0 ? "chip-good" : "chip-warning"}">${desvio > 0 ? "+" : ""}${GP.fmtInt(desvio)}</span></td>
+                </tr>`;
+              }).join("")}
+              <tr style="font-weight:700;">
+                <td>Total ${state.semestre}</td>
+                <td class="num">${GP.fmtInt(metas.casas.meta)}</td>
+                <td class="num">${GP.fmtInt(metas.casas.realizado)}</td>
+                <td class="num">${GP.fmtInt(metas.casas.realizado - metas.casas.meta)}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    `;
+    document.querySelectorAll("[data-semestre]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        state.semestre = btn.dataset.semestre;
+        renderMetaSemestre();
+      });
+    });
+  }
+  renderMetaSemestre();
+
   function render() {
     const filtradas = casas.filter((c) =>
       (state.empreendimento === "todos" || c.empreendimento === state.empreendimento) &&
@@ -448,7 +478,8 @@
         <td>${stageTracker(c)}</td>
         <td class="footnote">${ETAPA_LABEL[c.etapa_atual] ?? c.etapa_atual}</td>
         <td>${c.data_inicio ? GP.fmtDate(c.data_inicio) : "—"}</td>
-      </tr>`).join("") || `<tr><td colspan="8" class="footnote" style="padding:18px;">Nenhuma casa no filtro atual.</td></tr>`;
+        <td class="num">${c.produtividade_total != null ? GP.fmtNum1(c.produtividade_total) : "—"}</td>
+      </tr>`).join("") || `<tr><td colspan="9" class="footnote" style="padding:18px;">Nenhuma casa no filtro atual.</td></tr>`;
 
     document.getElementById("limite-nota").textContent = filtradas.length > LIMITE
       ? `Mostrando ${LIMITE} de ${GP.fmtInt(filtradas.length)} — refine os filtros para ver outras casas.`

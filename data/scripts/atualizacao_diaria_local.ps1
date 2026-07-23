@@ -53,8 +53,8 @@ try {
   node data/scripts/extrair_muros_planilha.mjs $muros 2>&1 | ForEach-Object { Log $_ }
   node data/scripts/gerar_produtividade_obras.mjs 2>&1 | ForEach-Object { Log $_ }
   node data/scripts/gerar_resumo_obras.mjs 2>&1 | ForEach-Object { Log $_ }
-  node data/scripts/extrair_metas_semestre.mjs $casas2 $muros 2>&1 | ForEach-Object { Log $_ }
-  node data/scripts/extrair_metas_mensais.mjs $casas2 $muros 2>&1 | ForEach-Object { Log $_ }
+  node data/scripts/extrair_metas_semestre.mjs "2026.2" $casas2 $muros 2>&1 | ForEach-Object { Log $_ }
+  node data/scripts/extrair_metas_mensais.mjs "2026.2" $casas2 $muros 2>&1 | ForEach-Object { Log $_ }
 } catch {
   Log "ERRO na extracao: $_"
   exit 1

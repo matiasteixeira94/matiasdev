@@ -152,6 +152,7 @@
         label: nome, value: porObra[nome].produtividade_media, color: OBRA_COR[nome] ?? "var(--accent)",
       })),
       yFormat: (v) => GP.fmtNum1(v),
+      onClick: (it) => { window.location.href = `casas.html?empreendimento=${encodeURIComponent(it.label)}`; },
     });
 
     GPCharts.barsLine(document.getElementById("chart-custo-casa"), {

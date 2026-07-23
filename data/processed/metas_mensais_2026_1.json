@@ -1,0 +1,76 @@
+{
+  "meses": [
+    {
+      "mes": "2026-01",
+      "label": "Janeiro/2026",
+      "casas": {
+        "meta": 44,
+        "realizado": 46
+      },
+      "muros": {
+        "meta": 74,
+        "realizado": 80
+      }
+    },
+    {
+      "mes": "2026-02",
+      "label": "Fevereiro/2026",
+      "casas": {
+        "meta": 62,
+        "realizado": 50
+      },
+      "muros": {
+        "meta": 72,
+        "realizado": 72
+      }
+    },
+    {
+      "mes": "2026-03",
+      "label": "Março/2026",
+      "casas": {
+        "meta": 58,
+        "realizado": 80
+      },
+      "muros": {
+        "meta": 84,
+        "realizado": 89
+      }
+    },
+    {
+      "mes": "2026-04",
+      "label": "Abril/2026",
+      "casas": {
+        "meta": 82,
+        "realizado": 68
+      },
+      "muros": {
+        "meta": 80,
+        "realizado": 61
+      }
+    },
+    {
+      "mes": "2026-05",
+      "label": "Maio/2026",
+      "casas": {
+        "meta": 74,
+        "realizado": 62
+      },
+      "muros": {
+        "meta": 76,
+        "realizado": 71
+      }
+    },
+    {
+      "mes": "2026-06",
+      "label": "Junho/2026",
+      "casas": {
+        "meta": 84,
+        "realizado": 94
+      },
+      "muros": {
+        "meta": 62,
+        "realizado": 60
+      }
+    }
+  ]
+}
