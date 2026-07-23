@@ -258,17 +258,22 @@ function calcularAgregados(itensSubset) {
   }
   const evolucaoMensal = [...porMesMap.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([mes, total]) => ({ mes, total }));
 
-  function slaPct(itensFiltro, dataCol, prazoCol) {
-    const validos = itensFiltro
+  // Por chamado, não por item — DataAvaliação/Prazo* e DataTermino/Prazo*
+  // são campos do chamado (repetidos em todo item dele), então calcular por
+  // item conta o mesmo chamado várias vezes na amostra (rótulo diz
+  // "chamados com prazo definido") e pode até distorcer o %: término no
+  // prazo máximo saía 90,2% por item vs 87,5% por chamado.
+  function slaPct(linhas, dataCol, prazoCol) {
+    const validos = linhas
       .map((r) => ({ data: dataValida(r[dataCol]), prazo: dataValida(r[prazoCol]) }))
       .filter((x) => x.data && x.prazo);
     const noPrazo = validos.filter((x) => x.data <= x.prazo).length;
     return { pct: pct(noPrazo, validos.length), amostra: validos.length };
   }
-  const slaAvalComb = slaPct(itensSubset, C.dataAval, C.prazoCombAval);
-  const slaAvalMax = slaPct(itensSubset, C.dataAval, C.prazoMaxAval);
-  const slaTerminoComb = slaPct(concluidos, C.dataTermino, C.prazoCombTermino);
-  const slaTerminoMax = slaPct(concluidos, C.dataTermino, C.prazoMaxTermino);
+  const slaAvalComb = slaPct(representantes, C.dataAval, C.prazoCombAval);
+  const slaAvalMax = slaPct(representantes, C.dataAval, C.prazoMaxAval);
+  const slaTerminoComb = slaPct(concluidosChamados, C.dataTermino, C.prazoCombTermino);
+  const slaTerminoMax = slaPct(concluidosChamados, C.dataTermino, C.prazoMaxTermino);
 
   const eventosPorId = new Map();
   for (const r of eventosSubset) {

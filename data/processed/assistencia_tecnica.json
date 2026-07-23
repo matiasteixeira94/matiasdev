@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-07-22",
+  "atualizado_em": "2026-07-23",
   "fonte": "chamadosAssistenciaTecnica3.csv + historicoChamadosAssistenciaTecnica.csv + relatorio_de_casas7.csv (dados.vianaemoura.com.br) — agregado, sem nome de cliente. Chamados sobre uma casa (todo Tipo, exceto Infra) só entram se a casa tiver entregaReal preenchido no relatorio_de_casas7.csv",
   "escopo": "UGB Caruaru (CA)",
   "empreendimentos": [
@@ -366,14 +366,14 @@
         }
       ],
       "sla": {
-        "avaliacao_no_prazo_combinado_pct": 99.4,
-        "avaliacao_no_prazo_combinado_amostra": 32435,
+        "avaliacao_no_prazo_combinado_pct": 99.1,
+        "avaliacao_no_prazo_combinado_amostra": 6080,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 32435,
+        "avaliacao_no_prazo_maximo_amostra": 6080,
         "termino_no_prazo_combinado_pct": 98.7,
-        "termino_no_prazo_combinado_amostra": 27399,
-        "termino_no_prazo_maximo_pct": 90.2,
-        "termino_no_prazo_maximo_amostra": 28361
+        "termino_no_prazo_combinado_amostra": 4198,
+        "termino_no_prazo_maximo_pct": 87.5,
+        "termino_no_prazo_maximo_amostra": 4479
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 2.8,
@@ -761,14 +761,14 @@
         }
       ],
       "sla": {
-        "avaliacao_no_prazo_combinado_pct": 99.1,
-        "avaliacao_no_prazo_combinado_amostra": 6443,
+        "avaliacao_no_prazo_combinado_pct": 99.3,
+        "avaliacao_no_prazo_combinado_amostra": 952,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 6443,
-        "termino_no_prazo_combinado_pct": 99.2,
-        "termino_no_prazo_combinado_amostra": 5585,
-        "termino_no_prazo_maximo_pct": 91.9,
-        "termino_no_prazo_maximo_amostra": 5585
+        "avaliacao_no_prazo_maximo_amostra": 952,
+        "termino_no_prazo_combinado_pct": 98.9,
+        "termino_no_prazo_combinado_amostra": 659,
+        "termino_no_prazo_maximo_pct": 91.5,
+        "termino_no_prazo_maximo_amostra": 659
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 2.5,
@@ -1112,14 +1112,14 @@
         }
       ],
       "sla": {
-        "avaliacao_no_prazo_combinado_pct": 100,
-        "avaliacao_no_prazo_combinado_amostra": 3937,
-        "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 3937,
-        "termino_no_prazo_combinado_pct": 99.1,
-        "termino_no_prazo_combinado_amostra": 3125,
-        "termino_no_prazo_maximo_pct": 87.2,
-        "termino_no_prazo_maximo_amostra": 3329
+        "avaliacao_no_prazo_combinado_pct": 99.9,
+        "avaliacao_no_prazo_combinado_amostra": 1210,
+        "avaliacao_no_prazo_maximo_pct": 99.9,
+        "avaliacao_no_prazo_maximo_amostra": 1210,
+        "termino_no_prazo_combinado_pct": 98.3,
+        "termino_no_prazo_combinado_amostra": 836,
+        "termino_no_prazo_maximo_pct": 82.3,
+        "termino_no_prazo_maximo_amostra": 932
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 2,
@@ -1507,14 +1507,14 @@
         }
       ],
       "sla": {
-        "avaliacao_no_prazo_combinado_pct": 98.9,
-        "avaliacao_no_prazo_combinado_amostra": 4984,
-        "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 4984,
-        "termino_no_prazo_combinado_pct": 99.6,
-        "termino_no_prazo_combinado_amostra": 4350,
-        "termino_no_prazo_maximo_pct": 92.4,
-        "termino_no_prazo_maximo_amostra": 4501
+        "avaliacao_no_prazo_combinado_pct": 99.1,
+        "avaliacao_no_prazo_combinado_amostra": 1151,
+        "avaliacao_no_prazo_maximo_pct": 99.9,
+        "avaliacao_no_prazo_maximo_amostra": 1151,
+        "termino_no_prazo_combinado_pct": 99,
+        "termino_no_prazo_combinado_amostra": 813,
+        "termino_no_prazo_maximo_pct": 89.6,
+        "termino_no_prazo_maximo_amostra": 858
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 2.4,
@@ -1770,14 +1770,14 @@
         }
       ],
       "sla": {
-        "avaliacao_no_prazo_combinado_pct": 98.8,
-        "avaliacao_no_prazo_combinado_amostra": 1723,
+        "avaliacao_no_prazo_combinado_pct": 95.4,
+        "avaliacao_no_prazo_combinado_amostra": 454,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 1723,
-        "termino_no_prazo_combinado_pct": 99.7,
-        "termino_no_prazo_combinado_amostra": 1451,
-        "termino_no_prazo_maximo_pct": 80.4,
-        "termino_no_prazo_maximo_amostra": 1722
+        "avaliacao_no_prazo_maximo_amostra": 454,
+        "termino_no_prazo_combinado_pct": 98.8,
+        "termino_no_prazo_combinado_amostra": 329,
+        "termino_no_prazo_maximo_pct": 79.1,
+        "termino_no_prazo_maximo_amostra": 398
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 4.9,
@@ -2041,14 +2041,14 @@
         }
       ],
       "sla": {
-        "avaliacao_no_prazo_combinado_pct": 99.6,
-        "avaliacao_no_prazo_combinado_amostra": 2493,
-        "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 2493,
-        "termino_no_prazo_combinado_pct": 99.9,
-        "termino_no_prazo_combinado_amostra": 2083,
-        "termino_no_prazo_maximo_pct": 95.8,
-        "termino_no_prazo_maximo_amostra": 2121
+        "avaliacao_no_prazo_combinado_pct": 98.9,
+        "avaliacao_no_prazo_combinado_amostra": 816,
+        "avaliacao_no_prazo_maximo_pct": 99.9,
+        "avaliacao_no_prazo_maximo_amostra": 816,
+        "termino_no_prazo_combinado_pct": 99.5,
+        "termino_no_prazo_combinado_amostra": 573,
+        "termino_no_prazo_maximo_pct": 92.3,
+        "termino_no_prazo_maximo_amostra": 596
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 3.6,
@@ -2421,13 +2421,13 @@
       ],
       "sla": {
         "avaliacao_no_prazo_combinado_pct": 100,
-        "avaliacao_no_prazo_combinado_amostra": 3600,
+        "avaliacao_no_prazo_combinado_amostra": 539,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 3600,
-        "termino_no_prazo_combinado_pct": 99.6,
-        "termino_no_prazo_combinado_amostra": 3130,
-        "termino_no_prazo_maximo_pct": 94.4,
-        "termino_no_prazo_maximo_amostra": 3130
+        "avaliacao_no_prazo_maximo_amostra": 539,
+        "termino_no_prazo_combinado_pct": 98.6,
+        "termino_no_prazo_combinado_amostra": 366,
+        "termino_no_prazo_maximo_pct": 93.2,
+        "termino_no_prazo_maximo_amostra": 366
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 2.4,
@@ -2804,13 +2804,13 @@
       ],
       "sla": {
         "avaliacao_no_prazo_combinado_pct": 100,
-        "avaliacao_no_prazo_combinado_amostra": 2632,
+        "avaliacao_no_prazo_combinado_amostra": 170,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 2632,
-        "termino_no_prazo_combinado_pct": 98.2,
-        "termino_no_prazo_combinado_amostra": 2321,
-        "termino_no_prazo_maximo_pct": 86.3,
-        "termino_no_prazo_maximo_amostra": 2321
+        "avaliacao_no_prazo_maximo_amostra": 170,
+        "termino_no_prazo_combinado_pct": 97.5,
+        "termino_no_prazo_combinado_amostra": 121,
+        "termino_no_prazo_maximo_pct": 86.8,
+        "termino_no_prazo_maximo_amostra": 121
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 3.5,
@@ -3010,14 +3010,14 @@
         }
       ],
       "sla": {
-        "avaliacao_no_prazo_combinado_pct": 95.8,
-        "avaliacao_no_prazo_combinado_amostra": 334,
+        "avaliacao_no_prazo_combinado_pct": 93,
+        "avaliacao_no_prazo_combinado_amostra": 43,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 334,
+        "avaliacao_no_prazo_maximo_amostra": 43,
         "termino_no_prazo_combinado_pct": 100,
-        "termino_no_prazo_combinado_amostra": 47,
-        "termino_no_prazo_maximo_pct": 51.6,
-        "termino_no_prazo_maximo_amostra": 335
+        "termino_no_prazo_combinado_amostra": 13,
+        "termino_no_prazo_maximo_pct": 59.6,
+        "termino_no_prazo_maximo_amostra": 52
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 7.8,
@@ -3349,14 +3349,14 @@
         }
       ],
       "sla": {
-        "avaliacao_no_prazo_combinado_pct": 98.9,
-        "avaliacao_no_prazo_combinado_amostra": 2377,
+        "avaliacao_no_prazo_combinado_pct": 98.4,
+        "avaliacao_no_prazo_combinado_amostra": 246,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 2377,
-        "termino_no_prazo_combinado_pct": 99,
-        "termino_no_prazo_combinado_amostra": 2163,
-        "termino_no_prazo_maximo_pct": 94.2,
-        "termino_no_prazo_maximo_amostra": 2163
+        "avaliacao_no_prazo_maximo_amostra": 246,
+        "termino_no_prazo_combinado_pct": 98.8,
+        "termino_no_prazo_combinado_amostra": 172,
+        "termino_no_prazo_maximo_pct": 91.9,
+        "termino_no_prazo_maximo_amostra": 172
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 2.6,
@@ -3729,13 +3729,13 @@
       ],
       "sla": {
         "avaliacao_no_prazo_combinado_pct": 100,
-        "avaliacao_no_prazo_combinado_amostra": 1277,
+        "avaliacao_no_prazo_combinado_amostra": 209,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 1277,
-        "termino_no_prazo_combinado_pct": 99.9,
-        "termino_no_prazo_combinado_amostra": 1164,
-        "termino_no_prazo_maximo_pct": 92.9,
-        "termino_no_prazo_maximo_amostra": 1174
+        "avaliacao_no_prazo_maximo_amostra": 209,
+        "termino_no_prazo_combinado_pct": 99.4,
+        "termino_no_prazo_combinado_amostra": 156,
+        "termino_no_prazo_maximo_pct": 86.1,
+        "termino_no_prazo_maximo_amostra": 165
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 2.7,
@@ -4068,13 +4068,13 @@
       ],
       "sla": {
         "avaliacao_no_prazo_combinado_pct": 100,
-        "avaliacao_no_prazo_combinado_amostra": 1039,
+        "avaliacao_no_prazo_combinado_amostra": 68,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 1039,
-        "termino_no_prazo_combinado_pct": 79.8,
-        "termino_no_prazo_combinado_amostra": 687,
-        "termino_no_prazo_maximo_pct": 79,
-        "termino_no_prazo_maximo_amostra": 687
+        "avaliacao_no_prazo_maximo_amostra": 68,
+        "termino_no_prazo_combinado_pct": 86.2,
+        "termino_no_prazo_combinado_amostra": 29,
+        "termino_no_prazo_maximo_pct": 75.9,
+        "termino_no_prazo_maximo_amostra": 29
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 3,
@@ -4351,13 +4351,13 @@
       ],
       "sla": {
         "avaliacao_no_prazo_combinado_pct": 100,
-        "avaliacao_no_prazo_combinado_amostra": 701,
+        "avaliacao_no_prazo_combinado_amostra": 95,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 701,
+        "avaliacao_no_prazo_maximo_amostra": 95,
         "termino_no_prazo_combinado_pct": 100,
-        "termino_no_prazo_combinado_amostra": 651,
-        "termino_no_prazo_maximo_pct": 94,
-        "termino_no_prazo_maximo_amostra": 651
+        "termino_no_prazo_combinado_amostra": 61,
+        "termino_no_prazo_maximo_pct": 90.2,
+        "termino_no_prazo_maximo_amostra": 61
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 3,
@@ -4661,14 +4661,14 @@
         }
       ],
       "sla": {
-        "avaliacao_no_prazo_combinado_pct": 99.8,
-        "avaliacao_no_prazo_combinado_amostra": 547,
+        "avaliacao_no_prazo_combinado_pct": 98.7,
+        "avaliacao_no_prazo_combinado_amostra": 77,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 547,
+        "avaliacao_no_prazo_maximo_amostra": 77,
         "termino_no_prazo_combinado_pct": 100,
-        "termino_no_prazo_combinado_amostra": 511,
-        "termino_no_prazo_maximo_pct": 96.1,
-        "termino_no_prazo_maximo_amostra": 511
+        "termino_no_prazo_combinado_amostra": 53,
+        "termino_no_prazo_maximo_pct": 92.5,
+        "termino_no_prazo_maximo_amostra": 53
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 2.9,
@@ -4937,13 +4937,13 @@
       ],
       "sla": {
         "avaliacao_no_prazo_combinado_pct": 100,
-        "avaliacao_no_prazo_combinado_amostra": 130,
+        "avaliacao_no_prazo_combinado_amostra": 19,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 130,
+        "avaliacao_no_prazo_maximo_amostra": 19,
         "termino_no_prazo_combinado_pct": 100,
-        "termino_no_prazo_combinado_amostra": 23,
-        "termino_no_prazo_maximo_pct": 4.3,
-        "termino_no_prazo_maximo_amostra": 23
+        "termino_no_prazo_combinado_amostra": 3,
+        "termino_no_prazo_maximo_pct": 33.3,
+        "termino_no_prazo_maximo_amostra": 3
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 3.4,
@@ -5192,13 +5192,13 @@
       ],
       "sla": {
         "avaliacao_no_prazo_combinado_pct": 100,
-        "avaliacao_no_prazo_combinado_amostra": 120,
+        "avaliacao_no_prazo_combinado_amostra": 26,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 120,
-        "termino_no_prazo_combinado_pct": 98.5,
-        "termino_no_prazo_combinado_amostra": 68,
-        "termino_no_prazo_maximo_pct": 82.4,
-        "termino_no_prazo_maximo_amostra": 68
+        "avaliacao_no_prazo_maximo_amostra": 26,
+        "termino_no_prazo_combinado_pct": 92.3,
+        "termino_no_prazo_combinado_amostra": 13,
+        "termino_no_prazo_maximo_pct": 69.2,
+        "termino_no_prazo_maximo_amostra": 13
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 2,
@@ -5347,13 +5347,13 @@
       ],
       "sla": {
         "avaliacao_no_prazo_combinado_pct": 100,
-        "avaliacao_no_prazo_combinado_amostra": 98,
+        "avaliacao_no_prazo_combinado_amostra": 5,
         "avaliacao_no_prazo_maximo_pct": 100,
-        "avaliacao_no_prazo_maximo_amostra": 98,
+        "avaliacao_no_prazo_maximo_amostra": 5,
         "termino_no_prazo_combinado_pct": 0,
-        "termino_no_prazo_combinado_amostra": 40,
+        "termino_no_prazo_combinado_amostra": 1,
         "termino_no_prazo_maximo_pct": 0,
-        "termino_no_prazo_maximo_amostra": 40
+        "termino_no_prazo_maximo_amostra": 1
       },
       "tempos_medios_dias": {
         "abertura_ate_agendamento": 2,
