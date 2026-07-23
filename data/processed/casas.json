@@ -99354,31 +99354,31 @@
     "data_inicio": "2026-07-03",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 9.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-27",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-30",
+        "producao": 3
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-03",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-06",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99392,31 +99392,31 @@
     "data_inicio": "2026-07-03",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 9.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-27",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-30",
+        "producao": 3
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-03",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-06",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99430,31 +99430,31 @@
     "data_inicio": "2026-07-24",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 7.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-27",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-03",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-07",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99468,31 +99468,31 @@
     "data_inicio": "2026-07-24",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 7.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-27",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-03",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-07",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99506,31 +99506,31 @@
     "data_inicio": "2026-07-27",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 10.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 4
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-31",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99544,31 +99544,31 @@
     "data_inicio": "2026-07-27",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 10.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 4
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-31",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99582,31 +99582,31 @@
     "data_inicio": "2026-07-27",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 10.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 4
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-31",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99620,31 +99620,31 @@
     "data_inicio": "2026-07-27",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 10.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 4
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-31",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99658,31 +99658,31 @@
     "data_inicio": "2026-07-02",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 9.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-27",
+        "producao": 3
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-30",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-04",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99696,31 +99696,31 @@
     "data_inicio": "2026-07-02",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 9.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-27",
+        "producao": 3
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-30",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-04",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99734,31 +99734,31 @@
     "data_inicio": "2026-07-17",
     "mes": 7,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 8,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-21",
+        "producao": 2.5
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-24",
+        "producao": 2.5
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99772,31 +99772,31 @@
     "data_inicio": "2026-07-29",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 7.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-31",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-11",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-13",
+        "producao": 2.5
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-17",
+        "producao": 2
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99810,31 +99810,31 @@
     "data_inicio": "2026-07-17",
     "mes": 7,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 8,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-21",
+        "producao": 2.5
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-24",
+        "producao": 2.5
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99848,31 +99848,31 @@
     "data_inicio": "2026-07-29",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 7.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-31",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-11",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-13",
+        "producao": 2.5
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-17",
+        "producao": 2
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99886,31 +99886,31 @@
     "data_inicio": "2026-07-01",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 8.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-03",
+        "producao": 2.5
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-27",
+        "producao": 1.5
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-03",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99924,31 +99924,31 @@
     "data_inicio": "2026-07-01",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 8.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-03",
+        "producao": 2.5
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-27",
+        "producao": 1.5
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-03",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -99962,31 +99962,31 @@
     "data_inicio": "2026-07-24",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 7.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-27",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-03",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-10",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100000,31 +100000,31 @@
     "data_inicio": "2026-07-24",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 7.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-27",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-03",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-10",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100038,19 +100038,19 @@
     "data_inicio": "2026-07-02",
     "mes": null,
     "ano": "-",
-    "produtividade_total": null,
+    "produtividade_total": 4,
     "etapas": {
       "radier": {
         "data": "2026-07-27",
-        "producao": null
+        "producao": 1
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-03",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-01",
+        "producao": 1
       },
       "reboco_int_ext": {
         "data": null,
@@ -100061,9 +100061,9 @@
         "producao": null
       }
     },
-    "macroetapas_concluidas": 1,
+    "macroetapas_concluidas": 3,
     "status": "em_producao",
-    "etapa_atual": "alvenaria",
+    "etapa_atual": "reboco_int_ext",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
   {
@@ -100076,19 +100076,19 @@
     "data_inicio": "2026-07-02",
     "mes": null,
     "ano": "-",
-    "produtividade_total": null,
+    "produtividade_total": 4,
     "etapas": {
       "radier": {
         "data": "2026-07-27",
-        "producao": null
+        "producao": 1
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-03",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-01",
+        "producao": 1
       },
       "reboco_int_ext": {
         "data": null,
@@ -100099,9 +100099,9 @@
         "producao": null
       }
     },
-    "macroetapas_concluidas": 1,
+    "macroetapas_concluidas": 3,
     "status": "em_producao",
-    "etapa_atual": "alvenaria",
+    "etapa_atual": "reboco_int_ext",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
   {
@@ -100114,31 +100114,31 @@
     "data_inicio": "2026-07-27",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 10.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 4
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-31",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100152,31 +100152,31 @@
     "data_inicio": "2026-07-27",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 10.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 4
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-31",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100190,31 +100190,31 @@
     "data_inicio": "2026-07-14",
     "mes": 7,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 11,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-16",
+        "producao": 2.5
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-16",
+        "producao": 3.5
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-23",
+        "producao": 3
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-27",
+        "producao": 2
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100228,31 +100228,31 @@
     "data_inicio": "2026-07-20",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 7.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-21",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-03",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-10",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100266,31 +100266,31 @@
     "data_inicio": "2026-07-14",
     "mes": 7,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 11,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-16",
+        "producao": 2.5
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-16",
+        "producao": 3.5
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-23",
+        "producao": 3
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-27",
+        "producao": 2
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100304,31 +100304,31 @@
     "data_inicio": "2026-07-20",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 7.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-21",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-03",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-10",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100342,31 +100342,31 @@
     "data_inicio": "2026-07-27",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 10.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 4
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-31",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100380,31 +100380,31 @@
     "data_inicio": "2026-07-27",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 10.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 4
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-31",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100418,31 +100418,31 @@
     "data_inicio": "2026-07-14",
     "mes": 7,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 12.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-17",
+        "producao": 4
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-22",
+        "producao": 4
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-24",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100456,31 +100456,31 @@
     "data_inicio": "2026-07-20",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 7.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-21",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-07",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-11",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100494,31 +100494,31 @@
     "data_inicio": "2026-07-14",
     "mes": 7,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 12.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-17",
+        "producao": 4
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-22",
+        "producao": 4
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-24",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-29",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100532,31 +100532,31 @@
     "data_inicio": "2026-07-20",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 7.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-21",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-05",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-07",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-11",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100570,31 +100570,31 @@
     "data_inicio": "2026-07-14",
     "mes": 7,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 11.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-17",
+        "producao": 3.5
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-20",
+        "producao": 3.5
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-22",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-24",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100608,31 +100608,31 @@
     "data_inicio": "2026-07-27",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 7.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-04",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-06",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-11",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100646,31 +100646,31 @@
     "data_inicio": "2026-07-14",
     "mes": 7,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 11.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-17",
+        "producao": 3.5
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-20",
+        "producao": 3.5
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-22",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-24",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100684,31 +100684,31 @@
     "data_inicio": "2026-07-27",
     "mes": 8,
     "ano": 2026,
-    "produtividade_total": null,
+    "produtividade_total": 7.5,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-28",
+        "producao": 2
       },
       "acab2_coberta": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-04",
+        "producao": 1
       },
       "reboco_int_ext": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-06",
+        "producao": 2
       },
       "acab1": {
-        "data": null,
-        "producao": null
+        "data": "2026-08-11",
+        "producao": 2.5
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100722,15 +100722,15 @@
     "data_inicio": "2026-07-15",
     "mes": null,
     "ano": "-",
-    "produtividade_total": null,
+    "produtividade_total": 2,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-16",
+        "producao": 2
       },
       "acab2_coberta": {
         "data": null,
@@ -100746,7 +100746,7 @@
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   },
@@ -100760,15 +100760,15 @@
     "data_inicio": "2026-07-15",
     "mes": null,
     "ano": "-",
-    "produtividade_total": null,
+    "produtividade_total": 2,
     "etapas": {
       "radier": {
         "data": null,
         "producao": null
       },
       "alvenaria": {
-        "data": null,
-        "producao": null
+        "data": "2026-07-16",
+        "producao": 2
       },
       "acab2_coberta": {
         "data": null,
@@ -100784,7 +100784,7 @@
       }
     },
     "macroetapas_concluidas": 0,
-    "status": "em_producao",
+    "status": "nao_iniciada",
     "etapa_atual": "radier",
     "_origem": "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)"
   }

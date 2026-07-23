@@ -102,12 +102,36 @@
     }
   }
 
-  const ETAPAS_ORDEM = ["radier", "alvenaria", "acab2_coberta", "reboco_int_ext", "acab1"];
   const ETAPA_LABEL = { radier: "Radier", alvenaria: "Alvenaria", acab2_coberta: "Acab.2 + Coberta", reboco_int_ext: "Reboco Int.+Ext.", acab1: "Acab.1", entregue: "Entregue" };
   const STATUS_LABEL = { concluida: "Concluída", em_producao: "Em produção", nao_iniciada: "Não iniciada" };
   const STATUS_CHIP = { concluida: "chip-good", em_producao: "chip-warning", nao_iniciada: "chip-neutral" };
 
-  const state = { empreendimento: "todos", equipe: "todos", supervisor: "todos", status: "todos", busca: "", semestre: "2026.2" };
+  // Produtividade da casa: usa produtividade_total quando a planilha já traz
+  // (coluna PROD. — soma das etapas concluídas, mesmo sem a casa estar
+  // entregue). Se não vier preenchido mas a casa já tem alguma etapa feita,
+  // soma a produção das etapas com data (fallback pro caso de a casa ainda
+  // não ter linha em DADOS CASA, só no cronograma da aba CONTROLE).
+  function produtividadeCasa(c) {
+    if (c.produtividade_total != null) return c.produtividade_total;
+    if (!c.etapas) return null;
+    const soma = Object.values(c.etapas).reduce((a, e) => a + (e.data ? (e.producao || 0) : 0), 0);
+    return soma > 0 ? soma : null;
+  }
+
+  // Colunas do "Registro de casas" — cada uma sabe como ordenar (chave de
+  // comparação) e como mostrar o valor na célula.
+  const COLUNAS_TABELA = [
+    { chave: "casa", rotulo: "Casa", valor: (c) => c.casa, celula: (c) => `<td class="mono">${c.casa}</td>` },
+    { chave: "empreendimento", rotulo: "Empreendimento", valor: (c) => c.empreendimento, celula: (c) => `<td>${c.empreendimento}</td>` },
+    { chave: "ga", rotulo: "Equipe (GA)", valor: (c) => c.ga || "", celula: (c) => `<td>${c.ga || "—"}</td>` },
+    { chave: "supervisor", rotulo: "Supervisor", valor: (c) => c.supervisor || "", celula: (c) => `<td>${c.supervisor || "—"}</td>` },
+    { chave: "status", rotulo: "Status", valor: (c) => STATUS_LABEL[c.status] || "", celula: (c) => `<td><span class="chip ${STATUS_CHIP[c.status]}">${STATUS_LABEL[c.status]}</span></td>` },
+    { chave: "etapa_atual", rotulo: "Etapa atual", valor: (c) => ETAPA_LABEL[c.etapa_atual] ?? c.etapa_atual ?? "", celula: (c) => `<td class="footnote">${ETAPA_LABEL[c.etapa_atual] ?? c.etapa_atual}</td>` },
+    { chave: "fim", rotulo: "Fim", valor: (c) => c.etapas?.acab1?.data || "", celula: (c) => `<td>${c.etapas?.acab1?.data ? GP.fmtDate(c.etapas.acab1.data) : "—"}</td>` },
+    { chave: "produtividade", rotulo: "Produtividade", num: true, valor: (c) => produtividadeCasa(c) ?? -1, celula: (c) => `<td class="num">${produtividadeCasa(c) != null ? GP.fmtNum1(produtividadeCasa(c)) : "—"}</td>` },
+  ];
+
+  const state = { empreendimento: "todos", equipe: "todos", supervisor: "todos", status: "todos", busca: "", semestre: "2026.2", ordenarPor: "casa", ordenarDesc: false };
 
   const content = document.getElementById("gp-content");
   content.innerHTML = `
@@ -181,8 +205,7 @@
         <table class="data" id="tabela-casas">
           <thead>
             <tr>
-              <th>Casa</th><th>Empreendimento</th><th>Equipe (GA)</th><th>Supervisor</th>
-              <th>Status</th><th>Progresso</th><th>Etapa atual</th><th>Início</th><th class="num">Produtividade</th>
+              ${COLUNAS_TABELA.map((col) => `<th class="${col.num ? "num " : ""}th-sort" data-sort="${col.chave}">${col.rotulo}<span class="sort-seta">${""}</span></th>`).join("")}
             </tr>
           </thead>
           <tbody></tbody>
@@ -218,14 +241,13 @@
     clearTimeout(buscaTimer);
     buscaTimer = setTimeout(() => { state.busca = e.target.value.trim().toUpperCase(); render(); }, 150);
   });
-
-  function stageTracker(casaRow) {
-    return `<div class="stage-tracker">${ETAPAS_ORDEM.map((et, i) => {
-      const done = i < casaRow.macroetapas_concluidas;
-      const current = i === casaRow.macroetapas_concluidas && casaRow.status !== "concluida";
-      return `<span class="stage-dot ${done ? "done" : ""} ${current ? "current" : ""}" title="${ETAPA_LABEL[et]}"></span>`;
-    }).join("")}</div>`;
-  }
+  document.querySelectorAll("#tabela-casas th[data-sort]").forEach((th) => {
+    th.addEventListener("click", () => {
+      if (state.ordenarPor === th.dataset.sort) state.ordenarDesc = !state.ordenarDesc;
+      else { state.ordenarPor = th.dataset.sort; state.ordenarDesc = false; }
+      render();
+    });
+  });
 
   const STATUS_COR = { concluida: "var(--status-good)", em_producao: "var(--gold)", nao_iniciada: "var(--border-strong)" };
 
@@ -465,21 +487,24 @@
 
     renderMapa(filtradas);
 
+    const colunaOrdenada = COLUNAS_TABELA.find((col) => col.chave === state.ordenarPor);
+    const ordenadas = filtradas.slice().sort((a, b) => {
+      const va = colunaOrdenada.valor(a), vb = colunaOrdenada.valor(b);
+      const cmp = typeof va === "number" ? va - vb : String(va).localeCompare(String(vb), "pt-BR");
+      return state.ordenarDesc ? -cmp : cmp;
+    });
+
     const LIMITE = 150;
-    const paraTabela = filtradas.slice(0, LIMITE);
+    const paraTabela = ordenadas.slice(0, LIMITE);
     document.getElementById("contador-casas").textContent = `${GP.fmtInt(filtradas.length)} casa(s)`;
     document.querySelector("#tabela-casas tbody").innerHTML = paraTabela.map((c) => `
-      <tr>
-        <td class="mono">${c.casa}</td>
-        <td>${c.empreendimento}</td>
-        <td>${c.ga || "—"}</td>
-        <td>${c.supervisor || "—"}</td>
-        <td><span class="chip ${STATUS_CHIP[c.status]}">${STATUS_LABEL[c.status]}</span></td>
-        <td>${stageTracker(c)}</td>
-        <td class="footnote">${ETAPA_LABEL[c.etapa_atual] ?? c.etapa_atual}</td>
-        <td>${c.data_inicio ? GP.fmtDate(c.data_inicio) : "—"}</td>
-        <td class="num">${c.produtividade_total != null ? GP.fmtNum1(c.produtividade_total) : "—"}</td>
-      </tr>`).join("") || `<tr><td colspan="9" class="footnote" style="padding:18px;">Nenhuma casa no filtro atual.</td></tr>`;
+      <tr>${COLUNAS_TABELA.map((col) => col.celula(c)).join("")}</tr>`).join("")
+      || `<tr><td colspan="${COLUNAS_TABELA.length}" class="footnote" style="padding:18px;">Nenhuma casa no filtro atual.</td></tr>`;
+
+    document.querySelectorAll("#tabela-casas th[data-sort]").forEach((th) => {
+      const seta = th.querySelector(".sort-seta");
+      seta.textContent = th.dataset.sort === state.ordenarPor ? (state.ordenarDesc ? " ▼" : " ▲") : "";
+    });
 
     document.getElementById("limite-nota").textContent = filtradas.length > LIMITE
       ? `Mostrando ${LIMITE} de ${GP.fmtInt(filtradas.length)} — refine os filtros para ver outras casas.`

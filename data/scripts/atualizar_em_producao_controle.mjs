@@ -6,8 +6,13 @@
  * (cronograma corrente) da planilha "CONTROLE DE UGB - CA - AAAA.S.xlsm"
  * como fonte da informação mais recente de quais casas já foram iniciadas.
  *
- * Cada linha da aba CONTROLE é uma casa (coluna B/"id") com datas de início
- * (colunas "IN. ALV. D", "USO.RADIER S", "IN.CASA S"); casas ainda não
+ * A aba CONTROLE tem as mesmas 5 macroetapas que a DADOS CASA (data +
+ * produção de cada uma: RD./Prod.RD., Alv./Prod.Alv., Acab2.+CO/
+ * Prod.Acab2.+CO, RbcInt+Ext./Prod.Rbc.Int+Ext., Acab1/Prod.Acab1.) — usamos
+ * elas pra já trazer o progresso parcial (quantos dias de produtividade a
+ * casa já tem, mesmo sem estar concluída) em vez de só marcar "começou".
+ *
+ * Cada linha da aba CONTROLE é uma casa (coluna B/"id"); casas ainda não
  * atribuídas usam um código genérico ("CASA12" etc.) em vez do código real
  * (ex. "RA 477R") — só as linhas com código real são usadas aqui, porque só
  * elas casam com o número de lote do mapa/planilha de custo.
@@ -41,6 +46,9 @@ const EMPREENDIMENTO_POR_PREFIXO = { RL: "Rec. Laranjeiras", RC: "Rec. Cerejeira
 function toIso(v) {
   return v instanceof Date && !isNaN(v) ? v.toISOString().slice(0, 10) : null;
 }
+function prod(v) {
+  return typeof v === "number" ? v : null;
+}
 
 const wb = XLSX.readFile(file, { cellDates: true });
 const ws = wb.Sheets["CONTROLE"];
@@ -50,7 +58,9 @@ const rows = XLSX.utils.sheet_to_json(ws, { header: 1, raw: true, defval: "" });
 // linha 6 (0-based) é o cabeçalho da aba CONTROLE.
 const header = rows[6];
 const idx = {};
-header.forEach((h, i) => { if (h !== "") idx[h] = i; });
+header.forEach((h, i) => { if (h !== "" && idx[h] === undefined) idx[h] = i; });
+
+const ORDEM = ["radier", "alvenaria", "acab2_coberta", "reboco_int_ext", "acab1"];
 
 let adicionadas = 0, jaExistiam = 0, ignoradas = 0;
 for (const r of rows.slice(9)) {
@@ -63,11 +73,20 @@ for (const r of rows.slice(9)) {
 
   const inCasaS = r[idx["IN.CASA S"]];
   const inAlvD = r[idx["IN. ALV. D"]];
-  const usoRadierS = r[idx["USO.RADIER S"]];
   const dataInicio = toIso(inCasaS) || toIso(inAlvD);
   if (!dataInicio) { ignoradas++; continue; } // sem data de início real = ainda não começou de fato
 
-  const radierFeito = usoRadierS instanceof Date && !isNaN(usoRadierS);
+  const etapas = {
+    radier: { data: toIso(r[idx["RD."]]), producao: prod(r[idx["Prod.RD."]]) },
+    alvenaria: { data: toIso(r[idx["Alv."]]), producao: prod(r[idx["Prod.Alv."]]) },
+    acab2_coberta: { data: toIso(r[idx["Acab2.+CO"]]), producao: prod(r[idx["Prod.Acab2.+CO"]]) },
+    reboco_int_ext: { data: toIso(r[idx["RbcInt+Ext."]]), producao: prod(r[idx["Prod.Rbc.Int+Ext."]]) },
+    acab1: { data: toIso(r[idx["Acab1"]]), producao: prod(r[idx["Prod.Acab1."]]) },
+  };
+  let concluidas = 0;
+  for (const et of ORDEM) { if (etapas[et].data) concluidas++; else break; }
+  const somaProducao = ORDEM.reduce((a, et) => a + (etapas[et].producao || 0), 0);
+
   casas.push({
     ga: String(r[idx["GA"]] || "").trim(),
     projeto: String(r[idx["PROJ"]] || "").trim(),
@@ -78,17 +97,11 @@ for (const r of rows.slice(9)) {
     data_inicio: dataInicio,
     mes: r[idx["MÊS"]] || null,
     ano: r[idx["ANO"]] || null,
-    produtividade_total: null,
-    etapas: {
-      radier: { data: radierFeito ? toIso(usoRadierS) : null, producao: null },
-      alvenaria: { data: null, producao: null },
-      acab2_coberta: { data: null, producao: null },
-      reboco_int_ext: { data: null, producao: null },
-      acab1: { data: null, producao: null },
-    },
-    macroetapas_concluidas: radierFeito ? 1 : 0,
-    status: "em_producao",
-    etapa_atual: radierFeito ? "alvenaria" : "radier",
+    produtividade_total: somaProducao > 0 ? somaProducao : null,
+    etapas,
+    macroetapas_concluidas: concluidas,
+    status: concluidas === 5 ? "concluida" : concluidas === 0 ? "nao_iniciada" : "em_producao",
+    etapa_atual: concluidas === 5 ? "entregue" : ORDEM[concluidas],
     _origem: "CONTROLE (cronograma em andamento, sem lançamento ainda em DADOS CASA)",
   });
   existentes.add(key);

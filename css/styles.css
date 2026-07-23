@@ -389,6 +389,9 @@ table.data td { padding: 11px 14px; border-bottom: 1px solid var(--border); vert
 table.data tbody tr:last-child td { border-bottom: none; }
 table.data tbody tr:hover { background: var(--accent-soft); }
 table.data td.num, table.data th.num { text-align: right; }
+table.data th.th-sort { cursor: pointer; user-select: none; }
+table.data th.th-sort:hover { color: var(--ink); }
+table.data .sort-seta { display: inline-block; margin-left: 3px; color: var(--accent); }
 
 /* legenda */
 .legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12px; color: var(--ink-secondary); }
